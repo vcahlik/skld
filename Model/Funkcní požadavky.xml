@@ -14,10 +14,10 @@
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="parent" value="EAPK_8FFFBA06_544B_47da_8063_A77CC2BB9436"/>
 						<UML:TaggedValue tag="created" value="2017-11-02 13:24:26"/>
-						<UML:TaggedValue tag="modified" value="2017-11-02 13:42:03"/>
+						<UML:TaggedValue tag="modified" value="2017-11-02 14:01:56"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Funkcní požadavky.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:42:03"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-02 14:01:57"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -58,7 +58,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="17"/>
+										<UML:TaggedValue tag="ea_localid" value="23"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -83,7 +83,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="18"/>
+										<UML:TaggedValue tag="ea_localid" value="24"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -139,6 +139,21 @@
 				</UML:Package>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
+		<UML:Diagram name="Model funkcnich pozadavek" xmi.id="EAID_138C7F8E_A517_452e_850E_F2A602E77796" diagramType="CustomDiagram" owner="EAPK_59D3B73F_136E_4c99_ACF5_00BD14F4A4A4" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="selvek"/>
+				<UML:TaggedValue tag="created_date" value="2017-11-02 14:02:23"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-02 14:02:23"/>
+				<UML:TaggedValue tag="package" value="EAPK_59D3B73F_136E_4c99_ACF5_00BD14F4A4A4"/>
+				<UML:TaggedValue tag="type" value="Custom"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="2"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=815;DocSize.cy=1067;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=32512;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Extended::Requirements;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+		</UML:Diagram>
 	</XMI.content>
 	<XMI.difference/>
 	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
