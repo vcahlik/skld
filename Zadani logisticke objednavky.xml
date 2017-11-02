@@ -1,3 +1,228 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
-	<XMI.header><XMI.documentation><XMI.exporter>Enterprise Architect</XMI.exporter><XMI.exporterVersion>2.5</XMI.exporterVersion></XMI.documentation></XMI.header><XMI.content><UML:Model name="EA Model" xmi.id="MX_EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956"><UML:Namespace.ownedElement><UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/><UML:Package name="Zadani logisticke objednavky" xmi.id="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" isRoot="false" isLeaf="false" isAbstract="false" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/><UML:TaggedValue tag="created" value="2017-11-02 20:55:56"/><UML:TaggedValue tag="modified" value="2017-11-02 20:55:56"/><UML:TaggedValue tag="iscontrolled" value="TRUE"/><UML:TaggedValue tag="xmlpath" value="Zadani logisticke objednavky.xml"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="isprotected" value="FALSE"/><UML:TaggedValue tag="usedtd" value="FALSE"/><UML:TaggedValue tag="owner" value="Batman"/><UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/><UML:TaggedValue tag="logxml" value="FALSE"/><UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=Batman;CRC=0;"/><UML:TaggedValue tag="batchsave" value="0"/><UML:TaggedValue tag="batchload" value="0"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="author" value="Batman"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="ea_stype" value="Public"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="gentype" value="Java"/></UML:ModelElement.taggedValue><UML:Namespace.ownedElement/></UML:Package></UML:Namespace.ownedElement></UML:Model><UML:Diagram name="Zadani logisticke objednavky" xmi.id="EAID_EF459BC9_D7E8_4601_B05B_CEAE07147E0E" diagramType="ActivityDiagram" owner="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" toolName="Enterprise Architect 2.5"><UML:ModelElement.taggedValue><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="author" value="Batman"/><UML:TaggedValue tag="created_date" value="2017-11-02 20:56:01"/><UML:TaggedValue tag="modified_date" value="2017-11-02 20:56:01"/><UML:TaggedValue tag="package" value="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956"/><UML:TaggedValue tag="type" value="Activity"/><UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;cls=0;"/><UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/><UML:TaggedValue tag="ea_localid" value="58"/><UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1035;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/><UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/></UML:ModelElement.taggedValue></UML:Diagram></XMI.content><XMI.difference/><XMI.extensions xmi.extender="Enterprise Architect 2.5"/></XMI>
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="Zadani logisticke objednavky" xmi.id="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
+						<UML:TaggedValue tag="created" value="2017-11-02 20:55:56"/>
+						<UML:TaggedValue tag="modified" value="2017-11-02 20:55:56"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="Zadani logisticke objednavky.xml"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="owner" value="Batman"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="Batman"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Event name="Prijeti informace o nove logisticke objednavce" xmi.id="EAID_6BB88398_47B2_49c2_9CE7_D487169A8FD7" visibility="public" namespace="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isAbstract" value="false"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Event"/>
+								<UML:TaggedValue tag="ea_ntype" value="1"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
+								<UML:TaggedValue tag="date_created" value="2017-11-02 20:56:40"/>
+								<UML:TaggedValue tag="date_modified" value="2017-11-02 20:57:18"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Zadani logisticke objednavky"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Batman"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="348"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Event>
+						<UML:ActivityModel xmi.id="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956_ActivityModel" context="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" name="ActivityModel" visibility="public">
+							<UML:StateMachine.transitions>
+								<UML:Transition xmi.id="EAID_808C9D7D_8DAC_4bee_8DB3_9DCC2C74212E" visibility="public" source="EAID_6BB88398_47B2_49c2_9CE7_D487169A8FD7" target="EAID_B06948B6_0CC4_459d_9C90_164D3762BAAB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="style" value="3"/>
+										<UML:TaggedValue tag="ea_type" value="ObjectFlow"/>
+										<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+										<UML:TaggedValue tag="linemode" value="3"/>
+										<UML:TaggedValue tag="linecolor" value="-1"/>
+										<UML:TaggedValue tag="linewidth" value="0"/>
+										<UML:TaggedValue tag="seqno" value="0"/>
+										<UML:TaggedValue tag="headStyle" value="0"/>
+										<UML:TaggedValue tag="lineStyle" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="267"/>
+										<UML:TaggedValue tag="ea_sourceName" value="Prijeti informace o nove logisticke objednavce"/>
+										<UML:TaggedValue tag="ea_targetName" value=":Logisticka objednavka"/>
+										<UML:TaggedValue tag="ea_sourceType" value="Event"/>
+										<UML:TaggedValue tag="ea_targetType" value="Object"/>
+										<UML:TaggedValue tag="ea_sourceID" value="348"/>
+										<UML:TaggedValue tag="ea_targetID" value="349"/>
+										<UML:TaggedValue tag="src_visibility" value="Public"/>
+										<UML:TaggedValue tag="src_aggregation" value="0"/>
+										<UML:TaggedValue tag="src_isOrdered" value="false"/>
+										<UML:TaggedValue tag="src_targetScope" value="instance"/>
+										<UML:TaggedValue tag="src_changeable" value="none"/>
+										<UML:TaggedValue tag="src_isNavigable" value="false"/>
+										<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="dst_visibility" value="Public"/>
+										<UML:TaggedValue tag="dst_aggregation" value="0"/>
+										<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+										<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+										<UML:TaggedValue tag="dst_changeable" value="none"/>
+										<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+										<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="virtualInheritance" value="0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Transition>
+								<UML:Transition xmi.id="EAID_DC43778C_1A98_4004_B9DF_DC2798FB301C" visibility="public" source="EAID_B06948B6_0CC4_459d_9C90_164D3762BAAB" target="EAID_80C2D612_CBF6_4321_B77C_474E1F4090EA">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="style" value="3"/>
+										<UML:TaggedValue tag="ea_type" value="ObjectFlow"/>
+										<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+										<UML:TaggedValue tag="linemode" value="3"/>
+										<UML:TaggedValue tag="linecolor" value="-1"/>
+										<UML:TaggedValue tag="linewidth" value="0"/>
+										<UML:TaggedValue tag="seqno" value="0"/>
+										<UML:TaggedValue tag="headStyle" value="0"/>
+										<UML:TaggedValue tag="lineStyle" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="268"/>
+										<UML:TaggedValue tag="ea_sourceName" value=":Logisticka objednavka"/>
+										<UML:TaggedValue tag="ea_targetName" value="Zadani objednavky do systemu"/>
+										<UML:TaggedValue tag="ea_sourceType" value="Object"/>
+										<UML:TaggedValue tag="ea_targetType" value="Activity"/>
+										<UML:TaggedValue tag="ea_sourceID" value="349"/>
+										<UML:TaggedValue tag="ea_targetID" value="350"/>
+										<UML:TaggedValue tag="src_visibility" value="Public"/>
+										<UML:TaggedValue tag="src_aggregation" value="0"/>
+										<UML:TaggedValue tag="src_isOrdered" value="false"/>
+										<UML:TaggedValue tag="src_targetScope" value="instance"/>
+										<UML:TaggedValue tag="src_changeable" value="none"/>
+										<UML:TaggedValue tag="src_isNavigable" value="false"/>
+										<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="dst_visibility" value="Public"/>
+										<UML:TaggedValue tag="dst_aggregation" value="0"/>
+										<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+										<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+										<UML:TaggedValue tag="dst_changeable" value="none"/>
+										<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+										<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="virtualInheritance" value="0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Transition>
+							</UML:StateMachine.transitions>
+							<UML:StateMachine.top>
+								<UML:CompositeState xmi.id="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956_Activity_Top" name="{top}">
+									<UML:CompositeState.substate>
+										<UML:ActionState name="Zadani objednavky do systemu" xmi.id="EAID_80C2D612_CBF6_4321_B77C_474E1F4090EA" visibility="public" namespace="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Activity"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="isActive" value="false"/>
+												<UML:TaggedValue tag="package" value="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
+												<UML:TaggedValue tag="date_created" value="2017-11-02 20:58:12"/>
+												<UML:TaggedValue tag="date_modified" value="2017-11-02 20:58:18"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Zadani logisticke objednavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Batman"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="350"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ActionState>
+									</UML:CompositeState.substate>
+								</UML:CompositeState>
+							</UML:StateMachine.top>
+						</UML:ActivityModel>
+						<UML:Collaboration xmi.id="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name=":Logisticka objednavka" xmi.id="EAID_B06948B6_0CC4_459d_9C90_164D3762BAAB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Object"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-02 20:57:57"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-02 20:58:03"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Zadani logisticke objednavky"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Batman"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="349"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="Zadani logisticke objednavky" xmi.id="EAID_EF459BC9_D7E8_4601_B05B_CEAE07147E0E" diagramType="ActivityDiagram" owner="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Batman"/>
+				<UML:TaggedValue tag="created_date" value="2017-11-02 20:56:01"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-02 20:58:59"/>
+				<UML:TaggedValue tag="package" value="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
+				<UML:TaggedValue tag="type" value="Activity"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="58"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1035;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=80135289;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=448;Top=76;Right=583;Bottom=151;" subject="EAID_80C2D612_CBF6_4321_B77C_474E1F4090EA" seqno="1" style="DUID=DE09AF48;"/>
+				<UML:DiagramElement geometry="Left=293;Top=89;Right=383;Bottom=139;" subject="EAID_B06948B6_0CC4_459d_9C90_164D3762BAAB" seqno="2" style="DUID=F80243A2;"/>
+				<UML:DiagramElement geometry="Left=85;Top=82;Right=219;Bottom=148;" subject="EAID_6BB88398_47B2_49c2_9CE7_D487169A8FD7" seqno="3" style="DUID=358A3EE7;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DC43778C_1A98_4004_B9DF_DC2798FB301C" style="Mode=3;EOID=DE09AF48;SOID=F80243A2;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_808C9D7D_8DAC_4bee_8DB3_9DCC2C74212E" style="Mode=3;EOID=F80243A2;SOID=358A3EE7;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
