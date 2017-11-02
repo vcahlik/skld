@@ -16,10 +16,11 @@
 						<UML:TaggedValue tag="modified" value="2017-10-30 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Sklad.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:30:36"/>
+						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
-						<UML:TaggedValue tag="owner" value="selvek"/>
 						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
 						<UML:TaggedValue tag="packageFlags" value="isModel=1;Recurse=0;VCCFG=SKLD;CRC=0;"/>
@@ -56,7 +57,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="5"/>
+										<UML:TaggedValue tag="ea_localid" value="4"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -70,10 +71,14 @@
 								<UML:TaggedValue tag="created" value="2017-11-02 00:00:00"/>
 								<UML:TaggedValue tag="modified" value="2017-11-02 00:00:00"/>
 								<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:30:36"/>
+								<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
 								<UML:TaggedValue tag="usedtd" value="FALSE"/>
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
 								<UML:TaggedValue tag="packageFlags" value="isModel=1;VICON=4;"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -104,7 +109,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="6"/>
+												<UML:TaggedValue tag="ea_localid" value="5"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -119,6 +124,8 @@
 										<UML:TaggedValue tag="modified" value="2017-11-02 13:24:26"/>
 										<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 										<UML:TaggedValue tag="xmlpath" value="Funkcní požadavky.xml"/>
+										<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:30:36"/>
+										<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="isprotected" value="FALSE"/>
 										<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -157,7 +164,7 @@
 														<UML:TaggedValue tag="complexity" value="1"/>
 														<UML:TaggedValue tag="status" value="Proposed"/>
 														<UML:TaggedValue tag="tpos" value="0"/>
-														<UML:TaggedValue tag="ea_localid" value="8"/>
+														<UML:TaggedValue tag="ea_localid" value="6"/>
 														<UML:TaggedValue tag="ea_eleType" value="package"/>
 														<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 													</UML:ModelElement.taggedValue>
@@ -196,10 +203,14 @@
 												<UML:TaggedValue tag="created" value="2017-11-02 13:27:39"/>
 												<UML:TaggedValue tag="modified" value="2017-11-02 13:27:57"/>
 												<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+												<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:30:36"/>
+												<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 												<UML:TaggedValue tag="version" value="1.0"/>
 												<UML:TaggedValue tag="isprotected" value="FALSE"/>
 												<UML:TaggedValue tag="usedtd" value="FALSE"/>
 												<UML:TaggedValue tag="logxml" value="FALSE"/>
+												<UML:TaggedValue tag="batchsave" value="0"/>
+												<UML:TaggedValue tag="batchload" value="0"/>
 												<UML:TaggedValue tag="phase" value="1.0"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="author" value="selvek"/>
@@ -214,10 +225,14 @@
 												<UML:TaggedValue tag="created" value="2017-11-02 13:27:34"/>
 												<UML:TaggedValue tag="modified" value="2017-11-02 13:27:34"/>
 												<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+												<UML:TaggedValue tag="lastloaddate" value="2017-11-02 13:30:36"/>
+												<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:30:36"/>
 												<UML:TaggedValue tag="version" value="1.0"/>
 												<UML:TaggedValue tag="isprotected" value="FALSE"/>
 												<UML:TaggedValue tag="usedtd" value="FALSE"/>
 												<UML:TaggedValue tag="logxml" value="FALSE"/>
+												<UML:TaggedValue tag="batchsave" value="0"/>
+												<UML:TaggedValue tag="batchload" value="0"/>
 												<UML:TaggedValue tag="phase" value="1.0"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="author" value="selvek"/>
