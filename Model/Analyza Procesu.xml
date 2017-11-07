@@ -12,14 +12,14 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="Analýza proces&#367;" xmi.id="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
-						<UML:TaggedValue tag="documentation" value="Obsahuje popis proces&#367;, které musejí být ve skladu vykonávány p&#345;i jeho b&#283;žném provozu. Byly základní procesy:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;naskladn&#283;ní zboží a p&#345;edání k expedici    &lt;/li&gt;&#xA;	&lt;li&gt;tvorba objednávek&lt;/li&gt;&#xA;	&lt;li&gt;editace objednávek    &lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<UML:TaggedValue tag="documentation" value="Obsahuje popis proces&#367;, které musejí být ve skladu vykonávány p&#345;i jeho b&#283;žném provozu. Základní procesy:&#xA;&amp;nbsp;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;naskladn&#283;ní zboží a p&#345;edání k expedici    &lt;/li&gt;&#xA;	&lt;li&gt;tvorba objednávek&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
 						<UML:TaggedValue tag="parent" value="EAPK_2BDF3F51_B1B0_4247_98C6_DA2D345C3540"/>
-						<UML:TaggedValue tag="ea_package_id" value="234"/>
+						<UML:TaggedValue tag="ea_package_id" value="242"/>
 						<UML:TaggedValue tag="created" value="2017-11-02 13:34:15"/>
-						<UML:TaggedValue tag="modified" value="2017-11-08 00:05:50"/>
+						<UML:TaggedValue tag="modified" value="2017-11-08 00:17:28"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Analyza Procesu.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:05:51"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:17:08"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:46:51"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -159,7 +159,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=crazy;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
