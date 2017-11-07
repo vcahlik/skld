@@ -1,3 +1,915 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
-	<XMI.header><XMI.documentation><XMI.exporter>Enterprise Architect</XMI.exporter><XMI.exporterVersion>2.5</XMI.exporterVersion></XMI.documentation></XMI.header><XMI.content><UML:Model name="EA Model" xmi.id="MX_EAID_579C5DAE_43EE_402c_A009_F2457473A19A"><UML:Namespace.ownedElement><UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/><UML:Package name="Návrhy obrazovek" xmi.id="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="parent" value="EAPK_8FFFBA06_544B_47da_8063_A77CC2BB9436"/><UML:TaggedValue tag="created" value="2017-11-06 17:40:42"/><UML:TaggedValue tag="modified" value="2017-11-06 17:40:42"/><UML:TaggedValue tag="iscontrolled" value="TRUE"/><UML:TaggedValue tag="xmlpath" value="Návrhy obrazovek.xml"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="isprotected" value="FALSE"/><UML:TaggedValue tag="usedtd" value="FALSE"/><UML:TaggedValue tag="owner" value="selvek"/><UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/><UML:TaggedValue tag="logxml" value="FALSE"/><UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=selvek;CRC=0;"/><UML:TaggedValue tag="batchsave" value="0"/><UML:TaggedValue tag="batchload" value="0"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="author" value="selvek"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="ea_stype" value="Public"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="gentype" value="Java"/></UML:ModelElement.taggedValue><UML:Namespace.ownedElement/></UML:Package></UML:Namespace.ownedElement></UML:Model></XMI.content><XMI.difference/><XMI.extensions xmi.extender="Enterprise Architect 2.5"/></XMI>
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_579C5DAE_43EE_402c_A009_F2457473A19A">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="Návrhy obrazovek" xmi.id="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_0B5C55E7_89A2_482b_B358_B096A5EDAB12"/>
+						<UML:TaggedValue tag="created" value="2017-11-06 17:40:42"/>
+						<UML:TaggedValue tag="modified" value="2017-11-07 21:01:15"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="Návrhy obrazovek.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-07 21:01:15"/>
+						<UML:TaggedValue tag="lastsavedate" value="2017-11-07 21:01:15"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="selvek"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_579C5DAE_43EE_402c_A009_F2457473A19A_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Zobrazit logistické objednávky" xmi.id="EAID_032EEB77_8BA6_4b34_AE47_44685A07DC80" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:23:58"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:24:34"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="702"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={709E452F-BF3E-4ea1-A758-FFDB82ED7EAB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={032EEB77-8BA6-4b34-AE47-44685A07DC80}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Detail objednávky" xmi.id="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeDialog"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Screen"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:35:52"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:36:27"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="712"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={AAB1AD22-6381-46ab-BFC8-7BFE992E736D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={0AB22CE8-79AA-42ed-B58F-203C2E130438}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Seznam logistických objednávek" xmi.id="EAID_155BF14F_3FAD_41fa_9816_54575BF88073" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeDialog"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Screen"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:49:51"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:50:37"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="729"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={10BEAD6A-7F74-44c8-B404-1A0FA87FAC5D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={155BF14F-3FAD-41fa-9816-54575BF88073}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="List" xmi.id="EAID_1EDF6C21_7CA9_4381_A63C_337CAC3F8F4C" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeList"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:52:29"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:52:29"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeList"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="731"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={96E57702-4863-4b2e-8229-EDA3D820C88E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeList;FQName=Wireframing::WireframeList;@ENDSTEREO;$DES;$CLT={1EDF6C21-7CA9-4381-A63C-337CAC3F8F4C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="ID Objednávky" xmi.id="EAID_257ADBF0_D014_4c45_BA74_A6F148954122" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:37:19"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:37:48"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="714"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={512664E0-8088-40ac-BCBC-492EDDDE0DD3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={257ADBF0-D014-4c45-BA74-A6F148954122}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zobrazit detaily" xmi.id="EAID_29D36C1E_65D0_4f3f_91FE_6AD0B50EC97F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:53:09"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:53:15"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="732"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6930D79C-6F6B-4839-8F25-E4DCF1FCBA4F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={29D36C1E-65D0-4f3f-91FE-6AD0B50EC97F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_3F2A8DF2_C1B0_45c9_9AF6_D1C3CFA6EE23" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:46:08"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:46:13"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="728"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4172656A-A683-47ef-B9A2-1C62E1A7B45B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={3F2A8DF2-C1B0-45c9-9AF6-D1C3CFA6EE23}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_47423117_DEBE_4db7_B799_0FFFD9094185" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:53:19"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:53:21"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="733"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DCA7200F-994C-4484-847E-31E4B39A1E6E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={47423117-DEBE-4db7-B799-0FFFD9094185}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="xxxx" xmi.id="EAID_49791A14_5777_4d96_A5F6_044663232629" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:42:45"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:42:51"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="721"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={97A543EC-E2DB-4333-AAFA-FDD5C35FE44D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={49791A14-5777-4d96-A5F6-044663232629}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="xxxx" xmi.id="EAID_4CDAE561_2D03_47af_B9C6_9B8F0AA2BA78" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:41:35"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:41:57"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="720"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F004DBE6-9798-4e8b-8C81-5BD7B5613A04}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={4CDAE561-2D03-47af-B9C6-9B8F0AA2BA78}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="List" xmi.id="EAID_4DA8FDA5_9719_45d4_B5EA_62D972E9193F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeList"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:38:50"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:38:50"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeList"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="717"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={60657C3D-6122-4f4f-A593-EB57491D6DE5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeList;FQName=Wireframing::WireframeList;@ENDSTEREO;$DES;$CLT={4DA8FDA5-9719-45d4-B5EA-62D972E9193F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Naskladn&#283;ní zboží" xmi.id="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeDialog"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Obrazovka umož&#328;uje skladníkovi naskladnit nové zboží."/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Screen"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:21:03"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:21:37"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Jirka"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="698"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BF43C04A-0C66-4b59-8DB2-5ED44F607B24}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={5553803A-02AD-46bd-810C-3E9FA24661A4}$CLT;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="xxxx" xmi.id="EAID_76812BCC_EBCF_425c_8A15_21FAFE3E6286" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:43:00"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:43:02"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="723"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BB9CC764-D012-4ef5-8FB6-CD22A09607C8}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={76812BCC-EBCF-425c-8A15-21FAFE3E6286}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="O&#269;ekávané množství" xmi.id="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:40:33"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:40:44"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="718"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CE6C7159-9DCC-4bca-B90C-ACEEA1E652BE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={80C5047E-EDDD-4520-AE39-D81568C77FFE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Vyhledat" xmi.id="EAID_87CAFD48_9764_4abf_8AE4_682DED6946EB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:21:03"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:23:48"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Jirka"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="699"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F7A9D723-909A-40f0-803B-3B45ABC37C44}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={87CAFD48-9764-4abf-8AE4-682DED6946EB}$CLT;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Dodávající firma" xmi.id="EAID_8831ADEA_3011_4a67_9E81_10327D288C44" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:40:46"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:40:57"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="719"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F0832967-FE25-4d5c-A842-89A7879D397A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={8831ADEA-3011-4a67-9E81-10327D288C44}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="xxxx" xmi.id="EAID_AA00834A_24C1_4439_A52F_672CF7A30224" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:42:55"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:42:57"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="722"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BD06660F-B544-46c6-888F-E8D88FFD6F8B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={AA00834A-24C1-4439-A52F-672CF7A30224}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zrušit objednávku" xmi.id="EAID_ACDCC8BF_D149_436e_A599_66C9034B84AF" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:45:38"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:45:46"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="727"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={81802C97-8CD1-4fa1-BF1C-8AEBBFB8DF9F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={ACDCC8BF-D149-436e-A599-66C9034B84AF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Vy&#345;ízeno" xmi.id="EAID_B7D9027A_5D60_4e00_8C49_46BE3CFB68B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeButton"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:44:06"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:44:14"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="724"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C16DA98F-9DBF-4747-AF2D-E2DC6E655B69}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={B7D9027A-5D60-4e00-8C49-46BE3CFB68B6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Reáln&#283; dodané množství" xmi.id="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:44:21"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:44:28"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="725"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={24FEFF97-310B-47b3-82DB-568720F996DC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={D3F80C52-3DCF-4db3-A9F2-7EE9D7C77248}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole xmi.id="EAID_F03D1A77_4AC7_4cc8_B718_0BE5FD627644" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:21:03"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:23:24"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="701"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C7B40097-1765-4bc8-A52D-6364E49881A2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={F03D1A77-4AC7-4cc8-B718-0BE5FD627644}$CLT;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole xmi.id="EAID_F210415F_8EE9_4fd3_ABC1_EBD3BEB7ED07" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeTextField"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:45:05"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:45:08"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="726"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={30109641-DE9E-4a92-930A-A18E731AE900}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={F210415F-8EE9-4fd3-ABC1-EBD3BEB7ED07}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Druh zboží" xmi.id="EAID_F51198A5_9730_4ff4_9601_05F0737B62CB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:37:32"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:37:45"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="715"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={2787512D-D2EC-4563-A92C-4D864ED27FF5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={F51198A5-9730-4ff4-9601-05F0737B62CB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nevíte identifikátor? Najd&#283;te ho v seznamu:" xmi.id="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="WireframeLabel"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="GUIElement"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+										<UML:TaggedValue tag="owner" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-07 23:25:14"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-07 23:25:25"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Pepa"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="703"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={91D03C99-CE84-4d10-9775-DE36BE36DD1D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={FF3412CE-479D-4f4c-B3AB-D7ABA8DBF963}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Comment xmi.id="EAID_32105094_1EBA_4d10_B98F_C7FF4023593D" visibility="public" namespace="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Identifikátor logistické objednávky:"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+								<UML:TaggedValue tag="date_created" value="2017-11-07 23:21:03"/>
+								<UML:TaggedValue tag="date_modified" value="2017-11-07 23:23:11"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Návrhy obrazovek"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Jirka"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="697"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_97C3_59AD032D04AA" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_032EEB77_8BA6_4b34_AE47_44685A07DC80"/>
+		<UML:TaggedValue tag="Close Button" xmi.id="EAID_08163252_01C7_d301_9D43_8A1BEE106901" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="Maximize Button" xmi.id="EAID_F79ACDC0_7115_8271_8E4C_C5BFE2B364BB" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="Minimize Button" xmi.id="EAID_B7E63BBE_DF13_cddf_8E49_19D2D3EB6742" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="ScrollbarH" xmi.id="EAID_7676EC4C_E681_70e6_B424_F11DFBB6F33E" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="ScrollbarV" xmi.id="EAID_7676EC5A_E68F_70e6_8933_B5B34CF1F49D" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="StatusBar" xmi.id="EAID_A3A897D9_936E_7193_9CCC_A232E5EC3F73" value="&lt;memo&gt;#NOTES#&lt;StatusBar Zoombar=&quot;False&quot;/&gt;&#xA;" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="User Icon" xmi.id="EAID_C996AE28_A5BD_4ea5_8FC7_E1684FE0E2C3" modelElement="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+		<UML:TaggedValue tag="Close Button" xmi.id="EAID_08163252_01C7_d301_A175_42DDF0965502" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="Maximize Button" xmi.id="EAID_F79ACDC0_7115_8271_9943_79F442069850" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="Minimize Button" xmi.id="EAID_B7E63BBE_DF13_cddf_BA67_F9EBB5F039F6" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="ScrollbarH" xmi.id="EAID_7676EC4C_E681_70e6_B56C_469B291F8BE3" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="ScrollbarV" xmi.id="EAID_7676EC5A_E68F_70e6_BD6B_F73336865BD1" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="StatusBar" xmi.id="EAID_A3A897D9_936E_7193_A006_63D009843A97" value="&lt;memo&gt;#NOTES#&lt;StatusBar Zoombar=&quot;False&quot;/&gt;&#xA;" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="User Icon" xmi.id="EAID_C996AE28_A5BD_4ea5_8F03_B4B0EA371521" modelElement="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+		<UML:TaggedValue tag="Items" xmi.id="EAID_07AD6502_2CA3_912c_8415_FD9C9F2B4DED" value="xxxx#NOTES#Values: xxxx,yyyy,zzzz&#xA;Default: xxxx&#xA;" modelElement="EAID_1EDF6C21_7CA9_4381_A63C_337CAC3F8F4C"/>
+		<UML:TaggedValue tag="ListType" xmi.id="EAID_531EC25E_E63F_87e6_B5EA_BBB4FF82E81F" value="Simple#NOTES#Values: Simple,Numbered,Bulleted&#xA;Default: Simple&#xA;" modelElement="EAID_1EDF6C21_7CA9_4381_A63C_337CAC3F8F4C"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_9AE4_2045F4190D3C" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_257ADBF0_D014_4c45_BA74_A6F148954122"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_87E7_280D4C35EA69" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_257ADBF0_D014_4c45_BA74_A6F148954122"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_811C_CB4F12067DBD" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_29D36C1E_65D0_4f3f_91FE_6AD0B50EC97F"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_9D5B_26F4781194BB" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_3F2A8DF2_C1B0_45c9_9AF6_D1C3CFA6EE23"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_9E72_6B2BA248C829" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_47423117_DEBE_4db7_B799_0FFFD9094185"/>
+		<UML:TaggedValue tag="Items" xmi.id="EAID_07AD6502_2CA3_912c_AB34_CD8C50E50E3E" value="xxxx#NOTES#Values: xxxx,xxxx,xxxx,xxxx&#xA;Default: xxxx&#xA;" modelElement="EAID_4DA8FDA5_9719_45d4_B5EA_62D972E9193F"/>
+		<UML:TaggedValue tag="ListType" xmi.id="EAID_531EC25E_E63F_87e6_870C_D2D757E35B0A" value="Simple#NOTES#Values: Simple,Numbered,Bulleted&#xA;Default: Simple&#xA;" modelElement="EAID_4DA8FDA5_9719_45d4_B5EA_62D972E9193F"/>
+		<UML:TaggedValue tag="Close Button" xmi.id="EAID_08163252_01C7_d301_BE02_75E59BAFA309" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="Maximize Button" xmi.id="EAID_F79ACDC0_7115_8271_8324_655299FD8624" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="Minimize Button" xmi.id="EAID_B7E63BBE_DF13_cddf_9BF3_0A86A8EFB397" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="ScrollbarH" xmi.id="EAID_7676EC4C_E681_70e6_9C35_B8161A653AA2" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="ScrollbarV" xmi.id="EAID_7676EC5A_E68F_70e6_9ADD_B7F88DA537D9" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="StatusBar" xmi.id="EAID_A3A897D9_936E_7193_8B01_544CEE6C5C4D" value="&lt;memo&gt;" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="User Icon" xmi.id="EAID_C996AE28_A5BD_4ea5_9BB9_2E246FFEE9E6" modelElement="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_BA45_E434E0860DA9" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_8841_48D31CA04B70" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_91BD_3CDE99F563D1" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_87CAFD48_9764_4abf_8AE4_682DED6946EB"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_9064_AE1C517C7A46" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_8831ADEA_3011_4a67_9E81_10327D288C44"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_AB72_8232E90357F8" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_8831ADEA_3011_4a67_9E81_10327D288C44"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_84CF_AB9113725B6E" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_ACDCC8BF_D149_436e_A599_66C9034B84AF"/>
+		<UML:TaggedValue tag="State" xmi.id="EAID_086249E1_57A2_8957_A972_5B48D2B177A5" value="Normal#NOTES#Values: Normal,Focused,Selected,Disabled&#xA;Default: Normal&#xA;" modelElement="EAID_B7D9027A_5D60_4e00_8C49_46BE3CFB68B6"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_A2B7_0E3C3165B7C4" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_8C5B_DF63BD9D43BF" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_9DE7_88F52A39C714" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_F51198A5_9730_4ff4_9601_05F0737B62CB"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_AAD1_15102C9BB2D1" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_F51198A5_9730_4ff4_9601_05F0737B62CB"/>
+		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_BAA1_B9EFEC311404" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963"/>
+		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_B048_C7B23FCB7908" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963"/>
+		<UML:Diagram name="Naskladn&#283;ní zboží" xmi.id="EAID_E6C72EBF_F5F9_4c7f_9089_C6F1B9654710" diagramType="CustomDiagram" owner="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="husekjos"/>
+				<UML:TaggedValue tag="created_date" value="2017-11-07 00:00:00"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-07 23:52:03"/>
+				<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+				<UML:TaggedValue tag="type" value="Custom"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="140"/>
+				<UML:TaggedValue tag="parent" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=C385A1E0;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=74;Top=130;Right=282;Bottom=143;" subject="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963" seqno="1" style="DUID=3D8E9386;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=80;Top=151;Right=269;Bottom=175;" subject="EAID_032EEB77_8BA6_4b34_AE47_44685A07DC80" seqno="2" style="DUID=9732C7C1;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=187;Top=98;Right=277;Bottom=118;" subject="EAID_87CAFD48_9764_4abf_8AE4_682DED6946EB" seqno="3" style="HideIcon=0;NSL=0;DUID=766433E0;"/>
+				<UML:DiagramElement geometry="Left=78;Top=99;Right=168;Bottom=119;" subject="EAID_F03D1A77_4AC7_4cc8_B718_0BE5FD627644" seqno="4" style="HideIcon=0;NSL=0;DUID=271B273B;"/>
+				<UML:DiagramElement geometry="Left=70;Top=73;Right=270;Bottom=96;" subject="EAID_32105094_1EBA_4d10_B98F_C7FF4023593D" seqno="5" style="NSL=0;DUID=FB8A46EC;"/>
+				<UML:DiagramElement geometry="Left=42;Top=30;Right=310;Bottom=194;" subject="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4" seqno="6" style="HideIcon=0;NSL=0;DUID=F806080F;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Detail objednávky" xmi.id="EAID_3CCC42D4_F2B7_49db_9677_65E1460A7AB6" diagramType="CustomDiagram" owner="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Pepa"/>
+				<UML:TaggedValue tag="created_date" value="2017-11-07 23:36:38"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-07 23:53:44"/>
+				<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+				<UML:TaggedValue tag="type" value="Custom"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="142"/>
+				<UML:TaggedValue tag="parent" value="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=632B6FFB;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=354;Top=248;Right=444;Bottom=268;" subject="EAID_3F2A8DF2_C1B0_45c9_9AF6_D1C3CFA6EE23" seqno="1" style="DUID=DE697FF3;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=310;Top=175;Right=400;Bottom=195;" subject="EAID_ACDCC8BF_D149_436e_A599_66C9034B84AF" seqno="2" style="DUID=284A832C;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=310;Top=111;Right=400;Bottom=131;" subject="EAID_F210415F_8EE9_4fd3_ABC1_EBD3BEB7ED07" seqno="3" style="DUID=88C25D43;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=294;Top=95;Right=457;Bottom=108;" subject="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248" seqno="4" style="DUID=D8E47C25;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=310;Top=141;Right=400;Bottom=161;" subject="EAID_B7D9027A_5D60_4e00_8C49_46BE3CFB68B6" seqno="5" style="DUID=CF1C39FE;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=181;Top=228;Right=271;Bottom=248;" subject="EAID_76812BCC_EBCF_425c_8A15_21FAFE3E6286" seqno="6" style="DUID=7560B8B5;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=181;Top=189;Right=271;Bottom=209;" subject="EAID_AA00834A_24C1_4439_A52F_672CF7A30224" seqno="7" style="DUID=2AE58698;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=181;Top=150;Right=271;Bottom=170;" subject="EAID_49791A14_5777_4d96_A5F6_044663232629" seqno="8" style="DUID=3409409F;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=181;Top=111;Right=271;Bottom=131;" subject="EAID_4CDAE561_2D03_47af_B9C6_9B8F0AA2BA78" seqno="9" style="DUID=E2BA909E;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=177;Top=210;Right=267;Bottom=223;" subject="EAID_8831ADEA_3011_4a67_9E81_10327D288C44" seqno="10" style="DUID=95245758;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=177;Top=172;Right=283;Bottom=185;" subject="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE" seqno="11" style="DUID=9D6F67BD;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=177;Top=134;Right=267;Bottom=147;" subject="EAID_F51198A5_9730_4ff4_9601_05F0737B62CB" seqno="12" style="DUID=CE0B1846;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=177;Top=95;Right=340;Bottom=108;" subject="EAID_257ADBF0_D014_4c45_BA74_A6F148954122" seqno="13" style="DUID=700922FB;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=158;Top=58;Right=458;Bottom=281;" subject="EAID_0AB22CE8_79AA_42ed_B58F_203C2E130438" seqno="14" style="DUID=99762445;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Seznam logistických objednávek" xmi.id="EAID_6850D34C_782A_460f_B8A8_9809F62C7E2D" diagramType="CustomDiagram" owner="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Pepa"/>
+				<UML:TaggedValue tag="created_date" value="2017-11-07 23:50:21"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-07 23:53:38"/>
+				<UML:TaggedValue tag="package" value="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A"/>
+				<UML:TaggedValue tag="type" value="Custom"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="143"/>
+				<UML:TaggedValue tag="parent" value="EAID_155BF14F_3FAD_41fa_9816_54575BF88073"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=80AFA346;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=288;Top=192;Right=378;Bottom=212;" subject="EAID_47423117_DEBE_4db7_B799_0FFFD9094185" seqno="1" style="DUID=49BD646D;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=288;Top=94;Right=378;Bottom=114;" subject="EAID_29D36C1E_65D0_4f3f_91FE_6AD0B50EC97F" seqno="2" style="DUID=1A64BBCD;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=151;Top=90;Right=256;Bottom=210;" subject="EAID_1EDF6C21_7CA9_4381_A63C_337CAC3F8F4C" seqno="3" style="DUID=383C0A35;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=133;Top=54;Right=409;Bottom=230;" subject="EAID_155BF14F_3FAD_41fa_9816_54575BF88073" seqno="4" style="DUID=37B59FA6;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
