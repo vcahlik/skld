@@ -12,12 +12,13 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="Návrhy obrazovek" xmi.id="EAPK_579C5DAE_43EE_402c_A009_F2457473A19A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
-						<UML:TaggedValue tag="parent" value="EAPK_0B5C55E7_89A2_482b_B358_B096A5EDAB12"/>
+						<UML:TaggedValue tag="parent" value="EAPK_A9D59B97_5A95_4ce0_A8C1_B23BB6546AAC"/>
+						<UML:TaggedValue tag="ea_package_id" value="133"/>
 						<UML:TaggedValue tag="created" value="2017-11-06 17:40:42"/>
-						<UML:TaggedValue tag="modified" value="2017-11-08 12:41:39"/>
+						<UML:TaggedValue tag="modified" value="2017-11-08 13:42:27"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Návrhy obrazovek.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 12:41:39"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 13:42:28"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-07 21:01:15"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -58,7 +59,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="200"/>
+										<UML:TaggedValue tag="ea_localid" value="134"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -113,7 +114,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1078"/>
+												<UML:TaggedValue tag="ea_localid" value="802"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={709E452F-BF3E-4ea1-A758-FFDB82ED7EAB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={032EEB77-8BA6-4b34-AE47-44685A07DC80}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -143,7 +144,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1079"/>
+												<UML:TaggedValue tag="ea_localid" value="803"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={AAB1AD22-6381-46ab-BFC8-7BFE992E736D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={0AB22CE8-79AA-42ed-B58F-203C2E130438}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -173,7 +174,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1080"/>
+												<UML:TaggedValue tag="ea_localid" value="804"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={10BEAD6A-7F74-44c8-B404-1A0FA87FAC5D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={155BF14F-3FAD-41fa-9816-54575BF88073}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -203,7 +204,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeList"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1081"/>
+												<UML:TaggedValue tag="ea_localid" value="805"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={96E57702-4863-4b2e-8229-EDA3D820C88E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeList;FQName=Wireframing::WireframeList;@ENDSTEREO;$DES;$CLT={1EDF6C21-7CA9-4381-A63C-337CAC3F8F4C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -233,7 +234,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1082"/>
+												<UML:TaggedValue tag="ea_localid" value="806"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={512664E0-8088-40ac-BCBC-492EDDDE0DD3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={257ADBF0-D014-4c45-BA74-A6F148954122}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -263,7 +264,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1083"/>
+												<UML:TaggedValue tag="ea_localid" value="807"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6930D79C-6F6B-4839-8F25-E4DCF1FCBA4F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={29D36C1E-65D0-4f3f-91FE-6AD0B50EC97F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -293,7 +294,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1084"/>
+												<UML:TaggedValue tag="ea_localid" value="808"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={0DB62656-D904-4546-BEA8-37F7BA2A0FBB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={2C9BE01D-3826-4412-A0B8-ED40726766E6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -323,7 +324,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1085"/>
+												<UML:TaggedValue tag="ea_localid" value="809"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E4AC2F87-3925-4640-BDE6-02C6149DD855}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={31C9DE21-B81E-4af5-B5EB-07FD32AA8172}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -353,13 +354,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1086"/>
+												<UML:TaggedValue tag="ea_localid" value="810"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C0AB6AD4-CB39-4f0a-A622-E300282952C3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={3C4BDBB1-8CB5-49c4-856C-E35CA05FA919}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_3F2A8DF2_C1B0_45c9_9AF6_D1C3CFA6EE23" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Zpet" xmi.id="EAID_3F2A8DF2_C1B0_45c9_9AF6_D1C3CFA6EE23" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -383,13 +384,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1087"/>
+												<UML:TaggedValue tag="ea_localid" value="811"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4172656A-A683-47ef-B9A2-1C62E1A7B45B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={3F2A8DF2-C1B0-45c9-9AF6-D1C3CFA6EE23}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_47423117_DEBE_4db7_B799_0FFFD9094185" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Zpet" xmi.id="EAID_47423117_DEBE_4db7_B799_0FFFD9094185" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -413,7 +414,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1088"/>
+												<UML:TaggedValue tag="ea_localid" value="812"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DCA7200F-994C-4484-847E-31E4B39A1E6E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={47423117-DEBE-4db7-B799-0FFFD9094185}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -443,7 +444,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1089"/>
+												<UML:TaggedValue tag="ea_localid" value="813"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={97A543EC-E2DB-4333-AAFA-FDD5C35FE44D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={49791A14-5777-4d96-A5F6-044663232629}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -473,7 +474,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1090"/>
+												<UML:TaggedValue tag="ea_localid" value="814"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F004DBE6-9798-4e8b-8C81-5BD7B5613A04}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={4CDAE561-2D03-47af-B9C6-9B8F0AA2BA78}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -503,7 +504,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeList"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1091"/>
+												<UML:TaggedValue tag="ea_localid" value="815"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={60657C3D-6122-4f4f-A593-EB57491D6DE5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeList;FQName=Wireframing::WireframeList;@ENDSTEREO;$DES;$CLT={4DA8FDA5-9719-45d4-B5EA-62D972E9193F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -533,7 +534,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeList"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1092"/>
+												<UML:TaggedValue tag="ea_localid" value="816"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CDC340EC-DC9B-4f78-86A0-6D858D0E3383}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeList;FQName=Wireframing::WireframeList;@ENDSTEREO;$DES;$CLT={4F611AE9-CA2C-45df-A28B-7C76BD59BB59}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -563,13 +564,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1093"/>
+												<UML:TaggedValue tag="ea_localid" value="817"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CA2BF1AB-3D26-44b6-99AD-4C6A728519F2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={5205BE90-B7AF-49f2-8701-FED382CA630C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Vy&#345;ízeno" xmi.id="EAID_53DCBA90_F56F_4afc_9EE8_ED7FEC28447F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Vyrízeno" xmi.id="EAID_53DCBA90_F56F_4afc_9EE8_ED7FEC28447F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -593,18 +594,18 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1094"/>
+												<UML:TaggedValue tag="ea_localid" value="818"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={14835A5B-D915-4fbb-9874-8D38FF91AB1A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={53DCBA90-F56F-4afc-9EE8-ED7FEC28447F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Naskladn&#283;ní zboží" xmi.id="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Naskladnení zboží" xmi.id="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeDialog"/>
 											</UML:ModelElement.stereotype>
 											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="documentation" value="Obrazovka umož&#328;uje skladníkovi naskladnit nové zboží."/>
+												<UML:TaggedValue tag="documentation" value="Obrazovka umožnuje skladníkovi naskladnit nové zboží."/>
 												<UML:TaggedValue tag="isAbstract" value="false"/>
 												<UML:TaggedValue tag="isSpecification" value="false"/>
 												<UML:TaggedValue tag="ea_stype" value="Screen"/>
@@ -623,7 +624,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1095"/>
+												<UML:TaggedValue tag="ea_localid" value="819"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BF43C04A-0C66-4b59-8DB2-5ED44F607B24}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={5553803A-02AD-46bd-810C-3E9FA24661A4}$CLT;$ENDXREF;"/>
@@ -653,13 +654,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1096"/>
+												<UML:TaggedValue tag="ea_localid" value="820"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9D248C89-B3EE-40ba-8FA8-E0B516B908ED}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={5BB3775C-3EC5-43a6-B686-5FF4C6FD9534}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="P&#345;edání zboží k expedici" xmi.id="EAID_6924DCB5_9BFE_4858_AE39_C4DF45D39F89" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Predání zboží k expedici" xmi.id="EAID_6924DCB5_9BFE_4858_AE39_C4DF45D39F89" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeDialog"/>
 											</UML:ModelElement.stereotype>
@@ -682,13 +683,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1097"/>
+												<UML:TaggedValue tag="ea_localid" value="821"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={571411BC-EF19-4116-A7C6-FDB0425D8E4E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={6924DCB5-9BFE-4858-AE39-C4DF45D39F89}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_6DDA66CB_65EB_43fd_A9CA_47229D7DAEB2" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Zpet" xmi.id="EAID_6DDA66CB_65EB_43fd_A9CA_47229D7DAEB2" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -712,13 +713,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1098"/>
+												<UML:TaggedValue tag="ea_localid" value="822"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B2F5F864-0B3B-413e-9BF8-6BA3458414E9}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={6DDA66CB-65EB-43fd-A9CA-47229D7DAEB2}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Množství uskladn&#283;ného zboží" xmi.id="EAID_71860268_24E1_4778_8BA4_04FE8AD7231F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Množství uskladneného zboží" xmi.id="EAID_71860268_24E1_4778_8BA4_04FE8AD7231F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeLabel"/>
 											</UML:ModelElement.stereotype>
@@ -742,7 +743,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1099"/>
+												<UML:TaggedValue tag="ea_localid" value="823"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A8B2DAFF-E876-41ce-AFA6-4696CF1D5605}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={71860268-24E1-4778-8BA4-04FE8AD7231F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -772,7 +773,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1100"/>
+												<UML:TaggedValue tag="ea_localid" value="824"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={48C4B7C4-EF68-4e4b-A574-C42E19950928}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={74876445-0071-4ef6-A480-15B3A19246E3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -802,13 +803,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1101"/>
+												<UML:TaggedValue tag="ea_localid" value="825"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BB9CC764-D012-4ef5-8FB6-CD22A09607C8}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={76812BCC-EBCF-425c-8A15-21FAFE3E6286}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_7A948E01_6236_451b_88E7_CE38134556E7" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Zpet" xmi.id="EAID_7A948E01_6236_451b_88E7_CE38134556E7" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -832,7 +833,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1102"/>
+												<UML:TaggedValue tag="ea_localid" value="826"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F2C30CF2-2987-4b9d-ADA5-926E280885E1}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={7A948E01-6236-451b-88E7-CE38134556E7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -862,13 +863,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1103"/>
+												<UML:TaggedValue tag="ea_localid" value="827"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5786F68D-7C2F-459f-8F2F-56232E22519A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={7DBF211E-4194-4c1e-A685-B26FCBF73E1B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="O&#269;ekávané množství" xmi.id="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Ocekávané množství" xmi.id="EAID_80C5047E_EDDD_4520_AE39_D81568C77FFE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeLabel"/>
 											</UML:ModelElement.stereotype>
@@ -892,7 +893,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1104"/>
+												<UML:TaggedValue tag="ea_localid" value="828"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CE6C7159-9DCC-4bca-B90C-ACEEA1E652BE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={80C5047E-EDDD-4520-AE39-D81568C77FFE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -922,7 +923,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1105"/>
+												<UML:TaggedValue tag="ea_localid" value="829"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F7A9D723-909A-40f0-803B-3B45ABC37C44}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={87CAFD48-9764-4abf-8AE4-682DED6946EB}$CLT;$ENDXREF;"/>
@@ -952,7 +953,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1106"/>
+												<UML:TaggedValue tag="ea_localid" value="830"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F0832967-FE25-4d5c-A842-89A7879D397A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={8831ADEA-3011-4a67-9E81-10327D288C44}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -982,7 +983,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1107"/>
+												<UML:TaggedValue tag="ea_localid" value="831"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B424B434-E641-4266-B00D-C0EE149F2509}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={88A3D370-CDB2-4f6e-AC2C-D1B34DDB0956}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1012,7 +1013,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1108"/>
+												<UML:TaggedValue tag="ea_localid" value="832"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A0BD0138-9DD4-4fba-8B41-B4A047B2A835}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={8F6316AC-92FD-44cf-8F00-B09E59106CB9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1042,7 +1043,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1109"/>
+												<UML:TaggedValue tag="ea_localid" value="833"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={3B8AC5DC-653A-4383-ACA1-D0C38C101EA1}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={959072AB-F5BF-4b3a-9706-63A371335863}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1072,7 +1073,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1110"/>
+												<UML:TaggedValue tag="ea_localid" value="834"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={018A1BE7-7F94-4624-80AE-FED7E04B1D1D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={9E4B16E9-0B97-4444-A474-6D6213E8CCF6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1102,7 +1103,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1111"/>
+												<UML:TaggedValue tag="ea_localid" value="835"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CA937FF4-3E3C-4657-82C6-D3DEFD3E127A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={9FF8B77B-EC44-4965-A0FE-AE98BE5B98AE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1132,7 +1133,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1112"/>
+												<UML:TaggedValue tag="ea_localid" value="836"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8FF0F33A-15BC-4996-83AA-7F5655D14ABC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={A15F2E08-70B8-42ea-B24C-9CBA1AAFB0AE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1162,7 +1163,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1113"/>
+												<UML:TaggedValue tag="ea_localid" value="837"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={296FE5E5-6D10-492f-A0A2-6C95AD0C82DA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={A209C4D2-3097-41f5-ACD2-CAF1B5259182}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1192,7 +1193,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1114"/>
+												<UML:TaggedValue tag="ea_localid" value="838"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BD06660F-B544-46c6-888F-E8D88FFD6F8B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={AA00834A-24C1-4439-A52F-672CF7A30224}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1222,13 +1223,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1115"/>
+												<UML:TaggedValue tag="ea_localid" value="839"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={81802C97-8CD1-4fa1-BF1C-8AEBBFB8DF9F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={ACDCC8BF-D149-436e-A599-66C9034B84AF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Vy&#345;ízeno" xmi.id="EAID_B7D9027A_5D60_4e00_8C49_46BE3CFB68B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Vyrízeno" xmi.id="EAID_B7D9027A_5D60_4e00_8C49_46BE3CFB68B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -1252,7 +1253,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1116"/>
+												<UML:TaggedValue tag="ea_localid" value="840"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C16DA98F-9DBF-4747-AF2D-E2DC6E655B69}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={B7D9027A-5D60-4e00-8C49-46BE3CFB68B6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1282,7 +1283,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1117"/>
+												<UML:TaggedValue tag="ea_localid" value="841"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={2E5AD728-DDCB-422f-AA1B-0482893E50E3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={B807DFA9-226B-4ccf-A107-9338F357BB5E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1312,7 +1313,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1118"/>
+												<UML:TaggedValue tag="ea_localid" value="842"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={FC8597E5-05A8-4e93-8A78-CB4F84FE3C9B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={B8C851DE-9348-4d9a-9081-240BA9234935}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1341,7 +1342,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1119"/>
+												<UML:TaggedValue tag="ea_localid" value="843"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={2F322F9F-8DD1-496f-913D-3C27D3331609}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={C9E207EA-2813-48ef-93B0-839565A5B341}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1371,13 +1372,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1120"/>
+												<UML:TaggedValue tag="ea_localid" value="844"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C0CD799A-965B-4733-8162-4EA28E8079C6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={D0AE521A-3324-43b0-A146-03CBA7A58261}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="P&#345;edání k expedici" xmi.id="EAID_D254C4FA_E2B7_4543_AB97_BD2940CC0129" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Predání k expedici" xmi.id="EAID_D254C4FA_E2B7_4543_AB97_BD2940CC0129" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -1401,13 +1402,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1121"/>
+												<UML:TaggedValue tag="ea_localid" value="845"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={3948DBE0-0DC6-489c-8C82-E368E9BD58E6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={D254C4FA-E2B7-4543-AB97-BD2940CC0129}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Reáln&#283; dodané množství" xmi.id="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Reálne dodané množství" xmi.id="EAID_D3F80C52_3DCF_4db3_A9F2_7EE9D7C77248" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeLabel"/>
 											</UML:ModelElement.stereotype>
@@ -1431,7 +1432,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1122"/>
+												<UML:TaggedValue tag="ea_localid" value="846"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={24FEFF97-310B-47b3-82DB-568720F996DC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={D3F80C52-3DCF-4db3-A9F2-7EE9D7C77248}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1461,13 +1462,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeDialog"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1123"/>
+												<UML:TaggedValue tag="ea_localid" value="847"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={ABB36D33-F538-42ce-97D5-3688B4B6956A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeDialog;FQName=Wireframing::WireframeDialog;@ENDSTEREO;$DES;$CLT={E008B3F5-F26E-4426-8B7C-3453B21366F7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Zp&#283;t" xmi.id="EAID_E53D2E6B_5C72_4453_8687_B36E2487C9BF" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Zpet" xmi.id="EAID_E53D2E6B_5C72_4453_8687_B36E2487C9BF" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -1491,13 +1492,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1124"/>
+												<UML:TaggedValue tag="ea_localid" value="848"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C5791655-3D9E-435f-8F0B-F6CA139EAABE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={E53D2E6B-5C72-4453-8687-B36E2487C9BF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Seznam míst, kde je toto zboží uskladn&#283;no" xmi.id="EAID_E927DECA_080A_4f9c_8280_4EEEB2C8658D" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Seznam míst, kde je toto zboží uskladneno" xmi.id="EAID_E927DECA_080A_4f9c_8280_4EEEB2C8658D" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeLabel"/>
 											</UML:ModelElement.stereotype>
@@ -1521,13 +1522,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1125"/>
+												<UML:TaggedValue tag="ea_localid" value="849"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DBFE94B1-F3DB-4f4c-837A-7FD7159FCA6F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={E927DECA-080A-4f9c-8280-4EEEB2C8658D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Naskladn&#283;ní" xmi.id="EAID_EE93EAA3_BD5A_4a87_8665_507481E442CC" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Naskladnení" xmi.id="EAID_EE93EAA3_BD5A_4a87_8665_507481E442CC" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeButton"/>
 											</UML:ModelElement.stereotype>
@@ -1551,7 +1552,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeButton"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1126"/>
+												<UML:TaggedValue tag="ea_localid" value="850"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={87006A10-BD6A-4858-90F2-33B98C56443C}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeButton;FQName=Wireframing::WireframeButton;@ENDSTEREO;$DES;$CLT={EE93EAA3-BD5A-4a87-8665-507481E442CC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1581,7 +1582,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1127"/>
+												<UML:TaggedValue tag="ea_localid" value="851"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C7B40097-1765-4bc8-A52D-6364E49881A2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={F03D1A77-4AC7-4cc8-B718-0BE5FD627644}$CLT;$ENDXREF;"/>
@@ -1611,7 +1612,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeTextField"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1128"/>
+												<UML:TaggedValue tag="ea_localid" value="852"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={30109641-DE9E-4a92-930A-A18E731AE900}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeTextField;FQName=Wireframing::WireframeTextField;@ENDSTEREO;$DES;$CLT={F210415F-8EE9-4fd3-ABC1-EBD3BEB7ED07}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1641,13 +1642,13 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1129"/>
+												<UML:TaggedValue tag="ea_localid" value="853"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={2787512D-D2EC-4563-A92C-4D864ED27FF5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={F51198A5-9730-4ff4-9601-05F0737B62CB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
-										<UML:ClassifierRole name="Nevíte identifikátor? Najd&#283;te ho v seznamu:" xmi.id="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+										<UML:ClassifierRole name="Nevíte identifikátor? Najdete ho v seznamu:" xmi.id="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
 												<UML:Stereotype name="WireframeLabel"/>
 											</UML:ModelElement.stereotype>
@@ -1671,7 +1672,7 @@
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="stereotype" value="WireframeLabel"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1130"/>
+												<UML:TaggedValue tag="ea_localid" value="854"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={91D03C99-CE84-4d10-9775-DE36BE36DD1D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=WireframeLabel;FQName=Wireframing::WireframeLabel;@ENDSTEREO;$DES;$CLT={FF3412CE-479D-4f4c-B3AB-D7ABA8DBF963}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -1700,7 +1701,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="1077"/>
+										<UML:TaggedValue tag="ea_localid" value="801"/>
 										<UML:TaggedValue tag="ea_eleType" value="element"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -1810,7 +1811,7 @@
 		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_AAD1_15102C9BB2D1" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_F51198A5_9730_4ff4_9601_05F0737B62CB"/>
 		<UML:TaggedValue tag="Align Text" xmi.id="EAID_8F4B4AB0_9195_a191_BAA1_B9EFEC311404" value="Left#NOTES#Values: Left,Center,Right&#xA;Default: Left&#xA;" modelElement="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963"/>
 		<UML:TaggedValue tag="Multiline" xmi.id="EAID_22E385B3_8C18_6a8c_B048_C7B23FCB7908" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_FF3412CE_479D_4f4c_B3AB_D7ABA8DBF963"/>
-		<UML:Diagram name="Naskladn&#283;ní zboží" xmi.id="EAID_E6C72EBF_F5F9_4c7f_9089_C6F1B9654710" diagramType="CustomDiagram" owner="EAPK_95A81FFF_306A_45dd_A9ED_3B06CD3C4F2C" toolName="Enterprise Architect 2.5">
+		<UML:Diagram name="Naskladnení zboží" xmi.id="EAID_E6C72EBF_F5F9_4c7f_9089_C6F1B9654710" diagramType="CustomDiagram" owner="EAPK_95A81FFF_306A_45dd_A9ED_3B06CD3C4F2C" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="husekjos"/>
@@ -1820,10 +1821,10 @@
 				<UML:TaggedValue tag="type" value="Custom"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="177"/>
+				<UML:TaggedValue tag="ea_localid" value="108"/>
 				<UML:TaggedValue tag="parent" value="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=C3068E89;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=7C7A78B0;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=194;Top=358;Right=284;Bottom=378;" subject="EAID_47423117_DEBE_4db7_B799_0FFFD9094185" seqno="1" style="HideIcon=0;DUID=F66EB8CC;NSL=0;"/>
@@ -1852,7 +1853,7 @@
 				<UML:DiagramElement geometry="Left=47;Top=27;Right=315;Bottom=191;" subject="EAID_5553803A_02AD_46bd_810C_3E9FA24661A4" seqno="24" style="HideIcon=0;NSL=0;DUID=F806080F;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
-		<UML:Diagram name="P&#345;edání zboží k expedici" xmi.id="EAID_58FFAFF0_F0AA_43ff_8BE5_2798721E0DAB" diagramType="CustomDiagram" owner="EAPK_95A81FFF_306A_45dd_A9ED_3B06CD3C4F2C" toolName="Enterprise Architect 2.5">
+		<UML:Diagram name="Predání zboží k expedici" xmi.id="EAID_58FFAFF0_F0AA_43ff_8BE5_2798721E0DAB" diagramType="CustomDiagram" owner="EAPK_95A81FFF_306A_45dd_A9ED_3B06CD3C4F2C" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="Pepa"/>
@@ -1862,10 +1863,10 @@
 				<UML:TaggedValue tag="type" value="Custom"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="178"/>
+				<UML:TaggedValue tag="ea_localid" value="109"/>
 				<UML:TaggedValue tag="parent" value="EAID_6924DCB5_9BFE_4858_AE39_C4DF45D39F89"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=4A4C599A;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=96DA39BB;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=189;Top=145;Right=279;Bottom=165;" subject="EAID_E53D2E6B_5C72_4453_8687_B36E2487C9BF" seqno="1" style="DUID=6E685E62;HideIcon=0;"/>
@@ -1906,10 +1907,10 @@
 				<UML:TaggedValue tag="type" value="Custom"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="179"/>
+				<UML:TaggedValue tag="ea_localid" value="110"/>
 				<UML:TaggedValue tag="parent" value="EAID_C9E207EA_2813_48ef_93B0_839565A5B341"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=5E13EEA7;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=638EBC45;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=Wireframing::Dialog Wireframe;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;Whiteboard=1;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=241;Top=156;Right=331;Bottom=176;" subject="EAID_D254C4FA_E2B7_4543_AB97_BD2940CC0129" seqno="1" style="DUID=73701352;HideIcon=0;"/>
