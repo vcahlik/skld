@@ -15,13 +15,14 @@
 						<UML:TaggedValue tag="documentation" value="Pokud skladník náhodou nalezne pohrešované zboží, vyhledá jej v systému pomocí identifikátoru produktu a císla logistické objednávky, odstraní pohrešovaný status, opet jej uloží do regálu a informuje o nálezu provozní oddelení."/>
 						<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 						<UML:TaggedValue tag="created" value="2017-11-08 11:13:34"/>
-						<UML:TaggedValue tag="modified" value="2017-11-08 11:13:55"/>
+						<UML:TaggedValue tag="modified" value="2017-11-08 11:25:06"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Nalezení pohrešovaného zboží.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 11:25:07"/>
+						<UML:TaggedValue tag="lastsavedate" value="2017-11-08 11:25:06"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
-						<UML:TaggedValue tag="owner" value="batman"/>
 						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
 						<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CRC=0;"/>
