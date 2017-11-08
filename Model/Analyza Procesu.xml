@@ -10,16 +10,16 @@
 		<UML:Model name="EA Model" xmi.id="MX_EAID_BA2EEF84_A573_4245_99B4_A4C5804D6408">
 			<UML:Namespace.ownedElement>
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
-				<UML:Package name="Analýza proces&#367;" xmi.id="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+				<UML:Package name="Analýza procesu" xmi.id="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
-						<UML:TaggedValue tag="documentation" value="Obsahuje popis proces&#367;, které musejí být ve skladu vykonávány p&#345;i jeho b&#283;žném provozu. Základní procesy:&#xA;&amp;nbsp;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;naskladn&#283;ní zboží a p&#345;edání k expedici    &lt;/li&gt;&#xA;	&lt;li&gt;tvorba objednávek&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
-						<UML:TaggedValue tag="parent" value="EAPK_2BDF3F51_B1B0_4247_98C6_DA2D345C3540"/>
-						<UML:TaggedValue tag="ea_package_id" value="242"/>
+						<UML:TaggedValue tag="documentation" value="Obsahuje popis procesu, které musejí být ve skladu vykonávány pri jeho bežném provozu. Základní procesy:&#xA;&amp;nbsp;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;naskladnení zboží a predání k expedici    &lt;/li&gt;&#xA;	&lt;li&gt;tvorba objednávek&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<UML:TaggedValue tag="parent" value="EAPK_A9D59B97_5A95_4ce0_A8C1_B23BB6546AAC"/>
+						<UML:TaggedValue tag="ea_package_id" value="36"/>
 						<UML:TaggedValue tag="created" value="2017-11-02 13:34:15"/>
-						<UML:TaggedValue tag="modified" value="2017-11-08 00:17:28"/>
+						<UML:TaggedValue tag="modified" value="2017-11-08 10:24:38"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Analyza Procesu.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:17:08"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 10:24:38"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:46:51"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -40,8 +40,9 @@
 					<UML:Namespace.ownedElement>
 						<UML:Collaboration xmi.id="EAID_BA2EEF84_A573_4245_99B4_A4C5804D6408_Collaboration" name="Collaborations">
 							<UML:Namespace.ownedElement>
-								<UML:ClassifierRole name="Predani zbozi k expedici" xmi.id="EAID_09075C76_78D7_44e1_91AC_0AAA78CD7F41" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="Predání zboží k expedici" xmi.id="EAID_09075C76_78D7_44e1_91AC_0AAA78CD7F41" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Vedoucí skladište pravidelne kontroluje, zda v systému existují libovolné koncové objednávky, jejichž zboží je již kompletne uloženo ve skladu. Pokud taková objednávka existuje, vedoucí to oznámí skladníkovi, který ve skladu vyhledá potrebné zboží (podle údaje o umístení), predá jej expedicnímu oddelení (umístenému v bezprostrední blízkosti skladu) spolu s identifikátorem koncové objednávky, zadá do systému záznam o predání zboží k expedici a informuje provozní oddelení.&#xA;V prípade, že skladník nejaké požadované zboží i pres existující záznam v systému nedokázal najít v regálech, se k expedici nic nepredává. Již vyhledané zboží skladník vrátí zpátky do regálu. Zboží, které nenalezl, oznací v systému jako pohrešované a o ztráte informuje provozní oddelení."/>
 										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
@@ -50,23 +51,24 @@
 										<UML:TaggedValue tag="isActive" value="false"/>
 										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 										<UML:TaggedValue tag="date_created" value="2017-11-06 11:37:55"/>
-										<UML:TaggedValue tag="date_modified" value="2017-11-07 18:51:36"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 10:29:05"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_09075C76_78D7_44e1_91AC_0AAA78CD7F41"/>
-										<UML:TaggedValue tag="package_name" value="Analýza proces&#367;"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="238"/>
+										<UML:TaggedValue tag="ea_localid" value="48"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
 								</UML:ClassifierRole>
-								<UML:ClassifierRole name="Naskladneni zbozi" xmi.id="EAID_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="Naskladnení zboží" xmi.id="EAID_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Po príjezdu dodavatele do skladu skladník prekontroluje dodané zboží. Pokud si není jist, zda dodané zboží odpovídá logistické objednávce, konzultuje situaci s vedoucím smeny (a ten ji prípadne konzultuje telefonicky s provozním oddelením). Následne skladník postupuje jedním z následujících zpusobu:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;Zboží prebírá a potvrzuje logistickou objednávku v systému jako vyrízenou.&lt;/li&gt;&#xA;	&lt;li&gt;Prebírá jen cást zboží. V seznamu zboží u objednávky jej oznacuje jako prijaté a objednávku oznacuje jako cástecne prijatou. Ta nadále ceká v systému na vyrízení - dokud nebude dodán zbytek zboží (odkládá se na neurcito).&lt;/li&gt;&#xA;	&lt;li&gt;Odmítá veškeré zboží prevzít a oznacuje objednávku jako zamítnutou.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;V prípade, že skladník prevzal jakékoli zboží, toto zboží oznací štítkem s identifikátorem produktu a císlem logistické objednávky a uloží jej do libovolného regálu. Poté jej zapíše do systému vcetne císla logistické objednávky a identifikátorem úložište, aby v budoucnu mohl zboží v regálech pomocí systému jednoduše vyhledat, a posílá provoznímu oddelení e-mail se seznamem prijatého zboží."/>
 										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
@@ -75,23 +77,50 @@
 										<UML:TaggedValue tag="isActive" value="false"/>
 										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 										<UML:TaggedValue tag="date_created" value="2017-11-06 10:32:53"/>
-										<UML:TaggedValue tag="date_modified" value="2017-11-07 20:37:29"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 10:27:34"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A"/>
-										<UML:TaggedValue tag="package_name" value="Analýza proces&#367;"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="lidakja1"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="239"/>
+										<UML:TaggedValue tag="ea_localid" value="47"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
 								</UML:ClassifierRole>
-								<UML:ClassifierRole name="Zadani logisticke objednavky" xmi.id="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="Nalezení pohrešovaného zboží" xmi.id="EAID_A15779A1_BD77_4fd4_B8D3_6EF3396566E8" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Pokud skladník náhodou nalezne pohrešované zboží, vyhledá jej v systému pomocí identifikátoru produktu a císla logistické objednávky, odstraní pohrešovaný status, opet jej uloží do regálu a informuje o nálezu provozní oddelení."/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-08 11:13:34"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 11:13:55"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_A15779A1_BD77_4fd4_B8D3_6EF3396566E8"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="batman"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="52"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zadání logistické objednávky" xmi.id="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Skladník od provozního oddelení dostává e-mail s informací o tom, že zboží bylo objednáno u dodavatele, a že sklad bude moci ocekávat jeho prijetí. Ve zpráve je obsaženo:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Desetimístné císlo logistické objednávky&lt;/li&gt;&#xA;	&lt;li&gt;Názvy, císelné identifikátory a príslušná množství objednávaných produktu (totožná s císly uvádenými v koncových objednávkách)&lt;/li&gt;&#xA;	&lt;li&gt;Datum a cas zadání objednávky&lt;/li&gt;&#xA;	&lt;li&gt;Datum ocekávaného prijetí objednávky na sklad&lt;/li&gt;&#xA;	&lt;li&gt;Název dodavatele ci prepravní spolecnosti&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;Skladník objednávku po prijetí rucne zadá do systému."/>
 										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
@@ -100,23 +129,50 @@
 										<UML:TaggedValue tag="isActive" value="false"/>
 										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 										<UML:TaggedValue tag="date_created" value="2017-11-02 20:55:56"/>
-										<UML:TaggedValue tag="date_modified" value="2017-11-07 18:51:36"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 11:10:19"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
-										<UML:TaggedValue tag="package_name" value="Analýza proces&#367;"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="241"/>
+										<UML:TaggedValue tag="ea_localid" value="50"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
 								</UML:ClassifierRole>
-								<UML:ClassifierRole name="Zadani koncove objednavky" xmi.id="EAID_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="Reporty (prohlížení systémové databáze)" xmi.id="EAID_E71FF09B_6570_46d6_AAE2_0547867D291E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Pro celkovou orientaci vedoucího smeny je treba mít možnost zobrazit všechny neuzavrené logistické/koncové objednávky v systému, historii všech naskladnení a predání zboží k expedici a stejne tak i veškeré zboží na skladu a pohrešované zboží."/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
+										<UML:TaggedValue tag="date_created" value="2017-11-08 11:12:54"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 11:13:13"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_E71FF09B_6570_46d6_AAE2_0547867D291E"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="batman"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="51"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Zadání koncové objednávky" xmi.id="EAID_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Skladník od provozního oddelení dostává e-mail s informací, že si zákazník objednal jisté zboží. Ve zpráve je obsaženo:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Dvanáctimístné císlo koncové objednávky&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Druhy objednávaných produktu (znázorneny jedinecným názvem a desetimístným císelným identifikátorem) a jejich príslušná množství&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Datum a cas zadání objednávky&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Datum ocekávaného predání expedicnímu oddelení&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;Skladník takovouto objednávku po prijetí rucne zadá do systému."/>
 										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
@@ -125,17 +181,17 @@
 										<UML:TaggedValue tag="isActive" value="false"/>
 										<UML:TaggedValue tag="package" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 										<UML:TaggedValue tag="date_created" value="2017-11-02 20:41:36"/>
-										<UML:TaggedValue tag="date_modified" value="2017-11-06 11:49:36"/>
+										<UML:TaggedValue tag="date_modified" value="2017-11-08 11:08:26"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE"/>
-										<UML:TaggedValue tag="package_name" value="Analýza proces&#367;"/>
+										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="240"/>
+										<UML:TaggedValue tag="ea_localid" value="49"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -143,14 +199,40 @@
 							</UML:Namespace.ownedElement>
 							<UML:Collaboration.interaction/>
 						</UML:Collaboration>
-						<UML:Package name="Naskladneni zbozi" xmi.id="EAPK_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="Nalezení pohrešovaného zboží" xmi.id="EAPK_A15779A1_BD77_4fd4_B8D3_6EF3396566E8" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Pokud skladník náhodou nalezne pohrešované zboží, vyhledá jej v systému pomocí identifikátoru produktu a císla logistické objednávky, odstraní pohrešovaný status, opet jej uloží do regálu a informuje o nálezu provozní oddelení."/>
+								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
+								<UML:TaggedValue tag="created" value="2017-11-08 11:13:34"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 11:13:55"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="Nalezení pohrešovaného zboží.xml"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="batman"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="batman"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Naskladnení zboží" xmi.id="EAPK_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Po príjezdu dodavatele do skladu skladník prekontroluje dodané zboží. Pokud si není jist, zda dodané zboží odpovídá logistické objednávce, konzultuje situaci s vedoucím smeny (a ten ji prípadne konzultuje telefonicky s provozním oddelením). Následne skladník postupuje jedním z následujících zpusobu:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;Zboží prebírá a potvrzuje logistickou objednávku v systému jako vyrízenou.&lt;/li&gt;&#xA;	&lt;li&gt;Prebírá jen cást zboží. V seznamu zboží u objednávky jej oznacuje jako prijaté a objednávku oznacuje jako cástecne prijatou. Ta nadále ceká v systému na vyrízení - dokud nebude dodán zbytek zboží (odkládá se na neurcito).&lt;/li&gt;&#xA;	&lt;li&gt;Odmítá veškeré zboží prevzít a oznacuje objednávku jako zamítnutou.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;V prípade, že skladník prevzal jakékoli zboží, toto zboží oznací štítkem s identifikátorem produktu a císlem logistické objednávky a uloží jej do libovolného regálu. Poté jej zapíše do systému vcetne císla logistické objednávky a identifikátorem úložište, aby v budoucnu mohl zboží v regálech pomocí systému jednoduše vyhledat, a posílá provoznímu oddelení e-mail se seznamem prijatého zboží."/>
 								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 								<UML:TaggedValue tag="created" value="2017-11-06 10:32:53"/>
-								<UML:TaggedValue tag="modified" value="2017-11-08 00:10:27"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 10:27:34"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="Naskladneni zbozi.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:10:28"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 10:24:58"/>
 								<UML:TaggedValue tag="lastsavedate" value="2017-11-06 11:49:42"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -168,14 +250,15 @@
 								<UML:TaggedValue tag="ea_stype" value="Public"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Package>
-						<UML:Package name="Predani zbozi k expedici" xmi.id="EAPK_09075C76_78D7_44e1_91AC_0AAA78CD7F41" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="Predání zboží k expedici" xmi.id="EAPK_09075C76_78D7_44e1_91AC_0AAA78CD7F41" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Vedoucí skladište pravidelne kontroluje, zda v systému existují libovolné koncové objednávky, jejichž zboží je již kompletne uloženo ve skladu. Pokud taková objednávka existuje, vedoucí to oznámí skladníkovi, který ve skladu vyhledá potrebné zboží (podle údaje o umístení), predá jej expedicnímu oddelení (umístenému v bezprostrední blízkosti skladu) spolu s identifikátorem koncové objednávky, zadá do systému záznam o predání zboží k expedici a informuje provozní oddelení.&#xA;V prípade, že skladník nejaké požadované zboží i pres existující záznam v systému nedokázal najít v regálech, se k expedici nic nepredává. Již vyhledané zboží skladník vrátí zpátky do regálu. Zboží, které nenalezl, oznací v systému jako pohrešované a o ztráte informuje provozní oddelení."/>
 								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 								<UML:TaggedValue tag="created" value="2017-11-06 11:37:55"/>
-								<UML:TaggedValue tag="modified" value="2017-11-08 00:09:57"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 10:29:05"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="Predani zbozi k expedici.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:09:58"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 10:24:59"/>
 								<UML:TaggedValue tag="lastsavedate" value="2017-11-07 18:51:36"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -193,14 +276,40 @@
 								<UML:TaggedValue tag="ea_stype" value="Public"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Package>
-						<UML:Package name="Zadani koncove objednavky" xmi.id="EAPK_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="Reporty (prohlížení systémové databáze)" xmi.id="EAPK_E71FF09B_6570_46d6_AAE2_0547867D291E" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Pro celkovou orientaci vedoucího smeny je treba mít možnost zobrazit všechny neuzavrené logistické/koncové objednávky v systému, historii všech naskladnení a predání zboží k expedici a stejne tak i veškeré zboží na skladu a pohrešované zboží."/>
+								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
+								<UML:TaggedValue tag="created" value="2017-11-08 11:12:54"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 11:13:13"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="Reporty (prohlížení systémové databáze).xml"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="batman"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="batman"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Zadání koncové objednávky" xmi.id="EAPK_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Skladník od provozního oddelení dostává e-mail s informací, že si zákazník objednal jisté zboží. Ve zpráve je obsaženo:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Dvanáctimístné císlo koncové objednávky&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Druhy objednávaných produktu (znázorneny jedinecným názvem a desetimístným císelným identifikátorem) a jejich príslušná množství&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Datum a cas zadání objednávky&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Datum ocekávaného predání expedicnímu oddelení&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;Skladník takovouto objednávku po prijetí rucne zadá do systému."/>
 								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 								<UML:TaggedValue tag="created" value="2017-11-02 20:41:36"/>
-								<UML:TaggedValue tag="modified" value="2017-11-08 00:10:39"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 11:08:26"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="Zadani koncove objednavky.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:10:40"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 10:25:00"/>
 								<UML:TaggedValue tag="lastsavedate" value="2017-11-02 20:59:40"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -218,14 +327,15 @@
 								<UML:TaggedValue tag="ea_stype" value="Public"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Package>
-						<UML:Package name="Zadani logisticke objednavky" xmi.id="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="Zadání logistické objednávky" xmi.id="EAPK_CB9F4155_735D_43c5_A632_DFF11DC8D956" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Skladník od provozního oddelení dostává e-mail s informací o tom, že zboží bylo objednáno u dodavatele, a že sklad bude moci ocekávat jeho prijetí. Ve zpráve je obsaženo:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Desetimístné císlo logistické objednávky&lt;/li&gt;&#xA;	&lt;li&gt;Názvy, císelné identifikátory a príslušná množství objednávaných produktu (totožná s císly uvádenými v koncových objednávkách)&lt;/li&gt;&#xA;	&lt;li&gt;Datum a cas zadání objednávky&lt;/li&gt;&#xA;	&lt;li&gt;Datum ocekávaného prijetí objednávky na sklad&lt;/li&gt;&#xA;	&lt;li&gt;Název dodavatele ci prepravní spolecnosti&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;Skladník objednávku po prijetí rucne zadá do systému."/>
 								<UML:TaggedValue tag="parent" value="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408"/>
 								<UML:TaggedValue tag="created" value="2017-11-02 20:55:56"/>
-								<UML:TaggedValue tag="modified" value="2017-11-08 00:10:51"/>
+								<UML:TaggedValue tag="modified" value="2017-11-08 11:10:19"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="Zadani logisticke objednavky.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 00:10:52"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-11-08 10:25:01"/>
 								<UML:TaggedValue tag="lastsavedate" value="2017-11-02 22:56:04"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
