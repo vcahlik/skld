@@ -10,16 +10,16 @@
 		<UML:Model name="EA Model" xmi.id="MX_EAID_BA2EEF84_A573_4245_99B4_A4C5804D6408">
 			<UML:Namespace.ownedElement>
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
-				<UML:Package name="Analýza procesu" xmi.id="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+				<UML:Package name="TO BE analýza procesu" xmi.id="EAPK_BA2EEF84_A573_4245_99B4_A4C5804D6408" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
-						<UML:TaggedValue tag="documentation" value="Obsahuje popis procesu, které musejí být ve skladu vykonávány pri jeho bežném provozu. Základní procesy:&#xA;&amp;nbsp;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;naskladnení zboží a predání k expedici    &lt;/li&gt;&#xA;	&lt;li&gt;tvorba objednávek&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<UML:TaggedValue tag="documentation" value="Proces fungování skladu vypadá ve zkratce tak, že do skladu prichází zboží k naskladnení, nejakou dobu zustává uloženo v regálech a casem je predáváno expedicnímu oddelení klienta, které jej rozesílá koncovým zákazníkum.&#xA;Do skladu pricházejí z provozního oddelení pomocí e-mailu tzv. “koncové objednávky”, tedy objednávky na zboží, které je treba zaslat koncovým zákazníkum (typicky jde o menší zásilky soukromým fyzickým osobám) a tzv. “logistické objednávky”, tedy informace o tom, že nejaké zboží bylo objednáno u dodavatele a je na ceste do skladu. Personál skladu tyto objednávky rucne zadává do systému. Po prijetí zboží od dodavatele jej skladník uloží do regálu a zapíše do systému (jde o tzv. “naskladnení”), a nakonec jej po case z regálu vyjme a “predá k expedici”, což je rovnež uvedeno do systému.&#xA;Pro vedoucího musí v systému existovat možnost zobrazení všech objednávek a naskladneného zboží a také vyfiltrování takových koncových objednávek, pro které je již zboží ve skladu k dispozici (tzn. které již mohou být predány k expedici). Potreba je rovnež mít také možnost manuální korekce množství naskladneného zboží (v prípade, že množství uvedené v systému neodpovídá realite).&#xA;Klient naopak nepožaduje možnost zobrazování, pro jaké koncové objednávky ješte nebylo objednáno zboží od dodavatelu. To reší výhradne provozní oddelení e-shopu (vede si vlastní prehled o množství zboží na sklade pres svuj stávající informacní systém a podle toho se rozhoduje, kdy je jaké zboží potreba objednat od dodavatelu). Všechna ostatní oddelení klienta jsou informacne nezávislá, tedy napríklad expedicní oddelení nepotrebuje od skladu spolu se zbožím získat i adresu odberatele (stací mu znát císlo koncové objednávky).&#xA;Do skladište prijíždí dodávané zboží nanejvýš nekolikrát denne, pocty predání zboží k expedici se pohybují v rádu desítek denne. Skladníci jsou ve skladu v jeden okamžik maximálne tri."/>
 						<UML:TaggedValue tag="parent" value="EAPK_A9D59B97_5A95_4ce0_A8C1_B23BB6546AAC"/>
-						<UML:TaggedValue tag="ea_package_id" value="104"/>
+						<UML:TaggedValue tag="ea_package_id" value="112"/>
 						<UML:TaggedValue tag="created" value="2017-11-02 13:34:15"/>
-						<UML:TaggedValue tag="modified" value="2017-11-08 11:25:00"/>
+						<UML:TaggedValue tag="modified" value="2017-11-08 11:36:04"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Analyza Procesu.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 11:25:01"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-08 11:35:33"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:46:51"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -55,7 +55,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_09075C76_78D7_44e1_91AC_0AAA78CD7F41"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -81,7 +81,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_53EC08AB_8A34_4603_B618_CBCDC1CA2C2A"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="lidakja1"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -107,7 +107,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_A15779A1_BD77_4fd4_B8D3_6EF3396566E8"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -133,7 +133,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_CB9F4155_735D_43c5_A632_DFF11DC8D956"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -159,7 +159,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_E71FF09B_6570_46d6_AAE2_0547867D291E"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -185,7 +185,7 @@
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_EF4DD4BC_B1FD_4f86_9A98_61C9F13A6BBE"/>
-										<UML:TaggedValue tag="package_name" value="Analýza procesu"/>
+										<UML:TaggedValue tag="package_name" value="TO BE analýza procesu"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Batman"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -216,7 +216,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -242,7 +242,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -268,7 +268,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -294,7 +294,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -320,7 +320,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
@@ -346,7 +346,7 @@
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;CheckedOutTo=batman;"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SKLD;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
