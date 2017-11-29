@@ -13,13 +13,13 @@
 				<UML:Package name="Prípady užití" xmi.id="EAPK_D7F57043_B7EE_486a_A12D_F9FB224D955C" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="documentation" value="Obsahuje popis prípadu užití IS pro sklad. Jedná se o funkcionality, které bude nove navrhovaný systém poskytovat svým uživatelum. Dále obsahuje popis všech uživatelu systému. "/>
-						<UML:TaggedValue tag="parent" value="EAPK_A9D59B97_5A95_4ce0_A8C1_B23BB6546AAC"/>
-						<UML:TaggedValue tag="ea_package_id" value="178"/>
+						<UML:TaggedValue tag="parent" value="EAPK_2BDF3F51_B1B0_4247_98C6_DA2D345C3540"/>
+						<UML:TaggedValue tag="ea_package_id" value="433"/>
 						<UML:TaggedValue tag="created" value="2017-11-02 13:35:13"/>
-						<UML:TaggedValue tag="modified" value="2017-11-11 01:26:12"/>
+						<UML:TaggedValue tag="modified" value="2017-11-11 01:57:28"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Pripady uziti.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-11-11 01:26:13"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-11-11 01:57:29"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-11-02 13:56:17"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -36,6 +36,7 @@
 						<UML:TaggedValue tag="ea_stype" value="Public"/>
 						<UML:TaggedValue tag="tpos" value="0"/>
 						<UML:TaggedValue tag="gentype" value="Java"/>
+						<UML:TaggedValue tag="$ea_attsclassified" value="{BF645C88-0B2F-4f80-A99D-E8D26D7F5857}"/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
 						<UML:Collaboration xmi.id="EAID_D7F57043_B7EE_486a_A12D_F9FB224D955C_Collaboration" name="Collaborations">
@@ -61,7 +62,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="1"/>
-										<UML:TaggedValue tag="ea_localid" value="179"/>
+										<UML:TaggedValue tag="ea_localid" value="434"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -87,7 +88,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="2"/>
-										<UML:TaggedValue tag="ea_localid" value="180"/>
+										<UML:TaggedValue tag="ea_localid" value="435"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -137,7 +138,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="1220"/>
+										<UML:TaggedValue tag="ea_localid" value="2742"/>
 										<UML:TaggedValue tag="ea_eleType" value="element"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -153,13 +154,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="866"/>
+										<UML:TaggedValue tag="ea_localid" value="2030"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Vedoucí smeny"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC6 - Pridání nového uživatele"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1220"/>
-										<UML:TaggedValue tag="ea_targetID" value="1231"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2742"/>
+										<UML:TaggedValue tag="ea_targetID" value="2753"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -180,6 +181,43 @@
 										</UML:AssociationEnd>
 									</UML:Association.connection>
 								</UML:Association>
+								<UML:Generalization subtype="EAID_11B43A4A_3882_44b6_9228_4885B787A8B7" supertype="EAID_A402D603_0EA2_4223_9A2E_E7FB57D9E98A" xmi.id="EAID_1409B63E_17A6_4e85_924D_46C390B6F1B3" visibility="public">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="style" value="3"/>
+										<UML:TaggedValue tag="ea_type" value="Generalization"/>
+										<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+										<UML:TaggedValue tag="linemode" value="3"/>
+										<UML:TaggedValue tag="linecolor" value="-1"/>
+										<UML:TaggedValue tag="linewidth" value="0"/>
+										<UML:TaggedValue tag="seqno" value="0"/>
+										<UML:TaggedValue tag="headStyle" value="0"/>
+										<UML:TaggedValue tag="lineStyle" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="2111"/>
+										<UML:TaggedValue tag="ea_sourceName" value="Vedoucí smeny"/>
+										<UML:TaggedValue tag="ea_targetName" value="Skladník"/>
+										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
+										<UML:TaggedValue tag="ea_targetType" value="Actor"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2742"/>
+										<UML:TaggedValue tag="ea_targetID" value="2743"/>
+										<UML:TaggedValue tag="src_visibility" value="Public"/>
+										<UML:TaggedValue tag="src_aggregation" value="0"/>
+										<UML:TaggedValue tag="src_isOrdered" value="false"/>
+										<UML:TaggedValue tag="src_targetScope" value="instance"/>
+										<UML:TaggedValue tag="src_changeable" value="none"/>
+										<UML:TaggedValue tag="src_isNavigable" value="false"/>
+										<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="dst_visibility" value="Public"/>
+										<UML:TaggedValue tag="dst_aggregation" value="0"/>
+										<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+										<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+										<UML:TaggedValue tag="dst_changeable" value="none"/>
+										<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+										<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+										<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="virtualInheritance" value="0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Generalization>
 								<UML:Association xmi.id="EAID_25FEB02A_85A7_4073_8FC7_7B2B80A1857F" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="style" value="3"/>
@@ -191,13 +229,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="865"/>
+										<UML:TaggedValue tag="ea_localid" value="2029"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Vedoucí smeny"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC7 - Blokace uživatele"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1220"/>
-										<UML:TaggedValue tag="ea_targetID" value="1233"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2742"/>
+										<UML:TaggedValue tag="ea_targetID" value="2755"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -218,44 +256,6 @@
 										</UML:AssociationEnd>
 									</UML:Association.connection>
 								</UML:Association>
-								<UML:Association xmi.id="EAID_40C61C85_9E84_42c6_A115_2BA6DF95CEEC" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="style" value="3"/>
-										<UML:TaggedValue tag="ea_type" value="Association"/>
-										<UML:TaggedValue tag="direction" value="Destination -&gt; Source"/>
-										<UML:TaggedValue tag="linemode" value="3"/>
-										<UML:TaggedValue tag="linecolor" value="-1"/>
-										<UML:TaggedValue tag="linewidth" value="0"/>
-										<UML:TaggedValue tag="seqno" value="0"/>
-										<UML:TaggedValue tag="headStyle" value="0"/>
-										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="864"/>
-										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
-										<UML:TaggedValue tag="ea_targetName" value="Vedoucí smeny"/>
-										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
-										<UML:TaggedValue tag="ea_targetType" value="Actor"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1220"/>
-										<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
-										<UML:TaggedValue tag="virtualInheritance" value="0"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_A402D603_0EA2_4223_9A2E_E7FB57D9E98A">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="containment" value="Unspecified"/>
-												<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-												<UML:TaggedValue tag="ea_end" value="source"/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_11B43A4A_3882_44b6_9228_4885B787A8B7">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="containment" value="Unspecified"/>
-												<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
-												<UML:TaggedValue tag="ea_end" value="target"/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
 								<UML:Association xmi.id="EAID_AD1B07D1_ADD1_4548_9707_16B9F27B595B" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="style" value="3"/>
@@ -267,13 +267,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="863"/>
+										<UML:TaggedValue tag="ea_localid" value="2027"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Vedoucí smeny"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC8 - Úprava uživatele"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1220"/>
-										<UML:TaggedValue tag="ea_targetID" value="1230"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2742"/>
+										<UML:TaggedValue tag="ea_targetID" value="2752"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=52;EY=0;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -313,7 +313,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="1221"/>
+										<UML:TaggedValue tag="ea_localid" value="2743"/>
 										<UML:TaggedValue tag="ea_eleType" value="element"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -329,13 +329,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="862"/>
+										<UML:TaggedValue tag="ea_localid" value="2026"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC5 - Odhlášení uživatele"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1227"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2749"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=-51;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -367,13 +367,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="861"/>
+										<UML:TaggedValue tag="ea_localid" value="2025"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC15 - Presun zboží ve skladu"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1240"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2762"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -405,13 +405,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="860"/>
+										<UML:TaggedValue tag="ea_localid" value="2024"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC2 - Pridání nového typu zboží"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1226"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2748"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -443,13 +443,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="859"/>
+										<UML:TaggedValue tag="ea_localid" value="2023"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC1 - Úprava typu zboží"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1232"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2754"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=-51;EY=1;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -481,13 +481,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="858"/>
+										<UML:TaggedValue tag="ea_localid" value="2022"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC9 - Vytvorení koncové objednávky"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1237"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2759"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -519,13 +519,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="857"/>
+										<UML:TaggedValue tag="ea_localid" value="2021"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC10 - Zmena koncové objednávky"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1238"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2760"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -557,13 +557,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="856"/>
+										<UML:TaggedValue tag="ea_localid" value="2020"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC12 - Zmena logistické objednávky"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1236"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2758"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -595,13 +595,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="855"/>
+										<UML:TaggedValue tag="ea_localid" value="2019"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC11 - Vytvorení logistické objednávky"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1235"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2757"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=-1;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -633,13 +633,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="854"/>
+										<UML:TaggedValue tag="ea_localid" value="2018"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC13 - Predání zboží k expedici"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1241"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2763"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -671,13 +671,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="853"/>
+										<UML:TaggedValue tag="ea_localid" value="2017"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC3 - Nalezení pohrešovaného zboží"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1229"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2751"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=-51;EY=2;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -709,13 +709,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="852"/>
+										<UML:TaggedValue tag="ea_localid" value="2016"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC14 - Naskladnení zboží"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1242"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2764"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=1;EX=0;EY=1;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -747,13 +747,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="851"/>
+										<UML:TaggedValue tag="ea_localid" value="2015"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC16 - Reporty"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1244"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2766"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -785,13 +785,13 @@
 										<UML:TaggedValue tag="seqno" value="0"/>
 										<UML:TaggedValue tag="headStyle" value="0"/>
 										<UML:TaggedValue tag="lineStyle" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="850"/>
+										<UML:TaggedValue tag="ea_localid" value="2014"/>
 										<UML:TaggedValue tag="ea_sourceName" value="Skladník"/>
 										<UML:TaggedValue tag="ea_targetName" value="UC4 - Prihlášení uživatele"/>
 										<UML:TaggedValue tag="ea_sourceType" value="Actor"/>
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-										<UML:TaggedValue tag="ea_sourceID" value="1221"/>
-										<UML:TaggedValue tag="ea_targetID" value="1228"/>
+										<UML:TaggedValue tag="ea_sourceID" value="2743"/>
+										<UML:TaggedValue tag="ea_targetID" value="2750"/>
 										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=-51;EY=2;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
@@ -860,7 +860,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="182"/>
+												<UML:TaggedValue tag="ea_localid" value="437"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -886,7 +886,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="181"/>
+												<UML:TaggedValue tag="ea_localid" value="436"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -912,7 +912,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="183"/>
+												<UML:TaggedValue tag="ea_localid" value="438"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -938,7 +938,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="184"/>
+												<UML:TaggedValue tag="ea_localid" value="439"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -987,7 +987,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="2"/>
-												<UML:TaggedValue tag="ea_localid" value="1226"/>
+												<UML:TaggedValue tag="ea_localid" value="2748"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1003,13 +1003,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="849"/>
+												<UML:TaggedValue tag="ea_localid" value="2013"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC2 - Pridání nového typu zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1226"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2748"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1048,7 +1048,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="6"/>
-												<UML:TaggedValue tag="ea_localid" value="1227"/>
+												<UML:TaggedValue tag="ea_localid" value="2749"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1064,13 +1064,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="848"/>
+												<UML:TaggedValue tag="ea_localid" value="2012"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC5 - Odhlášení uživatele"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1227"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2749"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1109,7 +1109,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="5"/>
-												<UML:TaggedValue tag="ea_localid" value="1228"/>
+												<UML:TaggedValue tag="ea_localid" value="2750"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1125,13 +1125,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="847"/>
+												<UML:TaggedValue tag="ea_localid" value="2011"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC4 - Prihlášení uživatele"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1228"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2750"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1170,7 +1170,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="4"/>
-												<UML:TaggedValue tag="ea_localid" value="1229"/>
+												<UML:TaggedValue tag="ea_localid" value="2751"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1186,13 +1186,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="846"/>
+												<UML:TaggedValue tag="ea_localid" value="2010"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC3 - Nalezení pohrešovaného zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1229"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2751"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1231,7 +1231,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="9"/>
-												<UML:TaggedValue tag="ea_localid" value="1230"/>
+												<UML:TaggedValue tag="ea_localid" value="2752"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1247,13 +1247,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="845"/>
+												<UML:TaggedValue tag="ea_localid" value="2009"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC8 - Úprava uživatele"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1230"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2752"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1292,7 +1292,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="7"/>
-												<UML:TaggedValue tag="ea_localid" value="1231"/>
+												<UML:TaggedValue tag="ea_localid" value="2753"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1308,13 +1308,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="844"/>
+												<UML:TaggedValue tag="ea_localid" value="2008"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC6 - Pridání nového uživatele"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1231"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2753"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1353,7 +1353,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="1"/>
-												<UML:TaggedValue tag="ea_localid" value="1232"/>
+												<UML:TaggedValue tag="ea_localid" value="2754"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1369,13 +1369,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="843"/>
+												<UML:TaggedValue tag="ea_localid" value="2007"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC1 - Úprava typu zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1232"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2754"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1416,7 +1416,7 @@
 														<UML:TaggedValue tag="complexity" value="1"/>
 														<UML:TaggedValue tag="status" value="Proposed"/>
 														<UML:TaggedValue tag="tpos" value="0"/>
-														<UML:TaggedValue tag="ea_localid" value="1234"/>
+														<UML:TaggedValue tag="ea_localid" value="2756"/>
 														<UML:TaggedValue tag="ea_eleType" value="element"/>
 														<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=3;"/>
 													</UML:ModelElement.taggedValue>
@@ -1443,7 +1443,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="8"/>
-												<UML:TaggedValue tag="ea_localid" value="1233"/>
+												<UML:TaggedValue tag="ea_localid" value="2755"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1459,13 +1459,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="842"/>
+												<UML:TaggedValue tag="ea_localid" value="2006"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC7 - Blokace uživatele"/>
 												<UML:TaggedValue tag="ea_targetName" value="F2 - Administrace systému"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1233"/>
-												<UML:TaggedValue tag="ea_targetID" value="1249"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2755"/>
+												<UML:TaggedValue tag="ea_targetID" value="2701"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1530,7 +1530,7 @@
 														<UML:TaggedValue tag="complexity" value="1"/>
 														<UML:TaggedValue tag="status" value="Proposed"/>
 														<UML:TaggedValue tag="tpos" value="0"/>
-														<UML:TaggedValue tag="ea_localid" value="1239"/>
+														<UML:TaggedValue tag="ea_localid" value="2761"/>
 														<UML:TaggedValue tag="ea_eleType" value="element"/>
 														<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=3;"/>
 													</UML:ModelElement.taggedValue>
@@ -1557,7 +1557,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="3"/>
-												<UML:TaggedValue tag="ea_localid" value="1235"/>
+												<UML:TaggedValue tag="ea_localid" value="2757"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1573,13 +1573,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="841"/>
+												<UML:TaggedValue tag="ea_localid" value="2005"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC11 - Vytvorení logistické objednávky"/>
 												<UML:TaggedValue tag="ea_targetName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1235"/>
-												<UML:TaggedValue tag="ea_targetID" value="1252"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2757"/>
+												<UML:TaggedValue tag="ea_targetID" value="2704"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1610,13 +1610,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="868"/>
+												<UML:TaggedValue tag="ea_localid" value="1929"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC11 - Vytvorení logistické objednávky"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1252"/>
-												<UML:TaggedValue tag="ea_targetID" value="1235"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2704"/>
+												<UML:TaggedValue tag="ea_targetID" value="2757"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1655,7 +1655,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="4"/>
-												<UML:TaggedValue tag="ea_localid" value="1236"/>
+												<UML:TaggedValue tag="ea_localid" value="2758"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1671,13 +1671,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="839"/>
+												<UML:TaggedValue tag="ea_localid" value="2003"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC12 - Zmena logistické objednávky"/>
 												<UML:TaggedValue tag="ea_targetName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1236"/>
-												<UML:TaggedValue tag="ea_targetID" value="1252"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2758"/>
+												<UML:TaggedValue tag="ea_targetID" value="2704"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1708,13 +1708,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="871"/>
+												<UML:TaggedValue tag="ea_localid" value="1932"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC12 - Zmena logistické objednávky"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1252"/>
-												<UML:TaggedValue tag="ea_targetID" value="1236"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2704"/>
+												<UML:TaggedValue tag="ea_targetID" value="2758"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1753,7 +1753,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="1"/>
-												<UML:TaggedValue tag="ea_localid" value="1237"/>
+												<UML:TaggedValue tag="ea_localid" value="2759"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1769,13 +1769,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="837"/>
+												<UML:TaggedValue tag="ea_localid" value="2001"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC9 - Vytvorení koncové objednávky"/>
 												<UML:TaggedValue tag="ea_targetName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1237"/>
-												<UML:TaggedValue tag="ea_targetID" value="1252"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2759"/>
+												<UML:TaggedValue tag="ea_targetID" value="2704"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1806,13 +1806,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="874"/>
+												<UML:TaggedValue tag="ea_localid" value="1935"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC9 - Vytvorení koncové objednávky"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1252"/>
-												<UML:TaggedValue tag="ea_targetID" value="1237"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2704"/>
+												<UML:TaggedValue tag="ea_targetID" value="2759"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1851,7 +1851,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="2"/>
-												<UML:TaggedValue tag="ea_localid" value="1238"/>
+												<UML:TaggedValue tag="ea_localid" value="2760"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1867,13 +1867,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="873"/>
+												<UML:TaggedValue tag="ea_localid" value="1934"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC10 - Zmena koncové objednávky"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1252"/>
-												<UML:TaggedValue tag="ea_targetID" value="1238"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2704"/>
+												<UML:TaggedValue tag="ea_targetID" value="2760"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1904,13 +1904,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="834"/>
+												<UML:TaggedValue tag="ea_localid" value="1998"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC10 - Zmena koncové objednávky"/>
 												<UML:TaggedValue tag="ea_targetName" value="F1 - Management objednávek"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1238"/>
-												<UML:TaggedValue tag="ea_targetID" value="1252"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2760"/>
+												<UML:TaggedValue tag="ea_targetID" value="2704"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -1973,7 +1973,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1240"/>
+												<UML:TaggedValue tag="ea_localid" value="2762"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -1989,13 +1989,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="833"/>
+												<UML:TaggedValue tag="ea_localid" value="1997"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC15 - Presun zboží ve skladu"/>
 												<UML:TaggedValue tag="ea_targetName" value="F3 - Správa zboží"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1240"/>
-												<UML:TaggedValue tag="ea_targetID" value="1251"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2762"/>
+												<UML:TaggedValue tag="ea_targetID" value="2703"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2034,7 +2034,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1241"/>
+												<UML:TaggedValue tag="ea_localid" value="2763"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -2050,13 +2050,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="880"/>
+												<UML:TaggedValue tag="ea_localid" value="1941"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F3 - Správa zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC13 - Predání zboží k expedici"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1251"/>
-												<UML:TaggedValue tag="ea_targetID" value="1241"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2703"/>
+												<UML:TaggedValue tag="ea_targetID" value="2763"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2087,13 +2087,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="831"/>
+												<UML:TaggedValue tag="ea_localid" value="1995"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC13 - Predání zboží k expedici"/>
 												<UML:TaggedValue tag="ea_targetName" value="F3 - Správa zboží"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1241"/>
-												<UML:TaggedValue tag="ea_targetID" value="1251"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2763"/>
+												<UML:TaggedValue tag="ea_targetID" value="2703"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2132,7 +2132,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="1242"/>
+												<UML:TaggedValue tag="ea_localid" value="2764"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -2148,13 +2148,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="830"/>
+												<UML:TaggedValue tag="ea_localid" value="1994"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC14 - Naskladnení zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="F3 - Správa zboží"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1242"/>
-												<UML:TaggedValue tag="ea_targetID" value="1251"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2764"/>
+												<UML:TaggedValue tag="ea_targetID" value="2703"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2185,13 +2185,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="876"/>
+												<UML:TaggedValue tag="ea_localid" value="1937"/>
 												<UML:TaggedValue tag="ea_sourceName" value="F3 - Správa zboží"/>
 												<UML:TaggedValue tag="ea_targetName" value="UC14 - Naskladnení zboží"/>
 												<UML:TaggedValue tag="ea_sourceType" value="Requirement"/>
 												<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1251"/>
-												<UML:TaggedValue tag="ea_targetID" value="1242"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2703"/>
+												<UML:TaggedValue tag="ea_targetID" value="2764"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2232,7 +2232,7 @@
 														<UML:TaggedValue tag="complexity" value="1"/>
 														<UML:TaggedValue tag="status" value="Proposed"/>
 														<UML:TaggedValue tag="tpos" value="0"/>
-														<UML:TaggedValue tag="ea_localid" value="1243"/>
+														<UML:TaggedValue tag="ea_localid" value="2765"/>
 														<UML:TaggedValue tag="ea_eleType" value="element"/>
 														<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=3;"/>
 													</UML:ModelElement.taggedValue>
@@ -2283,7 +2283,7 @@
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
 												<UML:TaggedValue tag="tpos" value="3"/>
-												<UML:TaggedValue tag="ea_localid" value="1244"/>
+												<UML:TaggedValue tag="ea_localid" value="2766"/>
 												<UML:TaggedValue tag="ea_eleType" value="element"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 											</UML:ModelElement.taggedValue>
@@ -2299,13 +2299,13 @@
 												<UML:TaggedValue tag="seqno" value="0"/>
 												<UML:TaggedValue tag="headStyle" value="0"/>
 												<UML:TaggedValue tag="lineStyle" value="0"/>
-												<UML:TaggedValue tag="ea_localid" value="828"/>
+												<UML:TaggedValue tag="ea_localid" value="1992"/>
 												<UML:TaggedValue tag="ea_sourceName" value="UC16 - Reporty"/>
 												<UML:TaggedValue tag="ea_targetName" value="F4 - Zobrazování údaju v databázi"/>
 												<UML:TaggedValue tag="ea_sourceType" value="UseCase"/>
 												<UML:TaggedValue tag="ea_targetType" value="Requirement"/>
-												<UML:TaggedValue tag="ea_sourceID" value="1244"/>
-												<UML:TaggedValue tag="ea_targetID" value="1250"/>
+												<UML:TaggedValue tag="ea_sourceID" value="2766"/>
+												<UML:TaggedValue tag="ea_targetID" value="2702"/>
 												<UML:TaggedValue tag="src_visibility" value="Public"/>
 												<UML:TaggedValue tag="src_aggregation" value="0"/>
 												<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -2343,9 +2343,9 @@
 				<UML:TaggedValue tag="type" value="Use Case"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="145"/>
+				<UML:TaggedValue tag="ea_localid" value="388"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=815;DocSize.cy=1067;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=32512;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=B8C260CC;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=AED1C091;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=346;Top=59;Right=476;Bottom=139;" subject="EAID_D4A40958_99D4_4d02_BED1_977D49ECA1EE" seqno="1" style=" DUID=34932C1C;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
@@ -2357,19 +2357,19 @@
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="lidakja1"/>
 				<UML:TaggedValue tag="created_date" value="2017-11-05 22:23:21"/>
-				<UML:TaggedValue tag="modified_date" value="2017-11-10 23:21:00"/>
+				<UML:TaggedValue tag="modified_date" value="2017-11-29 13:45:28"/>
 				<UML:TaggedValue tag="package" value="EAPK_6CF143C3_1A62_4769_BBD1_F767B09B236C"/>
 				<UML:TaggedValue tag="type" value="Use Case"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="146"/>
+				<UML:TaggedValue tag="ea_localid" value="389"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=6B07AA8E;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=8ED1D48A;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=380;Top=85;Right=425;Bottom=175;" subject="EAID_11B43A4A_3882_44b6_9228_4885B787A8B7" seqno="1" style="DUID=2C147DC7;"/>
 				<UML:DiagramElement geometry="Left=380;Top=249;Right=425;Bottom=339;" subject="EAID_A402D603_0EA2_4223_9A2E_E7FB57D9E98A" seqno="2" style="DUID=6FBB6F67;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_40C61C85_9E84_42c6_A115_2BA6DF95CEEC" style="Mode=3;EOID=2C147DC7;SOID=6FBB6F67;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_1409B63E_17A6_4e85_924D_46C390B6F1B3" style="Mode=3;EOID=6FBB6F67;SOID=2C147DC7;Color=-1;LWidth=0;Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Správa skladu" xmi.id="EAID_FE5A609B_CD52_44ad_842E_B816235939EC" diagramType="UseCaseDiagram" owner="EAPK_5A92FA95_EC42_4c7d_A2DF_E744B6B46D45" toolName="Enterprise Architect 2.5">
@@ -2382,9 +2382,9 @@
 				<UML:TaggedValue tag="type" value="Use Case"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="147"/>
+				<UML:TaggedValue tag="ea_localid" value="390"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=E3A17286;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=BF47D58A;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=459;Top=407;Right=564;Bottom=477;" subject="EAID_4F5698EA_0970_4389_B3D3_0D55F69D74FA" seqno="1" style="DUID=67E85B6B;"/>
@@ -2401,7 +2401,6 @@
 				<UML:DiagramElement geometry="Left=273;Top=89;Right=586;Bottom=701;" subject="EAID_D13A7E81_F042_4259_BADC_6EDA89D5A10E" seqno="12" style="DUID=0068BC7B;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_003854F5_7049_43c6_A73B_31E2BB93BC9B" style="Mode=3;EOID=5626902B;SOID=756A11EF;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_25FEB02A_85A7_4073_8FC7_7B2B80A1857F" style="Mode=3;EOID=C5D827D2;SOID=756A11EF;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_40C61C85_9E84_42c6_A115_2BA6DF95CEEC" style="Mode=3;EOID=756A11EF;SOID=0A81650B;Color=-1;LWidth=0;Hidden=1;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=52;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AD1B07D1_ADD1_4548_9707_16B9F27B595B" style="Mode=3;EOID=67E85B6B;SOID=756A11EF;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=-51;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0603CD21_CDE0_4129_89EB_14CB7C90DE82" style="Mode=3;EOID=845B6E0C;SOID=0A81650B;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_1C60B7F4_680B_447d_BD15_7181512B34D8" style="Mode=3;EOID=7E3F2528;SOID=0A81650B;Color=-1;LWidth=0;Hidden=0;"/>
@@ -2409,6 +2408,7 @@
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=-51;EY=2;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B16F0B1B_F6C8_4b12_94DB_4F9E66A0BE18" style="Mode=3;EOID=073C96BA;SOID=0A81650B;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D8046EB2_9CB5_4225_A43A_0E81BCC26B83" style="Mode=3;EOID=DCA39252;SOID=0A81650B;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=-51;EY=2;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E8B63B18_D4C8_40d0_B2F3_5A0B3227E004" style="Mode=3;EOID=AC018548;SOID=0A81650B;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_1409B63E_17A6_4e85_924D_46C390B6F1B3" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Správa objednávek" xmi.id="EAID_46621ACB_97B2_4eca_9897_F3B3AAA27254" diagramType="UseCaseDiagram" owner="EAPK_098E24FF_6FD1_4a62_AB9D_F00B81637D29" toolName="Enterprise Architect 2.5">
@@ -2421,9 +2421,9 @@
 				<UML:TaggedValue tag="type" value="Use Case"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="148"/>
+				<UML:TaggedValue tag="ea_localid" value="391"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=ABDB88CC;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=EE1B2B4D;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=83;Top=153;Right=128;Bottom=243;" subject="EAID_A402D603_0EA2_4223_9A2E_E7FB57D9E98A" seqno="1" style="DUID=953394E0;NSL=0;"/>
@@ -2448,9 +2448,9 @@
 				<UML:TaggedValue tag="type" value="Use Case"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="149"/>
+				<UML:TaggedValue tag="ea_localid" value="392"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=C2BEAC4C;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=920DE171;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=457;Top=242;Right=562;Bottom=312;" subject="EAID_48B382D0_44B2_4d07_8EDD_FD81BFD1A2F6" seqno="1" style="DUID=ACAF8113;"/>
