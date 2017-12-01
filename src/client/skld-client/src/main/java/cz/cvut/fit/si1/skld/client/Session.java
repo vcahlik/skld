@@ -13,4 +13,7 @@ public class Session {
         this.signedUser = null;
     }
 
+    public User getSignedUser() {
+        return signedUser;
+    }
 }

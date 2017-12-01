@@ -1,5 +1,5 @@
 package cz.cvut.fit.si1.skld.client;
 
 public enum NotifyType {
-    DEFAULT
+    USER_ACTION, CHANGE, LOGOUT
 }

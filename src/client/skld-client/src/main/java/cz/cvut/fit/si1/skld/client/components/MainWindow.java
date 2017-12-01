@@ -12,7 +12,7 @@ public class MainWindow extends Window {
     @Override
     public void follow() {
         Screen screen = new LoginScreen(this);
-        setScreen(screen);
+        changeContent(screen);
         screen.follow();
     }
 

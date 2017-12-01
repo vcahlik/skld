@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" prefHeight="574.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox alignment="CENTER" prefHeight="701.0" prefWidth="968.0">
+      <VBox alignment="CENTER" prefHeight="431.0" prefWidth="517.0">
          <children>
             <Label alignment="CENTER" text="Přihlášení" />
             <HBox alignment="CENTER" prefHeight="77.0" prefWidth="229.0">
@@ -30,4 +30,4 @@
          </children>
       </VBox>
    </children>
-</AnchorPane>
+</HBox>
