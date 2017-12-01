@@ -17,10 +17,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="skld" />
+        <module name="skld-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="skld" target="1.8" />
+      <module name="skld-client" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
