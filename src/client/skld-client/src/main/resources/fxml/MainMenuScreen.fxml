@@ -2,56 +2,123 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fit.si1.skld.client.view.fxview.handlers.MainMenuScreenHandler">
-   <children>
-      <Label text="Management objednavek">
-         <VBox.margin>
-            <Insets bottom="10.0" left="20.0" top="10.0" />
-         </VBox.margin>
-      </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+
+<BorderPane prefHeight="695.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button layoutX="110.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
+            <Label text="Management objednavek">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Nova logisticka objednavka" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Nova koncova objednavka" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Zmena logisticke objednavky" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="240.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Zmena koncove objednavky" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Sprava zbozi">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Naskladneni" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Predani k expedici" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Presun zbozi" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="30.0" layoutY="290.0" text="Zobrazovani udaju v systemu">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox layoutX="10.0" layoutY="180.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Reporty" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="30.0" layoutY="155.0" text="Administrace">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox layoutX="10.0" layoutY="180.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Novy typ zbozi" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava typu zbozi" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Nalezeni pohresovaneho zbozi" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="240.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Novy uzivatel" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="340.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava uzivatele" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" layoutX="440.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Blokace uzivatele" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
-      </HBox>
-      <Label text="Sprava zbozi">
-         <VBox.margin>
-            <Insets bottom="10.0" left="20.0" top="10.0" />
-         </VBox.margin>
-      </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button layoutX="75.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-   </children>
-</VBox>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox fx:id="sessionBar" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="60.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

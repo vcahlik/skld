@@ -45,7 +45,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>cz.cvut.fit.si1.skld.client.view.fxview.FXApp</mainClass>
+                    <mainClass>cz.cvut.fit.si1.skld.client.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
