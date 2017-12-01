@@ -3,15 +3,16 @@ package cz.cvut.fit.si1.skld.client;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public abstract class Window extends Component implements Passable {
+public abstract class Window extends Component implements Wrapper {
     private Passable source;
     private App app;
     private Stage stage;
     private Screen screen;
 
     public Window(Passable source, Stage stage) {
+        super(source.getApp());
+
         this.source = source;
-        this.app = source.getApp();
         this.stage = stage;
     }
 
@@ -20,16 +21,11 @@ public abstract class Window extends Component implements Passable {
 
     }
 
-    @Override
-    public App getApp() {
-        return this.app;
-    }
-
     public Screen getScreen() {
         return screen;
     }
 
-    public void setScreen(Screen screen) {
+    public void changeContent(Screen screen) {
         this.screen = screen;
 
         Scene scene = stage.getScene();

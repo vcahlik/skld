@@ -5,8 +5,6 @@ public interface Passable extends Notifyable {
 
     void pass(UI source, PassResult result);
 
-    App getApp();
-
-    void setScreen(Screen screen);
+    void changeContent(Screen screen);
 
 }

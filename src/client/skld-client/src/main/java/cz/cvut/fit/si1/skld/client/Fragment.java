@@ -10,8 +10,9 @@ public abstract class Fragment extends Component {
     Notifyable parent;
 
     public Fragment(Notifyable parent) {
-        this.parent = parent;
+        super(parent.getApp());
 
+        this.parent = parent;
         Handler handler = makeHandler();
         load(handler);
     }
@@ -42,5 +43,9 @@ public abstract class Fragment extends Component {
 
     public Parent getRoot() {
         return root;
+    }
+
+    public Notifyable getParent() {
+        return parent;
     }
 }

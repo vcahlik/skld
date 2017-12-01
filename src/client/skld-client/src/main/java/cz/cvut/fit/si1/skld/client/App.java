@@ -42,7 +42,7 @@ public class App extends Application implements Passable {
     }
 
     @Override
-    public void setScreen(Screen screen) {
+    public void changeContent(Screen screen) {
 
     }
 

@@ -16,7 +16,7 @@
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Nova logisticka objednavka" textAlignment="CENTER" wrapText="true">
+                  <Button disable="true" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Nova logisticka objednavka" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
@@ -45,7 +45,7 @@
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Naskladneni" textAlignment="CENTER" wrapText="true">
+                  <Button disable="true" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Naskladneni" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
@@ -83,12 +83,12 @@
             </Label>
             <HBox layoutX="10.0" layoutY="180.0" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Novy typ zbozi" textAlignment="CENTER" wrapText="true">
+                  <Button mnemonicParsing="false" onAction="#handleAddProductTypeButtonAction" prefHeight="100.0" prefWidth="100.0" text="Novy typ zbozi" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava typu zbozi" textAlignment="CENTER" wrapText="true">
+                  <Button disable="true" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava typu zbozi" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
@@ -98,12 +98,12 @@
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Button>
-                  <Button layoutX="240.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Novy uzivatel" textAlignment="CENTER" wrapText="true">
+                  <Button disable="true" layoutX="240.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Novy uzivatel" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Button>
-                  <Button layoutX="340.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava uzivatele" textAlignment="CENTER" wrapText="true">
+                  <Button disable="true" layoutX="340.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Uprava uzivatele" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
@@ -119,6 +119,6 @@
       </VBox>
    </center>
    <bottom>
-      <HBox fx:id="sessionBar" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="60.0" BorderPane.alignment="CENTER" />
+      <HBox fx:id="sessionBar" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

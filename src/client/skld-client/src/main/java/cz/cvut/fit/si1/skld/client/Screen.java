@@ -11,7 +11,7 @@ public abstract class Screen extends Fragment implements Passable {
 
     @Override
     public void follow() {
-        getSource().setScreen(this);
+        getSource().changeContent(this);
     }
 
     @Override
@@ -19,13 +19,13 @@ public abstract class Screen extends Fragment implements Passable {
     }
 
     @Override
-    public App getApp() {
-        return this.app;
+    public void pass(UI source, PassResult result) {
+        getSource().changeContent(this);
     }
 
     @Override
-    public void setScreen(Screen screen) {
-        getSource().setScreen(screen);
+    public void changeContent(Screen screen) {
+        getSource().changeContent(screen);
     }
 
     public Passable getSource() {

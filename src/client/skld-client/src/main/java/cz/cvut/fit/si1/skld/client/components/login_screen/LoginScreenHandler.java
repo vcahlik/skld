@@ -6,10 +6,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 
-import java.io.IOException;
-
 public class LoginScreenHandler extends Handler {
     private LoginScreen owner;
+
+    @FXML
+    private PasswordField passwordField;
 
     public LoginScreenHandler() {
         super(FXMLFragment.LOGIN_SCREEN);
@@ -20,11 +21,9 @@ public class LoginScreenHandler extends Handler {
     }
 
     @FXML
-    private PasswordField passwordField;
-
-    @FXML
-    private void handleSubmitButtonAction(ActionEvent event) throws IOException {
+    private void handleSubmitButtonAction(ActionEvent event) {
         String password = passwordField.getText();
+        passwordField.clear();
         owner.submitPassword(password);
     }
 
