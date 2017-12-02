@@ -22,11 +22,9 @@ public class ProductsResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductsResource.class);
 
     private final ProductDAO productsDAO;
-    private final UserDAO userDAO;
 
-    public ProductsResource(ProductDAO pDao, UserDAO uDao) {
+    public ProductsResource(ProductDAO pDao) {
         productsDAO = pDao;
-        userDAO = uDao;
     }
 
     @POST

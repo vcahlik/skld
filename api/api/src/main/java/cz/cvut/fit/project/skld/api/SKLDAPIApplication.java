@@ -74,7 +74,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new AuthValueFactoryProvider.Binder<>(User.class));
         environment.jersey().register(RolesAllowedDynamicFeature.class);
         environment.jersey().register(new AuthResource(key, userDAO));
-        environment.jersey().register(new ProductsResource(productDAO, userDAO));
+        environment.jersey().register(new ProductsResource(productDAO));
     }
 
 }
