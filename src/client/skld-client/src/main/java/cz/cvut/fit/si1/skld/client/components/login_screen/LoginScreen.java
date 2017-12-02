@@ -6,13 +6,15 @@ import cz.cvut.fit.si1.skld.client.domain.DumbUser;
 import cz.cvut.fit.si1.skld.client.domain.DummyUser;
 
 public class LoginScreen extends Screen {
+    LoginScreenHandler handler;
+
     public LoginScreen(Passable source) {
         super(source);
     }
 
     @Override
     public Handler makeHandler() {
-        LoginScreenHandler handler = new LoginScreenHandler();
+        this.handler = new LoginScreenHandler();
         handler.setOwner(this);
         return handler;
     }

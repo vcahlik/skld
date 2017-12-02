@@ -9,8 +9,10 @@ public class AddProductTypeFrame extends NavigatorFrame {
     }
 
     @Override
-    public void pass(UI source, PassResult result) {
+    public void follow() {
+        super.follow();
 
+        Screen screen = new AddProductTypeScreen(this);
+        screen.follow();
     }
-
 }

@@ -4,7 +4,7 @@ import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.Screen;
 import cz.cvut.fit.si1.skld.client.components.navigator.navigator_bar.NavigatorBarFragment;
 import cz.cvut.fit.si1.skld.client.components.session_bar.SessionBarFragment;
-import cz.cvut.fit.si1.skld.client.resources.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragment;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
 
@@ -32,14 +32,11 @@ public class NavigatorFrameHandler extends Handler {
         content.getChildren().setAll((HBox)screen.getRoot());
     }
 
-    @FXML
-    protected void initialize() {
-        NavigatorBarFragment navigatorBarFragment = new NavigatorBarFragment(owner);
-        owner.setNavigatorBarFragment(navigatorBarFragment);
+    public void setNavigatorBarFragment(NavigatorBarFragment navigatorBarFragment) {
         navigatorBar.getChildren().setAll((HBox)navigatorBarFragment.getRoot());
+    }
 
-        SessionBarFragment sessionBarFragment = new SessionBarFragment(owner);
-        owner.setSessionBarFragment(sessionBarFragment);
+    public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
         sessionBar.getChildren().setAll((HBox)sessionBarFragment.getRoot());
     }
 }

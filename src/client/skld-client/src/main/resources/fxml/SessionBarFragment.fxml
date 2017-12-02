@@ -10,13 +10,13 @@
    <children>
       <VBox alignment="CENTER">
          <children>
-            <Label fx:id="signedUser" maxHeight="100.0" text="Label">
+            <Label fx:id="signedUser" maxHeight="100.0" text="Username">
                <VBox.margin>
                   <Insets />
                </VBox.margin></Label>
          </children>
       </VBox>
-      <Hyperlink onAction="#handleLogoutLinkAction" text="odhlasit">
+      <Hyperlink onAction="#handleLogoutLinkAction" text="odhlásit">
          <HBox.margin>
             <Insets left="10.0" />
          </HBox.margin>

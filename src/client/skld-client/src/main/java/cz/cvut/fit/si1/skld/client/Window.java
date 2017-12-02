@@ -16,6 +16,11 @@ public abstract class Window extends Component implements Wrapper {
         this.stage = stage;
     }
 
+    public Window(Passable source, Stage stage, String title) {
+        this(source, stage);
+        setTitle(title);
+    }
+
     @Override
     public void notify(UI source, NotifyType notifyType) {
 
@@ -35,6 +40,10 @@ public abstract class Window extends Component implements Wrapper {
         } else {
             scene.setRoot(screen.getRoot());
         }
+    }
+
+    public void setTitle(String title) {
+        stage.setTitle(title);
     }
 
 }

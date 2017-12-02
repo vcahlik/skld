@@ -5,15 +5,18 @@ import cz.cvut.fit.si1.skld.client.components.add_product_type_screen.AddProduct
 import cz.cvut.fit.si1.skld.client.components.session_bar.SessionBarFragment;
 
 public class MainMenuScreen extends Screen {
+    MainMenuScreenHandler handler;
     private SessionBarFragment sessionBarFragment;
 
     public MainMenuScreen(Passable source) {
         super(source);
+
+        setSessionBarFragment(new SessionBarFragment(this));
     }
 
     @Override
     public Handler makeHandler() {
-        MainMenuScreenHandler handler = new MainMenuScreenHandler();
+        this.handler = new MainMenuScreenHandler();
         handler.setOwner(this);
         return handler;
     }
@@ -37,12 +40,13 @@ public class MainMenuScreen extends Screen {
         }
     }
 
-    public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
-        this.sessionBarFragment = sessionBarFragment;
-    }
-
     public void addProductType() {
         AddProductTypeFrame frame = new AddProductTypeFrame(this);
         frame.follow();
+    }
+
+    public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
+        this.sessionBarFragment = sessionBarFragment;
+        handler.setSessionBarFragment(sessionBarFragment);
     }
 }

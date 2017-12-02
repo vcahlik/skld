@@ -3,13 +3,12 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <bottom>
       <HBox fx:id="sessionBar" BorderPane.alignment="CENTER" />
    </bottom>
    <top>
-      <HBox fx:id="navigatorBar" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <HBox fx:id="navigatorBar" BorderPane.alignment="CENTER" />
    </top>
    <center>
       <HBox fx:id="content" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
