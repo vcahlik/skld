@@ -1,6 +1,7 @@
 package cz.cvut.fit.project.skld.api.core;
 
 import javax.persistence.*;
+import java.security.Principal;
 import java.time.Instant;
 import java.util.Objects;
 
@@ -13,7 +14,13 @@ import java.util.Objects;
                 unique = true
         )
 )
-public class User {
+@NamedQueries({
+        @NamedQuery(
+                name = "User.findByPIN",
+                query = "SELECT u FROM User u WHERE u.pin = :pin AND u.blockedAt IS NULL"
+        )
+})
+public class User implements Principal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

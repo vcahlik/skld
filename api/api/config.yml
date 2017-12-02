@@ -5,7 +5,6 @@ logging:
 
 # Database settings.
 database:
-
   # the name of your JDBC driver
   driverClass: org.postgresql.Driver
 
@@ -17,3 +16,11 @@ database:
 
   # the JDBC URL
   url: jdbc:postgresql:skld
+
+server:
+  type: simple
+  connector:
+    type: http
+    port: 8080
+
+jwtSecret: onopFMW19gwpgo5qrwdxqhPNl8jZ3X26F0isuKUhW1R+AXkzObPORHjZWt7eh7DTp1LJPBxZ5CGyELTSZAN0cA
