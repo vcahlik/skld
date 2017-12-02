@@ -1,0 +1,4 @@
+logging:
+  level: INFO
+  loggers:
+    cz.cvut.fit.project.skld.api: DEBUG
