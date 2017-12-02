@@ -1,8 +1,10 @@
 package cz.cvut.fit.project.skld.api.resources;
 
 import cz.cvut.fit.project.skld.api.core.Product;
+import cz.cvut.fit.project.skld.api.core.User;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.db.UserDAO;
+import io.dropwizard.auth.Auth;
 import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,8 +31,8 @@ public class ProductsResource {
 
     @POST
     @UnitOfWork
-    public Product createProduct(Product product) {
-        product.setCreator(userDAO.findById(1L).get());
+    public Product createProduct(@Auth User user, Product product) {
+        product.setCreator(user);
         LOGGER.debug("{} {} {}", product.getName(), product.getId(), product.getCreator());
         return productsDAO.create(product);
     }

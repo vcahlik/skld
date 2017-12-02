@@ -14,6 +14,9 @@ public class SKLDAPIConfiguration extends Configuration {
     @NotNull
     private DataSourceFactory database = new DataSourceFactory();
 
+    @NotEmpty
+    private String jwtSecret;
+
     @JsonProperty("database")
     public DataSourceFactory getDataSourceFactory() {
         return database;
@@ -22,5 +25,13 @@ public class SKLDAPIConfiguration extends Configuration {
     @JsonProperty("database")
     public void setDataSourceFactory(DataSourceFactory dataSourceFactory) {
         this.database = dataSourceFactory;
+    }
+
+    public byte[] getJwtSecret() {
+        return jwtSecret.getBytes();
+    }
+
+    public void setJwtSecret(String jwtSecret) {
+        this.jwtSecret = jwtSecret;
     }
 }
