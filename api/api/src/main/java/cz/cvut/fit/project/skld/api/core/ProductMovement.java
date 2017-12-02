@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.time.Instant;
 import java.util.Objects;
 
+@Entity
+@Table(name = "product_movements")
 public class ProductMovement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,12 +21,14 @@ public class ProductMovement {
     private boolean missing;
 
     @ManyToOne
+    @JoinColumn(name = "product_id", foreignKey = @ForeignKey(name = "FK_Product_movement_product"))
     private Product product;
 
     @Column(nullable = false)
     private String location;
 
     @ManyToOne
+    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "FK_Product_User"))
     private User user;
 
     public ProductMovement() {}
