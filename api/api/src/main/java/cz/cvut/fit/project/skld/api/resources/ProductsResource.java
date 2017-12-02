@@ -9,6 +9,7 @@ import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -29,6 +30,7 @@ public class ProductsResource {
 
     @POST
     @UnitOfWork
+    @RolesAllowed({"admin"})
     public Product createProduct(@Auth User user, Product product) {
         product.setCreator(user);
         LOGGER.debug("{} {} {}", product.getName(), product.getId(), product.getCreator());

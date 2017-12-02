@@ -49,7 +49,7 @@ public class User implements Principal {
     }
 
     public boolean comparePIN(String comparedPIN) {
-        return pin == comparedPIN;
+        return pin.equals(comparedPIN);
     }
 
     @Override
