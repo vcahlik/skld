@@ -6,6 +6,7 @@ import cz.cvut.fit.project.skld.api.auth.UserAuthorizer;
 import cz.cvut.fit.project.skld.api.core.Product;
 import cz.cvut.fit.project.skld.api.core.ProductMovement;
 import cz.cvut.fit.project.skld.api.core.User;
+import cz.cvut.fit.project.skld.api.db.PositionDAO;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.db.UserDAO;
 import cz.cvut.fit.project.skld.api.resources.AuthResource;
@@ -54,6 +55,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
                     final Environment environment) {
         final ProductDAO productDAO = new ProductDAO(hibernateBundle.getSessionFactory());
         final UserDAO userDAO = new UserDAO(hibernateBundle.getSessionFactory());
+        final PositionDAO posDAO = new PositionDAO(hibernateBundle.getSessionFactory());
 
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
@@ -76,7 +78,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(RolesAllowedDynamicFeature.class);
         environment.jersey().register(new AuthResource(key, userDAO));
         environment.jersey().register(new ProductsResource(productDAO));
-        environment.jersey().register(new ProductResource(productDAO));
+        environment.jersey().register(new ProductResource(productDAO, posDAO));
     }
 
 }
