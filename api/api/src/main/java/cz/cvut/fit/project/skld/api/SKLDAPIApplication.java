@@ -9,6 +9,7 @@ import cz.cvut.fit.project.skld.api.core.User;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.db.UserDAO;
 import cz.cvut.fit.project.skld.api.resources.AuthResource;
+import cz.cvut.fit.project.skld.api.resources.ProductResource;
 import cz.cvut.fit.project.skld.api.resources.ProductsResource;
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
@@ -75,6 +76,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(RolesAllowedDynamicFeature.class);
         environment.jersey().register(new AuthResource(key, userDAO));
         environment.jersey().register(new ProductsResource(productDAO));
+        environment.jersey().register(new ProductResource(productDAO));
     }
 
 }
