@@ -2,3 +2,18 @@ logging:
   level: INFO
   loggers:
     cz.cvut.fit.project.skld.api: DEBUG
+
+# Database settings.
+database:
+
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: selvek
+
+  # the password
+  password: ""
+
+  # the JDBC URL
+  url: jdbc:postgresql:skld
