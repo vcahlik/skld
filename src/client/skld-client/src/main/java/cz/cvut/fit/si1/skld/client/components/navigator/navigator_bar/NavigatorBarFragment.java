@@ -6,13 +6,15 @@ import cz.cvut.fit.si1.skld.client.NotifyType;
 import cz.cvut.fit.si1.skld.client.Notifyable;
 
 public class NavigatorBarFragment extends Fragment {
+    NavigatorBarFragmentHandler handler;
+
     public NavigatorBarFragment(Notifyable parent) {
         super(parent);
     }
 
     @Override
     public Handler makeHandler() {
-        NavigatorBarFragmentHandler handler = new NavigatorBarFragmentHandler();
+        this.handler = new NavigatorBarFragmentHandler();
         handler.setOwner(this);
         return handler;
     }

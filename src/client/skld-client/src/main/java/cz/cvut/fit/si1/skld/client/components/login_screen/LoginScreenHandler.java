@@ -1,7 +1,7 @@
 package cz.cvut.fit.si1.skld.client.components.login_screen;
 
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.resources.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragment;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
@@ -26,5 +26,4 @@ public class LoginScreenHandler extends Handler {
         passwordField.clear();
         owner.submitPassword(password);
     }
-
 }

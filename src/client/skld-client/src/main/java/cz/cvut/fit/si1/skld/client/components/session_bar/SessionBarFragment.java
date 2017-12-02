@@ -6,13 +6,15 @@ import cz.cvut.fit.si1.skld.client.NotifyType;
 import cz.cvut.fit.si1.skld.client.Notifyable;
 
 public class SessionBarFragment extends Fragment {
+    SessionBarFragmentHandler handler;
+
     public SessionBarFragment(Notifyable parent) {
         super(parent);
     }
 
     @Override
     public Handler makeHandler() {
-        SessionBarFragmentHandler handler = new SessionBarFragmentHandler();
+        this.handler = new SessionBarFragmentHandler();
         handler.setOwner(this);
         return handler;
     }

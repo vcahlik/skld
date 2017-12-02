@@ -2,7 +2,6 @@ package cz.cvut.fit.si1.skld.client.components.navigator;
 
 import cz.cvut.fit.si1.skld.client.*;
 import cz.cvut.fit.si1.skld.client.components.navigator.navigator_bar.NavigatorBarFragment;
-import cz.cvut.fit.si1.skld.client.components.navigator.navigator_bar.NavigatorBarFragmentHandler;
 import cz.cvut.fit.si1.skld.client.components.session_bar.SessionBarFragment;
 
 public abstract class NavigatorFrame extends Frame {
@@ -14,6 +13,16 @@ public abstract class NavigatorFrame extends Frame {
 
     public NavigatorFrame(Passable source) {
         super(source);
+
+        setNavigatorBarFragment(new NavigatorBarFragment(this));
+        setSessionBarFragment(new SessionBarFragment(this));
+    }
+
+    @Override
+    public void pass(UI source, PassResult result) {
+        super.pass(source, result);
+
+        getSource().pass(this, result);
     }
 
     @Override
@@ -40,9 +49,11 @@ public abstract class NavigatorFrame extends Frame {
 
     public void setNavigatorBarFragment(NavigatorBarFragment navigatorBarFragment) {
         this.navigatorBarFragment = navigatorBarFragment;
+        handler.setNavigatorBarFragment(navigatorBarFragment);
     }
 
     public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
         this.sessionBarFragment = sessionBarFragment;
+        handler.setSessionBarFragment(sessionBarFragment);
     }
 }

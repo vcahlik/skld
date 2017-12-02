@@ -1,7 +1,7 @@
 package cz.cvut.fit.si1.skld.client.components.navigator.navigator_bar;
 
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.resources.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragment;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
