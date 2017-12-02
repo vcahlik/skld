@@ -1,6 +1,11 @@
 package cz.cvut.fit.project.skld.api;
 
+import cz.cvut.fit.project.skld.api.core.Product;
+import cz.cvut.fit.project.skld.api.core.ProductMovement;
 import cz.cvut.fit.project.skld.api.core.User;
+import cz.cvut.fit.project.skld.api.db.ProductDAO;
+import cz.cvut.fit.project.skld.api.db.UserDAO;
+import cz.cvut.fit.project.skld.api.resources.ProductsResource;
 import io.dropwizard.Application;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.setup.Bootstrap;
@@ -14,7 +19,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
     }
 
     private final HibernateBundle<SKLDAPIConfiguration> hibernateBundle =
-            new HibernateBundle<SKLDAPIConfiguration>(User.class) {
+            new HibernateBundle<SKLDAPIConfiguration>(User.class, Product.class, ProductMovement.class) {
                 @Override
                 public DataSourceFactory getDataSourceFactory(SKLDAPIConfiguration configuration) {
                     return configuration.getDataSourceFactory();
@@ -34,7 +39,9 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
     @Override
     public void run(final SKLDAPIConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
+        final ProductDAO productDAO = new ProductDAO(hibernateBundle.getSessionFactory());
+        final UserDAO userDAO = new UserDAO(hibernateBundle.getSessionFactory());
+        environment.jersey().register(new ProductsResource(productDAO, userDAO));
     }
 
 }

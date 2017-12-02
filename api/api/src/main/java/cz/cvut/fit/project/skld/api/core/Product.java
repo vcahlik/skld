@@ -5,19 +5,18 @@ import java.util.Objects;
 
 @Entity
 @Table(name="products")
-@NamedQueries(
-        {
-                @NamedQuery(
-                        name = "cz.cvut.fit.project.skld.api.core.Product.getAll",
-                        query = "SELECT p FROM Product p"
-                )
-        }
-)
+@NamedQueries({
+    @NamedQuery(
+        name = "Product.findAll",
+        query = "SELECT p FROM Product p"
+    )
+})
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(name = "name")
     private String name;
 
     @ManyToOne
@@ -26,7 +25,11 @@ public class Product {
 
     public Product() {}
 
-    public Product(String name, User creator) {}
+    public Product(long id, String name, User creator) {
+        this.id = id;
+        this.name = name;
+        this.creator = creator;
+    }
 
     @Override
     public boolean equals(Object o) {
