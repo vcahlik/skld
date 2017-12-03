@@ -1,12 +1,12 @@
-package cz.cvut.fit.si1.skld.client;
+package cz.cvut.fit.si1.skld.client.resources;
 
-public enum FXMLFragment {
-    LOGIN_SCREEN, MAIN_MENU_SCREEN, SESSION_BAR_FRAGMENT, NAVIGATOR_FRAME, NAVIGATOR_BAR_FRAGMENT, ADD_PRODUCT_TYPE_SCREEN, EDIT_PRODUCT_TYPE_FRAGMENT;
+import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 
-    public String getFXMLFilePath() {
+public class Files {
+    public static String getFXMLFilePath(FXMLFragmentType fragment) {
         String fileName;
 
-        switch (this) {
+        switch (fragment) {
             case LOGIN_SCREEN:
                 fileName = "/fxml/LoginScreen.fxml";
                 break;
@@ -27,6 +27,12 @@ public enum FXMLFragment {
                 break;
             case EDIT_PRODUCT_TYPE_FRAGMENT:
                 fileName = "/fxml/EditProductTypeFragment.fxml";
+                break;
+            case CHANGE_PRODUCT_TYPE_SCREEN:
+                fileName = "/fxml/ChangeProductTypeScreen.fxml";
+                break;
+            case FIND_PRODUCT_TYPE_FRAGMENT:
+                fileName = "/fxml/FindProductTypeFragment.fxml";
                 break;
             default:
                 throw new RuntimeException("FXML file path not added");

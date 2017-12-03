@@ -1,7 +1,7 @@
 package cz.cvut.fit.si1.skld.client.components.login_screen;
 
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
@@ -13,7 +13,7 @@ public class LoginScreenHandler extends Handler {
     private PasswordField passwordField;
 
     public LoginScreenHandler() {
-        super(FXMLFragment.LOGIN_SCREEN);
+        super(FXMLFragmentType.LOGIN_SCREEN);
     }
 
     public void setOwner(LoginScreen owner) {

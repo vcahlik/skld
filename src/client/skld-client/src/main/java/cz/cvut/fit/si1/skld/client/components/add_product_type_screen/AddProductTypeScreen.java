@@ -1,7 +1,8 @@
 package cz.cvut.fit.si1.skld.client.components.add_product_type_screen;
 
 import cz.cvut.fit.si1.skld.client.*;
-import cz.cvut.fit.si1.skld.client.components.edit_product_type_fragment.EditProductTypeFragment;
+import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
+import cz.cvut.fit.si1.skld.client.domain.ProductType;
 
 public class AddProductTypeScreen extends Screen {
     private AddProductTypeScreenHandler handler;
@@ -26,9 +27,8 @@ public class AddProductTypeScreen extends Screen {
     }
 
     public void addProductType() {
-        String id = editProductTypeFragment.getID();
-        String name = editProductTypeFragment.getName();
-        System.out.println("New product: id: " + id + ", name: " + name + " -> SERVER");
+        ProductType newProductType = editProductTypeFragment.getEdited();
+        System.out.println("New product: id: " + newProductType.getId() + ", name: " + newProductType.getName() + " -> SERVER");
         getSource().pass(this, PassResult.DONE);
     }
 }

@@ -2,6 +2,7 @@ package cz.cvut.fit.si1.skld.client.components.main_menu;
 
 import cz.cvut.fit.si1.skld.client.*;
 import cz.cvut.fit.si1.skld.client.components.add_product_type_screen.AddProductTypeFrame;
+import cz.cvut.fit.si1.skld.client.components.change_product_type_screen.ChangeProductTypeFrame;
 import cz.cvut.fit.si1.skld.client.components.session_bar.SessionBarFragment;
 
 public class MainMenuScreen extends Screen {
@@ -42,6 +43,11 @@ public class MainMenuScreen extends Screen {
 
     public void addProductType() {
         AddProductTypeFrame frame = new AddProductTypeFrame(this);
+        frame.follow();
+    }
+
+    public void changeProductType() {
+        ChangeProductTypeFrame frame = new ChangeProductTypeFrame(this);
         frame.follow();
     }
 

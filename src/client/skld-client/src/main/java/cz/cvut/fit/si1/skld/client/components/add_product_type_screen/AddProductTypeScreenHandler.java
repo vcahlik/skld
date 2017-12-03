@@ -1,8 +1,8 @@
 package cz.cvut.fit.si1.skld.client.components.add_product_type_screen;
 
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.components.edit_product_type_fragment.EditProductTypeFragment;
-import cz.cvut.fit.si1.skld.client.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
@@ -14,7 +14,7 @@ public class AddProductTypeScreenHandler extends Handler {
     private HBox editProductType;
 
     public AddProductTypeScreenHandler() {
-        super(FXMLFragment.ADD_PRODUCT_TYPE_SCREEN);
+        super(FXMLFragmentType.ADD_PRODUCT_TYPE_SCREEN);
     }
 
     public void setOwner(AddProductTypeScreen owner) {
