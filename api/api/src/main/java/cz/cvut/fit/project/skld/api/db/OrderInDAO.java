@@ -1,5 +1,6 @@
 package cz.cvut.fit.project.skld.api.db;
 
+import cz.cvut.fit.project.skld.api.core.LineItem;
 import cz.cvut.fit.project.skld.api.core.OrderIn;
 import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.SessionFactory;
@@ -22,5 +23,9 @@ public class OrderInDAO extends AbstractDAO<OrderIn> {
 
     public List<OrderIn> findAll() {
         return list(namedQuery("OrderIn.findAll"));
+    }
+
+    public void removeLineItem(LineItem li) {
+        currentSession().delete(li);
     }
 }

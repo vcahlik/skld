@@ -51,6 +51,11 @@ public class Order {
         return m;
     }
 
+    public void setHandlingDetails(User handler) {
+        this.handler = handler;
+        this.handledAt = Instant.now();
+    }
+
     public long getId() {
         return id;
     }
