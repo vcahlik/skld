@@ -46,8 +46,9 @@ public class OrderInRepresentation {
         this.handledBy = order.getHandler();
 
         this.products = new ArrayList<ProductRepresentation>();
-        for (LineItem p : order.getLineItems()) {
-            products.add(new ProductRepresentation(p.getProduct().getId(), p.getProduct().getName(), p.getQuantity()));
+        for (LineItem li : order.getLineItems()) {
+            ProductRepresentation pRep = new ProductRepresentation(li);
+            this.products.add(pRep);
         }
     }
 
