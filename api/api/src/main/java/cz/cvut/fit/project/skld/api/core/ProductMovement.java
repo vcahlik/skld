@@ -28,7 +28,7 @@ public class ProductMovement {
     private String location;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "FK_Product_User"))
+    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "FK_Product_User"), nullable = false)
     private User user;
 
     public ProductMovement() {}
@@ -41,20 +41,21 @@ public class ProductMovement {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof ProductMovement)) {
-            return false;
-        }
+        if (this == o) return true;
+        if (!(o instanceof ProductMovement)) return false;
+        ProductMovement that = (ProductMovement) o;
+        return id == that.id &&
+                quantity == that.quantity &&
+                missing == that.missing &&
+                Objects.equals(at, that.at) &&
+                Objects.equals(product, that.product) &&
+                Objects.equals(location, that.location) &&
+                Objects.equals(user, that.user);
+    }
 
-        final ProductMovement that = (ProductMovement) o;
+    @Override
+    public int hashCode() {
 
-        return Objects.equals(this.id, that.id) &&
-                Objects.equals(this.at, that.at) &&
-                Objects.equals(this.quantity, that.quantity) &&
-                Objects.equals(this.missing, that.missing) &&
-                Objects.equals(this.product, that.product) &&
-                Objects.equals(this.user, that.user);
+        return Objects.hash(id, at, quantity, missing, product, location, user);
     }
 }

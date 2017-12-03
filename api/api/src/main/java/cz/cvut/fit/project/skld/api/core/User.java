@@ -52,24 +52,6 @@ public class User implements Principal {
         return pin.equals(comparedPIN);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof User)) {
-            return false;
-        }
-
-        final User that = (User) o;
-
-        return Objects.equals(this.id, that.id) &&
-                Objects.equals(this.isAdmin, that.isAdmin) &&
-                Objects.equals(this.createdAt, that.createdAt) &&
-                Objects.equals(this.blockedAt, that.blockedAt) &&
-                Objects.equals(this.pin, that.pin);
-    }
-
     public long getId() {
         return id;
     }
@@ -112,5 +94,24 @@ public class User implements Principal {
 
     public void setAdmin(boolean admin) {
         isAdmin = admin;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return id == user.id &&
+                isAdmin == user.isAdmin &&
+                Objects.equals(name, user.name) &&
+                Objects.equals(createdAt, user.createdAt) &&
+                Objects.equals(blockedAt, user.blockedAt) &&
+                Objects.equals(pin, user.pin);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, name, createdAt, blockedAt, pin, isAdmin);
     }
 }
