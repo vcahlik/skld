@@ -4,10 +4,7 @@ import com.github.toastshaman.dropwizard.auth.jwt.JwtAuthFilter;
 import cz.cvut.fit.project.skld.api.auth.UserAuthenticator;
 import cz.cvut.fit.project.skld.api.auth.UserAuthorizer;
 import cz.cvut.fit.project.skld.api.core.*;
-import cz.cvut.fit.project.skld.api.db.OrderInDAO;
-import cz.cvut.fit.project.skld.api.db.PositionDAO;
-import cz.cvut.fit.project.skld.api.db.ProductDAO;
-import cz.cvut.fit.project.skld.api.db.UserDAO;
+import cz.cvut.fit.project.skld.api.db.*;
 import cz.cvut.fit.project.skld.api.resources.*;
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
@@ -54,6 +51,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         final UserDAO userDAO = new UserDAO(hibernateBundle.getSessionFactory());
         final PositionDAO posDAO = new PositionDAO(hibernateBundle.getSessionFactory());
         final OrderInDAO orderInDAO = new OrderInDAO(hibernateBundle.getSessionFactory());
+        final MovementDAO movementDAO = new MovementDAO(hibernateBundle.getSessionFactory());
 
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
@@ -78,7 +76,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new ProductsResource(productDAO));
         environment.jersey().register(new ProductResource(productDAO, posDAO));
         environment.jersey().register(new OrderInsResource(orderInDAO, productDAO));
-        environment.jersey().register(new OrderInResource(orderInDAO, productDAO));
+        environment.jersey().register(new OrderInResource(orderInDAO, productDAO, movementDAO));
     }
 
 }

@@ -15,7 +15,7 @@ public class ProductMovement {
     private Instant at;
 
     @Column(nullable = false)
-    private int quantity;
+    private long quantity;
 
     @Column(nullable = false)
     private boolean missing;
@@ -33,10 +33,69 @@ public class ProductMovement {
 
     public ProductMovement() {}
 
-    public ProductMovement(Product product, int qty, String destination) {
+    public ProductMovement(Product product, long qty, String destination, User creator) {
         this.product = product;
         quantity = qty;
         location = destination;
+        user = creator;
+        at = Instant.now();
+        missing = false;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Instant getAt() {
+        return at;
+    }
+
+    public void setAt(Instant at) {
+        this.at = at;
+    }
+
+    public long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(long quantity) {
+        this.quantity = quantity;
+    }
+
+    public boolean isMissing() {
+        return missing;
+    }
+
+    public void setMissing(boolean missing) {
+        this.missing = missing;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
@@ -55,7 +114,6 @@ public class ProductMovement {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(id, at, quantity, missing, product, location, user);
     }
 }

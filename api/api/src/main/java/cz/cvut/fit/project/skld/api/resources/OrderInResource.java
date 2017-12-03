@@ -2,13 +2,12 @@ package cz.cvut.fit.project.skld.api.resources;
 
 import cz.cvut.fit.project.skld.api.api.OrderInRepresentation;
 import cz.cvut.fit.project.skld.api.api.ProductRepresentation;
-import cz.cvut.fit.project.skld.api.core.LineItem;
-import cz.cvut.fit.project.skld.api.core.OrderIn;
-import cz.cvut.fit.project.skld.api.core.OrderState;
-import cz.cvut.fit.project.skld.api.core.Product;
+import cz.cvut.fit.project.skld.api.core.*;
+import cz.cvut.fit.project.skld.api.db.MovementDAO;
 import cz.cvut.fit.project.skld.api.db.OrderInDAO;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.util.WebAppExceptionSupplier;
+import io.dropwizard.auth.Auth;
 import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +15,10 @@ import org.slf4j.LoggerFactory;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Path("/orders/in/{id}")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -26,10 +28,12 @@ public class OrderInResource {
 
     private final OrderInDAO orderInDAO;
     private final ProductDAO productDAO;
+    private final MovementDAO movementDAO;
 
-    public OrderInResource(OrderInDAO orderInDAO, ProductDAO productDAO) {
+    public OrderInResource(OrderInDAO orderInDAO, ProductDAO productDAO, MovementDAO movementDAO) {
         this.orderInDAO = orderInDAO;
         this.productDAO = productDAO;
+        this.movementDAO = movementDAO;
     }
 
     @GET
@@ -70,5 +74,66 @@ public class OrderInResource {
             }
         }
         return new OrderInRepresentation(order);
+    }
+
+
+    @POST
+    @UnitOfWork
+    @Path("/close")
+    public OrderInRepresentation closeOrder(@Auth User user, @PathParam("id") long id, OrderInRepresentation request) {
+        OrderIn order = orderInDAO.findById(id).orElseThrow(
+                new WebAppExceptionSupplier("Specified Order was not found", Response.Status.NOT_FOUND));
+        if (order.getState() != OrderState.OPEN) {
+            throw new WebApplicationException("You can only close open orders", Response.Status.BAD_REQUEST);
+        }
+        Map<Long, LineItem> lineItems = order.lineItemMap();
+        Set<Long> product_ids = request.getProducts()
+                .stream()
+                .map((ProductRepresentation pr) -> pr.getId())
+                .collect(Collectors.toSet());
+        product_ids.removeAll(lineItems.keySet());
+        if (!product_ids.isEmpty()) {
+            throw new WebApplicationException("Products you are trying to allocate are not present in this order",
+                    Response.Status.BAD_REQUEST);
+        }
+
+        for (ProductRepresentation pr : request.getProducts()) {
+            Product product = productDAO.findById(pr.getId()).orElseThrow(
+                    new WebAppExceptionSupplier("Couldn't find product you are allocating", Response.Status.NOT_FOUND));
+            Map<String, Long> positions = pr.getPositions();
+            LineItem lineItem = lineItems.get(product.getId());
+            if (sumMapKeys(positions) > lineItem.getQuantity()) {
+                throw new WebApplicationException("You are trying to allocate more pieces of product than ordered", Response.Status.BAD_REQUEST);
+            }
+            for (String position : positions.keySet()) {
+                ProductMovement pm = new ProductMovement(product, positions.get(position), position, user);
+                movementDAO.create(pm);
+                lineItem.getProductAllocations().add(pm);
+            }
+        }
+        order.setState(OrderState.CLOSED);
+        order.setHandlingDetails(user);
+        return new OrderInRepresentation(order);
+    }
+
+    @POST
+    @UnitOfWork
+    @Path("/refuse")
+    public OrderInRepresentation refuseOrder(@Auth User user, @PathParam("id") long id) {
+        OrderIn order = orderInDAO.findById(id).orElseThrow(new WebAppExceptionSupplier("Specified Order was not found", Response.Status.NOT_FOUND));
+        if (order.getState() != OrderState.OPEN) {
+            throw new WebApplicationException("You can only refuse open orders", Response.Status.BAD_REQUEST);
+        }
+        order.setState(OrderState.REFUSED);
+        order.setHandlingDetails(user);
+        return new OrderInRepresentation(order);
+    }
+
+    private long sumMapKeys(Map<String, Long> m) {
+        long sum = 0;
+        for (String k : m.keySet()) {
+            sum += m.get(k);
+        }
+        return sum;
     }
 }
