@@ -15,7 +15,7 @@
                <children>
                   <VBox alignment="TOP_CENTER">
                      <children>
-                        <HBox fx:id="editProductType" />
+                        <AnchorPane fx:id="editProductType" />
                         <Button fx:id="submitButton" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Uložit" />
                      </children>
                   </VBox>

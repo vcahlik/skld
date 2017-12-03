@@ -1,8 +1,7 @@
 package cz.cvut.fit.si1.skld.client.components.edit_product_type;
 
-import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
+import cz.cvut.fit.si1.skld.client.Handler;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -27,11 +26,8 @@ public class EditProductTypeFragmentHandler extends Handler {
         inputID.setText(owner.getEditingProductType().getId());
         inputName.setText(owner.getEditingProductType().getName());
 
-        inputID.setDisable(owner.isDisabled());
+        inputID.setDisable(owner.isDisabled() || !owner.isIdEditEnabled());
         inputName.setDisable(owner.isDisabled());
-        if (!owner.isDisabled()) {
-            inputID.setDisable(!owner.isIdEditEnabled());
-        }
     }
 
     public String getID() {

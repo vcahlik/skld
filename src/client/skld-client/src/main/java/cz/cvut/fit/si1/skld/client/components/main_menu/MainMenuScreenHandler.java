@@ -26,6 +26,11 @@ public class MainMenuScreenHandler extends Handler {
     }
 
     @FXML
+    private void handleNewOrderInButtonAction(ActionEvent event) {
+        owner.newOrderIn();
+    }
+
+    @FXML
     private void handleAddProductTypeButtonAction(ActionEvent event) {
         owner.addProductType();
     }
@@ -34,5 +39,4 @@ public class MainMenuScreenHandler extends Handler {
     private void handleChangeProductTypeButtonAction(ActionEvent event) {
         owner.changeProductType();
     }
-
 }
