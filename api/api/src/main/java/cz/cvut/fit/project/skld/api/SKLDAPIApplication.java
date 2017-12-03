@@ -1,5 +1,9 @@
 package cz.cvut.fit.project.skld.api;
 
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import com.github.toastshaman.dropwizard.auth.jwt.JwtAuthFilter;
 import cz.cvut.fit.project.skld.api.auth.UserAuthenticator;
 import cz.cvut.fit.project.skld.api.auth.UserAuthorizer;
@@ -61,6 +65,10 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
             .setVerificationKey(new HmacKey(key)) // verify the signature with the public key
             .setRelaxVerificationKeyValidation() // relaxes key length requirement
             .build(); // create the JwtConsumer instance
+        environment.getObjectMapper().findAndRegisterModules();
+
+        // Ye who removes this, prepare for your ISO formatted dates in JSON to become floats.
+        environment.getObjectMapper().disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 
         environment.jersey().register(new AuthDynamicFeature(
                 new JwtAuthFilter.Builder<User>()
