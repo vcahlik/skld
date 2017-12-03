@@ -8,10 +8,7 @@ import cz.cvut.fit.project.skld.api.db.OrderInDAO;
 import cz.cvut.fit.project.skld.api.db.PositionDAO;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.db.UserDAO;
-import cz.cvut.fit.project.skld.api.resources.AuthResource;
-import cz.cvut.fit.project.skld.api.resources.OrderInsResource;
-import cz.cvut.fit.project.skld.api.resources.ProductResource;
-import cz.cvut.fit.project.skld.api.resources.ProductsResource;
+import cz.cvut.fit.project.skld.api.resources.*;
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
 import io.dropwizard.auth.AuthValueFactoryProvider;
@@ -81,6 +78,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new ProductsResource(productDAO));
         environment.jersey().register(new ProductResource(productDAO, posDAO));
         environment.jersey().register(new OrderInsResource(orderInDAO, productDAO));
+        environment.jersey().register(new OrderInResource(orderInDAO, productDAO));
     }
 
 }

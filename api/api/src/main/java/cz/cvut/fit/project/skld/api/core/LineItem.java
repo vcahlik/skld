@@ -19,6 +19,7 @@ public class LineItem {
     private Product product;
 
     @OneToMany(orphanRemoval = true)
+    @JoinTable(name = "line_item_allocations", joinColumns = {@JoinColumn(name = "line_item_id")}, inverseJoinColumns = {@JoinColumn(name = "product_movement_id")})
     private List<ProductMovement> productAllocations;
 
     @ManyToOne

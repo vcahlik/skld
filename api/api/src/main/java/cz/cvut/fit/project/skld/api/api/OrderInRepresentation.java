@@ -3,7 +3,6 @@ package cz.cvut.fit.project.skld.api.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.cvut.fit.project.skld.api.core.LineItem;
 import cz.cvut.fit.project.skld.api.core.OrderIn;
-import cz.cvut.fit.project.skld.api.core.Product;
 import cz.cvut.fit.project.skld.api.core.User;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -72,12 +71,12 @@ public class OrderInRepresentation {
         this.supplierName = supplierName;
     }
 
-    @JsonProperty("delivery_date")
+    @JsonProperty
     public Date getDeliveryDate() {
         return deliveryDate;
     }
 
-    @JsonProperty("delivery_date")
+    @JsonProperty
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
     }
