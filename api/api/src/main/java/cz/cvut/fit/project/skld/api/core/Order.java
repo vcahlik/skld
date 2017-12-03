@@ -2,9 +2,7 @@ package cz.cvut.fit.project.skld.api.core;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name="orders")
@@ -43,6 +41,14 @@ public class Order {
         this.state = OrderState.OPEN;
         this.creator = creator;
         this.lineItems = new ArrayList<LineItem>();
+    }
+
+    public Map<Long, LineItem> lineItemMap() {
+        HashMap<Long, LineItem> m = new HashMap<>();
+        for (LineItem li : getLineItems()) {
+            m.put(li.getProduct().getId(), li);
+        }
+        return m;
     }
 
     public long getId() {
