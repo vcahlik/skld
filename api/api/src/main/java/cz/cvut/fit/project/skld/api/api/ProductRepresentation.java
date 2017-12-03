@@ -1,6 +1,8 @@
 package cz.cvut.fit.project.skld.api.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import cz.cvut.fit.project.skld.api.core.LineItem;
+import cz.cvut.fit.project.skld.api.core.ProductMovement;
 import cz.cvut.fit.project.skld.api.core.ProductPosition;
 
 import javax.validation.constraints.NotNull;
@@ -41,12 +43,26 @@ public class ProductRepresentation {
         }
     }
 
+    public ProductRepresentation(LineItem li) {
+        this.id = li.getProduct().getId();
+        this.name = li.getProduct().getName();
+        this.quantity = 0;
+        if (!li.getProductAllocations().isEmpty()) {
+            this.positions = new HashMap<>();
+        }
+        for (ProductMovement pm : li.getProductAllocations()) {
+            this.positions.put(pm.getLocation(), pm.getQuantity());
+            this.quantity += pm.getQuantity();
+        }
+    }
+
     public ProductRepresentation(long id, String name, long quantity) {
         this.id = id;
         this.name = name;
         this.positions = null;
         this.quantity = quantity;
     }
+
 
     @JsonProperty
     public long getId() {
