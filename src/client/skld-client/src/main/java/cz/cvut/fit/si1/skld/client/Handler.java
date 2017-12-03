@@ -1,13 +1,15 @@
 package cz.cvut.fit.si1.skld.client;
 
-public abstract class Handler {
-    private FXMLFragment fxmlFragment;
+import cz.cvut.fit.si1.skld.client.resources.Files;
 
-    public Handler(FXMLFragment fxmlFragment) {
-        this.fxmlFragment = fxmlFragment;
+public abstract class Handler {
+    private FXMLFragmentType fxmlFragmentType;
+
+    public Handler(FXMLFragmentType fxmlFragmentType) {
+        this.fxmlFragmentType = fxmlFragmentType;
     }
 
     public String getFXMLFilePath() {
-        return fxmlFragment.getFXMLFilePath();
+        return Files.getFXMLFilePath(fxmlFragmentType);
     }
 }

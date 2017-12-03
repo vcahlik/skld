@@ -1,7 +1,7 @@
 package cz.cvut.fit.si1.skld.client.components.session_bar;
 
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.FXMLFragment;
+import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -13,7 +13,7 @@ public class SessionBarFragmentHandler extends Handler {
     private Label signedUser;
 
     public SessionBarFragmentHandler() {
-        super(FXMLFragment.SESSION_BAR_FRAGMENT);
+        super(FXMLFragmentType.SESSION_BAR_FRAGMENT);
     }
 
     public void setOwner(SessionBarFragment owner) {
