@@ -3,13 +3,13 @@ package cz.cvut.fit.project.skld.api;
 import com.github.toastshaman.dropwizard.auth.jwt.JwtAuthFilter;
 import cz.cvut.fit.project.skld.api.auth.UserAuthenticator;
 import cz.cvut.fit.project.skld.api.auth.UserAuthorizer;
-import cz.cvut.fit.project.skld.api.core.Product;
-import cz.cvut.fit.project.skld.api.core.ProductMovement;
-import cz.cvut.fit.project.skld.api.core.User;
+import cz.cvut.fit.project.skld.api.core.*;
+import cz.cvut.fit.project.skld.api.db.OrderInDAO;
 import cz.cvut.fit.project.skld.api.db.PositionDAO;
 import cz.cvut.fit.project.skld.api.db.ProductDAO;
 import cz.cvut.fit.project.skld.api.db.UserDAO;
 import cz.cvut.fit.project.skld.api.resources.AuthResource;
+import cz.cvut.fit.project.skld.api.resources.OrderInsResource;
 import cz.cvut.fit.project.skld.api.resources.ProductResource;
 import cz.cvut.fit.project.skld.api.resources.ProductsResource;
 import io.dropwizard.Application;
@@ -33,7 +33,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
     }
 
     private final HibernateBundle<SKLDAPIConfiguration> hibernateBundle =
-            new HibernateBundle<SKLDAPIConfiguration>(User.class, Product.class, ProductMovement.class) {
+            new HibernateBundle<SKLDAPIConfiguration>(User.class, Product.class, ProductMovement.class, Order.class, OrderIn.class, LineItem.class) {
                 @Override
                 public DataSourceFactory getDataSourceFactory(SKLDAPIConfiguration configuration) {
                     return configuration.getDataSourceFactory();
@@ -56,6 +56,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         final ProductDAO productDAO = new ProductDAO(hibernateBundle.getSessionFactory());
         final UserDAO userDAO = new UserDAO(hibernateBundle.getSessionFactory());
         final PositionDAO posDAO = new PositionDAO(hibernateBundle.getSessionFactory());
+        final OrderInDAO orderInDAO = new OrderInDAO(hibernateBundle.getSessionFactory());
 
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
@@ -79,6 +80,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new AuthResource(key, userDAO));
         environment.jersey().register(new ProductsResource(productDAO));
         environment.jersey().register(new ProductResource(productDAO, posDAO));
+        environment.jersey().register(new OrderInsResource(orderInDAO, productDAO));
     }
 
 }

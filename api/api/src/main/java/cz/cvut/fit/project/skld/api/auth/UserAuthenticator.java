@@ -9,6 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.context.internal.ManagedSessionContext;
 import org.jose4j.jwt.MalformedClaimException;
+import org.jose4j.jwt.consumer.InvalidJwtException;
 import org.jose4j.jwt.consumer.JwtContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,8 +35,7 @@ public class UserAuthenticator implements Authenticator<JwtContext, User> {
             try {
                 final String subject = jwtContext.getJwtClaims().getSubject();
                 return userDAO.findById(Long.parseLong(subject));
-            }
-            catch (MalformedClaimException e) {
+            } catch (MalformedClaimException e) {
                 LOGGER.error("Received a malformed JWT claim: {}", e);
                 return Optional.empty();
             }

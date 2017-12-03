@@ -3,6 +3,7 @@ package cz.cvut.fit.project.skld.api.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.cvut.fit.project.skld.api.core.ProductPosition;
 
+import javax.validation.constraints.NotNull;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,12 +13,39 @@ public class ProductRepresentation {
 
     private String name;
 
-    private List<ProductPosition> positions;
+    private Map<String, Long> positions;
 
-    public ProductRepresentation(long id, String name, List<ProductPosition> positions) {
+    private long quantity;
+
+    public ProductRepresentation() {}
+
+    public ProductRepresentation(long id, String name, Map<String, Long> positions) {
         this.id = id;
         this.name = name;
         this.positions = positions;
+    }
+
+
+    public ProductRepresentation(long id, String name, @NotNull List<ProductPosition> positions) {
+        this.id = id;
+        this.name = name;
+        if (positions.size() > 0) {
+            this.positions = new HashMap<>();
+            for (ProductPosition pos : positions) {
+                this.positions.put(pos.getPosition(), pos.getQuantity());
+                this.quantity += pos.getQuantity();
+            }
+        } else {
+            this.positions = null;
+            this.quantity = 0;
+        }
+    }
+
+    public ProductRepresentation(long id, String name, long quantity) {
+        this.id = id;
+        this.name = name;
+        this.positions = null;
+        this.quantity = quantity;
     }
 
     @JsonProperty
@@ -42,15 +70,21 @@ public class ProductRepresentation {
 
     @JsonProperty
     public long getQuantity() {
-        return positions.stream().mapToLong(ProductPosition::getQuantity).sum();
+        return quantity;
+    }
+
+    @JsonProperty
+    public void setQuantity(long quantity) {
+        this.quantity = quantity;
     }
 
     @JsonProperty
     public Map<String, Long> getPositions() {
-        Map<String, Long> p = new HashMap<>();
-        for (ProductPosition pos : positions) {
-            p.put(pos.getPosition(), pos.getQuantity());
-        }
-        return p;
+        return this.positions;
+    }
+
+    @JsonProperty
+    public void setPositions(Map<String, Long> positions) {
+        this.positions = positions;
     }
 }
