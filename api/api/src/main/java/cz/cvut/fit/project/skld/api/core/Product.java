@@ -20,7 +20,7 @@ public class Product {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "created_by", foreignKey = @ForeignKey(name = "FK_Product_Creator"))
+    @JoinColumn(name = "created_by", foreignKey = @ForeignKey(name = "FK_Product_Creator"), nullable = false)
     private User creator;
 
     public Product() {}
@@ -29,22 +29,6 @@ public class Product {
         this.id = id;
         this.name = name;
         this.creator = creator;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof Product)) {
-            return false;
-        }
-
-        final Product that = (Product) o;
-
-        return Objects.equals(this.id, that.id) &&
-                Objects.equals(this.name, that.name) &&
-                Objects.equals(this.creator, that.creator);
     }
 
     public long getId() {
@@ -69,5 +53,21 @@ public class Product {
 
     public void setCreator(User creator) {
         this.creator = creator;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product)) return false;
+        Product product = (Product) o;
+        return id == product.id &&
+                Objects.equals(name, product.name) &&
+                Objects.equals(creator, product.creator);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, creator);
     }
 }
