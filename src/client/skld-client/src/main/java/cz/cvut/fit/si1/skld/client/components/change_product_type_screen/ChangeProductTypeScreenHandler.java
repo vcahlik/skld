@@ -9,7 +9,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
 
 public class ChangeProductTypeScreenHandler extends Handler {
     private ChangeProductTypeScreen owner;
@@ -18,7 +17,7 @@ public class ChangeProductTypeScreenHandler extends Handler {
     private AnchorPane findProductType;
 
     @FXML
-    private HBox editProductType;
+    private AnchorPane editProductType;
 
     @FXML
     private Button submitButton;
@@ -38,7 +37,7 @@ public class ChangeProductTypeScreenHandler extends Handler {
     }
 
     public void setEditProductTypeFragment(EditProductTypeFragment editProductTypeFragment) {
-        editProductType.getChildren().setAll((HBox)editProductTypeFragment.getRoot());
+        editProductType.getChildren().setAll((AnchorPane)editProductTypeFragment.getRoot());
     }
 
     public void refresh() {

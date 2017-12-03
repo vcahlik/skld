@@ -34,6 +34,12 @@ public class Files {
             case FIND_PRODUCT_TYPE_FRAGMENT:
                 fileName = "/fxml/FindProductTypeFragment.fxml";
                 break;
+            case NEW_ORDER_IN_SCREEN:
+                fileName = "/fxml/NewOrderInScreen.fxml";
+                break;
+            case EDIT_ORDER_IN_FRAGMENT:
+                fileName = "/fxml/EditOrderInFragment.fxml";
+                break;
             default:
                 throw new RuntimeException("FXML file path not added");
         }

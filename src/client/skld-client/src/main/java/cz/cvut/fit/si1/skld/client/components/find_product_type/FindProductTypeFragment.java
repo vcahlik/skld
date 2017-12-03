@@ -28,11 +28,11 @@ public class FindProductTypeFragment extends Fragment {
         return handler;
     }
 
-    public ProductType getSelectedProductType() {
+    public ProductType getSelected() {
         return selectedProductType;
     }
 
-    public void setSelectedProductType(ProductType selectedProductType) {
+    protected void setSelectedProductType(ProductType selectedProductType) {
         if (this.selectedProductType != selectedProductType) {
             this.selectedProductType = selectedProductType;
             getParent().notify(this, NotifyType.CHANGE);

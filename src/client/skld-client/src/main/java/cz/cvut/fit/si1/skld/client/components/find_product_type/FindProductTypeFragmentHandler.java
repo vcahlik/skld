@@ -4,7 +4,6 @@ import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.domain.ProductType;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;

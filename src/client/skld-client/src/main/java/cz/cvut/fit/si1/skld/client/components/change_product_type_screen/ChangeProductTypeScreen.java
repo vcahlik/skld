@@ -41,7 +41,7 @@ public class ChangeProductTypeScreen extends Screen {
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == findProductTypeFragment && notifyType == NotifyType.CHANGE) {
-            ProductType editingProductType = findProductTypeFragment.getSelectedProductType();
+            ProductType editingProductType = findProductTypeFragment.getSelected();
             if (editingProductType != null) {
                 changeEditingProductType(editingProductType);
             }

@@ -3,6 +3,8 @@ package cz.cvut.fit.si1.skld.client.components.main_menu;
 import cz.cvut.fit.si1.skld.client.*;
 import cz.cvut.fit.si1.skld.client.components.add_product_type_screen.AddProductTypeFrame;
 import cz.cvut.fit.si1.skld.client.components.change_product_type_screen.ChangeProductTypeFrame;
+import cz.cvut.fit.si1.skld.client.components.new_order_in_screen.NewOrderInFrame;
+import cz.cvut.fit.si1.skld.client.components.new_order_in_screen.NewOrderInScreen;
 import cz.cvut.fit.si1.skld.client.components.session_bar.SessionBarFragment;
 
 public class MainMenuScreen extends Screen {
@@ -39,6 +41,11 @@ public class MainMenuScreen extends Screen {
                 getSource().pass(this, PassResult.LOGOUT);
                 break;
         }
+    }
+
+    public void newOrderIn() {
+        NewOrderInFrame frame = new NewOrderInFrame(this);
+        frame.follow();
     }
 
     public void addProductType() {

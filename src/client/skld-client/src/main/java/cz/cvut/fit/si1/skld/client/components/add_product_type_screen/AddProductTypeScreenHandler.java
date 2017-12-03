@@ -1,17 +1,17 @@
 package cz.cvut.fit.si1.skld.client.components.add_product_type_screen;
 
+import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
-import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.AnchorPane;
 
 public class AddProductTypeScreenHandler extends Handler {
     private AddProductTypeScreen owner;
 
     @FXML
-    private HBox editProductType;
+    private AnchorPane editProductType;
 
     public AddProductTypeScreenHandler() {
         super(FXMLFragmentType.ADD_PRODUCT_TYPE_SCREEN);
@@ -22,7 +22,7 @@ public class AddProductTypeScreenHandler extends Handler {
     }
 
     public void setEditProductTypeFragment(EditProductTypeFragment editProductTypeFragment) {
-        editProductType.getChildren().setAll((HBox)editProductTypeFragment.getRoot());
+        editProductType.getChildren().setAll((AnchorPane)editProductTypeFragment.getRoot());
     }
 
     @FXML
