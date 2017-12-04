@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>cz.cvut.fit.project.skld.api</groupId>
-  <artifactId>api</artifactId>
+  <groupId>cz.cvut.fit.project.skld</groupId>
+  <artifactId>application</artifactId>
   <name>SKLDAPI</name>
   <version>0.1</version>
   <prerequisites>
@@ -100,7 +100,7 @@
   </dependencyManagement>
   <properties>
     <dropwizard.version>1.2.2</dropwizard.version>
-    <mainClass>cz.cvut.fit.project.skld.api.SKLDAPIApplication</mainClass>
+    <mainClass>cz.cvut.fit.project.skld.application.SKLDAPIApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
