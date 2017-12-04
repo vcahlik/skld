@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -30,6 +31,13 @@ public class OrderInRepresentation {
     private List<ProductRepresentation> products;
 
     public OrderInRepresentation() {}
+
+    public OrderInRepresentation(long id, String supplierName) {
+        this.id = id;
+        this.supplierName = supplierName;
+        this.state = "OPEN";
+        this.products = new ArrayList<>();
+    }
 
     @JsonProperty
     public long getId() {

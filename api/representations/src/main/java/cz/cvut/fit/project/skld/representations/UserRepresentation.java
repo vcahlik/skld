@@ -51,12 +51,12 @@ public class UserRepresentation {
         this.createdAt = createdAt;
     }
 
-    @JsonProperty("created_at")
+    @JsonProperty("is_admin")
     public boolean isAdmin() {
         return isAdmin;
     }
 
-    @JsonProperty("created_at")
+    @JsonProperty("is_admin")
     public void setAdmin(boolean admin) {
         isAdmin = admin;
     }
