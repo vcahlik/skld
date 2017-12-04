@@ -47,6 +47,6 @@ public class ProductResource {
     }
 
     private ProductRepresentation generateRepresentation(Product p) {
-        return new ProductRepresentation(p.getId(), p.getName(), positionDAO.findForProductId(p.getId()));
+        return RepresentationConverter.representProduct(p, positionDAO.findForProductId(p.getId()));
     }
 }

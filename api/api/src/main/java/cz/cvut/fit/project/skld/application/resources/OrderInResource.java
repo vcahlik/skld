@@ -44,7 +44,7 @@ public class OrderInResource {
     @UnitOfWork
     public OrderInRepresentation getOrder(@PathParam("id") long id) {
         OrderIn order = orderInDAO.findById(id).orElseThrow(new WebAppExceptionSupplier("Specified Order was not found", Response.Status.NOT_FOUND));
-        return new OrderInRepresentation(order);
+        return RepresentationConverter.representOrderIn(order);
     }
 
     @PUT
@@ -77,7 +77,7 @@ public class OrderInResource {
                 order.getLineItems().add(new LineItem(prod.getQuantity(), lineItemProduct, order));
             }
         }
-        return new OrderInRepresentation(order);
+        return RepresentationConverter.representOrderIn(order);
     }
 
 
@@ -117,7 +117,7 @@ public class OrderInResource {
         }
         order.setState(OrderState.CLOSED);
         order.setHandlingDetails(user);
-        return new OrderInRepresentation(order);
+        return RepresentationConverter.representOrderIn(order);
     }
 
     @POST
@@ -130,7 +130,7 @@ public class OrderInResource {
         }
         order.setState(OrderState.REFUSED);
         order.setHandlingDetails(user);
-        return new OrderInRepresentation(order);
+        return RepresentationConverter.representOrderIn(order);
     }
 
     private long sumMapKeys(Map<String, Long> m) {

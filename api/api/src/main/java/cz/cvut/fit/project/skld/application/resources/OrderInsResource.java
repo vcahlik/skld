@@ -49,7 +49,7 @@ public class OrderInsResource {
             order.getLineItems().add(li);
         }
         orderInDAO.create(order);
-        return new OrderInRepresentation(order);
+        return RepresentationConverter.representOrderIn(order);
     }
 
     @GET
@@ -57,6 +57,6 @@ public class OrderInsResource {
     public List<OrderInRepresentation> getAll() {
         List<OrderIn> orders = orderInDAO.findAll();
 
-        return orders.stream().map(OrderInRepresentation::new).collect(Collectors.toList());
+        return orders.stream().map(RepresentationConverter::representOrderIn).collect(Collectors.toList());
     }
 }

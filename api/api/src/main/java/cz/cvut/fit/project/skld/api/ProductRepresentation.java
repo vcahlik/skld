@@ -1,15 +1,10 @@
 package cz.cvut.fit.project.skld.api;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import cz.cvut.fit.project.skld.application.core.LineItem;
-import cz.cvut.fit.project.skld.application.core.ProductMovement;
-import cz.cvut.fit.project.skld.application.core.ProductPosition;
-
-import javax.validation.constraints.NotNull;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductRepresentation {
     private long id;
 
@@ -17,7 +12,7 @@ public class ProductRepresentation {
 
     private Map<String, Long> positions;
 
-    private long quantity;
+    private Long quantity;
 
     public ProductRepresentation() {}
 
@@ -25,37 +20,6 @@ public class ProductRepresentation {
         this.id = id;
         this.name = name;
         this.positions = positions;
-    }
-
-
-    public ProductRepresentation(long id, String name, @NotNull List<ProductPosition> positions) {
-        this.id = id;
-        this.name = name;
-        if (positions.size() > 0) {
-            this.positions = new HashMap<>();
-            for (ProductPosition pos : positions) {
-                this.positions.put(pos.getPosition(), pos.getQuantity());
-                this.quantity += pos.getQuantity();
-            }
-        } else {
-            this.positions = null;
-            this.quantity = 0;
-        }
-    }
-
-    public ProductRepresentation(LineItem li) {
-        this.id = li.getProduct().getId();
-        this.name = li.getProduct().getName();
-        this.quantity = 0;
-        if (li.getProductAllocations() != null && !li.getProductAllocations().isEmpty()) {
-            this.positions = new HashMap<>();
-            for (ProductMovement pm : li.getProductAllocations()) {
-                this.positions.put(pm.getLocation(), pm.getQuantity());
-                this.quantity += pm.getQuantity();
-            }
-        } else {
-            this.quantity = li.getQuantity();
-        }
     }
 
     public ProductRepresentation(long id, String name, long quantity) {
@@ -87,12 +51,12 @@ public class ProductRepresentation {
     }
 
     @JsonProperty
-    public long getQuantity() {
+    public Long getQuantity() {
         return quantity;
     }
 
     @JsonProperty
-    public void setQuantity(long quantity) {
+    public void setQuantity(Long quantity) {
         this.quantity = quantity;
     }
 

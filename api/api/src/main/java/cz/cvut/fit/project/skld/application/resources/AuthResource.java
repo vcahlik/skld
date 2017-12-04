@@ -49,7 +49,7 @@ public class AuthResource {
         jws.setKey(new HmacKey(tokenKey));
 
         try {
-            return new LogInDetails(new UserRepresentation(user.getId(), user.getName(), user.getCreatedAt(), user.isAdmin()), jws.getCompactSerialization());
+            return new LogInDetails(RepresentationConverter.representUser(user), jws.getCompactSerialization());
         } catch (JoseException e) { throw new RuntimeException(e); }
     }
 }
