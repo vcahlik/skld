@@ -1,7 +1,7 @@
 package cz.cvut.fit.project.skld.application.resources;
 
-import cz.cvut.fit.project.skld.api.ProductEdit;
-import cz.cvut.fit.project.skld.api.ProductRepresentation;
+import cz.cvut.fit.project.skld.representations.ProductEdit;
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.core.Product;
 import cz.cvut.fit.project.skld.application.db.PositionDAO;
 import cz.cvut.fit.project.skld.application.db.ProductDAO;

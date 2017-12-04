@@ -1,8 +1,7 @@
 package cz.cvut.fit.project.skld.application.resources;
 
-import cz.cvut.fit.project.skld.api.LogInDetails;
-import cz.cvut.fit.project.skld.api.PIN;
-import cz.cvut.fit.project.skld.api.UserRepresentation;
+import cz.cvut.fit.project.skld.representations.LogInDetails;
+import cz.cvut.fit.project.skld.representations.PIN;
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.db.UserDAO;
 import cz.cvut.fit.project.skld.application.util.WebAppExceptionSupplier;
