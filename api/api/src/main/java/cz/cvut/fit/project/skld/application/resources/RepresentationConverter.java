@@ -25,7 +25,9 @@ class RepresentationConverter {
         rep.setHandledAt(order.getHandledAt());
         rep.setState(order.getState().toString());
         rep.setCreatedBy(representUser(order.getCreator()));
-        rep.setHandledBy(representUser(order.getHandler()));
+        if (order.getHandler() != null) {
+            rep.setHandledBy(representUser(order.getHandler()));
+        }
 
         ArrayList<ProductRepresentation> products = new ArrayList<ProductRepresentation>();
         for (LineItem li : order.getLineItems()) {
