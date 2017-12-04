@@ -9,6 +9,10 @@ public class PIN {
 
     public PIN() {}
 
+    public PIN(String pin) {
+        this.pin = pin;
+    }
+
     @JsonProperty("PIN")
     public String getPin() {
         return pin;
