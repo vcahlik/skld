@@ -1,4 +1,4 @@
-package cz.cvut.fit.project.skld.api;
+package cz.cvut.fit.project.skld.representations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;

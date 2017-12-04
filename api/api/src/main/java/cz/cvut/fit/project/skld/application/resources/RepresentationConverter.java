@@ -1,8 +1,8 @@
 package cz.cvut.fit.project.skld.application.resources;
 
-import cz.cvut.fit.project.skld.api.OrderInRepresentation;
-import cz.cvut.fit.project.skld.api.ProductRepresentation;
-import cz.cvut.fit.project.skld.api.UserRepresentation;
+import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
+import cz.cvut.fit.project.skld.representations.UserRepresentation;
 import cz.cvut.fit.project.skld.application.core.*;
 
 import javax.validation.constraints.NotNull;
