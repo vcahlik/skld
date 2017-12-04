@@ -20,12 +20,18 @@ public class ProductRepresentation {
         this.id = id;
         this.name = name;
         this.positions = positions;
+        //this.quantity = 0L;
     }
 
     public ProductRepresentation(long id, String name, long quantity) {
         this.id = id;
         this.name = name;
         this.positions = null;
+        this.quantity = quantity;
+    }
+
+    public ProductRepresentation(long id, long quantity) {
+        this.id = id;
         this.quantity = quantity;
     }
 

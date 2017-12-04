@@ -9,6 +9,10 @@ public class ProductEdit {
 
     public ProductEdit() {}
 
+    public ProductEdit(String name) {
+        this.name = name;
+    }
+
     @JsonProperty
     public String getName() {
         return name;
