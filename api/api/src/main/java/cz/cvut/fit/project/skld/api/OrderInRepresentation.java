@@ -1,13 +1,9 @@
 package cz.cvut.fit.project.skld.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import cz.cvut.fit.project.skld.application.core.LineItem;
-import cz.cvut.fit.project.skld.application.core.OrderIn;
-import cz.cvut.fit.project.skld.application.core.User;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -26,31 +22,14 @@ public class OrderInRepresentation {
 
     private String state;
 
-    private User createdBy;
+    private UserRepresentation createdBy;
 
-    private User handledBy;
+    private UserRepresentation handledBy;
 
     @NotEmpty
     private List<ProductRepresentation> products;
 
     public OrderInRepresentation() {}
-
-    public OrderInRepresentation(OrderIn order) {
-        this.id = order.getId();
-        this.supplierName = order.getSupplierName();
-        this.deliveryDate = order.getExpectedDelivery();
-        this.createdAt = order.getCreatedAt();
-        this.handledAt = order.getHandledAt();
-        this.state = order.getState().toString();
-        this.createdBy = order.getCreator();
-        this.handledBy = order.getHandler();
-
-        this.products = new ArrayList<ProductRepresentation>();
-        for (LineItem li : order.getLineItems()) {
-            ProductRepresentation pRep = new ProductRepresentation(li);
-            this.products.add(pRep);
-        }
-    }
 
     @JsonProperty
     public long getId() {
@@ -123,22 +102,22 @@ public class OrderInRepresentation {
     }
 
     @JsonProperty("created_by")
-    public User getCreatedBy() {
+    public UserRepresentation getCreatedBy() {
         return createdBy;
     }
 
     @JsonProperty("created_by")
-    public void setCreatedBy(User createdBy) {
+    public void setCreatedBy(UserRepresentation createdBy) {
         this.createdBy = createdBy;
     }
 
     @JsonProperty("handled_by")
-    public User getHandledBy() {
+    public UserRepresentation getHandledBy() {
         return handledBy;
     }
 
     @JsonProperty("handled_by")
-    public void setHandledBy(User handledBy) {
+    public void setHandledBy(UserRepresentation handledBy) {
         this.handledBy = handledBy;
     }
 }

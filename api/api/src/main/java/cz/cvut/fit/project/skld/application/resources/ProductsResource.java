@@ -1,5 +1,6 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.api.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.core.Product;
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.db.ProductDAO;
@@ -15,6 +16,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Path("/products")
 @Produces(MediaType.APPLICATION_JSON)
@@ -30,15 +32,16 @@ public class ProductsResource {
     @POST
     @UnitOfWork
     @RolesAllowed({"admin"})
-    public Product createProduct(@Auth User user, Product product) {
+    public ProductRepresentation createProduct(@Auth User user, Product product) {
         product.setCreator(user);
         LOGGER.debug("{} {} {}", product.getName(), product.getId(), product.getCreator());
-        return productsDAO.create(product);
+        productsDAO.create(product);
+        return RepresentationConverter.representProduct(product);
     }
 
     @GET
     @UnitOfWork
-    public List<Product> listProducts() {
-        return productsDAO.findAll();
+    public List<ProductRepresentation> listProducts() {
+        return productsDAO.findAll().stream().map(RepresentationConverter::representProduct).collect(Collectors.toList());
     }
 }
