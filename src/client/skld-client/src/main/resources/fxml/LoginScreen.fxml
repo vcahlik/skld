@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import javafx.scene.*?>
@@ -11,21 +12,26 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<HBox alignment="CENTER" prefHeight="637.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox alignment="CENTER" prefHeight="431.0" prefWidth="517.0">
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="229.0">
          <children>
             <Label alignment="CENTER" text="Přihlášení" />
             <HBox alignment="CENTER" prefHeight="77.0" prefWidth="229.0">
                <children>
                   <PasswordField id="passwordField" fx:id="passwordField" alignment="CENTER" prefHeight="25.0" prefWidth="148.0" />
-                  <Button id="submitButton" defaultButton="true" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="25.0" prefWidth="40.0" text="OK">
+                  <Button id="submitButton" fx:id="submitButton" defaultButton="true" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="25.0" prefWidth="40.0" text="OK">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
                </children>
             </HBox>
+            <Label fx:id="infoLabel" text="Nesprávné heslo" visible="false">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
          </children>
       </VBox>
    </children>

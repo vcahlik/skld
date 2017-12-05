@@ -1,8 +1,14 @@
 package cz.cvut.fit.si1.skld.client.components.add_product_type_screen;
 
-import cz.cvut.fit.si1.skld.client.*;
+import cz.cvut.fit.project.skld.client.exceptions.APIException;
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
+import cz.cvut.fit.si1.skld.client.Handler;
+import cz.cvut.fit.si1.skld.client.PassResult;
+import cz.cvut.fit.si1.skld.client.Passable;
+import cz.cvut.fit.si1.skld.client.Screen;
 import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
+
+import java.io.IOException;
 
 public class AddProductTypeScreen extends Screen {
     private AddProductTypeScreenHandler handler;
@@ -27,8 +33,21 @@ public class AddProductTypeScreen extends Screen {
     }
 
     public void addProductType() {
-        ProductType newProductType = editProductTypeFragment.getEdited();
-        System.out.println("New product: id: " + newProductType.getId() + ", name: " + newProductType.getName() + " -> SERVER");
+        ProductRepresentation newProductType = null;
+
+        try {
+            newProductType = editProductTypeFragment.getEdited();
+        } catch (NumberFormatException e) {
+            return;
+        }
+
+        try {
+            getApp().getHttpClient().createProduct(newProductType);
+        } catch (IOException | APIException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+
         getSource().pass(this, PassResult.DONE);
     }
 }

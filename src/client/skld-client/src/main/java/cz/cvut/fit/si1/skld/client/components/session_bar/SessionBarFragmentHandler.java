@@ -22,7 +22,7 @@ public class SessionBarFragmentHandler extends Handler {
 
     @FXML
     protected void initialize() {
-        signedUser.setText(owner.getApp().getSession().getSignedUser().getUserName());
+        signedUser.setText(owner.getApp().getHttpClient().getLoggedInUser().getName());
     }
 
     @FXML

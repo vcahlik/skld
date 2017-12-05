@@ -1,8 +1,9 @@
 package cz.cvut.fit.si1.skld.client.components.find_product_type;
 
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.si1.skld.client.FXMLFragmentType;
 import cz.cvut.fit.si1.skld.client.Handler;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
+import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -14,22 +15,22 @@ public class FindProductTypeFragmentHandler extends Handler {
     private FindProductTypeFragment owner;
 
     @FXML
-    private TableView<ProductType> productTypeTable;
+    private TableView<ProductRepresentation> productTypeTable;
 
     @FXML
-    private TableColumn<ProductType, String> idColumn;
+    private TableColumn<ProductRepresentation, Long> idColumn;
     @FXML
-    private TableColumn<ProductType, String> nameColumn;
+    private TableColumn<ProductRepresentation, String> nameColumn;
 
     @FXML
     private void initialize() {
-        idColumn.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getId()));
+        idColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
         nameColumn.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getName()));
     }
 
     @FXML
     private void handleProductTypeClickedAction() {
-        ProductType selected = productTypeTable.getSelectionModel().getSelectedItem();
+        ProductRepresentation selected = productTypeTable.getSelectionModel().getSelectedItem();
         if (selected != null) {
             owner.setSelectedProductType(selected);
         }
@@ -43,9 +44,9 @@ public class FindProductTypeFragmentHandler extends Handler {
         this.owner = owner;
     }
 
-    public void setProductTypes(List<ProductType> productTypes) {
+    public void setProductTypes(List<ProductRepresentation> productTypes) {
         productTypeTable.getItems().clear();
-        for (ProductType productType : productTypes) {
+        for (ProductRepresentation productType : productTypes) {
             productTypeTable.getItems().add(productType);
         }
     }
