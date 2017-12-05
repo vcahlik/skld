@@ -1,6 +1,10 @@
 package cz.cvut.fit.si1.skld.client;
 
+import cz.cvut.fit.project.skld.representations.LogInDetails;
+import cz.cvut.fit.project.skld.representations.UserRepresentation;
 import cz.cvut.fit.si1.skld.client.components.MainWindow;
+import cz.cvut.fit.si1.skld.client.network.exceptions.APIException;
+import cz.cvut.fit.si1.skld.client.network.http.SkldHttpClient;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -10,7 +14,9 @@ public class App extends Application implements Passable {
     private Session session;
     private MainWindow mainWindow;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, APIException {
+        UserRepresentation user = SkldHttpClient.getClientForPIN("http://localhost:8080", "1234").getLoggedInUser();
+        System.out.println(user.getName());
         launch(args);
     }
 
