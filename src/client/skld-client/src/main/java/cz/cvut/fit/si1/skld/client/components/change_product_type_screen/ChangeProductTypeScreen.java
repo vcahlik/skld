@@ -1,9 +1,13 @@
 package cz.cvut.fit.si1.skld.client.components.change_product_type_screen;
 
+import cz.cvut.fit.project.skld.client.exceptions.APIException;
+import cz.cvut.fit.project.skld.representations.ProductEdit;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.si1.skld.client.*;
 import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
 import cz.cvut.fit.si1.skld.client.components.find_product_type.FindProductTypeFragment;
+
+import java.io.IOException;
 
 public class ChangeProductTypeScreen extends Screen {
     private ChangeProductTypeScreenHandler handler;
@@ -48,14 +52,24 @@ public class ChangeProductTypeScreen extends Screen {
         }
     }
 
-    private void changeEditingProductType(ProductRepresentation editingProductType) {
-        editProductTypeFragment.setEditingProductType(editingProductType);
+    private void changeEditingProductType(ProductRepresentation product) {
+        editProductTypeFragment.fill(product);
         setEditEnabled(true);
     }
 
     public void submitChangedProductType() {
-        ProductRepresentation changedProductType = editProductTypeFragment.getEdited();
-        System.out.println("Change product: id: " + changedProductType.getId() + ", name: " + changedProductType.getName() + " -> SERVER");
+        ProductRepresentation selected = findProductTypeFragment.getSelected();
+
+        ProductEdit edit = new ProductEdit();
+        edit.setName(editProductTypeFragment.getEditedName());
+
+        try {
+            getApp().getHttpClient().changeProduct(selected.getId(), edit);
+        } catch (IOException | APIException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+
         reset();
     }
 

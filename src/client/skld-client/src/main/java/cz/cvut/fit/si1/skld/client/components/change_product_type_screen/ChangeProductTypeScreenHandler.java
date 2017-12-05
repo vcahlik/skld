@@ -42,6 +42,7 @@ public class ChangeProductTypeScreenHandler extends Handler {
 
     public void refresh() {
         submitButton.setDisable(!owner.isEditEnabled());
+        submitButton.setDefaultButton(true);
     }
 
     @FXML

@@ -23,8 +23,12 @@ public class EditProductTypeFragmentHandler extends Handler {
     }
 
     public void refresh() {
-        inputID.setText(Long.toString(owner.getEditingProductType().getId()));
-        inputName.setText(owner.getEditingProductType().getName());
+        if (owner.isIdSet()) {
+            inputID.setText(Long.toString(owner.getId()));
+        } else {
+            inputID.setText("");
+        }
+        inputName.setText(owner.getName());
 
         inputID.setDisable(owner.isDisabled() || !owner.isIdEditEnabled());
         inputName.setDisable(owner.isDisabled());
