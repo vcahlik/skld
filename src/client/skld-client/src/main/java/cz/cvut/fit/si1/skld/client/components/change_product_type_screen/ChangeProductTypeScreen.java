@@ -1,9 +1,9 @@
 package cz.cvut.fit.si1.skld.client.components.change_product_type_screen;
 
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.si1.skld.client.*;
 import cz.cvut.fit.si1.skld.client.components.edit_product_type.EditProductTypeFragment;
 import cz.cvut.fit.si1.skld.client.components.find_product_type.FindProductTypeFragment;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
 
 public class ChangeProductTypeScreen extends Screen {
     private ChangeProductTypeScreenHandler handler;
@@ -41,20 +41,20 @@ public class ChangeProductTypeScreen extends Screen {
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == findProductTypeFragment && notifyType == NotifyType.CHANGE) {
-            ProductType editingProductType = findProductTypeFragment.getSelected();
+            ProductRepresentation editingProductType = findProductTypeFragment.getSelected();
             if (editingProductType != null) {
                 changeEditingProductType(editingProductType);
             }
         }
     }
 
-    private void changeEditingProductType(ProductType editingProductType) {
+    private void changeEditingProductType(ProductRepresentation editingProductType) {
         editProductTypeFragment.setEditingProductType(editingProductType);
         setEditEnabled(true);
     }
 
     public void submitChangedProductType() {
-        ProductType changedProductType = editProductTypeFragment.getEdited();
+        ProductRepresentation changedProductType = editProductTypeFragment.getEdited();
         System.out.println("Change product: id: " + changedProductType.getId() + ", name: " + changedProductType.getName() + " -> SERVER");
         reset();
     }

@@ -1,20 +1,21 @@
 package cz.cvut.fit.si1.skld.client.components.find_product_type;
 
+import cz.cvut.fit.project.skld.client.exceptions.APIException;
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.si1.skld.client.Fragment;
 import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.NotifyType;
 import cz.cvut.fit.si1.skld.client.Notifyable;
-import cz.cvut.fit.si1.skld.client.domain.ExampleProductType;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FindProductTypeFragment extends Fragment {
     private FindProductTypeFragmentHandler handler;
 
-    private List<ProductType> productTypes;
-    private ProductType selectedProductType;
+    private List<ProductRepresentation> productTypes;
+    private ProductRepresentation selectedProductType;
 
     public FindProductTypeFragment(Notifyable parent) {
         super(parent);
@@ -28,11 +29,11 @@ public class FindProductTypeFragment extends Fragment {
         return handler;
     }
 
-    public ProductType getSelected() {
+    public ProductRepresentation getSelected() {
         return selectedProductType;
     }
 
-    protected void setSelectedProductType(ProductType selectedProductType) {
+    protected void setSelectedProductType(ProductRepresentation selectedProductType) {
         if (this.selectedProductType != selectedProductType) {
             this.selectedProductType = selectedProductType;
             getParent().notify(this, NotifyType.CHANGE);
@@ -40,19 +41,14 @@ public class FindProductTypeFragment extends Fragment {
     }
 
     public void refresh() {
-        productTypes.clear();
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
-        productTypes.add(new ExampleProductType());
-        productTypes.add(new ProductType("666666", "Wolrd Dominator Type B"));
+        try {
+            productTypes = getApp().getHttpClient().getProducts();
+        } catch (IOException | APIException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+//        productTypes.add(new ProductRepresentation((long)666666, "Wolrd Dominator Type B", (long)10));
         handler.setProductTypes(productTypes);
 
         handler.clearSelection();

@@ -1,14 +1,15 @@
 package cz.cvut.fit.si1.skld.client.components.edit_product_type;
 
+import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.si1.skld.client.Fragment;
 import cz.cvut.fit.si1.skld.client.Handler;
 import cz.cvut.fit.si1.skld.client.Notifyable;
-import cz.cvut.fit.si1.skld.client.domain.ProductType;
+import javafx.scene.control.Alert;
 
 public class EditProductTypeFragment extends Fragment {
     private EditProductTypeFragmentHandler handler;
 
-    private ProductType editingProductType;
+    private ProductRepresentation editingProductType;
     private boolean disabled;
     private boolean idEditEnabled;
 
@@ -24,22 +25,30 @@ public class EditProductTypeFragment extends Fragment {
     }
 
     public void reset() {
-        setEditingProductType(new ProductType());
+        setEditingProductType(new ProductRepresentation());
         this.disabled = false;
         handler.refresh();
     }
 
-    public ProductType getEdited() {
-        editingProductType.setId(handler.getID());
+    public ProductRepresentation getEdited() throws NumberFormatException {
+        try {
+            editingProductType.setId(Long.parseLong(handler.getID()));
+        } catch (NumberFormatException e) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information Dialog");
+            alert.setHeaderText("Look, an Information Dialog");
+            alert.show();
+            throw e;
+        }
         editingProductType.setName(handler.getName());
         return editingProductType;
     }
 
-    protected ProductType getEditingProductType() {
+    protected ProductRepresentation getEditingProductType() {
         return editingProductType;
     }
 
-    public void setEditingProductType(ProductType editingProductType) {
+    public void setEditingProductType(ProductRepresentation editingProductType) {
         this.editingProductType = editingProductType;
         handler.refresh();
     }
