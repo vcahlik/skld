@@ -20,7 +20,7 @@ public class SkldHttpClientTest {
 
     @Before
     public void setup() {
-        assertThatCode( () -> {client = SkldHttpClient.getClientForPIN("http://localhost:8080", "1984");}).doesNotThrowAnyException();
+        assertThatCode( () -> {client = SkldHttpClient.getClientForPIN("http://localhost:8080", "1234");}).doesNotThrowAnyException();
     }
 
     @Test(expected = UnauthorizedException.class)
