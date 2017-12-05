@@ -1,18 +1,16 @@
 package cz.cvut.fit.project.skld.client.http;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import cz.cvut.fit.project.skld.client.SkldClient;
 import cz.cvut.fit.project.skld.client.exceptions.APIException;
 import cz.cvut.fit.project.skld.representations.*;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.fluent.Executor;
 import org.apache.http.client.fluent.Request;
-import org.apache.http.client.fluent.Response;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.ContentType;
-import org.apache.http.entity.InputStreamEntity;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
@@ -30,8 +28,7 @@ public class SkldHttpClient implements SkldClient {
         this.executor = Executor.newInstance();
         this.baseURL = baseURL;
         this.authHeader = String.format("Bearer %s", login.getToken());
-        this.mapper = new ObjectMapper();
-        mapper.findAndRegisterModules();
+        this.mapper = new ObjectMapper().registerModule(new JavaTimeModule());
     }
 
     public UserRepresentation getLoggedInUser() {
@@ -112,8 +109,7 @@ public class SkldHttpClient implements SkldClient {
      * @throws IOException
      */
     public static SkldHttpClient getClientForPIN(String baseURL, String pin) throws IOException, APIException {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.findAndRegisterModules();
+        ObjectMapper mapper = new ObjectMapper().registerModule(new JavaTimeModule());
         HttpResponse res = Request
                 .Post(baseURL + "/log/in")
                 .body(new ByteArrayEntity(mapper.writeValueAsBytes(new PIN(pin)), ContentType.APPLICATION_JSON))
