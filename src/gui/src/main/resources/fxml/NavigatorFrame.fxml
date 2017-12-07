@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <VBox>
+         <children>
+            <Separator prefWidth="200.0" />
+            <HBox fx:id="sessionBar" BorderPane.alignment="CENTER" />
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox>
+         <children>
+            <HBox fx:id="navigatorBar" BorderPane.alignment="CENTER" />
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="content" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
