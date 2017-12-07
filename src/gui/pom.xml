@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>eu.cz.cvut.fit.si1.skld</groupId>
-    <artifactId>skld-client</artifactId>
+    <groupId>cz.cvut.fit.project.skld</groupId>
+    <artifactId>gui</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -59,7 +59,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>cz.cvut.fit.si1.skld.client.App</mainClass>
+                    <mainClass>cz.cvut.fit.project.skld.gui.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
