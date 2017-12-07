@@ -1,6 +1,7 @@
 package cz.cvut.fit.project.skld.application.resources;
 
 
+import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.core.LineItem;
@@ -16,6 +17,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.security.RolesAllowed;
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -39,7 +41,7 @@ public class OrderInsResource {
     @POST
     @UnitOfWork
     @RolesAllowed({"admin"})
-    public OrderInRepresentation create(@Auth User user, OrderInRepresentation request) {
+    public OrderInRepresentation create(@Auth User user, @Valid OrderInChange request) {
         OrderIn order = new OrderIn(request.getId(), user, request.getSupplierName());
         order.setExpectedDelivery(request.getDeliveryDate());
         for (ProductRepresentation rep : request.getProducts()) {
