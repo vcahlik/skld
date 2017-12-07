@@ -1,6 +1,7 @@
-package cz.cvut.fit.project.skld.application.db;
+package cz.cvut.fit.project.skld.application.db.postgres;
 
 import cz.cvut.fit.project.skld.application.core.User;
+import cz.cvut.fit.project.skld.application.db.UserDAO;
 import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -8,16 +9,16 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Optional;
 
-public class UserDAO extends AbstractDAO<User> {
-    public UserDAO(SessionFactory factory) {
+public class PostgresUserDAO extends AbstractDAO<User>implements UserDAO {
+    public PostgresUserDAO(SessionFactory factory) {
         super(factory);
     }
 
-    public Optional<User> findById(Long id) {
+    @Override public Optional<User> findById(Long id) {
         return Optional.ofNullable(get(id));
     }
 
-    public Optional<User> findByPin(String pin) {
+    @Override public Optional<User> findByPin(String pin) {
         Query<User> q = namedQuery("User.findByPIN");
         q.setParameter("pin", pin);
         List<User> found = list(q);
@@ -28,7 +29,7 @@ public class UserDAO extends AbstractDAO<User> {
         }
     }
 
-    public User create(User user) {
+    @Override public User create(User user) {
         return persist(user);
     }
 
