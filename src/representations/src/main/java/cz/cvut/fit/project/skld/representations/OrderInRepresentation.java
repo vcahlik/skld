@@ -1,7 +1,6 @@
 package cz.cvut.fit.project.skld.representations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -9,10 +8,8 @@ import java.util.Date;
 import java.util.List;
 
 public class OrderInRepresentation {
-    @NotEmpty
     private long id;
 
-    @NotEmpty
     private String supplierName;
 
     private Date deliveryDate;
@@ -27,7 +24,6 @@ public class OrderInRepresentation {
 
     private UserRepresentation handledBy;
 
-    @NotEmpty
     private List<ProductRepresentation> products;
 
     public OrderInRepresentation() {}
