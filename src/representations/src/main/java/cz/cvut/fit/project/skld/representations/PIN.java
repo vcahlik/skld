@@ -1,10 +1,10 @@
 package cz.cvut.fit.project.skld.representations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 public class PIN {
-    @NotEmpty
     private String pin;
 
     public PIN() {}
@@ -14,6 +14,7 @@ public class PIN {
     }
 
     @JsonProperty("PIN")
+    @NotNull
     public String getPin() {
         return pin;
     }
