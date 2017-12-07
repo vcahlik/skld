@@ -1,6 +1,6 @@
 package cz.cvut.fit.project.skld.application.resources;
 
-import cz.cvut.fit.project.skld.representations.ProductEdit;
+import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.core.Product;
 import cz.cvut.fit.project.skld.application.db.PositionDAO;
@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.security.RolesAllowed;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -40,9 +41,12 @@ public class ProductResource {
     @PUT
     @UnitOfWork
     @RolesAllowed({"admin"})
-    public ProductRepresentation edit(@NotNull @PathParam("id") long productId, ProductEdit changes) {
+    public ProductRepresentation edit(@NotNull @PathParam("id") long productId, @Valid ProductChange change) {
+        if (productId != change.getId()) {
+            throw new WebApplicationException("Path and body IDs don't match.", Response.Status.BAD_REQUEST);
+        }
         Product p = productDAO.findById(productId).orElseThrow(error404);
-        p.setName(changes.getName());
+        p.setName(change.getName());
         return generateRepresentation(p);
     }
 

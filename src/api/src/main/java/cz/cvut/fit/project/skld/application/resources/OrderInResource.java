@@ -1,5 +1,6 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.db.MovementDAO;
@@ -17,6 +18,7 @@ import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -49,7 +51,7 @@ public class OrderInResource {
 
     @PUT
     @UnitOfWork
-    public OrderInRepresentation updateOrder(@PathParam("id") long id, OrderInRepresentation data) {
+    public OrderInRepresentation updateOrder(@PathParam("id") long id, @Valid OrderInChange data) {
         if (id != data.getId()) {
             throw new WebApplicationException("Path and body IDs don't match.", Response.Status.BAD_REQUEST);
         }
