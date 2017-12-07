@@ -3,8 +3,9 @@ import static org.assertj.core.api.Assertions.*;
 
 import cz.cvut.fit.project.skld.client.exceptions.APIException;
 import cz.cvut.fit.project.skld.client.exceptions.UnauthorizedException;
+import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
-import cz.cvut.fit.project.skld.representations.ProductEdit;
+import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +31,7 @@ public class SkldHttpClientTest {
 
     @Test
     public void testCreateProduct() throws IOException, APIException {
-        ProductRepresentation prod = new ProductRepresentation(1909, "Unit test product 1", null);
+        ProductChange prod = new ProductChange(1909, "Unit test product 1");
         ProductRepresentation response = client.createProduct(prod);
         assertThat(response.getId()).isEqualTo(1909);
         assertThat(response.getName()).isEqualTo("Unit test product 1");
@@ -52,7 +53,7 @@ public class SkldHttpClientTest {
 
     @Test
     public void testEditProduct() throws IOException, APIException {
-        ProductRepresentation response = client.changeProduct(2, new ProductEdit("Flesh-Eating Nanobot Cloud"));
+        ProductRepresentation response = client.changeProduct(new ProductChange(2, "Flesh-Eating Nanobot Cloud"));
         assertThat(response.getId()).isEqualTo(2);
         assertThat(response.getName()).isEqualTo("Flesh-Eating Nanobot Cloud");
         response = client.getProduct(2);
@@ -62,7 +63,7 @@ public class SkldHttpClientTest {
 
     @Test
     public void testCreateOrderIn() throws IOException, APIException {
-        OrderInRepresentation order = new OrderInRepresentation(9000, "ACME Fulfillment Co.");
+        OrderInChange order = new OrderInChange(9000, "ACME Fulfillment Co.");
         ArrayList<ProductRepresentation> products = new ArrayList<>();
         products.add(new ProductRepresentation(1, 13));
         products.add(new ProductRepresentation(3, 8));

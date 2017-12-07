@@ -40,7 +40,7 @@ public class SkldHttpClient implements SkldClient {
                 performRequest(HTTPMethod.GET, "/orders/in", null, new TypeReference<List<OrderInRepresentation>>() {});
     }
 
-    public OrderInRepresentation createOrderIn(OrderInRepresentation order) throws IOException, APIException {
+    public OrderInRepresentation createOrderIn(OrderInChange order) throws IOException, APIException {
         return (OrderInRepresentation)
                 performRequest(HTTPMethod.POST, "/orders/in", order, new TypeReference<OrderInRepresentation>() {});
     }
@@ -50,7 +50,7 @@ public class SkldHttpClient implements SkldClient {
                 performRequest(HTTPMethod.GET, String.format("/orders/in/%d", id), null, new TypeReference<OrderInRepresentation>() {});
     }
 
-    public OrderInRepresentation updateOrderIn(OrderInRepresentation order) throws IOException, APIException {
+    public OrderInRepresentation updateOrderIn(OrderInChange order) throws IOException, APIException {
         return (OrderInRepresentation)
                 performRequest(HTTPMethod.PUT, String.format("/orders/in/%d", order.getId()), order, new TypeReference<OrderInRepresentation>() {});
     }
@@ -70,7 +70,7 @@ public class SkldHttpClient implements SkldClient {
                 performRequest(HTTPMethod.GET, "/products", null, new TypeReference<List<ProductRepresentation>>() {});
     }
 
-    public ProductRepresentation createProduct(ProductRepresentation product) throws IOException, APIException {
+    public ProductRepresentation createProduct(ProductChange product) throws IOException, APIException {
         return (ProductRepresentation)
                 performRequest(HTTPMethod.POST, "/products", product, new TypeReference<ProductRepresentation>() {});
     }
@@ -80,9 +80,9 @@ public class SkldHttpClient implements SkldClient {
                 performRequest(HTTPMethod.GET, String.format("/products/%d", id), null, new TypeReference<ProductRepresentation>() {});
     }
 
-    public ProductRepresentation changeProduct(long id, ProductEdit edit) throws IOException, APIException {
+    public ProductRepresentation changeProduct(ProductChange edit) throws IOException, APIException {
         return (ProductRepresentation)
-                performRequest(HTTPMethod.PUT, String.format("/products/%d", id), edit, new TypeReference<ProductRepresentation>() {});
+                performRequest(HTTPMethod.PUT, String.format("/products/%d", edit.getId()), edit, new TypeReference<ProductRepresentation>() {});
     }
 
     private <T> Object performRequest(HTTPMethod method, String path, T requestBody, TypeReference responseClass) throws IOException, APIException {

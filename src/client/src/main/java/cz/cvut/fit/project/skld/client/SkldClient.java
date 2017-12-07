@@ -1,10 +1,7 @@
 package cz.cvut.fit.project.skld.client;
 
 import cz.cvut.fit.project.skld.client.exceptions.APIException;
-import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
-import cz.cvut.fit.project.skld.representations.ProductEdit;
-import cz.cvut.fit.project.skld.representations.ProductRepresentation;
-import cz.cvut.fit.project.skld.representations.UserRepresentation;
+import cz.cvut.fit.project.skld.representations.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -44,7 +41,7 @@ public interface SkldClient {
      *
      * @return the created order, with the generated fields filled.
      */
-    OrderInRepresentation createOrderIn(OrderInRepresentation order) throws IOException, APIException;
+    OrderInRepresentation createOrderIn(OrderInChange order) throws IOException, APIException;
 
     /**
      * Get detailed information about an order in.
@@ -61,7 +58,7 @@ public interface SkldClient {
      *              but the whole object must be passed.
      * @return the updated order, as seen on the server side.
      */
-    OrderInRepresentation updateOrderIn(OrderInRepresentation order) throws IOException, APIException;
+    OrderInRepresentation updateOrderIn(OrderInChange order) throws IOException, APIException;
 
     /**
      * Set the order's status to closed and update product warehouse stocks according to the submitted product allocations.
@@ -90,7 +87,7 @@ public interface SkldClient {
      *
      * @return the product that has been created.
      */
-    ProductRepresentation createProduct(ProductRepresentation product) throws IOException, APIException;
+    ProductRepresentation createProduct(ProductChange product) throws IOException, APIException;
 
     /**
      * Return detailed information about a product.
@@ -102,8 +99,8 @@ public interface SkldClient {
 
     /**
      * Change product information. Currently, only product name can be changed.
-     * @param edit an object containing product's new name.
+     * @param edit an object containing product's new name and its ID.
      * @return the changed product, as seen on the server side.
      */
-    ProductRepresentation changeProduct(long id, ProductEdit edit) throws IOException, APIException;
+    ProductRepresentation changeProduct(ProductChange edit) throws IOException, APIException;
 }
