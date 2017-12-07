@@ -4,15 +4,10 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.toastshaman.dropwizard.auth.jwt.JwtAuthFilter;
 import cz.cvut.fit.project.skld.application.auth.UserAuthenticator;
 import cz.cvut.fit.project.skld.application.auth.UserAuthorizer;
-import cz.cvut.fit.project.skld.application.core.*;
 import cz.cvut.fit.project.skld.application.db.*;
+import cz.cvut.fit.project.skld.application.db.postgres.*;
 import cz.cvut.fit.project.skld.application.resources.*;
-import cz.cvut.fit.project.skld.application.core.LineItem;
-import cz.cvut.fit.project.skld.application.core.Order;
-import cz.cvut.fit.project.skld.application.core.OrderIn;
-import cz.cvut.fit.project.skld.application.core.Product;
-import cz.cvut.fit.project.skld.application.core.ProductMovement;
-import cz.cvut.fit.project.skld.application.core.User;
+import cz.cvut.fit.project.skld.application.core.*;
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
 import io.dropwizard.auth.AuthValueFactoryProvider;
@@ -52,11 +47,11 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
     @Override
     public void run(final SKLDAPIConfiguration configuration,
                     final Environment environment) {
-        final ProductDAO productDAO = new ProductDAO(hibernateBundle.getSessionFactory());
-        final UserDAO userDAO = new UserDAO(hibernateBundle.getSessionFactory());
-        final PositionDAO posDAO = new PositionDAO(hibernateBundle.getSessionFactory());
-        final OrderInDAO orderInDAO = new OrderInDAO(hibernateBundle.getSessionFactory());
-        final MovementDAO movementDAO = new MovementDAO(hibernateBundle.getSessionFactory());
+        final ProductDAO productDAO = new PostgresProductDAO(hibernateBundle.getSessionFactory());
+        final UserDAO userDAO = new PostgresUserDAO(hibernateBundle.getSessionFactory());
+        final PositionDAO posDAO = new PostgresPositionDAO(hibernateBundle.getSessionFactory());
+        final OrderInDAO orderInDAO = new PostgresOrderInDAO(hibernateBundle.getSessionFactory());
+        final MovementDAO movementDAO = new PostgresMovementDAO(hibernateBundle.getSessionFactory());
 
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
