@@ -1,10 +1,10 @@
 package cz.cvut.fit.project.skld.application.resources;
 
-import cz.cvut.fit.project.skld.representations.LogInDetails;
-import cz.cvut.fit.project.skld.representations.PIN;
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.db.UserDAO;
 import cz.cvut.fit.project.skld.application.util.WebAppExceptionSupplier;
+import cz.cvut.fit.project.skld.representations.LogInDetails;
+import cz.cvut.fit.project.skld.representations.PIN;
 import io.dropwizard.hibernate.UnitOfWork;
 import org.jose4j.jws.JsonWebSignature;
 import org.jose4j.jwt.JwtClaims;
@@ -13,7 +13,10 @@ import org.jose4j.lang.JoseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ws.rs.*;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 

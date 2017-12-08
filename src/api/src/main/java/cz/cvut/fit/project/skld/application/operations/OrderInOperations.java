@@ -12,8 +12,6 @@ import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 
-import javax.swing.text.html.Option;
-import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.Map;

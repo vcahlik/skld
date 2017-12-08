@@ -1,7 +1,5 @@
 package cz.cvut.fit.project.skld.application.core;
 
-import cz.cvut.fit.project.skld.application.core.User;
-
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.*;

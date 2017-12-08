@@ -1,13 +1,12 @@
 package cz.cvut.fit.project.skld.application;
 
-import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.validator.constraints.*;
-
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+import io.dropwizard.Configuration;
 import io.dropwizard.db.DataSourceFactory;
 import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 public class SKLDAPIConfiguration extends Configuration {
     @Valid

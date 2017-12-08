@@ -1,9 +1,6 @@
 package cz.cvut.fit.project.skld.application.core;
 
 
-import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import java.util.Objects;
 
 public class ProductPosition {
