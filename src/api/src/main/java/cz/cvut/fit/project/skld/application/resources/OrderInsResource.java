@@ -1,6 +1,7 @@
 package cz.cvut.fit.project.skld.application.resources;
 
 
+import cz.cvut.fit.project.skld.application.operations.OrderInOperations;
 import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
@@ -30,35 +31,22 @@ import java.util.stream.Collectors;
 public class OrderInsResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductsResource.class);
 
-    private final OrderInDAO orderInDAO;
-    private final ProductDAO productDAO;
+    private final OrderInOperations orderInOps;
 
-    public OrderInsResource(OrderInDAO orderInDAO, ProductDAO productDAO) {
-        this.orderInDAO = orderInDAO;
-        this.productDAO = productDAO;
+    public OrderInsResource(OrderInOperations orderInOps) {
+        this.orderInOps = orderInOps;
     }
 
     @POST
     @UnitOfWork
     @RolesAllowed({"admin"})
     public OrderInRepresentation create(@Auth User user, @Valid OrderInChange request) {
-        OrderIn order = new OrderIn(request.getId(), user, request.getSupplierName());
-        order.setExpectedDelivery(request.getDeliveryDate());
-        for (ProductRepresentation rep : request.getProducts()) {
-            Product product = productDAO.findById(rep.getId()).orElseThrow(
-                    new WebAppExceptionSupplier("Unknown product "+ Long.toString(rep.getId()), Response.Status.BAD_REQUEST));
-            LineItem li = new LineItem(rep.getQuantity(), product, order);
-            order.getLineItems().add(li);
-        }
-        orderInDAO.create(order);
-        return RepresentationConverter.representOrderIn(order);
+        return RepresentationConverter.representOrderIn(orderInOps.create(user, request));
     }
 
     @GET
     @UnitOfWork
     public List<OrderInRepresentation> getAll() {
-        List<OrderIn> orders = orderInDAO.findAll();
-
-        return orders.stream().map(RepresentationConverter::representOrderIn).collect(Collectors.toList());
+        return orderInOps.getAll().stream().map(RepresentationConverter::representOrderIn).collect(Collectors.toList());
     }
 }

@@ -6,6 +6,7 @@ import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.db.PositionDAO;
 import cz.cvut.fit.project.skld.application.db.ProductDAO;
 import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundException;
+import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundExceptionSupplier;
 import cz.cvut.fit.project.skld.representations.ProductChange;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,20 +36,13 @@ public class ProductOperations {
     }
 
     public Product get(long id) throws NotFoundException {
-        Optional<Product> p = productDAO.findById(id);
-        if (!p.isPresent()) {
-            throw new NotFoundException();
-        }
-        return p.get();
+        return productDAO.findById(id).orElseThrow(new NotFoundExceptionSupplier());
     }
 
     public Product edit(ProductChange change) throws NotFoundException {
-        Optional<Product> p = productDAO.findById(change.getId());
-        if (!p.isPresent()) {
-            throw new NotFoundException();
-        }
-        p.get().setName(change.getName());
-        return p.get();
+        Product p = productDAO.findById(change.getId()).orElseThrow(new NotFoundExceptionSupplier());
+        p.setName(change.getName());
+        return p;
     }
 
     public List<ProductPosition> positionsForProduct(long id) {
