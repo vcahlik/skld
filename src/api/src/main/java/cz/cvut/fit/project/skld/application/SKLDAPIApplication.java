@@ -6,6 +6,7 @@ import cz.cvut.fit.project.skld.application.auth.UserAuthenticator;
 import cz.cvut.fit.project.skld.application.auth.UserAuthorizer;
 import cz.cvut.fit.project.skld.application.db.*;
 import cz.cvut.fit.project.skld.application.db.postgres.*;
+import cz.cvut.fit.project.skld.application.operations.ProductOperations;
 import cz.cvut.fit.project.skld.application.resources.*;
 import cz.cvut.fit.project.skld.application.core.*;
 import io.dropwizard.Application;
@@ -53,6 +54,8 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         final OrderInDAO orderInDAO = new PostgresOrderInDAO(hibernateBundle.getSessionFactory());
         final MovementDAO movementDAO = new PostgresMovementDAO(hibernateBundle.getSessionFactory());
 
+        final ProductOperations productOps = new ProductOperations(productDAO, posDAO);
+
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
             .setAllowedClockSkewInSeconds(30) // allow some leeway in validating time based claims to account for clock skew
@@ -77,8 +80,8 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new AuthValueFactoryProvider.Binder<>(User.class));
         environment.jersey().register(RolesAllowedDynamicFeature.class);
         environment.jersey().register(new AuthResource(key, userDAO));
-        environment.jersey().register(new ProductsResource(productDAO));
-        environment.jersey().register(new ProductResource(productDAO, posDAO));
+        environment.jersey().register(new ProductsResource(productOps));
+        environment.jersey().register(new ProductResource(productOps));
         environment.jersey().register(new OrderInsResource(orderInDAO, productDAO));
         environment.jersey().register(new OrderInResource(orderInDAO, productDAO, movementDAO));
     }
