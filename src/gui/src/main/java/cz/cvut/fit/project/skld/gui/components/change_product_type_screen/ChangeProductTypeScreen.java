@@ -3,9 +3,8 @@ package cz.cvut.fit.project.skld.gui.components.change_product_type_screen;
 import cz.cvut.fit.project.skld.client.exceptions.APIException;
 import cz.cvut.fit.project.skld.gui.*;
 import cz.cvut.fit.project.skld.gui.components.find_product_type.FindProductTypeFragment;
-import cz.cvut.fit.project.skld.representations.ProductEdit;
+import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
-import cz.cvut.fit.project.skld.*;
 import cz.cvut.fit.project.skld.gui.components.edit_product_type.EditProductTypeFragment;
 
 import java.io.IOException;
@@ -61,11 +60,12 @@ public class ChangeProductTypeScreen extends Screen {
     public void submitChangedProductType() {
         ProductRepresentation selected = findProductTypeFragment.getSelected();
 
-        ProductEdit edit = new ProductEdit();
-        edit.setName(editProductTypeFragment.getEditedName());
+        ProductChange change = new ProductChange();
+        change.setId(selected.getId());
+        change.setName(editProductTypeFragment.getEditedName());
 
         try {
-            getApp().getHttpClient().changeProduct(selected.getId(), edit);
+            getApp().getHttpClient().changeProduct(change);
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);

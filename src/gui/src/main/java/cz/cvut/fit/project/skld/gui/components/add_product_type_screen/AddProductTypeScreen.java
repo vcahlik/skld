@@ -6,7 +6,7 @@ import cz.cvut.fit.project.skld.gui.PassResult;
 import cz.cvut.fit.project.skld.gui.Passable;
 import cz.cvut.fit.project.skld.gui.Screen;
 import cz.cvut.fit.project.skld.gui.util.exceptions.InputErrorException;
-import cz.cvut.fit.project.skld.representations.ProductRepresentation;
+import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.gui.components.edit_product_type.EditProductTypeFragment;
 
 import java.io.IOException;
@@ -34,17 +34,17 @@ public class AddProductTypeScreen extends Screen {
     }
 
     public void addProductType() {
-        ProductRepresentation newProductType = new ProductRepresentation();
+        ProductChange change = new ProductChange();
 
         try {
-            newProductType.setId(editProductTypeFragment.getEditedId());
+            change.setId(editProductTypeFragment.getEditedId());
         } catch (InputErrorException e) {
             return;
         }
-        newProductType.setName(editProductTypeFragment.getEditedName());
+        change.setName(editProductTypeFragment.getEditedName());
 
         try {
-            getApp().getHttpClient().createProduct(newProductType);
+            getApp().getHttpClient().createProduct(change);
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);
