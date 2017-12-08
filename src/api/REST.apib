@@ -1,0 +1,605 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Warehouse API
+
+A prototype API for our BI-SI1.2 project - warehouse information system.
+
+## Authentication
+
+Resources related to authentication features of the API. All the routes,
+except `/log/in` require a token sent as part of `Authorization: Bearer` header.
+
+## Log In [/log/in]
+
+A route allowing user to log in and get information about themselves.
+
+### Log In [POST]
+
++ Request (application/json)
+
+        {
+            "PIN": "424242"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "user": {
+            "id": 3,
+            "name": "Robo",
+            "createdAt": "2017-12-02T16:07:17.339676Z",
+            "blockedAt": null,
+            "admin": true
+          },
+          "token": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTIzNTQ5MDksInN1YiI6IjMifQ.EoafsbB22Ok9DC1s3mELEwq3-JIHNr4oAzexG0XMuz8"
+        }
+
++ Response 401 (application/json)
+
+        {
+            "error": "Unknown PIN"
+        }
+
+## General Order In Operations [/orders/in]
+
+Operations that list or create order ins.
+
+### List All Order Ins [GET]
+
+Orders that describe the products that will arrive into the warehouse
++ Request
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "id": 313,
+                    "deliveryDate": null,
+                    "state": "open",
+                    "products": [
+                        {
+                            "id": 34,
+                            "name": "A small box. Inconspicuous.",
+                            "positions": {
+                                "A16": 255
+                            },
+                            "quantity": 255
+                        },
+                        {
+                            "id": 32,
+                            "name": "Umborgulator 3000r1",
+                            "positions": {
+                                "B20": 6,
+                                "A15": 6
+                            },
+                            "quantity": 12
+                        }
+                    ],
+                    "supplier_name": "Black Mesa fulfillment Co.",
+                    "handled_at": "2017-12-03T14:14:59.125Z",
+                    "created_at": "2017-12-03T10:57:04.754Z",
+                    "created_by": {
+                        "id": 3,
+                        "name": "Robo",
+                        "createdAt": "2017-12-02T16:07:17.339676Z",
+                        "blockedAt": null,
+                        "admin": true
+                    },
+                    "handled_by": null
+                },
+                {
+                    "id": 392,
+                    "deliveryDate": null,
+                    "state": "open",
+                    "products": [
+                        {
+                            "id": 32,
+                            "name": "Umborgulator 3000r1",
+                            "positions": null,
+                            "quantity": 18
+                        }
+                    ],
+                    "supplier_name": "Black Mesa fulfillment Co.",
+                    "handled_at": null,
+                    "created_at": "2017-12-03T16:40:46.735Z",
+                    "created_by": {
+                        "id": 3,
+                        "name": "Robo",
+                        "createdAt": "2017-12-02T16:07:17.339676Z",
+                        "blockedAt": null,
+                        "admin": true
+                    },
+                    "handled_by": null
+                }
+            ]
+
+
+### Create A New Order In [POST]
+
+Create a new order with the given information. Most of the information is automatically
+computed and saved with the order.
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
+    + Body
+
+            {
+                "id": 358,
+                "supplier_name": "CTU Faculty of Mass Destruction Technology Transfer Corporation Ltd.",
+                "products": [
+                    {
+                        "id": 91,
+                        "quantity": 5
+                    },
+                    {
+                        "id": 92,
+                        "quantity": 100
+                    }
+                ]
+            }
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "id": 358,
+              "deliveryDate": null,
+              "state": "open",
+              "products": [
+                {
+                  "id": 91,
+                  "name": "Suitcase-mount Antimatter Bomb",
+                  "positions": null,
+                  "quantity": 5
+                },
+                {
+                  "id": 92,
+                  "name": "Flesh-eating nanobot cloud, 25cm3",
+                  "positions": null,
+                  "quantity": 100
+                }
+              ],
+              "supplier_name": "CTU Faculty of Mass Destruction Technology Transfer Corporation Ltd.",
+              "handled_at": null,
+              "created_at": "2017-12-03T17:12:06.088Z",
+              "created_by": {
+                "id": 3,
+                "name": "Robo",
+                "createdAt": "2017-12-02T16:07:17.339676Z",
+                "blockedAt": null,
+                "admin": true
+              },
+              "handled_by": null
+            }
+
+## Operations On A Specific Order In [/orders/in/{id}]
+
++ Parameters
+    + id (number) - ID of the affected order
+
+
+### Get An Order In [GET]
+
+Get information about a single order, identified by its ID
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id": 313,
+                "deliveryDate": null,
+                "state": "open",
+                "products": [
+                    {
+                        "id": 34,
+                        "name": "A small box. Inconspicuous.",
+                        "positions": {
+                            "A16": 255
+                        },
+                        "quantity": 255
+                    },
+                    {
+                        "id": 32,
+                        "name": "Umborgulator 3000r1",
+                        "positions": {
+                            "B20": 6,
+                            "A15": 6
+                        },
+                        "quantity": 12
+                    }
+                ],
+                "supplier_name": "Black Mesa fulfillment Co.",
+                "handled_at": "2017-12-03T14:14:59.125Z",
+                "created_at": "2017-12-03T10:57:04.754Z",
+                "created_by": {
+                    "id": 3,
+                    "name": "Robo",
+                    "createdAt": "2017-12-02T16:07:17.339676Z",
+                    "blockedAt": null,
+                    "admin": true
+                },
+                "handled_by": null
+            }
+
+### Update An Order In [PUT]
+
+Update the order with the given ID. You can edit supplier name and products
+and their quantities that are part of the order. To remove an product from
+
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
+    + Body
+
+            {
+                "id": 392,
+                "products": [
+                    {
+                        "id": 32,
+                        "quantity": 18
+                    }
+                ],
+                "supplier_name": "ACME Shipping"
+            }
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id": 392,
+                "deliveryDate": null,
+                "state": "open",
+                "products": [
+                    {
+                        "id": 32,
+                        "name": "Umborgulator 3000r1",
+                        "positions": null,
+                        "quantity": 18
+                    }
+                ],
+                "supplier_name": "ACME Shipping",
+                "handled_at": null,
+                "created_at": "2017-12-03T16:40:46.735Z",
+                "created_by": {
+                    "id": 3,
+                    "name": "Robo",
+                    "createdAt": "2017-12-02T16:07:17.339676Z",
+                    "blockedAt": null,
+                    "admin": true
+                },
+                "handled_by": null
+            }
+
+
+# Close An Order In [/orders/in/{id}/close]
+
++ Parameters
+    + id (number) - ID of the affected order
+
+
+### Close The Order [POST]
+
+Set order's state to `closed`, recalculate appropriate fields and
+add products to given warehouse positions.
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
+    + Body
+
+            {
+                "products": [
+                    {
+                        "id": 91,
+                        "positions": {
+                            "A10": 2,
+                            "A11": 3
+                        }
+                    },
+                    {
+                        "id": 92,
+                        "positions": {
+                            "B120": 100
+                        }
+                    }
+                ]
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "id": 358,
+              "deliveryDate": null,
+              "state": "closed",
+              "products": [
+                {
+                  "id": 91,
+                  "name": "Suitcase-mount Antimatter Bomb",
+                  "positions": {
+                    "A10": 2,
+                    "A11": 3
+                  },
+                  "quantity": 5
+                },
+                {
+                  "id": 92,
+                  "name": "Flesh-eating nanobot cloud, 25cm3",
+                  "positions": {
+                    "B120": 100
+                  },
+                  "quantity": 100
+                }
+              ],
+              "supplier_name": "CTU Faculty of Mass Destruction Technology Transfer Corporation Ltd.",
+              "handled_at": "2017-12-03T17:23:05.118Z",
+              "created_at": "2017-12-03T17:12:06.088Z",
+              "created_by": {
+                "id": 3,
+                "name": "Robo",
+                "createdAt": "2017-12-02T16:07:17.339676Z",
+                "blockedAt": null,
+                "admin": true
+              },
+              "handled_by": {
+                "id": 3,
+                "name": "Robo",
+                "createdAt": "2017-12-02T16:07:17.339676Z",
+                "blockedAt": null,
+                "admin": true
+              }
+            }
+
+
+# Refuse An Order In [/orders/in/{id}/refuse]
+
++ Parameters
+    + id (number) - ID of the affected order
+
+
+### Refuse The Order [POST]
+
+Set order's state to `refused`.
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "id": 392,
+              "deliveryDate": null,
+              "state": "refused",
+              "products": [
+                {
+                  "id": 32,
+                  "name": "Umborgulator 3000r1",
+                  "positions": null,
+                  "quantity": 18
+                }
+              ],
+              "supplier_name": "ACME Shipping",
+              "handled_at": "2017-12-03T17:25:26.588Z",
+              "created_at": "2017-12-03T16:40:46.735Z",
+              "created_by": {
+                "id": 3,
+                "name": "Robo",
+                "createdAt": "2017-12-02T16:07:17.339676Z",
+                "blockedAt": null,
+                "admin": true
+              },
+              "handled_by": {
+                "id": 3,
+                "name": "Robo",
+                "createdAt": "2017-12-02T16:07:17.339676Z",
+                "blockedAt": null,
+                "admin": true
+              }
+            }
+
+## General Product Operations [/products]
+
+Operations that list and create products.
+
+### List All Products [GET]
+
+Retrieve an array of all products that have been submitted
+into the system and their quantities in the warehouse.
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "id": 2,
+                    "name": "World-destroyer 4",
+                    "creator": {
+                        "id": 1,
+                        "name": "Kanye West",
+                        "createdAt": "2017-12-02T13:10:59.908464Z",
+                        "blockedAt": null,
+                        "admin": true
+                    }
+                },
+                {
+                    "id": 34,
+                    "name": "A small box. Inconspicuous.",
+                    "creator": {
+                        "id": 3,
+                        "name": "Robo",
+                        "createdAt": "2017-12-02T16:07:17.339676Z",
+                        "blockedAt": null,
+                        "admin": true
+                    }
+                },
+                {
+                    "id": 32,
+                    "name": "Umborgulator 3000r1",
+                    "creator": {
+                        "id": 1,
+                        "name": "Kanye West",
+                        "createdAt": "2017-12-02T13:10:59.908464Z",
+                        "blockedAt": null,
+                        "admin": true
+                    }
+                },
+                {
+                    "id": 91,
+                    "name": "Suitcase-mount Antimatter Bomb",
+                    "creator": {
+                        "id": 3,
+                        "name": "Robo",
+                        "createdAt": "2017-12-02T16:07:17.339676Z",
+                        "blockedAt": null,
+                        "admin": true
+                    }
+                },
+                {
+                    "id": 92,
+                    "name": "Flesh-eating nanobot cloud, 25cm3",
+                    "creator": {
+                        "id": 3,
+                        "name": "Robo",
+                        "createdAt": "2017-12-02T16:07:17.339676Z",
+                        "blockedAt": null,
+                        "admin": true
+                    }
+                }
+            ]
+
+### Create A New Product [POST]
+
+Save a new product into the system.
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
+    + Body
+
+            {
+                "id": 91,
+                "name": "Suitcase-mount Antimatter Bomb"
+            }
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "id": 91,
+                "name": "Suitcase-mount Antimatter Bomb",
+                "creator": {
+                    "id": 3,
+                    "name": "Robo",
+                    "createdAt": "2017-12-02T16:07:17.339676Z",
+                    "blockedAt": null,
+                    "admin": true
+                }
+            }
+
+## Operations on a specific product [/products/{id}]
+
++ Parameters
+    + id (number) - ID of the affected product
+
+### Get detailed product information [GET]
+
+Get product's metadata and positions.
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
++ Response 200 (application/json)
+
+    + Body
+
+             {
+                "id": 32,
+                "name": "Umborgulator 3000r1",
+                "positions": {
+                    "B20": 6,
+                    "A58": 3,
+                    "A15": 19,
+                    "A59": 2
+                },
+                "quantity": 30
+            }
+
+### Change product information [PUT]
+
+Edit the product. In this prototype, only changing the name is supported.
++ Request (application/json)
+
+    + Headers
+
+            Authorization: Bearer {{token}}
+
+    + Body
+
+            {
+                "name": "Umborgulator 3000r2"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id": 32,
+                "name": "Umborgulator 3000r2",
+                "positions": {
+                    "B20": 6,
+                    "A58": 3,
+                    "A15": 19,
+                    "A59": 2
+                },
+                "quantity": 30
+            }
