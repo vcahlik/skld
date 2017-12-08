@@ -7,6 +7,7 @@ import cz.cvut.fit.project.skld.application.auth.UserAuthorizer;
 import cz.cvut.fit.project.skld.application.core.*;
 import cz.cvut.fit.project.skld.application.db.*;
 import cz.cvut.fit.project.skld.application.db.postgres.*;
+import cz.cvut.fit.project.skld.application.operations.OrderInOperations;
 import cz.cvut.fit.project.skld.application.operations.ProductOperations;
 import cz.cvut.fit.project.skld.application.resources.*;
 import io.dropwizard.Application;
@@ -55,6 +56,7 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         final MovementDAO movementDAO = new PostgresMovementDAO(hibernateBundle.getSessionFactory());
 
         final ProductOperations productOps = new ProductOperations(productDAO, posDAO);
+        final OrderInOperations orderOps = new OrderInOperations(orderInDAO, productDAO, movementDAO);
 
         final byte[] key = configuration.getJwtSecret();
         final JwtConsumer consumer = new JwtConsumerBuilder()
@@ -82,8 +84,8 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
         environment.jersey().register(new AuthResource(key, userDAO));
         environment.jersey().register(new ProductsResource(productOps));
         environment.jersey().register(new ProductResource(productOps));
-        environment.jersey().register(new OrderInsResource(orderInDAO, productDAO));
-        environment.jersey().register(new OrderInResource(orderInDAO, productDAO, movementDAO));
+        environment.jersey().register(new OrderInsResource(orderOps));
+        environment.jersey().register(new OrderInResource(orderOps));
     }
 
 }
