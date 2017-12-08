@@ -1,9 +1,5 @@
 package cz.cvut.fit.project.skld.application.core;
 
-import cz.cvut.fit.project.skld.application.core.Order;
-import cz.cvut.fit.project.skld.application.core.Product;
-import cz.cvut.fit.project.skld.application.core.ProductMovement;
-
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;

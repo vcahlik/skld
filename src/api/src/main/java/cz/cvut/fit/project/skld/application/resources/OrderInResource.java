@@ -1,21 +1,12 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.application.core.OrderIn;
+import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.operations.OrderInOperations;
 import cz.cvut.fit.project.skld.application.operations.exceptions.InvalidStateException;
 import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundException;
 import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
-import cz.cvut.fit.project.skld.representations.ProductRepresentation;
-import cz.cvut.fit.project.skld.application.db.MovementDAO;
-import cz.cvut.fit.project.skld.application.db.OrderInDAO;
-import cz.cvut.fit.project.skld.application.db.ProductDAO;
-import cz.cvut.fit.project.skld.application.core.LineItem;
-import cz.cvut.fit.project.skld.application.core.OrderIn;
-import cz.cvut.fit.project.skld.application.core.OrderState;
-import cz.cvut.fit.project.skld.application.core.Product;
-import cz.cvut.fit.project.skld.application.core.ProductMovement;
-import cz.cvut.fit.project.skld.application.core.User;
-import cz.cvut.fit.project.skld.application.util.WebAppExceptionSupplier;
 import io.dropwizard.auth.Auth;
 import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
@@ -25,9 +16,6 @@ import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Path("/orders/in/{id}")
 @Consumes(MediaType.APPLICATION_JSON)

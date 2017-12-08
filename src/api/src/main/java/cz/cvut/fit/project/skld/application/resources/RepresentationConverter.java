@@ -1,11 +1,10 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.application.core.*;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.representations.UserRepresentation;
-import cz.cvut.fit.project.skld.application.core.*;
 
-import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

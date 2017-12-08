@@ -1,11 +1,9 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.operations.ProductOperations;
 import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
-import cz.cvut.fit.project.skld.application.core.Product;
-import cz.cvut.fit.project.skld.application.core.User;
-import cz.cvut.fit.project.skld.application.db.ProductDAO;
 import io.dropwizard.auth.Auth;
 import io.dropwizard.hibernate.UnitOfWork;
 import org.slf4j.Logger;
