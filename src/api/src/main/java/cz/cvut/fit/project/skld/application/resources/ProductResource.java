@@ -1,5 +1,7 @@
 package cz.cvut.fit.project.skld.application.resources;
 
+import cz.cvut.fit.project.skld.application.operations.ProductOperations;
+import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundException;
 import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import cz.cvut.fit.project.skld.application.core.Product;
@@ -23,19 +25,21 @@ import javax.ws.rs.core.Response;
 public class ProductResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductResource.class);
     private final WebAppExceptionSupplier error404 = new WebAppExceptionSupplier("Product not found", Response.Status.NOT_FOUND);
-    final ProductDAO productDAO;
-    final PositionDAO positionDAO;
+    final ProductOperations productOps;
 
-    public ProductResource(ProductDAO productDAO, PositionDAO positionDAO) {
-        this.productDAO = productDAO;
-        this.positionDAO = positionDAO;
+    public ProductResource(ProductOperations productOps) {
+        this.productOps = productOps;
     }
 
     @GET
     @UnitOfWork
     @Produces(MediaType.APPLICATION_JSON)
     public ProductRepresentation get(@NotNull @PathParam("id") long productId) {
-        return generateRepresentation(productDAO.findById(productId).orElseThrow(error404));
+        try {
+            return generateRepresentation(productOps.get(productId));
+        } catch (NotFoundException e) {
+            throw new WebApplicationException("Couldn't find the requested product.", Response.Status.NOT_FOUND);
+        }
     }
 
     @PUT
@@ -45,12 +49,16 @@ public class ProductResource {
         if (productId != change.getId()) {
             throw new WebApplicationException("Path and body IDs don't match.", Response.Status.BAD_REQUEST);
         }
-        Product p = productDAO.findById(productId).orElseThrow(error404);
-        p.setName(change.getName());
+        Product p;
+        try {
+            p = productOps.edit(change);
+        } catch (NotFoundException e) {
+            throw new WebApplicationException("Couldn't find the requested product.", Response.Status.NOT_FOUND);
+        }
         return generateRepresentation(p);
     }
 
     private ProductRepresentation generateRepresentation(Product p) {
-        return RepresentationConverter.representProduct(p, positionDAO.findForProductId(p.getId()));
+        return RepresentationConverter.representProduct(p, productOps.positionsForProduct(p.getId()));
     }
 }
