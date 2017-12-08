@@ -55,6 +55,7 @@
                     <archive>
                         <manifest>
                             <mainClass>cz.cvut.fit.project.skld.gui.App</mainClass>
+                            <addClasspath>true</addClasspath>
                         </manifest>
                     </archive>
                 </configuration>

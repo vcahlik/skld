@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" />
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="120.0" text="Label">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0" text="Label">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Hyperlink text="Odstranit">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Hyperlink>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</HBox>

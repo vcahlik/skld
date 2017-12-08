@@ -40,6 +40,9 @@ public class Files {
             case EDIT_ORDER_IN_FRAGMENT:
                 fileName = "/fxml/EditOrderInFragment.fxml";
                 break;
+            case ORDER_IN_PRODUCT_FRAGMENT:
+                fileName = "/fxml/OrderInProductFragment.fxml";
+                break;
             default:
                 throw new RuntimeException("FXML file path not added");
         }
