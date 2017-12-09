@@ -20,6 +20,14 @@ public class EditOrderInFragmentHandler extends Handler {
     @FXML
     private TextField inputSupplierName;
 
+    @FXML
+    private Button addProductButton;
+
+    @FXML
+    private void handleAddProductButtonAction(ActionEvent event) {
+        owner.addProduct();
+    }
+
     public EditOrderInFragmentHandler() {
         super(FXMLFragmentType.EDIT_ORDER_IN_FRAGMENT);
     }
@@ -28,9 +36,23 @@ public class EditOrderInFragmentHandler extends Handler {
         this.owner = owner;
     }
 
-    @FXML
-    private void handleAddProductButtonAction(ActionEvent event) {
-        owner.addProduct();
+    public void reset() {
+        if (owner.isFilled()) {
+            inputID.setText(Long.toString(owner.getId()));
+        } else {
+            inputID.setText("");
+        }
+        inputSupplierName.setText(owner.getSupplierName());
+
+        inputID.setDisable(!owner.isEnabled() || !owner.isIdEditEnabled());
+        inputSupplierName.setDisable(!owner.isEnabled());
+
+        addProductButton.setDisable(!owner.isEnabled());
+
+        productsVBox.getChildren().clear();
+        for (OrderInProductFragment orderInProductFragment : owner.getOrderInProductFragments()) {
+            addOrderInProductFragment(orderInProductFragment);
+        }
     }
 
     protected String getID() {

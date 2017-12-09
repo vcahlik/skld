@@ -11,37 +11,31 @@ import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 public class EditProductTypeFragment extends Fragment {
     private EditProductTypeFragmentHandler handler;
 
+    private boolean enabled;
+    private boolean idEditEnabled;
+    private boolean filled;
+
     private long id;
     private String name;
-    private boolean idSet;
-
-    private boolean disabled;
-    private boolean idEditEnabled;
 
     public EditProductTypeFragment(Notifyable parent, boolean idEditEnabled) {
         super(parent);
-
-        this.idSet = false;
         this.idEditEnabled = idEditEnabled;
-        reset();
+        this.filled = false;
+        setId(0);
+        setName("");
+        setEnabled(true);
     }
 
     public EditProductTypeFragment(Notifyable parent) {
         this(parent, true);
     }
 
-    public void reset() {
-        id = 0;
-        name = "";
-        idSet = false;
-        this.disabled = false;
-        handler.refresh();
-    }
-
     public void fill(ProductRepresentation product) {
+        this.filled = true;
         setId(product.getId());
         setName(product.getName());
-        handler.refresh();
+        handler.reset();
     }
 
     @Override
@@ -70,7 +64,6 @@ public class EditProductTypeFragment extends Fragment {
 
     protected void setId(long id) {
         this.id = id;
-        idSet = true;
     }
 
     protected String getName() {
@@ -81,20 +74,20 @@ public class EditProductTypeFragment extends Fragment {
         this.name = name;
     }
 
-    protected boolean isIdSet() {
-        return idSet;
+    protected boolean isFilled() {
+        return filled;
     }
 
     public boolean isIdEditEnabled() {
         return idEditEnabled;
     }
 
-    public boolean isDisabled() {
-        return disabled;
+    public boolean isEnabled() {
+        return enabled;
     }
 
-    public void setDisabled(boolean disabled) {
-        this.disabled = disabled;
-        handler.refresh();
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+        handler.reset();
     }
 }

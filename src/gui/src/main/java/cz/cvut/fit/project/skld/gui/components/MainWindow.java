@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 public class MainWindow extends Window {
     public MainWindow(App app, Stage stage) {
         super(app, stage, Texts.Windows.MAIN_WINDOW_TITLE);
+        stage.setMaximized(true);
     }
 
     @Override

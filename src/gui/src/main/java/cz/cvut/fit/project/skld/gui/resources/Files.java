@@ -49,6 +49,9 @@ public class Files {
             case CHANGE_ORDER_IN_SCREEN:
                 fileName = "/fxml/ChangeOrderInScreen.fxml";
                 break;
+            case FIND_ORDER_IN_FRAGMENT:
+                fileName = "/fxml/FindOrderInFragment.fxml";
+                break;
             default:
                 throw new RuntimeException("FXML file path not added");
         }

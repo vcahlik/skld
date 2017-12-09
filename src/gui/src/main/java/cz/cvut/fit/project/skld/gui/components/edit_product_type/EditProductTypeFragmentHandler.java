@@ -22,16 +22,16 @@ public class EditProductTypeFragmentHandler extends Handler {
         this.owner = owner;
     }
 
-    public void refresh() {
-        if (owner.isIdSet()) {
+    public void reset() {
+        if (owner.isFilled()) {
             inputID.setText(Long.toString(owner.getId()));
         } else {
             inputID.setText("");
         }
         inputName.setText(owner.getName());
 
-        inputID.setDisable(owner.isDisabled() || !owner.isIdEditEnabled());
-        inputName.setDisable(owner.isDisabled());
+        inputID.setDisable(!owner.isEnabled() || !owner.isIdEditEnabled());
+        inputName.setDisable(!owner.isEnabled());
     }
 
     public String getID() {
