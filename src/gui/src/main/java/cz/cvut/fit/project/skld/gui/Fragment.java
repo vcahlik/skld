@@ -21,7 +21,7 @@ public abstract class Fragment extends Component {
 
     @Override
     public void notify(UI source, NotifyType notifyType) {
-
+        parent.notify(this, notifyType);
     }
 
     public void load(Handler handler) {

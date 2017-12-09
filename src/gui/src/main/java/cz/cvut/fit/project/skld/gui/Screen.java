@@ -15,10 +15,6 @@ public abstract class Screen extends Fragment implements Passable {
     }
 
     @Override
-    public void notify(UI source, NotifyType notifyType) {
-    }
-
-    @Override
     public void pass(UI source, PassResult result) {
         getSource().changeContent(this);
     }

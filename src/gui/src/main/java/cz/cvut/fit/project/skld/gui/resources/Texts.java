@@ -3,6 +3,7 @@ package cz.cvut.fit.project.skld.gui.resources;
 public class Texts {
     public static class Windows {
         public static final String MAIN_WINDOW_TITLE = "SKLD IS";
+        public static final String ADD_PRODUCT_WINDOW_TITLE = "Výběr produktu";
     }
 
     public static class Alerts {
@@ -11,5 +12,8 @@ public class Texts {
 
         public static final String ID_NOT_NUMBER_ERROR_ALERT_TITLE = "Chyba formátu";
         public static final String ID_NOT_NUMBER_ERROR_ALERT_TEXT = "ID musí být celé číslo.";
+
+        public static final String PRODUCT_QUANTITY_NOT_NUMBER_ERROR_ALERT_TITLE = "Chyba formátu";
+        public static final String PRODUCT_QUANTITY_NOT_NUMBER_ERROR_ALERT_TEXT = "Množství produktu musí být celé číslo.";
     }
 }

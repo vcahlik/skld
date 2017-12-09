@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="10.0" layoutY="10.0">
+      <VBox>
          <children>
             <GridPane layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefWidth="540.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
               <columnConstraints>
@@ -25,7 +25,7 @@
                   <Label text="Datum vytvoření:" GridPane.rowIndex="1" />
                   <Label text="Očekávané datum přijetí:" GridPane.rowIndex="2" />
                   <Label text="Název dodavatele:" GridPane.rowIndex="3" />
-                  <TextField GridPane.columnIndex="1">
+                  <TextField fx:id="inputID" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
@@ -40,26 +40,24 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <TextField fx:id="inputSupplierName" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </TextField>
                </children>
             </GridPane>
-            <VBox>
-               <children>
-                  <Label text="Seznam zboží:" />
-                  <VBox fx:id="productsVBox">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin></VBox>
-                  <Button mnemonicParsing="false" onAction="#handleAddProductButtonAction" text="+" />
-               </children>
+            <Label text="Seznam zboží:">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
+            </Label>
+            <VBox fx:id="productsVBox">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
             </VBox>
+            <Button mnemonicParsing="false" onAction="#handleAddProductButtonAction" text="+" />
          </children>
       </VBox>
    </children>

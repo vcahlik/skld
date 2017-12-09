@@ -17,9 +17,18 @@ public class FindProductTypeFragment extends Fragment {
     private List<ProductRepresentation> productTypes;
     private ProductRepresentation selectedProductType;
 
+    private List<ProductRepresentation> excludedProductTypes;
+
     public FindProductTypeFragment(Notifyable parent) {
         super(parent);
         productTypes = new ArrayList<>();
+        excludedProductTypes = new ArrayList<>();
+        refresh();
+    }
+
+    public void setExcluded(List<ProductRepresentation> excludedProductTypes) {
+        this.excludedProductTypes = excludedProductTypes;
+        refresh();
     }
 
     @Override
@@ -27,6 +36,10 @@ public class FindProductTypeFragment extends Fragment {
         this.handler = new FindProductTypeFragmentHandler();
         handler.setOwner(this);
         return handler;
+    }
+
+    public boolean isSelected() {
+        return getSelected() != null;
     }
 
     public ProductRepresentation getSelected() {
@@ -47,8 +60,7 @@ public class FindProductTypeFragment extends Fragment {
             e.printStackTrace();
             System.exit(1);
         }
-
-//        productTypes.add(new ProductRepresentation((long)666666, "Wolrd Dominator Type B", (long)10));
+        productTypes.removeAll(excludedProductTypes);
         handler.setProductTypes(productTypes);
 
         handler.clearSelection();
