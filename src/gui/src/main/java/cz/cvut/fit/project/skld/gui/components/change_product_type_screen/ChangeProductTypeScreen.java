@@ -27,7 +27,7 @@ public class ChangeProductTypeScreen extends Screen {
 
     public void reset() {
         findProductTypeFragment.refresh();
-
+        editProductTypeFragment.reset();
         setEditEnabled(false);
     }
 

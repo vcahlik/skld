@@ -21,14 +21,19 @@ public class EditProductTypeFragment extends Fragment {
     public EditProductTypeFragment(Notifyable parent, boolean idEditEnabled) {
         super(parent);
         this.idEditEnabled = idEditEnabled;
-        this.filled = false;
-        setId(0);
-        setName("");
-        setEnabled(true);
+        reset();
     }
 
     public EditProductTypeFragment(Notifyable parent) {
         this(parent, true);
+    }
+
+    public void reset() {
+        this.filled = false;
+        setId(0);
+        setName("");
+        setEnabled(true);
+        handler.reset();
     }
 
     public void fill(ProductRepresentation product) {

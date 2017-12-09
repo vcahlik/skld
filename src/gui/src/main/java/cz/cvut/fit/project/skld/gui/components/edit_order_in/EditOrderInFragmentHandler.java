@@ -5,8 +5,14 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 
 public class EditOrderInFragmentHandler extends Handler {
     private EditOrderInFragment owner;
@@ -16,6 +22,9 @@ public class EditOrderInFragmentHandler extends Handler {
 
     @FXML
     private TextField inputID;
+
+    @FXML
+    private DatePicker inputDeliveryDate;
 
     @FXML
     private TextField inputSupplierName;
@@ -42,6 +51,9 @@ public class EditOrderInFragmentHandler extends Handler {
         } else {
             inputID.setText("");
         }
+
+        resetInputDeliveryDate();
+
         inputSupplierName.setText(owner.getSupplierName());
 
         inputID.setDisable(!owner.isEnabled() || !owner.isIdEditEnabled());
@@ -55,8 +67,28 @@ public class EditOrderInFragmentHandler extends Handler {
         }
     }
 
+    private void resetInputDeliveryDate() {
+        if (owner.isFilled()) {
+            Date date = owner.getDeliveryDate();
+            if (date != null) {
+                LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+                inputDeliveryDate.setValue(localDate);
+            } else {
+                inputDeliveryDate.getEditor().clear();
+            }
+        } else {
+            inputDeliveryDate.getEditor().clear();
+        }
+
+        inputDeliveryDate.setDisable(!owner.isEnabled());
+    }
+
     protected String getID() {
         return inputID.getText();
+    }
+
+    protected LocalDate getDeliveryDate() {
+        return inputDeliveryDate.getValue();
     }
 
     protected String getSupplierName() {
