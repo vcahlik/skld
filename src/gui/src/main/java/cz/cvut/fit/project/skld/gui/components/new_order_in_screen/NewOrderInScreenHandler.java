@@ -23,7 +23,7 @@ public class NewOrderInScreenHandler extends Handler {
 
     @FXML
     private void handleSubmitButtonAction(ActionEvent event) {
-        System.out.println("to be implemented");
+        owner.onSubmit();
     }
 
     public void setOwner(NewOrderInScreen owner) {

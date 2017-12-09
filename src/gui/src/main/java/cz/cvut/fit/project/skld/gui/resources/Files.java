@@ -43,6 +43,12 @@ public class Files {
             case ORDER_IN_PRODUCT_FRAGMENT:
                 fileName = "/fxml/OrderInProductFragment.fxml";
                 break;
+            case ADD_PRODUCT_TO_ORDER_SCREEN:
+                fileName = "/fxml/AddProductToOrderScreen.fxml";
+                break;
+            case CHANGE_ORDER_IN_SCREEN:
+                fileName = "/fxml/ChangeOrderInScreen.fxml";
+                break;
             default:
                 throw new RuntimeException("FXML file path not added");
         }

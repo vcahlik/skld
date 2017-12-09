@@ -5,7 +5,7 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import cz.cvut.fit.project.skld.gui.Notifyable;
 import cz.cvut.fit.project.skld.gui.resources.Texts;
 import cz.cvut.fit.project.skld.gui.util.FXUtil;
-import cz.cvut.fit.project.skld.gui.util.exceptions.InputErrorException;
+import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 
 public class EditProductTypeFragment extends Fragment {
@@ -51,12 +51,12 @@ public class EditProductTypeFragment extends Fragment {
         return handler;
     }
 
-    public long getEditedId() throws InputErrorException {
+    public long getEditedId() throws InvalidInputException {
         try {
             return Long.parseLong(handler.getID());
         } catch (NumberFormatException e) {
             FXUtil.displayAlert(Texts.Alerts.ID_NOT_NUMBER_ERROR_ALERT_TITLE, Texts.Alerts.ID_NOT_NUMBER_ERROR_ALERT_TEXT);
-            throw new InputErrorException();
+            throw new InvalidInputException();
         }
     }
 

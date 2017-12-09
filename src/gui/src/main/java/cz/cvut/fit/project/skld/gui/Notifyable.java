@@ -4,4 +4,5 @@ public interface Notifyable {
     void notify(UI source, NotifyType notifyType);
 
     App getApp();
+
 }

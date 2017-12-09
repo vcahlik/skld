@@ -5,13 +5,20 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 public class EditOrderInFragmentHandler extends Handler {
-    EditOrderInFragment owner;
+    private EditOrderInFragment owner;
 
     @FXML
     private VBox productsVBox;
+
+    @FXML
+    private TextField inputID;
+
+    @FXML
+    private TextField inputSupplierName;
 
     public EditOrderInFragmentHandler() {
         super(FXMLFragmentType.EDIT_ORDER_IN_FRAGMENT);
@@ -23,7 +30,22 @@ public class EditOrderInFragmentHandler extends Handler {
 
     @FXML
     private void handleAddProductButtonAction(ActionEvent event) {
-        OrderInProductFragment frag = new OrderInProductFragment(owner);
-        productsVBox.getChildren().add(frag.getRoot());
+        owner.addProduct();
+    }
+
+    protected String getID() {
+        return inputID.getText();
+    }
+
+    protected String getSupplierName() {
+        return inputSupplierName.getText();
+    }
+
+    public void addOrderInProductFragment(OrderInProductFragment fragment) {
+        productsVBox.getChildren().add(fragment.getRoot());
+    }
+
+    public void removeOrderInProductFragment(OrderInProductFragment fragment) {
+        productsVBox.getChildren().remove(fragment.getRoot());
     }
 }

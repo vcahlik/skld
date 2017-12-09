@@ -5,7 +5,7 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import cz.cvut.fit.project.skld.gui.PassResult;
 import cz.cvut.fit.project.skld.gui.Passable;
 import cz.cvut.fit.project.skld.gui.Screen;
-import cz.cvut.fit.project.skld.gui.util.exceptions.InputErrorException;
+import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.gui.components.edit_product_type.EditProductTypeFragment;
 
@@ -38,7 +38,7 @@ public class AddProductTypeScreen extends Screen {
 
         try {
             change.setId(editProductTypeFragment.getEditedId());
-        } catch (InputErrorException e) {
+        } catch (InvalidInputException e) {
             return;
         }
         change.setName(editProductTypeFragment.getEditedName());
