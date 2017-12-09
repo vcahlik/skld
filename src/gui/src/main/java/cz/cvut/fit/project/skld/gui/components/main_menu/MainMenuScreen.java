@@ -2,6 +2,7 @@ package cz.cvut.fit.project.skld.gui.components.main_menu;
 
 import cz.cvut.fit.project.skld.gui.*;
 import cz.cvut.fit.project.skld.gui.components.add_product_type_screen.AddProductTypeFrame;
+import cz.cvut.fit.project.skld.gui.components.change_order_in_screen.ChangeOrderInFrame;
 import cz.cvut.fit.project.skld.gui.components.change_product_type_screen.ChangeProductTypeFrame;
 import cz.cvut.fit.project.skld.gui.components.new_order_in_screen.NewOrderInFrame;
 import cz.cvut.fit.project.skld.gui.components.session_bar.SessionBarFragment;
@@ -45,6 +46,11 @@ public class MainMenuScreen extends Screen {
 
     public void newOrderIn() {
         NewOrderInFrame frame = new NewOrderInFrame(this);
+        frame.follow();
+    }
+
+    public void changeOrderIn() {
+        ChangeOrderInFrame frame = new ChangeOrderInFrame(this);
         frame.follow();
     }
 
