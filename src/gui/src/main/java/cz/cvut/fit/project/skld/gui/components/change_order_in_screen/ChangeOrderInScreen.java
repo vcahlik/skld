@@ -28,6 +28,8 @@ public class ChangeOrderInScreen extends Screen {
     }
 
     private void reset() {
+        findOrderInFragment.refresh();
+        editOrderInFragment.reset();
         setEditEnabled(false);
         handler.refresh();
     }
@@ -42,6 +44,7 @@ public class ChangeOrderInScreen extends Screen {
         String supplierName = editOrderInFragment.getEditedSupplierName();
 
         OrderInChange orderInChange = new OrderInChange(id, supplierName);
+        orderInChange.setDeliveryDate(editOrderInFragment.getEditedDeliveryDate());
         try {
             orderInChange.setProducts(editOrderInFragment.getEditedProducts());
         } catch (InvalidInputException e) {
@@ -55,7 +58,7 @@ public class ChangeOrderInScreen extends Screen {
             System.exit(1);
         }
 
-        getSource().pass(this, PassResult.DONE);
+        reset();
     }
 
     @Override

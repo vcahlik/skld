@@ -44,6 +44,7 @@ public class NewOrderInScreen extends Screen {
         String supplierName = editOrderInFragment.getEditedSupplierName();
 
         OrderInChange orderInChange = new OrderInChange(id, supplierName);
+        orderInChange.setDeliveryDate(editOrderInFragment.getEditedDeliveryDate());
         try {
             orderInChange.setProducts(editOrderInFragment.getEditedProducts());
         } catch (InvalidInputException e) {

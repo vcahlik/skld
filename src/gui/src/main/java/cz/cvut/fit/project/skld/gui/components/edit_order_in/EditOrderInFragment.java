@@ -8,7 +8,10 @@ import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class EditOrderInFragment extends Fragment {
@@ -22,25 +25,33 @@ public class EditOrderInFragment extends Fragment {
     private boolean filled;
 
     private long id;
+    private Date deliveryDate;
     private String supplierName;
 
     public EditOrderInFragment(Notifyable parent, boolean idEditEnabled) {
         super(parent);
         orderInProductFragments = new ArrayList<>();
         this.idEditEnabled = idEditEnabled;
-        this.filled = false;
-        this.id = 0;
-        this.supplierName = "";
-        setEnabled(true);
+        reset();
     }
 
     public EditOrderInFragment(Notifyable parent) {
         this(parent, true);
     }
 
+    public void reset() {
+        this.filled = false;
+        this.id = 0;
+        this.deliveryDate = new Date();
+        this.supplierName = "";
+        orderInProductFragments.clear();
+        setEnabled(true);
+    }
+
     public void fill(OrderInRepresentation orderInRepresentation) {
         this.filled = true;
         setId(orderInRepresentation.getId());
+        setDeliveryDate(orderInRepresentation.getDeliveryDate());
         setSupplierName(orderInRepresentation.getSupplierName());
         orderInProductFragments.clear();
         for (ProductRepresentation productRepresentation : orderInRepresentation.getProducts()) {
@@ -128,6 +139,23 @@ public class EditOrderInFragment extends Fragment {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Date getEditedDeliveryDate() {
+        LocalDate localDate = handler.getDeliveryDate();
+        if (localDate == null) {
+            return null;
+        }
+
+        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+    }
+
+    protected Date getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public void setDeliveryDate(Date deliveryDate) {
+        this.deliveryDate = deliveryDate;
     }
 
     public String getEditedSupplierName() {

@@ -17,34 +17,27 @@
               <rowConstraints>
                 <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Label text="ID:" />
-                  <Label text="Datum vytvoření:" GridPane.rowIndex="1" />
-                  <Label text="Očekávané datum přijetí:" GridPane.rowIndex="2" />
-                  <Label text="Název dodavatele:" GridPane.rowIndex="3" />
+                  <Label text="Očekávané datum přijetí:" GridPane.rowIndex="1" />
+                  <Label text="Název dodavatele:" GridPane.rowIndex="2" />
                   <TextField fx:id="inputID" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="inputSupplierName" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <DatePicker fx:id="inputDeliveryDate" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
-                  </TextField>
-                  <TextField fx:id="inputSupplierName" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <GridPane.margin>
-                        <Insets left="10.0" />
-                     </GridPane.margin>
-                  </TextField>
+                  </DatePicker>
                </children>
             </GridPane>
             <Label text="Seznam zboží:">
