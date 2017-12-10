@@ -1,4 +1,4 @@
-# Pokyny k nastaveniu
+﻿# Pokyny k nastaveniu
 Aplikácia je implementovaná ako dve hlavné komponenty - REST API a GUI. 
 Obidve musia bežať (nie nutne na tom istom serveri), aby sa dala používať.
 REST API naviac vyžaduje bežiacu PostgreSQL databázu.
@@ -15,5 +15,8 @@ prostredníctvom príkazu `psql -d nazov_databazy < db.sql`
 
 Napokon sa server dá spustiť pomocou príkazu `java -jar api.jar server config.yml`.
 Pre beh vyžaduje JRE 1.8.
+
+## Nastavení klienta
+Klient se jednoduše spustí příkazem `java -jar gui.jar`. Pro spuštění vyžaduje JRE 1.8 s podporou JavaFX 2 (Oracle JRE by to měl zvládat implicitně, OpenJRE technologii JavaFX rovněž podporuje, avšak obvykle se musí doinstalovat, na většině linuxových distribucí balíčkem openjfx).
 
 Do aplikácie sa dá prihlásiť ako administrátor pomocou PIN kódov `1234` a `1984`.
