@@ -9,7 +9,7 @@ database:
   driverClass: org.postgresql.Driver
 
   # the username
-  user: selvek
+  user: batman
 
   # the password
   password: ""
