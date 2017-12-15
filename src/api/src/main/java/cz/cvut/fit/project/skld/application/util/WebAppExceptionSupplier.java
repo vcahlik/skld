@@ -4,6 +4,9 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import java.util.function.Supplier;
 
+/***
+ * An implementation of Supplier interface over WebAppExceptions.
+ */
 public class WebAppExceptionSupplier implements Supplier<WebApplicationException> {
     private final String message;
     private final Response.Status status;

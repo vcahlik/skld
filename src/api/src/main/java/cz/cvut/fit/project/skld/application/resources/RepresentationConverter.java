@@ -10,6 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/***
+ * Contains static methods which convert from domain objects to different representations.
+ */
 class RepresentationConverter {
     public static UserRepresentation representUser(User u) {
         return new UserRepresentation(u.getId(), u.getName(), u.getCreatedAt(), u.isAdmin());
