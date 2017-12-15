@@ -5,6 +5,9 @@ import java.security.Principal;
 import java.time.Instant;
 import java.util.Objects;
 
+/***
+ * Represents a User from the domain model.
+ */
 @Entity
 @Table(
         name="users",
@@ -48,6 +51,11 @@ public class User implements Principal {
         setPin(PIN);
     }
 
+    /***
+     * Check whether the given PIN code is equal to user's PIN.
+     * @param comparedPIN PIN code to compare with the user's PIN
+     * @return whether the given PIN code is equal to user's PIN
+     */
     public boolean comparePIN(String comparedPIN) {
         return pin.equals(comparedPIN);
     }

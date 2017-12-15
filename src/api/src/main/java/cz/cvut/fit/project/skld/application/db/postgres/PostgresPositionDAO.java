@@ -8,6 +8,9 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
+/***
+ * An implementation of PositionDAO powered by Dropwizard's AbstractDAO implementation.
+ */
 public class PostgresPositionDAO extends AbstractDAO<ProductPosition>implements PositionDAO {
     public PostgresPositionDAO(SessionFactory factory) {
         super(factory);

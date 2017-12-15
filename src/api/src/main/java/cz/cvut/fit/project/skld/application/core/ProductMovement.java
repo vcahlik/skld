@@ -4,6 +4,9 @@ import javax.persistence.*;
 import java.time.Instant;
 import java.util.Objects;
 
+/***
+ * Represents a Product Movement from the domain model.
+ */
 @Entity
 @Table(name = "product_movements")
 public class ProductMovement {
