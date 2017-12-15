@@ -108,7 +108,11 @@ public class OrderInOperations {
         return order;
     }
 
-    public OrderIn create(User creator, OrderInChange request) {
+    public OrderIn create(User creator, OrderInChange request) throws InvalidStateException {
+        Optional<OrderIn> existing = orderInDAO.findById(request.getId());
+        if (existing.isPresent()) {
+            throw new InvalidStateException("Order with the given ID already exists");
+        }
         OrderIn order = new OrderIn(request.getId(), creator, request.getSupplierName());
         order.setExpectedDelivery(request.getDeliveryDate());
         for (ProductRepresentation rep : request.getProducts()) {

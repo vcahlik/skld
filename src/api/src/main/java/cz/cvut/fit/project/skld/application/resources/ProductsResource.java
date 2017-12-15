@@ -2,6 +2,7 @@ package cz.cvut.fit.project.skld.application.resources;
 
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.operations.ProductOperations;
+import cz.cvut.fit.project.skld.application.operations.exceptions.InvalidStateException;
 import cz.cvut.fit.project.skld.representations.ProductChange;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 import io.dropwizard.auth.Auth;
@@ -11,11 +12,9 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,7 +33,11 @@ public class ProductsResource {
     @UnitOfWork
     @RolesAllowed({"admin"})
     public ProductRepresentation createProduct(@Auth User user, @Valid ProductChange product) {
-        return RepresentationConverter.representProduct(productOps.create(user, product));
+        try {
+            return RepresentationConverter.representProduct(productOps.create(user, product));
+        } catch (InvalidStateException e) {
+            throw new WebApplicationException("Product with the given ID already exists", Response.Status.BAD_REQUEST);
+        }
     }
 
     @GET
