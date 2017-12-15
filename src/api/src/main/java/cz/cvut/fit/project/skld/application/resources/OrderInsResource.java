@@ -3,6 +3,7 @@ package cz.cvut.fit.project.skld.application.resources;
 
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.operations.OrderInOperations;
+import cz.cvut.fit.project.skld.application.operations.exceptions.InvalidStateException;
 import cz.cvut.fit.project.skld.representations.OrderInChange;
 import cz.cvut.fit.project.skld.representations.OrderInRepresentation;
 import io.dropwizard.auth.Auth;
@@ -14,6 +15,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,7 +35,11 @@ public class OrderInsResource {
     @UnitOfWork
     @RolesAllowed({"admin"})
     public OrderInRepresentation create(@Auth User user, @Valid OrderInChange request) {
-        return RepresentationConverter.representOrderIn(orderInOps.create(user, request));
+        try {
+            return RepresentationConverter.representOrderIn(orderInOps.create(user, request));
+        } catch (InvalidStateException e) {
+            throw new WebApplicationException("Order with the given ID already exists", Response.Status.BAD_REQUEST);
+        }
     }
 
     @GET

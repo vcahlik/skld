@@ -5,6 +5,7 @@ import cz.cvut.fit.project.skld.application.core.ProductPosition;
 import cz.cvut.fit.project.skld.application.core.User;
 import cz.cvut.fit.project.skld.application.db.PositionDAO;
 import cz.cvut.fit.project.skld.application.db.ProductDAO;
+import cz.cvut.fit.project.skld.application.operations.exceptions.InvalidStateException;
 import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundException;
 import cz.cvut.fit.project.skld.application.operations.exceptions.NotFoundExceptionSupplier;
 import cz.cvut.fit.project.skld.representations.ProductChange;
@@ -12,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.Optional;
 
 public class ProductOperations {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductOperations.class);
@@ -25,7 +27,11 @@ public class ProductOperations {
         this.positionDAO = posDao;
     }
 
-    public Product create(User creator, ProductChange product) {
+    public Product create(User creator, ProductChange product) throws InvalidStateException {
+        Optional<Product> existing = productDAO.findById(product.getId());
+        if (existing.isPresent()) {
+            throw new InvalidStateException("Product with the given ID already exists.");
+        }
         Product p = new Product(product.getId(), product.getName(), creator);
         return productDAO.create(p);
     }
