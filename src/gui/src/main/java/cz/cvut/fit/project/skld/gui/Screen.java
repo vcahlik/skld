@@ -1,12 +1,8 @@
 package cz.cvut.fit.project.skld.gui;
 
 public abstract class Screen extends Fragment implements Passable {
-    App app;
-
     public Screen(Passable source) {
         super(source);
-
-        this.app = source.getApp();
     }
 
     @Override
@@ -25,6 +21,6 @@ public abstract class Screen extends Fragment implements Passable {
     }
 
     public Passable getSource() {
-        return (Passable)parent;
+        return (Passable)getParent();
     }
 }

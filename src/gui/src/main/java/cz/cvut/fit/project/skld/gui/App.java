@@ -6,12 +6,17 @@ import cz.cvut.fit.project.skld.gui.resources.Config;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
+/**
+ * Nejvyssi trida a vstupni bod aplikace. Dedi tridu Application definovanou knihovnou JavaFX.
+ */
 public class App extends Application implements Passable {
     private SkldHttpClient httpClient;
     private MainWindow mainWindow;
 
+    /**
+     * Hlavni metoda. Nacte cestu ke konfiguracnimu souboru a spusti JavaFX aplikaci metodou launch()
+     * @param args Argumenty predane z prikazove radky: cesta ke konfiguracnimu souboru
+     */
     public static void main(String[] args) {
         if (args.length < 1) {
             System.out.println("Usage: java -jar gui.jar configfile");
@@ -21,7 +26,11 @@ public class App extends Application implements Passable {
         launch(args);
     }
 
-    public void start(Stage stage) throws IOException {
+    /**
+     * Vstupni metoda knihovny JavaFX. Vytvori hlavni okno a preda mu kontrolu.
+     * @param stage Automaticky vytvoreny JavaFX stage
+     */
+    public void start(Stage stage) {
         mainWindow = new MainWindow(this, stage);
         mainWindow.follow();
     }
