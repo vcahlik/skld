@@ -4,6 +4,9 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
+/***
+ * Represents an Order In from the domain model.
+ */
 @NamedQueries({
         @NamedQuery(
                 name = "OrderIn.findAll",

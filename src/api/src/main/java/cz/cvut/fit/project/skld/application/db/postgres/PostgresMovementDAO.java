@@ -7,6 +7,9 @@ import org.hibernate.SessionFactory;
 
 import java.util.Optional;
 
+/***
+ * An implementation of MovementDAO powered by Dropwizard's AbstractDAO implementation.
+ */
 public class PostgresMovementDAO extends AbstractDAO<ProductMovement>implements MovementDAO {
     public PostgresMovementDAO(SessionFactory factory) {
         super(factory);

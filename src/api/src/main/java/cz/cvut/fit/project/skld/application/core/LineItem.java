@@ -4,6 +4,9 @@ import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
+/***
+ * Represents a Line Item from the domain model.
+ */
 @Entity
 @Table(name="line_items")
 public class LineItem {

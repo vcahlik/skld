@@ -9,6 +9,9 @@ import org.hibernate.SessionFactory;
 import java.util.List;
 import java.util.Optional;
 
+/***
+ * An implementation of OrderInDAO powered by Dropwizard's AbstractDAO implementation.
+ */
 public class PostgresOrderInDAO extends AbstractDAO<OrderIn> implements OrderInDAO {
     public PostgresOrderInDAO(SessionFactory factory) {
         super(factory);

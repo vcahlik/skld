@@ -3,6 +3,9 @@ package cz.cvut.fit.project.skld.application.core;
 import javax.persistence.*;
 import java.util.Objects;
 
+/***
+ * Represents a Product from the domain model.
+ */
 @Entity
 @Table(name="products")
 @NamedQueries({

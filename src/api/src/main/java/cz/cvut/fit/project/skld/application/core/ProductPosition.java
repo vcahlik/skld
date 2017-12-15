@@ -3,6 +3,9 @@ package cz.cvut.fit.project.skld.application.core;
 
 import java.util.Objects;
 
+/***
+ * A helper class which describes some quantity of products located at a specified position.
+ */
 public class ProductPosition {
     private String position;
     private long quantity;

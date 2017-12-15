@@ -4,6 +4,9 @@ import javax.persistence.*;
 import java.time.Instant;
 import java.util.*;
 
+/***
+ * Represents an Order from the domain model.
+ */
 @Entity
 @Table(name="orders")
 @Inheritance(strategy = InheritanceType.JOINED)

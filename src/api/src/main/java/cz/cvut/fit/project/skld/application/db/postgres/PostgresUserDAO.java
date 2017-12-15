@@ -9,6 +9,9 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Optional;
 
+/***
+ * An implementation of UserDAO powered by Dropwizard's AbstractDAO implementation.
+ */
 public class PostgresUserDAO extends AbstractDAO<User>implements UserDAO {
     public PostgresUserDAO(SessionFactory factory) {
         super(factory);
