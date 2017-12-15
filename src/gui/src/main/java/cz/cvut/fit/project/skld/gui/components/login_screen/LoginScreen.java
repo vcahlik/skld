@@ -36,16 +36,13 @@ public class LoginScreen extends Screen {
         SkldHttpClient httpClient = null;
 
         try {
-             httpClient = SkldHttpClient.getClientForPIN(Config.SERVER_URL, password);
+             httpClient = SkldHttpClient.getClientForPIN(Config.getInstance().getServerUrl(), password);
         } catch (UnauthorizedException e) {
             handler.onInvalidPassword();
             return;
-        } catch (ConnectException e) {
+        } catch (IOException | APIException e) {
             FXUtil.displayAlert(Texts.Alerts.CONNECTION_ERROR_ALERT_TITLE, Texts.Alerts.CONNECTION_ERROR_ALERT_TEXT);
             return;
-        } catch (IOException | APIException e) {
-            e.printStackTrace();
-            System.exit(1);
         }
 
         getApp().setHttpClient(httpClient);

@@ -2,6 +2,7 @@ package cz.cvut.fit.project.skld.gui;
 
 import cz.cvut.fit.project.skld.client.http.SkldHttpClient;
 import cz.cvut.fit.project.skld.gui.components.MainWindow;
+import cz.cvut.fit.project.skld.gui.resources.Config;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -12,6 +13,11 @@ public class App extends Application implements Passable {
     private MainWindow mainWindow;
 
     public static void main(String[] args) {
+        if (args.length < 1) {
+            System.out.println("Usage: java -jar gui.jar configfile");
+            System.exit(1);
+        }
+        Config.setConfigFilePath(args[0]);
         launch(args);
     }
 
