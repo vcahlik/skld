@@ -22,6 +22,10 @@ import org.jose4j.jwt.consumer.JwtConsumer;
 import org.jose4j.jwt.consumer.JwtConsumerBuilder;
 import org.jose4j.keys.HmacKey;
 
+/***
+ * Application entry point. Initializes all the necessary packages, injects the needed objects into resources
+ * and starts, using its superclass, the application server.
+ */
 public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
 
     public static void main(final String[] args) throws Exception {

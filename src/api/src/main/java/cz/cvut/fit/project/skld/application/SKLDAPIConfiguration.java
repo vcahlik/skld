@@ -8,6 +8,9 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
+/***
+ * Contains application's configuration details.
+ */
 public class SKLDAPIConfiguration extends Configuration {
     @Valid
     @NotNull
