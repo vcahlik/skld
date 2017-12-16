@@ -55,7 +55,7 @@ public class FindProductTypeFragment extends Fragment {
 
     public void refresh() {
         try {
-            productTypes = getApp().getHttpClient().getProducts();
+            productTypes = getApp().getClient().getProducts();
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);

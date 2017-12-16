@@ -2,7 +2,15 @@ package cz.cvut.fit.project.skld.gui.resources;
 
 import cz.cvut.fit.project.skld.gui.FXMLFragmentType;
 
+/**
+ * Obsahuje nazvy (pripadne cesty) k souborum, typicky resource souborum
+ */
 public class Files {
+    /**
+     * Vraci FXML soubor definujici GUI pro prislusny fragment
+     * @param fragment Typ fragmentu
+     * @return FXML soubor pro prislusny typu fragmentu
+     */
     public static String getFXMLFilePath(FXMLFragmentType fragment) {
         String fileName;
 

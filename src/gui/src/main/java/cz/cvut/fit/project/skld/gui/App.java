@@ -1,5 +1,6 @@
 package cz.cvut.fit.project.skld.gui;
 
+import cz.cvut.fit.project.skld.client.SkldClient;
 import cz.cvut.fit.project.skld.client.http.SkldHttpClient;
 import cz.cvut.fit.project.skld.gui.components.MainWindow;
 import cz.cvut.fit.project.skld.gui.resources.Config;
@@ -11,7 +12,7 @@ import javafx.stage.Stage;
  * Nejvyssi trida a vstupni bod aplikace. Dedi tridu Application definovanou knihovnou JavaFX.
  */
 public class App extends Application implements Passable {
-    private SkldHttpClient httpClient;
+    private SkldClient client;
     private MainWindow mainWindow;
 
     /**
@@ -64,12 +65,20 @@ public class App extends Application implements Passable {
 
     }
 
-    public void setHttpClient(SkldHttpClient httpClient) {
-        this.httpClient = httpClient;
+    /**
+     * Nastavi SkldClienta, tedy datovou cast aplikace
+     * @param skldClient SkldClient
+     */
+    public void setClient(SkldClient skldClient) {
+        this.client = client;
     }
 
-    public SkldHttpClient getHttpClient() {
-        return httpClient;
+    /**
+     * Vraci SkldClienta aplikace
+     * @return SkldClient
+     */
+    public SkldClient getClient() {
+        return client;
     }
 
 }

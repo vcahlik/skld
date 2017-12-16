@@ -45,7 +45,7 @@ public class LoginScreen extends Screen {
             return;
         }
 
-        getApp().setHttpClient(httpClient);
+        getApp().setClient(httpClient);
 
         MainMenuScreen screen = new MainMenuScreen(this);
         screen.follow();

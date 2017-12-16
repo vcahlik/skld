@@ -24,6 +24,10 @@ public abstract class Component implements UI, Notifyable {
         return parent.getApp();
     }
 
+    /**
+     * Vraci rodice, ktery obsahuje tuto komponentu (nebo ze ktereho byla vytvorena)
+     * @return Rodic
+     */
     public Notifyable getParent() {
         return parent;
     }

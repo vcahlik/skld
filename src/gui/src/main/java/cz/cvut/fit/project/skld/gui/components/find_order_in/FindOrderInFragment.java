@@ -47,7 +47,7 @@ public class FindOrderInFragment extends Fragment {
 
     public void refresh() {
         try {
-            ordersIn = getApp().getHttpClient().getOrderIns();
+            ordersIn = getApp().getClient().getOrderIns();
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);
