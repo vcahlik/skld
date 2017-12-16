@@ -3,6 +3,7 @@ package cz.cvut.fit.project.skld.gui;
 import cz.cvut.fit.project.skld.client.http.SkldHttpClient;
 import cz.cvut.fit.project.skld.gui.components.MainWindow;
 import cz.cvut.fit.project.skld.gui.resources.Config;
+import cz.cvut.fit.project.skld.gui.resources.Texts;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -18,11 +19,14 @@ public class App extends Application implements Passable {
      * @param args Argumenty predane z prikazove radky: cesta ke konfiguracnimu souboru
      */
     public static void main(String[] args) {
-        if (args.length < 1) {
-            System.out.println("Usage: java -jar gui.jar configfile");
+        if (args.length > 1) {
+            System.out.println(Texts.ConsoleOutput.USAGE_HINT);
             System.exit(1);
+        } else if (args.length == 1) {
+            Config.setConfigFilePath(args[0]);
+        } else {
+            System.err.println(Texts.ConsoleOutput.NO_CONFIG_FILE_SPECIFIED_MESSAGE);
         }
-        Config.setConfigFilePath(args[0]);
         launch(args);
     }
 

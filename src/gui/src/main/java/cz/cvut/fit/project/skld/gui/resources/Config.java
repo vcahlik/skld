@@ -7,7 +7,7 @@ import java.util.Properties;
 public class Config {
     private static Config instance;
 
-    private static String configFilePath;
+    private static String configFilePath = "";
     private Properties properties;
 
     protected Config() {
@@ -18,9 +18,7 @@ public class Config {
             properties.load(in);
             in.close();
         } catch (IOException e) {
-            // Config file not present or IO error
-            e.printStackTrace();
-            System.exit(1);
+            // Config file not present or IO error, will use default property values
             return;
         }
     }
@@ -33,11 +31,19 @@ public class Config {
     }
 
     public String getServerUrl() {
-        return properties.getProperty("serverUrl", "http://localhost:8080");
+        return properties.getProperty(PropertyNames.SERVER_URL, DefaultConfig.SERVER_URL);
     }
 
     public static void setConfigFilePath(String configFilePath) {
         Config.configFilePath = configFilePath;
+    }
+
+    private static class PropertyNames {
+        private static final String SERVER_URL = "serverUrl";
+    }
+
+    private static class DefaultConfig {
+        private static final String SERVER_URL = "http://localhost:8080";
     }
 
 }
