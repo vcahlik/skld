@@ -64,7 +64,7 @@ public class ChangeProductTypeScreen extends Screen {
         change.setName(editProductTypeFragment.getEditedName());
 
         try {
-            getApp().getHttpClient().changeProduct(change);
+            getApp().getClient().changeProduct(change);
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);

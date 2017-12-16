@@ -52,7 +52,7 @@ public class ChangeOrderInScreen extends Screen {
         }
 
         try {
-            getApp().getHttpClient().updateOrderIn(orderInChange);
+            getApp().getClient().updateOrderIn(orderInChange);
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);

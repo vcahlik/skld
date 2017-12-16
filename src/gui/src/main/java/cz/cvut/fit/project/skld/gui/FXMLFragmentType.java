@@ -1,5 +1,8 @@
 package cz.cvut.fit.project.skld.gui;
 
+/**
+ * Oznacuje typ fragmentu, kazdy fragment ma obvykle svuj vlastni. Diky tomuto systemu je fragment schopen identifikovat svuj FXML soubor.
+ */
 public enum FXMLFragmentType {
     LOGIN_SCREEN, MAIN_MENU_SCREEN, SESSION_BAR_FRAGMENT, NAVIGATOR_FRAME, NAVIGATOR_BAR_FRAGMENT, ADD_PRODUCT_TYPE_SCREEN, EDIT_PRODUCT_TYPE_FRAGMENT,
     CHANGE_PRODUCT_TYPE_SCREEN, FIND_PRODUCT_TYPE_FRAGMENT, EDIT_ORDER_IN_FRAGMENT, NEW_ORDER_IN_SCREEN, ORDER_IN_PRODUCT_FRAGMENT, ADD_PRODUCT_TO_ORDER_SCREEN,

@@ -55,7 +55,7 @@ public class NewOrderInScreen extends Screen {
         }
 
         try {
-            getApp().getHttpClient().createOrderIn(orderInChange);
+            getApp().getClient().createOrderIn(orderInChange);
         } catch (BadRequestException e) {
             FXUtil.displayAlert(Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TITLE, Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TEXT);
             return;

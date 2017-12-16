@@ -47,7 +47,7 @@ public class AddProductTypeScreen extends Screen {
         change.setName(editProductTypeFragment.getEditedName());
 
         try {
-            getApp().getHttpClient().createProduct(change);
+            getApp().getClient().createProduct(change);
         } catch (BadRequestException e) {
             FXUtil.displayAlert(Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TITLE, Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TEXT);
             return;

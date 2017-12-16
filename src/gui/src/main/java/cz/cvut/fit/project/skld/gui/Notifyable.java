@@ -6,7 +6,7 @@ package cz.cvut.fit.project.skld.gui;
  */
 public interface Notifyable {
     /**
-     * Zavolana na objektu, ktery je notifikovan.
+     * Oznami objektu, ze doslo k nejake udalosti. Zavolana na objektu, ktery je notifikovan.
      * @param source Objekt, ktery odeslal notifikaci
      * @param notifyType Typ notifikace
      */
