@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+/***
+ * A login request, containing user's PIN code.
+ */
 public class PIN {
     private String pin;
 

@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/***
+ * Request payload for edits performed on Order Ins.
+ */
 public class OrderInChange {
     private long id;
 
