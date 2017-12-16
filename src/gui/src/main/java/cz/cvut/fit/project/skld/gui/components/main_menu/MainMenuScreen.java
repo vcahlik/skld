@@ -8,10 +8,17 @@ import cz.cvut.fit.project.skld.gui.components.new_order_in_screen.NewOrderInFra
 import cz.cvut.fit.project.skld.gui.components.session_bar.SessionBarFragment;
 import cz.cvut.fit.project.skld.*;
 
+/**
+ * Obrazovka hlavniho menu aplikace. Z ni se uzivatel muze jednim kliknutim dostat do implementace vetsiny use cases.
+ */
 public class MainMenuScreen extends Screen {
     MainMenuScreenHandler handler;
     private SessionBarFragment sessionBarFragment;
 
+    /**
+     * Konstruktor.
+     * @param source Rodicovsky objekt
+     */
     public MainMenuScreen(Passable source) {
         super(source);
 
@@ -44,26 +51,42 @@ public class MainMenuScreen extends Screen {
         }
     }
 
+    /**
+     * Presune uzivatele na screen vytvoreni nove logisticke objednavky.
+     */
     public void newOrderIn() {
         NewOrderInFrame frame = new NewOrderInFrame(this);
         frame.follow();
     }
 
+    /**
+     * Presune uzivatele na screen zmeny existujici logisticke objednavky.
+     */
     public void changeOrderIn() {
         ChangeOrderInFrame frame = new ChangeOrderInFrame(this);
         frame.follow();
     }
 
+    /**
+     * Presune uzivatele na screen vytvoreni noveho typu produktu.
+     */
     public void addProductType() {
         AddProductTypeFrame frame = new AddProductTypeFrame(this);
         frame.follow();
     }
 
+    /**
+     * Presune uzivatele na screen zmeny existujiciho typu produktu.
+     */
     public void changeProductType() {
         ChangeProductTypeFrame frame = new ChangeProductTypeFrame(this);
         frame.follow();
     }
 
+    /**
+     * Nastavi SessionBarFragment s informacemi o uzivateli.
+     * @param sessionBarFragment SessionBarFragment
+     */
     public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
         this.sessionBarFragment = sessionBarFragment;
         handler.setSessionBarFragment(sessionBarFragment);

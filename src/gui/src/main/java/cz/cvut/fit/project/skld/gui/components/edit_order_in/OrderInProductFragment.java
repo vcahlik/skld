@@ -9,12 +9,20 @@ import cz.cvut.fit.project.skld.gui.util.FXUtil;
 import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 
+/**
+ * Fragment reprezentujici produkt obsazeny v aktualne editovane logisticke objednavce.
+ */
 public class OrderInProductFragment extends Fragment {
     private OrderInProductFragmentHandler handler;
 
     private ProductRepresentation productRepresentation;
     private boolean deleteRequested;
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     * @param productRepresentation Typ produktu
+     */
     public OrderInProductFragment(Notifyable parent, ProductRepresentation productRepresentation) {
         super(parent);
         deleteRequested = false;
@@ -28,15 +36,27 @@ public class OrderInProductFragment extends Fragment {
         return handler;
     }
 
+    /**
+     * Zjisti, zda uzivatel odstranil produkt ze seznamu.
+     * @return
+     */
     public boolean isDeleteRequested() {
         return deleteRequested;
     }
 
+    /**
+     * Zavolano pri pozadavku uzivatele o odstraneni produkt ze seznamu.
+     */
     protected void requestDelete() {
         this.deleteRequested = true;
         getParent().notify(this, NotifyType.CHANGE);
     }
 
+    /**
+     * Vraci editovany produkt s jeho zadanym mnozstvim.
+     * @return Produkt
+     * @throws InvalidInputException Pri nespravnem mnozstvi (neni cele cislo)
+     */
     public ProductRepresentation getEditedProductRepresentation() throws InvalidInputException {
         try {
             productRepresentation.setQuantity(Long.parseLong(handler.getQuantity()));
@@ -48,6 +68,10 @@ public class OrderInProductFragment extends Fragment {
         return productRepresentation;
     }
 
+    /**
+     * Vraci puvodni editovany produkt
+     * @return Produkt
+     */
     protected ProductRepresentation getProductRepresentation() {
         return productRepresentation;
     }

@@ -11,12 +11,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Fragment pro vyhledani existujiciho typu logisticke objednavky.
+ */
 public class FindOrderInFragment extends Fragment {
     private FindOrderInFragmentHandler handler;
 
     private List<OrderInRepresentation> ordersIn;
     private OrderInRepresentation selectedOrderIn;
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     */
     public FindOrderInFragment(Notifyable parent) {
         super(parent);
         ordersIn = new ArrayList<>();
@@ -30,14 +37,26 @@ public class FindOrderInFragment extends Fragment {
         return handler;
     }
 
-    public boolean isSelected() {
+    /**
+     * Zjisti, zda uzivatel oznacil nejakou objednavku ze seznamu
+     * @return true pokud existuje oznacena objednavka
+     */
+    public boolean isAnyOrderInSelected() {
         return getSelected() != null;
     }
 
+    /**
+     * Vrati uzivatelem oznacenou objednavku.
+     * @return Oznacena objednavka
+     */
     public OrderInRepresentation getSelected() {
         return selectedOrderIn;
     }
 
+    /**
+     * Oznaci objednavku jako oznacenou uzivatelem.
+     * @param selectedOrderIn Oznacena objednavka
+     */
     protected void setSelectedOrderIn(OrderInRepresentation selectedOrderIn) {
         if (this.selectedOrderIn != selectedOrderIn) {
             this.selectedOrderIn = selectedOrderIn;
@@ -45,6 +64,9 @@ public class FindOrderInFragment extends Fragment {
         }
     }
 
+    /**
+     * Nacte seznam vsech logistickych objednavek a zobrazi jej.
+     */
     public void refresh() {
         try {
             ordersIn = getApp().getClient().getOrderIns();

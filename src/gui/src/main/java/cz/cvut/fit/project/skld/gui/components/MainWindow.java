@@ -6,7 +6,15 @@ import cz.cvut.fit.project.skld.gui.resources.Texts;
 import cz.cvut.fit.project.skld.*;
 import javafx.stage.Stage;
 
+/**
+ * Hlavni okno aplikace. Zobrazene po jejim spusteni.
+ */
 public class MainWindow extends Window {
+    /**
+     * Konstruktor
+     * @param app Aplikace
+     * @param stage JavaFX Stage
+     */
     public MainWindow(App app, Stage stage) {
         super(app, stage, Texts.Windows.MAIN_WINDOW_TITLE);
         stage.setMaximized(true);

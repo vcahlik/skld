@@ -11,6 +11,9 @@ import javafx.scene.control.TableView;
 
 import java.util.List;
 
+/**
+ * Handler pro FindOrderInFragment.
+ */
 public class FindOrderInFragmentHandler extends Handler {
     private FindOrderInFragment owner;
 
@@ -29,6 +32,9 @@ public class FindOrderInFragmentHandler extends Handler {
     @FXML
     private TableColumn<OrderInRepresentation, String> stateColumn;
 
+    /**
+     * Vola JavaFX pri inicializaci handleru.
+     */
     @FXML
     private void initialize() {
         idColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
@@ -45,14 +51,25 @@ public class FindOrderInFragmentHandler extends Handler {
         }
     }
 
+    /**
+     * Konstruktor.
+     */
     public FindOrderInFragmentHandler() {
         super(FXMLFragmentType.FIND_ORDER_IN_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(FindOrderInFragment owner) {
         this.owner = owner;
     }
 
+    /**
+     * Zobrazi seznam logistickych objednavek.
+     * @param productTypes Logisticke objednavky ke zobrazeni
+     */
     public void setOrdersIn(List<OrderInRepresentation> productTypes) {
         orderInTable.getItems().clear();
         for (OrderInRepresentation productType : productTypes) {
@@ -60,6 +77,9 @@ public class FindOrderInFragmentHandler extends Handler {
         }
     }
 
+    /**
+     * Zadny polozky oznacene uzivatelem jiz nebudou oznaceny.
+     */
     public void clearSelection() {
         orderInTable.getSelectionModel().clearSelection();
     }

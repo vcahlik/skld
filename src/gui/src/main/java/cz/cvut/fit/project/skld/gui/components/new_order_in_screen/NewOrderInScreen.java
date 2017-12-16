@@ -14,11 +14,18 @@ import cz.cvut.fit.project.skld.representations.OrderInChange;
 
 import java.io.IOException;
 
+/**
+ * Obrazovka pro vytvoreni nove logisticke objednavky.
+ */
 public class NewOrderInScreen extends Screen {
     private NewOrderInScreenHandler handler;
 
     private EditOrderInFragment editOrderInFragment;
 
+    /**
+     * Konstruktor.
+     * @param source Rodicovsky objekt
+     */
     public NewOrderInScreen(Passable source) {
         super(source);
 
@@ -32,11 +39,18 @@ public class NewOrderInScreen extends Screen {
         return handler;
     }
 
+    /**
+     * Nastavi fragment pro editaci logisticke objednavky.
+     * @param editOrderInFragment Fragment pro editaci logisticke objednavky
+     */
     public void setEditOrderInFragment(EditOrderInFragment editOrderInFragment) {
         this.editOrderInFragment = editOrderInFragment;
         handler.setEditOrderInFragment(editOrderInFragment);
     }
 
+    /**
+     * Zavolano pri odeslani objednavky uzivatelem. Provede validaci vstupu a pri uspechu odesle objednavku na server a vrati uzivatele do hlavniho menu, jinak zobrazi uzivateli alert s chybou.
+     */
     protected void onSubmit() {
         Long id;
         try {

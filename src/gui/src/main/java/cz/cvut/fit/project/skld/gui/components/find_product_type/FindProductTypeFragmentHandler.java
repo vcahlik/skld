@@ -22,6 +22,9 @@ public class FindProductTypeFragmentHandler extends Handler {
     @FXML
     private TableColumn<ProductRepresentation, String> nameColumn;
 
+    /**
+     * Vola JavaFX pri inicializaci handleru.
+     */
     @FXML
     private void initialize() {
         idColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
@@ -36,14 +39,25 @@ public class FindProductTypeFragmentHandler extends Handler {
         }
     }
 
+    /**
+     * Konstruktor.
+     */
     public FindProductTypeFragmentHandler() {
         super(FXMLFragmentType.FIND_PRODUCT_TYPE_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(FindProductTypeFragment owner) {
         this.owner = owner;
     }
 
+    /**
+     * Zobrazi seznam typu produktu.
+     * @param productTypes Typy produktu ke zobrazeni
+     */
     public void setProductTypes(List<ProductRepresentation> productTypes) {
         productTypeTable.getItems().clear();
         for (ProductRepresentation productType : productTypes) {
@@ -51,6 +65,9 @@ public class FindProductTypeFragmentHandler extends Handler {
         }
     }
 
+    /**
+     * Zadny polozky oznacene uzivatelem jiz nebudou oznaceny.
+     */
     public void clearSelection() {
         productTypeTable.getSelectionModel().clearSelection();
     }

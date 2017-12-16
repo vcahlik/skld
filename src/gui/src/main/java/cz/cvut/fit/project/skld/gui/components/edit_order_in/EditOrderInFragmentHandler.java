@@ -41,6 +41,10 @@ public class EditOrderInFragmentHandler extends Handler {
         super(FXMLFragmentType.EDIT_ORDER_IN_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(EditOrderInFragment owner) {
         this.owner = owner;
     }

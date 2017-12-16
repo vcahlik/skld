@@ -7,6 +7,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+/**
+ * Handler pro OrderInProductFragment.
+ */
 public class OrderInProductFragmentHandler extends Handler {
     private OrderInProductFragment owner;
 
@@ -19,10 +22,17 @@ public class OrderInProductFragmentHandler extends Handler {
     @FXML
     private Label productName;
 
+    /**
+     * Konstruktor.
+     */
     public OrderInProductFragmentHandler() {
         super(FXMLFragmentType.ORDER_IN_PRODUCT_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(OrderInProductFragment owner) {
         this.owner = owner;
     }
@@ -32,10 +42,17 @@ public class OrderInProductFragmentHandler extends Handler {
         owner.requestDelete();
     }
 
+    /**
+     * Vraci uzivatelem zadane mnozstvi produktu.
+     * @return Mnozstvi
+     */
     protected String getQuantity() {
         return productQuantity.getText();
     }
 
+    /**
+     * Aktualizuje zobrazene hodnoty.
+     */
     protected void refresh() {
         productQuantity.setText(Long.toString(owner.getProductRepresentation().getQuantity()));
         productId.setText(Long.toString(owner.getProductRepresentation().getId()));

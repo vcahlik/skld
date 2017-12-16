@@ -10,6 +10,9 @@ import javafx.scene.control.PasswordField;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Handler pro LoginScreen.
+ */
 public class LoginScreenHandler extends Handler {
     private LoginScreen owner;
 
@@ -22,14 +25,24 @@ public class LoginScreenHandler extends Handler {
     @FXML
     private Label infoLabel;
 
+    /**
+     * Konstruktor.
+     */
     public LoginScreenHandler() {
         super(FXMLFragmentType.LOGIN_SCREEN);
     }
 
+    /**
+     * Pripoji k handleru prislusny screen.
+     * @param owner Fragment
+     */
     public void setOwner(LoginScreen owner) {
         this.owner = owner;
     }
 
+    /**
+     * Zablokuje uzivateli na chvili policko pro zadani hesla.
+     */
     protected void onInvalidPassword() {
         try {
             TimeUnit.SECONDS.sleep(1);
@@ -45,6 +58,6 @@ public class LoginScreenHandler extends Handler {
         String password = passwordField.getText();
         passwordField.clear();
         infoLabel.setVisible(false);
-        owner.submitPassword(password);
+        owner.onPasswordSubmit(password);
     }
 }

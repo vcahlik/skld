@@ -14,11 +14,18 @@ import cz.cvut.fit.project.skld.gui.components.edit_product_type.EditProductType
 
 import java.io.IOException;
 
+/**
+ * Obrazovka pro pridani noveho typu produktu.
+ */
 public class AddProductTypeScreen extends Screen {
     private AddProductTypeScreenHandler handler;
 
     private EditProductTypeFragment editProductTypeFragment;
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     */
     public AddProductTypeScreen(Passable parent) {
         super(parent);
         setEditProductTypeFragment(new EditProductTypeFragment(this));
@@ -31,12 +38,19 @@ public class AddProductTypeScreen extends Screen {
         return handler;
     }
 
+    /**
+     * Nastavi EditProductTypeFragment pro editaci typu produktu.
+     * @param editProductTypeFragment EditProductTypeFragment
+     */
     public void setEditProductTypeFragment(EditProductTypeFragment editProductTypeFragment) {
         this.editProductTypeFragment = editProductTypeFragment;
         handler.setEditProductTypeFragment(editProductTypeFragment);
     }
 
-    public void addProductType() {
+    /**
+     * Zavolano pri potvrzeni odeslani uzivatelem. V pripade zadani nespravneho ID zobrazi alert s chybou, jinak data odesle na server a vrati uzivatele do hlavniho menu.
+     */
+    public void onAddProductType() {
         ProductChange change = new ProductChange();
 
         try {

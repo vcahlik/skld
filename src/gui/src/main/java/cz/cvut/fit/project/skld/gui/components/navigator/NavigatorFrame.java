@@ -5,6 +5,10 @@ import cz.cvut.fit.project.skld.gui.components.navigator.navigator_bar.Navigator
 import cz.cvut.fit.project.skld.gui.components.session_bar.SessionBarFragment;
 import cz.cvut.fit.project.skld.*;
 
+/**
+ * Wrapper, ktery umoznuje navigaci a pridava okolo vestaveneho screenu navigacni listu a session bar.
+ * Navigace probiha zpravidla o krok o jednu obrazovku dopredu nebo zpet (jako ve webovem prohlizeci).
+ */
 public abstract class NavigatorFrame extends Frame {
     private NavigatorFrameHandler handler;
 
@@ -12,6 +16,10 @@ public abstract class NavigatorFrame extends Frame {
     private Screen content;
     private SessionBarFragment sessionBarFragment;
 
+    /**
+     * Konstruktor.
+     * @param source Rodicovsky objekt
+     */
     public NavigatorFrame(Passable source) {
         super(source);
 
@@ -48,11 +56,19 @@ public abstract class NavigatorFrame extends Frame {
         }
     }
 
+    /**
+     * Nastavi fragment s navigacni listou.
+     * @param navigatorBarFragment Fragment s navigacni listou
+     */
     public void setNavigatorBarFragment(NavigatorBarFragment navigatorBarFragment) {
         this.navigatorBarFragment = navigatorBarFragment;
         handler.setNavigatorBarFragment(navigatorBarFragment);
     }
 
+    /**
+     * Nastavi SessionBarFragment s informacemi o uzivateli.
+     * @param sessionBarFragment SessionBarFragment
+     */
     public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
         this.sessionBarFragment = sessionBarFragment;
         handler.setSessionBarFragment(sessionBarFragment);

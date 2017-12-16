@@ -6,20 +6,33 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+/**
+ * Handler SessionBarFragmentu
+ */
 public class SessionBarFragmentHandler extends Handler {
-    SessionBarFragment owner;
+    private SessionBarFragment owner;
 
     @FXML
     private Label signedUser;
 
+    /**
+     * Konstruktor.
+     */
     public SessionBarFragmentHandler() {
         super(FXMLFragmentType.SESSION_BAR_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(SessionBarFragment owner) {
         this.owner = owner;
     }
 
+    /**
+     * Vola JavaFX pri inicializaci handleru.
+     */
     @FXML
     protected void initialize() {
         signedUser.setText(owner.getApp().getClient().getLoggedInUser().getName());
@@ -27,6 +40,6 @@ public class SessionBarFragmentHandler extends Handler {
 
     @FXML
     private void handleLogoutLinkAction(ActionEvent event) {
-        owner.logoutRequested();
+        owner.onLogoutRequested();
     }
 }

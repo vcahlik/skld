@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Fragment pro editaci (existujici/nove) logisticke objednavky.
+ */
 public class EditOrderInFragment extends Fragment {
     private EditOrderInFragmentHandler handler;
 
@@ -28,6 +31,11 @@ public class EditOrderInFragment extends Fragment {
     private Date deliveryDate;
     private String supplierName;
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     * @param idEditEnabled true umozni editaci ID typu produktu
+     */
     public EditOrderInFragment(Notifyable parent, boolean idEditEnabled) {
         super(parent);
         orderInProductFragments = new ArrayList<>();
@@ -35,10 +43,17 @@ public class EditOrderInFragment extends Fragment {
         reset();
     }
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     */
     public EditOrderInFragment(Notifyable parent) {
         this(parent, true);
     }
 
+    /**
+     * Vrati objekt do pocatecniho stavu.
+     */
     public void reset() {
         this.filled = false;
         this.id = 0;
@@ -48,6 +63,10 @@ public class EditOrderInFragment extends Fragment {
         setEnabled(true);
     }
 
+    /**
+     * Vyplni polozky podle hodnot dane logisticke objednavky
+     * @param orderInRepresentation Logisticka objednavka
+     */
     public void fill(OrderInRepresentation orderInRepresentation) {
         this.filled = true;
         setId(orderInRepresentation.getId());
@@ -61,6 +80,10 @@ public class EditOrderInFragment extends Fragment {
         handler.reset();
     }
 
+    /**
+     * Umozni/znemozni editaci policek formulare.
+     * @param enabled true editace bude umoznena
+     */
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
         handler.reset();
@@ -69,7 +92,7 @@ public class EditOrderInFragment extends Fragment {
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == addProductToOrderWindow && notifyType == NotifyType.CHANGE) {
-            productAdded();
+            onProductAdded();
         } else if (notifyType == NotifyType.CHANGE) {
             removeDeletedProducts();
         }
@@ -104,13 +127,16 @@ public class EditOrderInFragment extends Fragment {
         return products;
     }
 
+    /**
+     * Prida typ produktu do seznamu zobrazenych typu produktu.
+     */
     protected void addProduct() {
         addProductToOrderWindow = new AddProductToOrderWindow(this);
         addProductToOrderWindow.setExcluded(getProducts());
         addProductToOrderWindow.follow();
     }
 
-    private void productAdded() {
+    private void onProductAdded() {
         ProductRepresentation product = addProductToOrderWindow.getSelected();
         addProductToOrderWindow.close();
 
@@ -124,6 +150,11 @@ public class EditOrderInFragment extends Fragment {
         handler.addOrderInProductFragment(fragment);
     }
 
+    /**
+     * Pokusi se vratit uzivatelem zadane ID, pri nespravnem formatu zobrazi alert a vyhodi vyjimku.
+     * @return Zadane ID
+     * @throws InvalidInputException ID neni cele cislo
+     */
     public long getEditedId() throws InvalidInputException {
         try {
             return Long.parseLong(handler.getID());
@@ -133,14 +164,26 @@ public class EditOrderInFragment extends Fragment {
         }
     }
 
+    /**
+     * Vraci puvodni ID editovane logisticke objednavky.
+     * @return ID
+     */
     protected Long getId() {
         return id;
     }
 
+    /**
+     * Nastavi puvodni ID logisticke objednavky.
+     * @param id ID
+     */
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * Vraci uzivatelem zadane datum ocekavaneho doruceni logisticke objednavky.
+     * @return Datum ocekavaneho doruceni
+     */
     public Date getEditedDeliveryDate() {
         LocalDate localDate = handler.getDeliveryDate();
         if (localDate == null) {
@@ -150,18 +193,33 @@ public class EditOrderInFragment extends Fragment {
         return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
 
+    /**
+     * Vraci ocekavane datum doruceni puvodni editovane logisticke objednavky.
+     * @return Ocekavane datum doruceni
+     */
     protected Date getDeliveryDate() {
         return deliveryDate;
     }
 
+    /**
+     * Nastavi predzobrazene datum doruceni puvodni editovane logisticke objednavky.
+     */
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
     }
 
+    /**
+     * Vraci uzivatelem zadany nazev dodavatele logisticke objednavky.
+     * @return Nazev dodavatele
+     */
     public String getEditedSupplierName() {
         return handler.getSupplierName();
     }
 
+    /**
+     * Vraci puvodni jmeno dodavatele editovane objednavky.
+     * @return Jmeno dodavatele
+     */
     protected String getSupplierName() {
         return supplierName;
     }
@@ -178,18 +236,34 @@ public class EditOrderInFragment extends Fragment {
         return products;
     }
 
+    /**
+     * Zjistuje zda je umoznena editace ID typu produktu.
+     * @return true editace umoznena
+     */
     protected boolean isIdEditEnabled() {
         return idEditEnabled;
     }
 
+    /**
+     * Zjistuje zda je umoznena editace.
+     * @return true editace umoznena
+     */
     protected boolean isEnabled() {
         return enabled;
     }
 
+    /**
+     * Vraci fragmenty veskerych produktu obsazenych v aktualne editovane logisticke objednavce.
+     * @return
+     */
     protected List<OrderInProductFragment> getOrderInProductFragments() {
         return orderInProductFragments;
     }
 
+    /**
+     * Zjistuje zda byly polozky formulare naplneny nejakym existujicim typem produktu (pri jeho zmene).
+     * @return true formular byl naplnen
+     */
     public boolean isFilled() {
         return filled;
     }

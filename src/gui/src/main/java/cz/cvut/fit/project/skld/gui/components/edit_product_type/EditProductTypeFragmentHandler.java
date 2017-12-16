@@ -5,6 +5,9 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+/**
+ * Handler pro EditProductTypeFragment.
+ */
 public class EditProductTypeFragmentHandler extends Handler {
     private EditProductTypeFragment owner;
 
@@ -14,14 +17,24 @@ public class EditProductTypeFragmentHandler extends Handler {
     @FXML
     private TextField inputName;
 
+    /**
+     * Konstruktor.
+     */
     public EditProductTypeFragmentHandler() {
         super(FXMLFragmentType.EDIT_PRODUCT_TYPE_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(EditProductTypeFragment owner) {
         this.owner = owner;
     }
 
+    /**
+     * Vraci objekt do pocatecniho stavu.
+     */
     public void reset() {
         if (owner.isFilled()) {
             inputID.setText(Long.toString(owner.getId()));
@@ -34,10 +47,18 @@ public class EditProductTypeFragmentHandler extends Handler {
         inputName.setDisable(!owner.isEnabled());
     }
 
+    /**
+     * Vraci uzivatelem vyplnene ID typu produktu.
+     * @return ID typu produktu
+     */
     public String getID() {
         return inputID.getText();
     }
 
+    /**
+     * Vraci uzivatelem zadane jmeno typu produktu.
+     * @return Jmeno typu produktu
+     */
     public String getName() {
         return inputName.getText();
     }
