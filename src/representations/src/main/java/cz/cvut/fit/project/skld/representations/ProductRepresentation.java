@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
+/***
+ * A response with full details of a Product
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductRepresentation {
     private long id;

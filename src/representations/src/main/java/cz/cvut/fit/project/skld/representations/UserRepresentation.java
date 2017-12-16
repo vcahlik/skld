@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;
 import java.util.Objects;
 
+/***
+ * A response with full details of a User
+ */
 public class UserRepresentation {
 
     private long id;

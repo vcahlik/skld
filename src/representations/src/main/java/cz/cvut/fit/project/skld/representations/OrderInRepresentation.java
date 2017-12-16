@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/***
+ * A response with full details of an Order In.
+ */
 public class OrderInRepresentation {
     private long id;
 

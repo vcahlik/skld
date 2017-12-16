@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.NotNull;
 
+/***
+ * Request payload for edits performed on Products
+ */
 public class ProductChange {
     private String name;
 
