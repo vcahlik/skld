@@ -1,11 +1,14 @@
 package cz.cvut.fit.project.skld.gui.components.new_order_in_screen;
 
 import cz.cvut.fit.project.skld.client.exceptions.APIException;
+import cz.cvut.fit.project.skld.client.exceptions.BadRequestException;
 import cz.cvut.fit.project.skld.gui.Handler;
 import cz.cvut.fit.project.skld.gui.PassResult;
 import cz.cvut.fit.project.skld.gui.Passable;
 import cz.cvut.fit.project.skld.gui.Screen;
 import cz.cvut.fit.project.skld.gui.components.edit_order_in.EditOrderInFragment;
+import cz.cvut.fit.project.skld.gui.resources.Texts;
+import cz.cvut.fit.project.skld.gui.util.FXUtil;
 import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.OrderInChange;
 
@@ -53,6 +56,9 @@ public class NewOrderInScreen extends Screen {
 
         try {
             getApp().getHttpClient().createOrderIn(orderInChange);
+        } catch (BadRequestException e) {
+            FXUtil.displayAlert(Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TITLE, Texts.Alerts.ID_ALREADY_EXISTS_ERROR_ALERT_TEXT);
+            return;
         } catch (IOException | APIException e) {
             e.printStackTrace();
             System.exit(1);

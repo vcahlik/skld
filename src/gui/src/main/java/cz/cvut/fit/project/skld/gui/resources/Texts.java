@@ -13,7 +13,15 @@ public class Texts {
         public static final String ID_NOT_NUMBER_ERROR_ALERT_TITLE = "Chyba formátu";
         public static final String ID_NOT_NUMBER_ERROR_ALERT_TEXT = "ID musí být celé číslo.";
 
+        public static final String ID_ALREADY_EXISTS_ERROR_ALERT_TITLE = "ID již existuje";
+        public static final String ID_ALREADY_EXISTS_ERROR_ALERT_TEXT = "Položka se stejným ID již existuje.";
+
         public static final String PRODUCT_QUANTITY_NOT_NUMBER_ERROR_ALERT_TITLE = "Chyba formátu";
         public static final String PRODUCT_QUANTITY_NOT_NUMBER_ERROR_ALERT_TEXT = "Množství produktu musí být celé číslo.";
+    }
+
+    public static class ConsoleOutput {
+        public static final String USAGE_HINT = "Pouziti: java -jar gui.jar [configfile]";
+        public static final String NO_CONFIG_FILE_SPECIFIED_MESSAGE = "Nebyl specifikovan soubor s konfiguraci, bude pouzito defaultni nastaveni.";
     }
 }
