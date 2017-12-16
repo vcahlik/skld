@@ -13,9 +13,16 @@ import cz.cvut.fit.project.skld.gui.components.main_menu.MainMenuScreen;
 import java.io.IOException;
 import java.net.ConnectException;
 
+/**
+ * Obrazovka pro prihlaseni uzivatele.
+ */
 public class LoginScreen extends Screen {
     LoginScreenHandler handler;
 
+    /**
+     * Konstruktor.
+     * @param source Rodicovsky objekt
+     */
     public LoginScreen(Passable source) {
         super(source);
     }
@@ -32,7 +39,13 @@ public class LoginScreen extends Screen {
         getSource().changeContent(this);
     }
 
-    public void submitPassword(String password) {
+    /**
+     * Zavolano po zadani hesla uzivatelem.
+     * Pokusi se uzivatele prihlasit a pri neuspechu jej upozorni na nespravne heslo.
+     * Po uspesnem prihlaseni uzivatele presune do hlavniho menu.
+     * @param password Zadane heslo
+     */
+    public void onPasswordSubmit(String password) {
         SkldHttpClient httpClient = null;
 
         try {

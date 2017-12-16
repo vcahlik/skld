@@ -6,10 +6,12 @@ import cz.cvut.fit.project.skld.gui.components.edit_order_in.EditOrderInFragment
 import cz.cvut.fit.project.skld.gui.components.find_order_in.FindOrderInFragment;
 import cz.cvut.fit.project.skld.gui.util.exceptions.InvalidInputException;
 import cz.cvut.fit.project.skld.representations.OrderInChange;
-import cz.cvut.fit.project.skld.representations.ProductRepresentation;
 
 import java.io.IOException;
 
+/**
+ * Obrazovka pro zobrazeni existujicich typu logistickych objednavek a jejich zmenu.
+ */
 public class ChangeOrderInScreen extends Screen {
     private ChangeOrderInScreenHandler handler;
 
@@ -18,6 +20,10 @@ public class ChangeOrderInScreen extends Screen {
 
     private boolean editEnabled;
 
+    /**
+     * Konstruktor.
+     * @param source Rodicovsky objekt
+     */
     public ChangeOrderInScreen(Passable source) {
         super(source);
 
@@ -27,6 +33,9 @@ public class ChangeOrderInScreen extends Screen {
         reset();
     }
 
+    /**
+     * Vrati objekt do pocatecniho stavu.
+     */
     private void reset() {
         findOrderInFragment.refresh();
         editOrderInFragment.reset();
@@ -34,6 +43,9 @@ public class ChangeOrderInScreen extends Screen {
         handler.refresh();
     }
 
+    /**
+     * Zavolano pri odeslani formulare uzivatelem. Pri neplatnem ID uzivatele upozorni na chybu, jinak odesle zmenu na server.
+     */
     protected void onSubmit() {
         Long id;
         try {
@@ -71,27 +83,43 @@ public class ChangeOrderInScreen extends Screen {
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == findOrderInFragment && notifyType == NotifyType.CHANGE) {
-            if (findOrderInFragment.isSelected()) {
+            if (findOrderInFragment.isAnyOrderInSelected()) {
                 editOrderInFragment.fill(findOrderInFragment.getSelected());
                 setEditEnabled(true);
             }
         }
     }
 
+    /**
+     * Nastavi FindOrderInFragment pro vyhledani logisticke objednavky.
+     * @param findOrderInFragment FindOrderInFragment
+     */
     public void setFindOrderInFragment(FindOrderInFragment findOrderInFragment) {
         this.findOrderInFragment = findOrderInFragment;
         handler.setFindOrderInFragment(findOrderInFragment);
     }
 
+    /**
+     * Nastavi EditOrderInFragment pro editaci existujici logisticke objednavky.
+     * @param editOrderInFragment EditOrderInFragment
+     */
     public void setEditOrderInFragment(EditOrderInFragment editOrderInFragment) {
         this.editOrderInFragment = editOrderInFragment;
         handler.setEditOrderInFragment(editOrderInFragment);
     }
 
+    /**
+     * Zjisti, zda je uzivateli umoznena editace zobrazenych hodnot.
+     * @return true editace umoznena
+     */
     public boolean isEditEnabled() {
         return editEnabled;
     }
 
+    /**
+     * Nastavi, zda je uzivateli umoznena editace zobrazenych hodnot.
+     * @param editEnabled true editace bude umoznena
+     */
     public void setEditEnabled(boolean editEnabled) {
         this.editEnabled = editEnabled;
         editOrderInFragment.setEnabled(editEnabled);

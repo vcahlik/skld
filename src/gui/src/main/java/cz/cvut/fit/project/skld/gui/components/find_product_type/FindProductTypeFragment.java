@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Fragment pro vyhledani existujiciho typu produktu.
+ */
 public class FindProductTypeFragment extends Fragment {
     private FindProductTypeFragmentHandler handler;
 
@@ -19,6 +22,10 @@ public class FindProductTypeFragment extends Fragment {
 
     private List<ProductRepresentation> excludedProductTypes;
 
+    /**
+     * Konstruktor.
+     * @param parent Rodicovsky objekt
+     */
     public FindProductTypeFragment(Notifyable parent) {
         super(parent);
         productTypes = new ArrayList<>();
@@ -26,6 +33,10 @@ public class FindProductTypeFragment extends Fragment {
         refresh();
     }
 
+    /**
+     * Zadane produkty nebudou zobrazeny v seznamu.
+     * @param excludedProductTypes Vynechavane zobrazeny
+     */
     public void setExcluded(List<ProductRepresentation> excludedProductTypes) {
         this.excludedProductTypes = excludedProductTypes;
         refresh();
@@ -38,14 +49,26 @@ public class FindProductTypeFragment extends Fragment {
         return handler;
     }
 
-    public boolean isSelected() {
+    /**
+     * Zjisti, zda uzivatel oznacil nejaky produkt ze seznamu
+     * @return true pokud existuje oznaceny produkt
+     */
+    public boolean isAnyProductTypeSelected() {
         return getSelected() != null;
     }
 
+    /**
+     * Vrati uzivatelem oznaceny produkt.
+     * @return Oznaceny produkt
+     */
     public ProductRepresentation getSelected() {
         return selectedProductType;
     }
 
+    /**
+     * Oznaci typ produktu jako oznaceny uzivatelem.
+     * @param selectedProductType Oznaceny typ produktu
+     */
     protected void setSelectedProductType(ProductRepresentation selectedProductType) {
         if (this.selectedProductType != selectedProductType) {
             this.selectedProductType = selectedProductType;
@@ -53,6 +76,9 @@ public class FindProductTypeFragment extends Fragment {
         }
     }
 
+    /**
+     * Nacte seznam vsech typu produktu a zobrazi jej (s vynechanim typu oznacenych jako excluded).
+     */
     public void refresh() {
         try {
             productTypes = getApp().getClient().getProducts();

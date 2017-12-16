@@ -12,6 +12,10 @@ public class NavigatorBarFragmentHandler extends Handler {
         super(FXMLFragmentType.NAVIGATOR_BAR_FRAGMENT);
     }
 
+    /**
+     * Pripoji k handleru prislusny fragment.
+     * @param owner Fragment
+     */
     public void setOwner(NavigatorBarFragment owner) {
         this.owner = owner;
     }

@@ -10,6 +10,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
+/**
+ * Handler pro ChangeOrderInScreen.
+ */
 public class ChangeOrderInScreenHandler extends Handler {
     private ChangeOrderInScreen owner;
 
@@ -27,24 +30,42 @@ public class ChangeOrderInScreenHandler extends Handler {
         owner.onSubmit();
     }
 
+    /**
+     * Konstruktor.
+     */
     public ChangeOrderInScreenHandler() {
         super(FXMLFragmentType.CHANGE_ORDER_IN_SCREEN);
     }
 
+    /**
+     * Pripoji k handleru prislusny screen.
+     * @param owner Fragment
+     */
     public void setOwner(ChangeOrderInScreen owner) {
         this.owner = owner;
     }
 
+    /**
+     * Nastavi FindOrderInFragment pro vyhledani logisticke objednavky.
+     * @param findOrderInFragment FindOrderInFragment
+     */
     public void setFindOrderInFragment(FindOrderInFragment findOrderInFragment) {
         AnchorPane pane = (AnchorPane)findOrderInFragment.getRoot();
         FXUtil.setAnchor(pane, 0.0, 0.0, 0.0, 0.0);
         findOrderIn.getChildren().setAll(pane);
     }
 
+    /**
+     * Nastavi EditOrderInFragment pro editaci existujici logisticke objednavky.
+     * @param editOrderInFragment EditOrderInFragment
+     */
     public void setEditOrderInFragment(EditOrderInFragment editOrderInFragment) {
         editOrderIn.getChildren().setAll((AnchorPane)editOrderInFragment.getRoot());
     }
 
+    /**
+     * Aktualizuje zobrazene hodnoty.
+     */
     protected void refresh() {
         submitButton.setDisable(!owner.isEditEnabled());
     }

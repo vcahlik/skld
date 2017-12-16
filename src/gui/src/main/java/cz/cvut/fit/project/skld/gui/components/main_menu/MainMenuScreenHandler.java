@@ -7,20 +7,34 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
 
+/**
+ * Handler pro MainMenuScreen.
+ */
 public class MainMenuScreenHandler extends Handler {
     private MainMenuScreen owner;
 
     @FXML
     private HBox sessionBar;
 
+    /**
+     * Konstruktor.
+     */
     public MainMenuScreenHandler() {
         super(FXMLFragmentType.MAIN_MENU_SCREEN);
     }
 
+    /**
+     * Pripoji k handleru prislusny screen.
+     * @param owner Fragment
+     */
     public void setOwner(MainMenuScreen owner) {
         this.owner = owner;
     }
 
+    /**
+     * Nastavi SessionBarFragment s informacemi o uzivateli.
+     * @param sessionBarFragment SessionBarFragment
+     */
     public void setSessionBarFragment(SessionBarFragment sessionBarFragment) {
         sessionBar.getChildren().setAll((HBox)sessionBarFragment.getRoot());
     }
