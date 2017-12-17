@@ -17,6 +17,9 @@ public class AddProductTypeFrame extends NavigatorFrame {
         super(source);
     }
 
+    /**
+     * Vytvori obrazovku pro pridani noveho typu produktu a preda ji rizeni.
+     */
     @Override
     public void follow() {
         super.follow();

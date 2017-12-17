@@ -20,15 +20,23 @@ public class MainWindow extends Window {
         stage.setMaximized(true);
     }
 
+    /**
+     * Vytvori prihlasovaci obrazovku a preda ji rizeni.
+     */
     @Override
     public void follow() {
         Screen screen = new LoginScreen(this);
         screen.follow();
     }
 
+    /**
+     * Zavolano po ukonceni cinnosti dcerinnych komponent. Preda rizeni zpet aplikaci.
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
-
+        getApp().pass(this, result);
     }
 
 }

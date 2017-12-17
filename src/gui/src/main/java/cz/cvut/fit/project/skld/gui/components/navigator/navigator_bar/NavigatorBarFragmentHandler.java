@@ -5,9 +5,15 @@ import cz.cvut.fit.project.skld.gui.Handler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
+/**
+ * Handler pro NavigatorBarFragment.
+ */
 public class NavigatorBarFragmentHandler extends Handler {
     private NavigatorBarFragment owner;
 
+    /**
+     * Konstruktor.
+     */
     public NavigatorBarFragmentHandler() {
         super(FXMLFragmentType.NAVIGATOR_BAR_FRAGMENT);
     }

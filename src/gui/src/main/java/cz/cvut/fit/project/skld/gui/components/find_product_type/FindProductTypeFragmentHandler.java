@@ -19,6 +19,7 @@ public class FindProductTypeFragmentHandler extends Handler {
 
     @FXML
     private TableColumn<ProductRepresentation, Long> idColumn;
+
     @FXML
     private TableColumn<ProductRepresentation, String> nameColumn;
 

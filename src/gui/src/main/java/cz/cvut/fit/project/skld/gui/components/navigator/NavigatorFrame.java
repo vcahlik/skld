@@ -27,6 +27,11 @@ public abstract class NavigatorFrame extends Frame {
         setSessionBarFragment(new SessionBarFragment(this));
     }
 
+    /**
+     * Vrati rizeni rodicovskemu objektu.
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
         super.pass(source, result);
@@ -34,6 +39,12 @@ public abstract class NavigatorFrame extends Frame {
         getSource().pass(this, result);
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new NavigatorFrameHandler();
@@ -41,12 +52,21 @@ public abstract class NavigatorFrame extends Frame {
         return handler;
     }
 
+    /**
+     * Nahradi aktualne zobrazenou obrazovku za jinou.
+     * @param screen Nova obrazovka
+     */
     @Override
     public void changeContent(Screen screen) {
         content = screen;
         handler.setContent(screen);
     }
 
+    /**
+     * Zachyti a zpracuje notifikace o udalostech v dcerinnych objektech.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (notifyType == NotifyType.LOGOUT) {

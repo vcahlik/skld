@@ -27,6 +27,12 @@ public class LoginScreen extends Screen {
         super(source);
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new LoginScreenHandler();
@@ -34,8 +40,13 @@ public class LoginScreen extends Screen {
         return handler;
     }
 
+    /**
+     * Vrati rizeni obrazovce.
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
-    public void pass(UI follower, PassResult result) {
+    public void pass(UI source, PassResult result) {
         getSource().changeContent(this);
     }
 

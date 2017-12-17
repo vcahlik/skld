@@ -41,11 +41,19 @@ public class AddProductToOrderWindow extends Window {
         return addProductToOrderScreen.getSelected();
     }
 
+    /**
+     * Preda rizeni obrazovce pro pridani produktu.
+     */
     @Override
     public void follow() {
         addProductToOrderScreen.follow();
     }
 
+    /**
+     * Preda rizeni zpet oknu.
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
 

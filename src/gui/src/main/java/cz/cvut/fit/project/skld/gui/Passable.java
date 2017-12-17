@@ -15,7 +15,7 @@ public interface Passable extends Notifyable {
      * Metoda, kterou dcerinny objekt vraci rizeni rodicovskemu objektu.
      * Vola ji dcerinny objekt nad rodicovskym objektem, obvykle pote, co dokonci pozadavek, pro ktery byl vytvoren. Obvykle to znamena, ze rodic muze dcerinny objekt zahodit.
      * @param source Dcerinny objekt
-     * @param result
+     * @param result Vysledek provadeni operaci dcerinneho objektu
      */
     void pass(UI source, PassResult result);
 

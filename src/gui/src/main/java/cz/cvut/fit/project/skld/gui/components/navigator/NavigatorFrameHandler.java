@@ -25,6 +25,9 @@ public class NavigatorFrameHandler extends Handler {
     @FXML
     private HBox sessionBar;
 
+    /**
+     * Konstruktor.
+     */
     public NavigatorFrameHandler() {
         super(FXMLFragmentType.NAVIGATOR_FRAME);
     }

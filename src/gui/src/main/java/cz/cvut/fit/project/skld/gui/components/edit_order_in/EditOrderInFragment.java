@@ -89,6 +89,11 @@ public class EditOrderInFragment extends Fragment {
         handler.reset();
     }
 
+    /**
+     * Zachyti a zpracuje notifikace o udalostech v dcerinnych objektech.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == addProductToOrderWindow && notifyType == NotifyType.CHANGE) {
@@ -112,6 +117,12 @@ public class EditOrderInFragment extends Fragment {
         }
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new EditOrderInFragmentHandler();
@@ -224,10 +235,19 @@ public class EditOrderInFragment extends Fragment {
         return supplierName;
     }
 
+    /**
+     * Nastavi predzobrazene jmeno dodavatele editovane objednavky.
+     * @param supplierName
+     */
     public void setSupplierName(String supplierName) {
         this.supplierName = supplierName;
     }
 
+    /**
+     * Vraci uzivatelem zadane produkty.
+     * @return Produkty
+     * @throws InvalidInputException
+     */
     public List<ProductRepresentation> getEditedProducts() throws InvalidInputException {
         List<ProductRepresentation> products = new ArrayList<>();
         for (OrderInProductFragment fragment : orderInProductFragments) {

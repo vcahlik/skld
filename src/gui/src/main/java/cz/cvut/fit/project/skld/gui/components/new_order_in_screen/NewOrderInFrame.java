@@ -16,6 +16,9 @@ public class NewOrderInFrame extends NavigatorFrame {
         super(source);
     }
 
+    /**
+     * Vytvori obrazovku pro vytvoreni nove logisticke objednavky a preda ji rizeni.
+     */
     @Override
     public void follow() {
         super.follow();

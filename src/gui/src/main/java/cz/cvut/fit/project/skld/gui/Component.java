@@ -14,11 +14,20 @@ public abstract class Component implements UI, Notifyable {
         this.parent = parent;
     }
 
+    /**
+     * Preposle notifikaci rodicovskemu objektu.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
         getParent().notify(this, notifyType);
     }
 
+    /**
+     * Vraci referenci na celou aplikaci.
+     * @return Aplikace
+     */
     @Override
     public App getApp() {
         return parent.getApp();

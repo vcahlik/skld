@@ -16,6 +16,9 @@ public class ChangeProductTypeFrame extends NavigatorFrame {
         super(source);
     }
 
+    /**
+     * Vytvori obrazovku pro zmenu existujicich typu produktu a preda ji rizeni.
+     */
     @Override
     public void follow() {
         super.follow();
