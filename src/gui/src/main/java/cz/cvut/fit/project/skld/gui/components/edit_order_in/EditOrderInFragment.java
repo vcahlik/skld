@@ -214,6 +214,7 @@ public class EditOrderInFragment extends Fragment {
 
     /**
      * Nastavi predzobrazene datum doruceni puvodni editovane logisticke objednavky.
+     * @param deliveryDate Predpokladane datum doruceni
      */
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
@@ -237,7 +238,7 @@ public class EditOrderInFragment extends Fragment {
 
     /**
      * Nastavi predzobrazene jmeno dodavatele editovane objednavky.
-     * @param supplierName
+     * @param supplierName Jmeno dodavatele
      */
     public void setSupplierName(String supplierName) {
         this.supplierName = supplierName;
@@ -246,7 +247,7 @@ public class EditOrderInFragment extends Fragment {
     /**
      * Vraci uzivatelem zadane produkty.
      * @return Produkty
-     * @throws InvalidInputException
+     * @throws InvalidInputException Chybny vstup v seznamu produktu
      */
     public List<ProductRepresentation> getEditedProducts() throws InvalidInputException {
         List<ProductRepresentation> products = new ArrayList<>();
@@ -274,7 +275,7 @@ public class EditOrderInFragment extends Fragment {
 
     /**
      * Vraci fragmenty veskerych produktu obsazenych v aktualne editovane logisticke objednavce.
-     * @return
+     * @return Fragmenty produktu
      */
     protected List<OrderInProductFragment> getOrderInProductFragments() {
         return orderInProductFragments;

@@ -75,7 +75,7 @@ public class AddProductToOrderScreen extends Screen {
     }
 
     /**
-     * Zavolano pri potvrzeni uzivatelem.
+     * Zavolano pri potvrzeni uzivatelem. Informuje rodicovskou komponentu o zmene.
      */
     protected void onSubmit() {
         getSource().notify(this, NotifyType.CHANGE);

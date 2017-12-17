@@ -99,7 +99,7 @@ public class EditProductTypeFragment extends Fragment {
 
     /**
      * Vraci puvodni ID editovaneho typu produktu.
-     * @return
+     * @return ID
      */
     protected long getId() {
         return id;
@@ -107,7 +107,7 @@ public class EditProductTypeFragment extends Fragment {
 
     /**
      * Nastavi puvodni ID editovaneho typu produktu.
-     * @param id
+     * @param id ID
      */
     protected void setId(long id) {
         this.id = id;
@@ -123,7 +123,7 @@ public class EditProductTypeFragment extends Fragment {
 
     /**
      * nastavi puvodni jmeno editovaneho typu produktu.
-     * @return Jmeno typu produktu
+     * @param name Jmeno typu produktu
      */
     protected void setName(String name) {
         this.name = name;

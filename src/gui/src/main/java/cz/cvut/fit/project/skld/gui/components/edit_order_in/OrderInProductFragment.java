@@ -44,7 +44,7 @@ public class OrderInProductFragment extends Fragment {
 
     /**
      * Zjisti, zda uzivatel odstranil produkt ze seznamu.
-     * @return
+     * @return true Produkt ma byt odstranen
      */
     public boolean isDeleteRequested() {
         return deleteRequested;
