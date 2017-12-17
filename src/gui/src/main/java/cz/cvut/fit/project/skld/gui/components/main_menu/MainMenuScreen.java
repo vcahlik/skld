@@ -25,6 +25,12 @@ public class MainMenuScreen extends Screen {
         setSessionBarFragment(new SessionBarFragment(this));
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new MainMenuScreenHandler();
@@ -32,6 +38,11 @@ public class MainMenuScreen extends Screen {
         return handler;
     }
 
+    /**
+     * Zachyti a zpracuje notifikace o udalostech v dcerinnych objektech.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
         switch (notifyType) {
@@ -41,9 +52,15 @@ public class MainMenuScreen extends Screen {
         }
     }
 
+    /**
+     * Vrati rizeni obrazovce. Pokud byl duvodem k predani rizeni pozadavek pro odhlaseni, preda rizeni s timto duvodem rodici.
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
-        getSource().changeContent(this);
+        super.pass(source, result);
+
         switch (result) {
             case LOGOUT:
                 getSource().pass(this, PassResult.LOGOUT);

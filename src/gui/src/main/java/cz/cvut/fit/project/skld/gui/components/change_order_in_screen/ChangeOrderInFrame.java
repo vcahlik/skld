@@ -16,6 +16,9 @@ public class ChangeOrderInFrame extends NavigatorFrame {
         super(source);
     }
 
+    /**
+     * Vytvori obrazovku pro zmenu logistickych objednavek a preda ji rizeni.
+     */
     @Override
     public void follow() {
         super.follow();

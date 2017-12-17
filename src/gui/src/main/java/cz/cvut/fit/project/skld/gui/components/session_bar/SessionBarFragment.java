@@ -19,6 +19,12 @@ public class SessionBarFragment extends Fragment {
         super(parent);
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new SessionBarFragmentHandler();

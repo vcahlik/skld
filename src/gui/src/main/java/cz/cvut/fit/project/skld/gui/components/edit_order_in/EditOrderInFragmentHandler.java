@@ -14,6 +14,9 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 
+/**
+ * Handler pro EditOrderInFragment.
+ */
 public class EditOrderInFragmentHandler extends Handler {
     private EditOrderInFragment owner;
 
@@ -37,6 +40,9 @@ public class EditOrderInFragmentHandler extends Handler {
         owner.addProduct();
     }
 
+    /**
+     * Konstruktor.
+     */
     public EditOrderInFragmentHandler() {
         super(FXMLFragmentType.EDIT_ORDER_IN_FRAGMENT);
     }
@@ -49,6 +55,9 @@ public class EditOrderInFragmentHandler extends Handler {
         this.owner = owner;
     }
 
+    /**
+     * Vrati objekt do pocatecniho stavu.
+     */
     public void reset() {
         if (owner.isFilled()) {
             inputID.setText(Long.toString(owner.getId()));
@@ -99,10 +108,18 @@ public class EditOrderInFragmentHandler extends Handler {
         return inputSupplierName.getText();
     }
 
+    /**
+     * Prida fragment reprezentujici nejaky produkt.
+     * @param fragment Fragment reprezentujici produkt
+     */
     public void addOrderInProductFragment(OrderInProductFragment fragment) {
         productsVBox.getChildren().add(fragment.getRoot());
     }
 
+    /**
+     * Smaze fragment reprezentujici dany produkt.
+     * @param fragment Fragment reprezentujici produkt
+     */
     public void removeOrderInProductFragment(OrderInProductFragment fragment) {
         productsVBox.getChildren().remove(fragment.getRoot());
     }

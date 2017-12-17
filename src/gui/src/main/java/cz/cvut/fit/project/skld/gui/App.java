@@ -6,6 +6,7 @@ import cz.cvut.fit.project.skld.gui.components.MainWindow;
 import cz.cvut.fit.project.skld.gui.resources.Config;
 import cz.cvut.fit.project.skld.gui.resources.Texts;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 /**
@@ -40,21 +41,39 @@ public class App extends Application implements Passable {
         mainWindow.follow();
     }
 
+    /**
+     * App je koren komponent, notifikace se neposilaji dal.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
 
     }
 
+    /**
+     * Prazdna metoda, korenu aplikace nema smysl predat rizeni.
+     */
     @Override
     public void follow() {
 
     }
 
+    /**
+     * Predanim rizeni korenove komponente je aplikace ukoncena,
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
-
+        Platform.exit();
+        System.exit(0);
     }
 
+    /**
+     * Vraci referenci na celou aplikaci.
+     * @return Aplikace
+     */
     @Override
     public App getApp() {
         return this;

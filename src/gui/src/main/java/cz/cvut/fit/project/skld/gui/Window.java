@@ -48,7 +48,7 @@ public abstract class Window extends Component implements Wrapper {
     }
 
     /**
-     *
+     * Nahradi aktualne zobrazenou obrazovku za nejakou jinou.
      * @param screen Nova obrazovka
      */
     public void changeContent(Screen screen) {

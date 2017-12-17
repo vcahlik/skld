@@ -24,6 +24,11 @@ public class AddProductToOrderScreen extends Screen {
         setFindProductTypeFragment(new FindProductTypeFragment(this));
     }
 
+    /**
+     * Zachyti a zpracuje notifikace o udalostech v dcerinnych objektech.
+     * @param source Objekt, ktery odeslal notifikaci
+     * @param notifyType Typ notifikace
+     */
     @Override
     public void notify(UI source, NotifyType notifyType) {
         if (source == findProductTypeFragment && notifyType == NotifyType.CHANGE) {
@@ -39,6 +44,12 @@ public class AddProductToOrderScreen extends Screen {
         findProductTypeFragment.setExcluded(excludedProductTypes);
     }
 
+    /**
+     * Factory metoda pro tvoreni handleru.
+     * Smi byt zavolana behem zivota fragmentu pouze jednou.
+     * Diky tomu muze mit kazdy fragment (implementovany zvlastni tridou dedenou z Fragment) vlastni handler (implementovany zvlastni tridou dedenou z Handler).
+     * @return Nove vytvoreny handler
+     */
     @Override
     public Handler makeHandler() {
         this.handler = new AddProductToOrderScreenHandler();

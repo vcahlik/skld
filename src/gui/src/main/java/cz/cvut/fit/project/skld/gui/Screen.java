@@ -12,16 +12,28 @@ public abstract class Screen extends Fragment implements Passable {
         super(source);
     }
 
+    /**
+     * V rodicovskem wrapperu zobrazi tuto zobrazovku misto libovolne predesle.
+     */
     @Override
     public void follow() {
         getSource().changeContent(this);
     }
 
+    /**
+     * V rodicovskem wrapperu zobrazi tuto zobrazovku (obvykle misto dcerinne obrazovky zdroje).
+     * @param source Dcerinny objekt
+     * @param result Vysledek provadeni operaci dcerinneho objektu
+     */
     @Override
     public void pass(UI source, PassResult result) {
         getSource().changeContent(this);
     }
 
+    /**
+     * Preposle rodicovske komponente pozadavek na zmenu obrazovky.
+     * @param screen Nova obrazovka
+     */
     @Override
     public void changeContent(Screen screen) {
         getSource().changeContent(screen);
