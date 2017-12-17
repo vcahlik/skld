@@ -82,6 +82,10 @@
           <mainClass>cz.cvut.fit.project.skld.gui.App</mainClass>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
     </plugins>
   </build>
   <properties>

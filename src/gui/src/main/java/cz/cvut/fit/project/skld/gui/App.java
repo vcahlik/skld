@@ -1,7 +1,6 @@
 package cz.cvut.fit.project.skld.gui;
 
 import cz.cvut.fit.project.skld.client.SkldClient;
-import cz.cvut.fit.project.skld.client.http.SkldHttpClient;
 import cz.cvut.fit.project.skld.gui.components.MainWindow;
 import cz.cvut.fit.project.skld.gui.resources.Config;
 import cz.cvut.fit.project.skld.gui.resources.Texts;
