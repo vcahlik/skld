@@ -1,0 +1,9 @@
+<BranchVCSpec>
+	<PkgGUID>{B7FCFD7F-45A2-4440-9230-ABD881FE6FFA}</PkgGUID>
+	<XMLPath>eaA\ABD881FE6FFA.xml</XMLPath>
+	<Config>
+		<GUID>SKLD</GUID>
+		<LocalPath>%SKLD%</LocalPath>
+		<Type>2</Type>
+	</Config>
+</BranchVCSpec>
