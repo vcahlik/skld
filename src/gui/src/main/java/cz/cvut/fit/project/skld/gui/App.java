@@ -85,9 +85,9 @@ public class App extends Application implements Passable {
 
     /**
      * Nastavi SkldClienta, tedy datovou cast aplikace
-     * @param skldClient SkldClient
+     * @param client SkldClient
      */
-    public void setClient(SkldClient skldClient) {
+    public void setClient(SkldClient client) {
         this.client = client;
     }
 
