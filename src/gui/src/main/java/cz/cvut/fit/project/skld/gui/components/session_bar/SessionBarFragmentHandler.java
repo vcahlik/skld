@@ -1,7 +1,10 @@
 package cz.cvut.fit.project.skld.gui.components.session_bar;
 
+import cz.cvut.fit.project.skld.client.SkldClient;
+import cz.cvut.fit.project.skld.gui.App;
 import cz.cvut.fit.project.skld.gui.FXMLFragmentType;
 import cz.cvut.fit.project.skld.gui.Handler;
+import cz.cvut.fit.project.skld.representations.UserRepresentation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
