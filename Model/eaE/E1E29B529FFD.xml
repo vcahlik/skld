@@ -1,3 +1,1186 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
-	<XMI.header><XMI.documentation><XMI.exporter>Enterprise Architect</XMI.exporter><XMI.exporterVersion>2.5</XMI.exporterVersion></XMI.documentation></XMI.header><XMI.content><UML:Model name="EA Model" xmi.id="MX_EAID_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"><UML:Namespace.ownedElement><UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/><UML:Package name="postgres" xmi.id="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="parent" value="EAPK_01417DA5_75C0_45e6_9D48_2062B31DDFF4"/><UML:TaggedValue tag="created" value="2017-12-18 11:05:09"/><UML:TaggedValue tag="modified" value="2017-12-18 11:05:09"/><UML:TaggedValue tag="iscontrolled" value="TRUE"/><UML:TaggedValue tag="xmlpath" value="eaE\E1E29B529FFD.xml"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="isprotected" value="FALSE"/><UML:TaggedValue tag="usedtd" value="FALSE"/><UML:TaggedValue tag="logxml" value="FALSE"/><UML:TaggedValue tag="packageFlags" value="VCCFG=SKLD;CRC=0;"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="ea_stype" value="Public"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="gentype" value="Java"/></UML:ModelElement.taggedValue><UML:Namespace.ownedElement><UML:Class name="PostgresMovementDAO" xmi.id="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"><UML:ModelElement.taggedValue><UML:TaggedValue tag="documentation" value="An implementation of MovementDAO powered by Dropwizard's AbstractDAO implementation."/><UML:TaggedValue tag="isSpecification" value="false"/><UML:TaggedValue tag="ea_stype" value="Class"/><UML:TaggedValue tag="ea_ntype" value="2"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="classparams" value="Actual=ProductMovement,Parent=AbstractDAO,BindType=Gen,"/><UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresMovementDAO.java"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="gentype" value="Java"/><UML:TaggedValue tag="tagged" value="0"/><UML:TaggedValue tag="package_name" value="postgres"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="ea_localid" value="3428"/><UML:TaggedValue tag="ea_eleType" value="element"/><UML:TaggedValue tag="eventflags" value="OBJ=1230;"/><UML:TaggedValue tag="parameters" value=";ARGS=Actual=ProductMovement,Parent=AbstractDAO,BindType=Gen,;"/><UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/></UML:ModelElement.taggedValue><UML:Classifier.feature><UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="ProductMovement"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="2"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{D45254F6-5125-475a-9866-12B6072DF6D6}"/><UML:TaggedValue tag="ea_localid" value="1201"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_2839BEFF_0947_40c2_97D2_060186A8A0F2"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="ProductMovement"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-5125-475a-9866-12B6072DF6D6}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="movement" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="ProductMovement"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/><UML:TaggedValue tag="ea_guid" value="{CCCF423F-7D69-4c12-880B-38CF3ACE8BE2}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Optional&lt;ProductMovement&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="1"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{4624C3A3-6D50-4179-AAF8-F599ED09CC00}"/><UML:TaggedValue tag="ea_localid" value="1202"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_602AE525_2B61_415f_9AA0_9F3F2C058ACA"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid0"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Optional&lt;ProductMovement&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-6D50-4179-AAF8-F599ED09CC00}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="id" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid1"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Long"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{5AC25DD0-F8A2-4bd2-9B6A-FBD8E88F419C}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="PostgresMovementDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="0"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{3C43ABA5-988D-422c-8C98-2760EFAC4FB6}"/><UML:TaggedValue tag="ea_localid" value="1203"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid2"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-988D-422c-8C98-2760EFAC4FB6}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="factory" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="SessionFactory"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{464E15F2-6CC4-4503-841D-CCEB219A8410}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation></UML:Classifier.feature></UML:Class><UML:Dependency client="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" supplier="EAID_E862731D_FA77_4a6d_A060_6826F11F1AF5" xmi.id="EAID_3D57F6DE_D3EA_410a_9099_F9DC2739096B" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="style" value="3"/><UML:TaggedValue tag="ea_type" value="Realisation"/><UML:TaggedValue tag="direction" value="Source -&gt; Destination"/><UML:TaggedValue tag="linemode" value="3"/><UML:TaggedValue tag="linecolor" value="-1"/><UML:TaggedValue tag="linewidth" value="0"/><UML:TaggedValue tag="seqno" value="0"/><UML:TaggedValue tag="headStyle" value="0"/><UML:TaggedValue tag="lineStyle" value="0"/><UML:TaggedValue tag="ea_localid" value="2157"/><UML:TaggedValue tag="ea_sourceName" value="PostgresMovementDAO"/><UML:TaggedValue tag="ea_targetName" value="MovementDAO"/><UML:TaggedValue tag="ea_sourceType" value="Class"/><UML:TaggedValue tag="ea_targetType" value="Interface"/><UML:TaggedValue tag="ea_sourceID" value="3428"/><UML:TaggedValue tag="ea_targetID" value="3433"/><UML:TaggedValue tag="src_visibility" value="Public"/><UML:TaggedValue tag="src_aggregation" value="0"/><UML:TaggedValue tag="src_isOrdered" value="false"/><UML:TaggedValue tag="src_targetScope" value="instance"/><UML:TaggedValue tag="src_changeable" value="none"/><UML:TaggedValue tag="src_isNavigable" value="false"/><UML:TaggedValue tag="src_containment" value="Unspecified"/><UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/><UML:TaggedValue tag="dst_visibility" value="Public"/><UML:TaggedValue tag="dst_aggregation" value="0"/><UML:TaggedValue tag="dst_isOrdered" value="false"/><UML:TaggedValue tag="dst_targetScope" value="instance"/><UML:TaggedValue tag="dst_changeable" value="none"/><UML:TaggedValue tag="dst_isNavigable" value="true"/><UML:TaggedValue tag="dst_containment" value="Unspecified"/><UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/><UML:TaggedValue tag="virtualInheritance" value="0"/></UML:ModelElement.taggedValue></UML:Dependency><UML:Class name="PostgresPositionDAO" xmi.id="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"><UML:ModelElement.taggedValue><UML:TaggedValue tag="documentation" value="An implementation of PositionDAO powered by Dropwizard's AbstractDAO implementation."/><UML:TaggedValue tag="isSpecification" value="false"/><UML:TaggedValue tag="ea_stype" value="Class"/><UML:TaggedValue tag="ea_ntype" value="2"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="classparams" value="Actual=ProductPosition,Parent=AbstractDAO,BindType=Gen,"/><UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresPositionDAO.java"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="gentype" value="Java"/><UML:TaggedValue tag="tagged" value="0"/><UML:TaggedValue tag="package_name" value="postgres"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="ea_localid" value="3430"/><UML:TaggedValue tag="ea_eleType" value="element"/><UML:TaggedValue tag="eventflags" value="OBJ=1230;"/><UML:TaggedValue tag="parameters" value=";ARGS=Actual=ProductPosition,Parent=AbstractDAO,BindType=Gen,;"/><UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/></UML:ModelElement.taggedValue><UML:Classifier.feature><UML:Operation name="findForProductId" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="List&lt;ProductPosition&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="1"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{608FC3B9-3DB6-4a08-B934-0CE4C9EC3201}"/><UML:TaggedValue tag="ea_localid" value="1209"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_EBF59534_7CF1_4345_AE0F_C2C56B95344A"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid4"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="List&lt;ProductPosition&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-3DB6-4a08-B934-0CE4C9EC3201}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="productId" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid5"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="long"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{46500BC9-F6A5-481e-8AD5-5C63B9F0F6B3}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="PostgresPositionDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="0"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{D18AB72A-8C55-4ea1-983F-760C4A3BF772}"/><UML:TaggedValue tag="ea_localid" value="1210"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid2"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-8C55-4ea1-983F-760C4A3BF772}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="factory" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="SessionFactory"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{FB32C3D6-B197-4927-8EE9-A87EC9DCB468}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation></UML:Classifier.feature></UML:Class><UML:Dependency client="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" supplier="EAID_983FCC74_255E_441d_8AAD_BD5381C1E07E" xmi.id="EAID_0E68C95E_B87E_45d4_8849_C83AC0C6B878" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="style" value="3"/><UML:TaggedValue tag="ea_type" value="Realisation"/><UML:TaggedValue tag="direction" value="Source -&gt; Destination"/><UML:TaggedValue tag="linemode" value="3"/><UML:TaggedValue tag="linecolor" value="-1"/><UML:TaggedValue tag="linewidth" value="0"/><UML:TaggedValue tag="seqno" value="0"/><UML:TaggedValue tag="headStyle" value="0"/><UML:TaggedValue tag="lineStyle" value="0"/><UML:TaggedValue tag="ea_localid" value="2159"/><UML:TaggedValue tag="ea_sourceName" value="PostgresPositionDAO"/><UML:TaggedValue tag="ea_targetName" value="PositionDAO"/><UML:TaggedValue tag="ea_sourceType" value="Class"/><UML:TaggedValue tag="ea_targetType" value="Interface"/><UML:TaggedValue tag="ea_sourceID" value="3430"/><UML:TaggedValue tag="ea_targetID" value="3435"/><UML:TaggedValue tag="src_visibility" value="Public"/><UML:TaggedValue tag="src_aggregation" value="0"/><UML:TaggedValue tag="src_isOrdered" value="false"/><UML:TaggedValue tag="src_targetScope" value="instance"/><UML:TaggedValue tag="src_changeable" value="none"/><UML:TaggedValue tag="src_isNavigable" value="false"/><UML:TaggedValue tag="src_containment" value="Unspecified"/><UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/><UML:TaggedValue tag="dst_visibility" value="Public"/><UML:TaggedValue tag="dst_aggregation" value="0"/><UML:TaggedValue tag="dst_isOrdered" value="false"/><UML:TaggedValue tag="dst_targetScope" value="instance"/><UML:TaggedValue tag="dst_changeable" value="none"/><UML:TaggedValue tag="dst_isNavigable" value="true"/><UML:TaggedValue tag="dst_containment" value="Unspecified"/><UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/><UML:TaggedValue tag="virtualInheritance" value="0"/></UML:ModelElement.taggedValue></UML:Dependency><UML:Class name="PostgresProductDAO" xmi.id="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"><UML:ModelElement.taggedValue><UML:TaggedValue tag="documentation" value="An implementation of ProductDAO powered by Dropwizard's AbstractDAO implementation."/><UML:TaggedValue tag="isSpecification" value="false"/><UML:TaggedValue tag="ea_stype" value="Class"/><UML:TaggedValue tag="ea_ntype" value="2"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="classparams" value="Actual=Product,Parent=AbstractDAO,BindType=Gen,"/><UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresProductDAO.java"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="gentype" value="Java"/><UML:TaggedValue tag="tagged" value="0"/><UML:TaggedValue tag="package_name" value="postgres"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="ea_localid" value="3431"/><UML:TaggedValue tag="ea_eleType" value="element"/><UML:TaggedValue tag="eventflags" value="OBJ=1230;"/><UML:TaggedValue tag="parameters" value=";ARGS=Actual=Product,Parent=AbstractDAO,BindType=Gen,;"/><UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/></UML:ModelElement.taggedValue><UML:Classifier.feature><UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Product"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="2"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{C6CDD249-2851-4204-9F62-292D77FA162D}"/><UML:TaggedValue tag="ea_localid" value="1211"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_DD55D3C2_5FED_4ec3_A301_A1D8BEADA27E"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Product"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-2851-4204-9F62-292D77FA162D}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="product" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Product"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/><UML:TaggedValue tag="ea_guid" value="{A41A5D81-C759-4d42-81FF-1B11E89AC032}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findAll" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="List&lt;Product&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="3"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{E1DCAE8D-CE56-426c-86AE-045CC139D5FF}"/><UML:TaggedValue tag="ea_localid" value="1212"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_A642ECAC_7FDE_4b2f_9BBA_7C6E8A8A84C6"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid6"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="List&lt;Product&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-CE56-426c-86AE-045CC139D5FF}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Optional&lt;Product&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="1"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{C738100C-2F2D-4aed-AB9E-8AD712A21EA2}"/><UML:TaggedValue tag="ea_localid" value="1213"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_778C2BB6_D50A_405e_BE77_F2A222917CF6"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid7"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Optional&lt;Product&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-2F2D-4aed-AB9E-8AD712A21EA2}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="id" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid1"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Long"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{7EE42222-2771-47f2-8898-4D92E3238385}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="PostgresProductDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="0"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{B71DF5C4-DD47-4e20-9256-827D8F4508D1}"/><UML:TaggedValue tag="ea_localid" value="1214"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid2"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-DD47-4e20-9256-827D8F4508D1}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="factory" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="SessionFactory"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{196ADC37-1F22-4f70-8CF5-29C09B8F0C89}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation></UML:Classifier.feature></UML:Class><UML:Dependency client="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" supplier="EAID_CCE3AF49_6E74_4767_AF53_CC9CD945AFF8" xmi.id="EAID_3D42B4BD_6A4F_44a9_B651_0C773DAAAF9B" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="style" value="3"/><UML:TaggedValue tag="ea_type" value="Realisation"/><UML:TaggedValue tag="direction" value="Source -&gt; Destination"/><UML:TaggedValue tag="linemode" value="3"/><UML:TaggedValue tag="linecolor" value="-1"/><UML:TaggedValue tag="linewidth" value="0"/><UML:TaggedValue tag="seqno" value="0"/><UML:TaggedValue tag="headStyle" value="0"/><UML:TaggedValue tag="lineStyle" value="0"/><UML:TaggedValue tag="ea_localid" value="2160"/><UML:TaggedValue tag="ea_sourceName" value="PostgresProductDAO"/><UML:TaggedValue tag="ea_targetName" value="ProductDAO"/><UML:TaggedValue tag="ea_sourceType" value="Class"/><UML:TaggedValue tag="ea_targetType" value="Interface"/><UML:TaggedValue tag="ea_sourceID" value="3431"/><UML:TaggedValue tag="ea_targetID" value="3436"/><UML:TaggedValue tag="src_visibility" value="Public"/><UML:TaggedValue tag="src_aggregation" value="0"/><UML:TaggedValue tag="src_isOrdered" value="false"/><UML:TaggedValue tag="src_targetScope" value="instance"/><UML:TaggedValue tag="src_changeable" value="none"/><UML:TaggedValue tag="src_isNavigable" value="false"/><UML:TaggedValue tag="src_containment" value="Unspecified"/><UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/><UML:TaggedValue tag="dst_visibility" value="Public"/><UML:TaggedValue tag="dst_aggregation" value="0"/><UML:TaggedValue tag="dst_isOrdered" value="false"/><UML:TaggedValue tag="dst_targetScope" value="instance"/><UML:TaggedValue tag="dst_changeable" value="none"/><UML:TaggedValue tag="dst_isNavigable" value="true"/><UML:TaggedValue tag="dst_containment" value="Unspecified"/><UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/><UML:TaggedValue tag="virtualInheritance" value="0"/></UML:ModelElement.taggedValue></UML:Dependency><UML:Class name="PostgresUserDAO" xmi.id="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"><UML:ModelElement.taggedValue><UML:TaggedValue tag="documentation" value="An implementation of UserDAO powered by Dropwizard's AbstractDAO implementation."/><UML:TaggedValue tag="isSpecification" value="false"/><UML:TaggedValue tag="ea_stype" value="Class"/><UML:TaggedValue tag="ea_ntype" value="2"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="classparams" value="Actual=User,Parent=AbstractDAO,BindType=Gen,"/><UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresUserDAO.java"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="gentype" value="Java"/><UML:TaggedValue tag="tagged" value="0"/><UML:TaggedValue tag="package_name" value="postgres"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="ea_localid" value="3432"/><UML:TaggedValue tag="ea_eleType" value="element"/><UML:TaggedValue tag="eventflags" value="OBJ=1230;"/><UML:TaggedValue tag="parameters" value=";ARGS=Actual=User,Parent=AbstractDAO,BindType=Gen,;"/><UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/></UML:ModelElement.taggedValue><UML:Classifier.feature><UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="User"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="3"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{AE06BC5A-B73D-4634-836A-B7EBE6E12C03}"/><UML:TaggedValue tag="ea_localid" value="1215"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_B6C6E58C_9071_4264_9B64_93AAB438AC38"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="User"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-B73D-4634-836A-B7EBE6E12C03}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="user" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="User"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/><UML:TaggedValue tag="ea_guid" value="{D65EEDDD-13AC-4c50-AF64-EA86528B8DD0}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="1"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{10DB45FE-1D70-4d27-83C1-1B180A0F6773}"/><UML:TaggedValue tag="ea_localid" value="1216"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_442A4218_7821_4a59_85A8_8384195F2CA2"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid8"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-1D70-4d27-83C1-1B180A0F6773}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="id" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid1"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Long"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{1AF523F7-E26E-4d11-BA50-41CC98CC5F69}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findByPin" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="2"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{ED5AE27F-D7AA-44c5-9DE8-8D472BF81591}"/><UML:TaggedValue tag="ea_localid" value="1217"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_F63D8AD0_492F_45eb_98EF_3F7F7AED0582"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid8"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-D7AA-44c5-9DE8-8D472BF81591}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="pin" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid9"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="String"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{BF829B9E-7F85-4c96-96A5-2E5B0960C79E}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="PostgresUserDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="0"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{55C6D6EF-5610-4b9d-9837-F030F93DEC6C}"/><UML:TaggedValue tag="ea_localid" value="1218"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid2"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-5610-4b9d-9837-F030F93DEC6C}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="factory" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="SessionFactory"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{2E6ECFBF-84BD-4fd6-965C-D3C57258F67E}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation></UML:Classifier.feature></UML:Class><UML:Dependency client="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" supplier="EAID_5E484D72_FE18_44e5_B71B_B52474000FED" xmi.id="EAID_A81B942C_D687_414b_8C0F_904643F0D692" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="style" value="3"/><UML:TaggedValue tag="ea_type" value="Realisation"/><UML:TaggedValue tag="direction" value="Source -&gt; Destination"/><UML:TaggedValue tag="linemode" value="3"/><UML:TaggedValue tag="linecolor" value="-1"/><UML:TaggedValue tag="linewidth" value="0"/><UML:TaggedValue tag="seqno" value="0"/><UML:TaggedValue tag="headStyle" value="0"/><UML:TaggedValue tag="lineStyle" value="0"/><UML:TaggedValue tag="ea_localid" value="2161"/><UML:TaggedValue tag="ea_sourceName" value="PostgresUserDAO"/><UML:TaggedValue tag="ea_targetName" value="UserDAO"/><UML:TaggedValue tag="ea_sourceType" value="Class"/><UML:TaggedValue tag="ea_targetType" value="Interface"/><UML:TaggedValue tag="ea_sourceID" value="3432"/><UML:TaggedValue tag="ea_targetID" value="3437"/><UML:TaggedValue tag="src_visibility" value="Public"/><UML:TaggedValue tag="src_aggregation" value="0"/><UML:TaggedValue tag="src_isOrdered" value="false"/><UML:TaggedValue tag="src_targetScope" value="instance"/><UML:TaggedValue tag="src_changeable" value="none"/><UML:TaggedValue tag="src_isNavigable" value="false"/><UML:TaggedValue tag="src_containment" value="Unspecified"/><UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/><UML:TaggedValue tag="dst_visibility" value="Public"/><UML:TaggedValue tag="dst_aggregation" value="0"/><UML:TaggedValue tag="dst_isOrdered" value="false"/><UML:TaggedValue tag="dst_targetScope" value="instance"/><UML:TaggedValue tag="dst_changeable" value="none"/><UML:TaggedValue tag="dst_isNavigable" value="true"/><UML:TaggedValue tag="dst_containment" value="Unspecified"/><UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/><UML:TaggedValue tag="virtualInheritance" value="0"/></UML:ModelElement.taggedValue></UML:Dependency><UML:Class name="PostgresOrderInDAO" xmi.id="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"><UML:ModelElement.taggedValue><UML:TaggedValue tag="documentation" value="An implementation of OrderInDAO powered by Dropwizard's AbstractDAO implementation."/><UML:TaggedValue tag="isSpecification" value="false"/><UML:TaggedValue tag="ea_stype" value="Class"/><UML:TaggedValue tag="ea_ntype" value="2"/><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="classparams" value="Actual=OrderIn,Parent=AbstractDAO,BindType=Gen,"/><UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/><UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresOrderInDAO.java"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="gentype" value="Java"/><UML:TaggedValue tag="tagged" value="0"/><UML:TaggedValue tag="package_name" value="postgres"/><UML:TaggedValue tag="phase" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="complexity" value="1"/><UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/><UML:TaggedValue tag="status" value="Proposed"/><UML:TaggedValue tag="tpos" value="0"/><UML:TaggedValue tag="ea_localid" value="3429"/><UML:TaggedValue tag="ea_eleType" value="element"/><UML:TaggedValue tag="eventflags" value="OBJ=1230;"/><UML:TaggedValue tag="parameters" value=";ARGS=Actual=OrderIn,Parent=AbstractDAO,BindType=Gen,;"/><UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/></UML:ModelElement.taggedValue><UML:Classifier.feature><UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="OrderIn"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="2"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{CC1522FD-6D5A-45f5-9BB3-C1A2FF0B4753}"/><UML:TaggedValue tag="ea_localid" value="1204"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_D7D1DB20_F1D6_4d71_AB80_4CFB3820CEB7"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="OrderIn"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-6D5A-45f5-9BB3-C1A2FF0B4753}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="order" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="OrderIn"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/><UML:TaggedValue tag="ea_guid" value="{A6692B6C-F289-4d58-9BD4-CBC74DC1486D}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findAll" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="List&lt;OrderIn&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="3"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{BB07FD10-ABC5-45b0-9EBB-F764E41120E6}"/><UML:TaggedValue tag="ea_localid" value="1205"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_D38F9049_A1C3_4463_B50D_87A41490FE05"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid10"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="List&lt;OrderIn&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-ABC5-45b0-9EBB-F764E41120E6}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="Optional&lt;OrderIn&gt;"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="1"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{2D6ECCC8-99BC-4da3-A30C-F00A6C063FC1}"/><UML:TaggedValue tag="ea_localid" value="1206"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_5D72E78D_4EFD_4f48_A35F_875102C09389"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid11"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Optional&lt;OrderIn&gt;"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-99BC-4da3-A30C-F00A6C063FC1}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="id" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid1"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="Long"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{18A8A94D-9947-405f-B0C4-40CF1DC47A3E}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="PostgresOrderInDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="0"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{14382EEA-D29F-4b4a-8F7E-C2E1BB42E00C}"/><UML:TaggedValue tag="ea_localid" value="1207"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid2"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-D29F-4b4a-8F7E-C2E1BB42E00C}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="factory" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid3"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="SessionFactory"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{38D73615-9268-4dc6-A6FA-C00668069E76}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation><UML:Operation name="removeLineItem" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential"><UML:ModelElement.taggedValue><UML:TaggedValue tag="type" value="void"/><UML:TaggedValue tag="const" value="false"/><UML:TaggedValue tag="synchronised" value="0"/><UML:TaggedValue tag="concurrency" value="Sequential"/><UML:TaggedValue tag="position" value="4"/><UML:TaggedValue tag="returnarray" value="0"/><UML:TaggedValue tag="pure" value="0"/><UML:TaggedValue tag="ea_guid" value="{1DA49CF8-9953-43eb-8D15-4810C5CF231C}"/><UML:TaggedValue tag="ea_localid" value="1208"/><UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_50084CB4_7DB1_4ca0_933D_989CD92A5C64"/></UML:ModelElement.taggedValue><UML:BehavioralFeature.parameter><UML:Parameter kind="return" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="eaxmiid12"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="void"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="ea_guid" value="{RETURNID-9953-43eb-8D15-4810C5CF231C}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter><UML:Parameter name="li" kind="in" visibility="public"><UML:Parameter.type><UML:Classifier xmi.idref="EAID_B2257416_66DC_41ce_945C_CE06255F8138"/></UML:Parameter.type><UML:ModelElement.taggedValue><UML:TaggedValue tag="pos" value="0"/><UML:TaggedValue tag="type" value="LineItem"/><UML:TaggedValue tag="const" value="0"/><UML:TaggedValue tag="classifier" value="EAID_B2257416_66DC_41ce_945C_CE06255F8138"/><UML:TaggedValue tag="ea_guid" value="{4452B112-9478-4651-8057-E6F7BD281261}"/></UML:ModelElement.taggedValue><UML:Parameter.defaultValue><UML:Expression/></UML:Parameter.defaultValue></UML:Parameter></UML:BehavioralFeature.parameter></UML:Operation></UML:Classifier.feature></UML:Class><UML:Dependency client="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" supplier="EAID_49F65955_124C_4753_8310_457F12D29321" xmi.id="EAID_13A89041_2E4E_4bb3_8151_2C80A9D01E90" visibility="public"><UML:ModelElement.taggedValue><UML:TaggedValue tag="style" value="3"/><UML:TaggedValue tag="ea_type" value="Realisation"/><UML:TaggedValue tag="direction" value="Source -&gt; Destination"/><UML:TaggedValue tag="linemode" value="3"/><UML:TaggedValue tag="linecolor" value="-1"/><UML:TaggedValue tag="linewidth" value="0"/><UML:TaggedValue tag="seqno" value="0"/><UML:TaggedValue tag="headStyle" value="0"/><UML:TaggedValue tag="lineStyle" value="0"/><UML:TaggedValue tag="ea_localid" value="2158"/><UML:TaggedValue tag="ea_sourceName" value="PostgresOrderInDAO"/><UML:TaggedValue tag="ea_targetName" value="OrderInDAO"/><UML:TaggedValue tag="ea_sourceType" value="Class"/><UML:TaggedValue tag="ea_targetType" value="Interface"/><UML:TaggedValue tag="ea_sourceID" value="3429"/><UML:TaggedValue tag="ea_targetID" value="3434"/><UML:TaggedValue tag="src_visibility" value="Public"/><UML:TaggedValue tag="src_aggregation" value="0"/><UML:TaggedValue tag="src_isOrdered" value="false"/><UML:TaggedValue tag="src_targetScope" value="instance"/><UML:TaggedValue tag="src_changeable" value="none"/><UML:TaggedValue tag="src_isNavigable" value="false"/><UML:TaggedValue tag="src_containment" value="Unspecified"/><UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/><UML:TaggedValue tag="dst_visibility" value="Public"/><UML:TaggedValue tag="dst_aggregation" value="0"/><UML:TaggedValue tag="dst_isOrdered" value="false"/><UML:TaggedValue tag="dst_targetScope" value="instance"/><UML:TaggedValue tag="dst_changeable" value="none"/><UML:TaggedValue tag="dst_isNavigable" value="true"/><UML:TaggedValue tag="dst_containment" value="Unspecified"/><UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/><UML:TaggedValue tag="virtualInheritance" value="0"/></UML:ModelElement.taggedValue></UML:Dependency></UML:Namespace.ownedElement></UML:Package><UML:DataType xmi.id="eaxmiid2" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid4" name="List&lt;ProductPosition&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid8" name="Optional&lt;User&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid12" name="void" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid10" name="List&lt;OrderIn&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid6" name="List&lt;Product&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid11" name="Optional&lt;OrderIn&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid7" name="Optional&lt;Product&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid0" name="Optional&lt;ProductMovement&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid3" name="SessionFactory" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid9" name="String" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid5" name="long" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/><UML:DataType xmi.id="eaxmiid1" name="Long" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/></UML:Namespace.ownedElement></UML:Model><UML:Diagram name="postgres" xmi.id="EAID_9BF8E03C_FD8F_41f4_90AF_D807F3A49B51" diagramType="ClassDiagram" owner="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" toolName="Enterprise Architect 2.5"><UML:ModelElement.taggedValue><UML:TaggedValue tag="version" value="1.0"/><UML:TaggedValue tag="author" value="husekjos"/><UML:TaggedValue tag="created_date" value="2017-12-18 11:05:09"/><UML:TaggedValue tag="modified_date" value="2017-12-18 14:34:16"/><UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/><UML:TaggedValue tag="type" value="Logical"/><UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/><UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/><UML:TaggedValue tag="ea_localid" value="401"/><UML:TaggedValue tag="EAStyle" value="ShowPrivate=0;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=2;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/><UML:TaggedValue tag="styleex" value="SaveTag=002404BF;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/></UML:ModelElement.taggedValue><UML:Diagram.element><UML:DiagramElement geometry="Left=249;Top=151;Right=446;Bottom=249;" subject="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" seqno="1" style="DUID=C9D57B63;"/><UML:DiagramElement geometry="Left=20;Top=151;Right=229;Bottom=249;" subject="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" seqno="2" style="DUID=614ED0EC;"/><UML:DiagramElement geometry="Left=532;Top=20;Right=780;Bottom=90;" subject="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" seqno="3" style="DUID=0B1B760C;"/><UML:DiagramElement geometry="Left=302;Top=20;Right=512;Bottom=131;" subject="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" seqno="4" style="DUID=A616A1E4;"/><UML:DiagramElement geometry="Left=20;Top=20;Right=282;Bottom=105;" subject="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" seqno="5" style="DUID=C88D3ECA;"/></UML:Diagram.element></UML:Diagram></XMI.content><XMI.difference/><XMI.extensions xmi.extender="Enterprise Architect 2.5"><EAStub xmi.id="EAID_E862731D_FA77_4a6d_A060_6826F11F1AF5" name="MovementDAO" UMLType="Interface"/><EAModel.paramSub/><EAStub xmi.id="EAID_983FCC74_255E_441d_8AAD_BD5381C1E07E" name="PositionDAO" UMLType="Interface"/><EAStub xmi.id="EAID_CCE3AF49_6E74_4767_AF53_CC9CD945AFF8" name="ProductDAO" UMLType="Interface"/><EAStub xmi.id="EAID_5E484D72_FE18_44e5_B71B_B52474000FED" name="UserDAO" UMLType="Interface"/><EAStub xmi.id="EAID_49F65955_124C_4753_8310_457F12D29321" name="OrderInDAO" UMLType="Interface"/><EAStub xmi.id="EAID_0C12269B_5459_45d0_8153_231CDB87E03C" name="ProductMovement" UMLType="Class"/><EAStub xmi.id="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3" name="Product" UMLType="Class"/><EAStub xmi.id="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F" name="User" UMLType="Class"/><EAStub xmi.id="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96" name="OrderIn" UMLType="Class"/><EAStub xmi.id="EAID_B2257416_66DC_41ce_945C_CE06255F8138" name="LineItem" UMLType="Class"/></XMI.extensions></XMI>
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_D597D7AB_C2A7_4690_82E5_E1E29B529FFD">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="postgres" xmi.id="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_01417DA5_75C0_45e6_9D48_2062B31DDFF4"/>
+						<UML:TaggedValue tag="created" value="2017-12-18 11:05:09"/>
+						<UML:TaggedValue tag="modified" value="2017-12-18 11:05:09"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="eaE\E1E29B529FFD.xml"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="packageFlags" value="VCCFG=SKLD;CRC=0;"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="husekjos"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="PostgresMovementDAO" xmi.id="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An implementation of MovementDAO powered by Dropwizard's AbstractDAO implementation."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="2"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+								<UML:TaggedValue tag="classparams" value="Actual=ProductMovement,Parent=AbstractDAO,BindType=Gen,"/>
+								<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresMovementDAO.java"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="postgres"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="husekjos"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="3428"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="eventflags" value="OBJ=1230;"/>
+								<UML:TaggedValue tag="parameters" value=";ARGS=Actual=ProductMovement,Parent=AbstractDAO,BindType=Gen,;"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ProductMovement"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{D45254F6-5125-475a-9866-12B6072DF6D6}"/>
+										<UML:TaggedValue tag="ea_localid" value="1201"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_2839BEFF_0947_40c2_97D2_060186A8A0F2"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ProductMovement"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-5125-475a-9866-12B6072DF6D6}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="movement" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ProductMovement"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_0C12269B_5459_45d0_8153_231CDB87E03C"/>
+												<UML:TaggedValue tag="ea_guid" value="{CCCF423F-7D69-4c12-880B-38CF3ACE8BE2}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Optional&lt;ProductMovement&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{4624C3A3-6D50-4179-AAF8-F599ED09CC00}"/>
+										<UML:TaggedValue tag="ea_localid" value="1202"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_602AE525_2B61_415f_9AA0_9F3F2C058ACA"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid0"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Optional&lt;ProductMovement&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-6D50-4179-AAF8-F599ED09CC00}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="id" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid1"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Long"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{5AC25DD0-F8A2-4bd2-9B6A-FBD8E88F419C}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="PostgresMovementDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{3C43ABA5-988D-422c-8C98-2760EFAC4FB6}"/>
+										<UML:TaggedValue tag="ea_localid" value="1203"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-988D-422c-8C98-2760EFAC4FB6}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="factory" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="SessionFactory"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{464E15F2-6CC4-4503-841D-CCEB219A8410}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" supplier="EAID_E862731D_FA77_4a6d_A060_6826F11F1AF5" xmi.id="EAID_3D57F6DE_D3EA_410a_9099_F9DC2739096B" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="2157"/>
+								<UML:TaggedValue tag="ea_sourceName" value="PostgresMovementDAO"/>
+								<UML:TaggedValue tag="ea_targetName" value="MovementDAO"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
+								<UML:TaggedValue tag="ea_sourceID" value="3428"/>
+								<UML:TaggedValue tag="ea_targetID" value="3433"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="PostgresPositionDAO" xmi.id="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An implementation of PositionDAO powered by Dropwizard's AbstractDAO implementation."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="2"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+								<UML:TaggedValue tag="classparams" value="Actual=ProductPosition,Parent=AbstractDAO,BindType=Gen,"/>
+								<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresPositionDAO.java"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="postgres"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="husekjos"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="3430"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="eventflags" value="OBJ=1230;"/>
+								<UML:TaggedValue tag="parameters" value=";ARGS=Actual=ProductPosition,Parent=AbstractDAO,BindType=Gen,;"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Operation name="findForProductId" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="List&lt;ProductPosition&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{608FC3B9-3DB6-4a08-B934-0CE4C9EC3201}"/>
+										<UML:TaggedValue tag="ea_localid" value="1209"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_EBF59534_7CF1_4345_AE0F_C2C56B95344A"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid4"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="List&lt;ProductPosition&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-3DB6-4a08-B934-0CE4C9EC3201}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="productId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid5"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="long"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{46500BC9-F6A5-481e-8AD5-5C63B9F0F6B3}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="PostgresPositionDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{D18AB72A-8C55-4ea1-983F-760C4A3BF772}"/>
+										<UML:TaggedValue tag="ea_localid" value="1210"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-8C55-4ea1-983F-760C4A3BF772}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="factory" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="SessionFactory"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{FB32C3D6-B197-4927-8EE9-A87EC9DCB468}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" supplier="EAID_983FCC74_255E_441d_8AAD_BD5381C1E07E" xmi.id="EAID_0E68C95E_B87E_45d4_8849_C83AC0C6B878" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="2159"/>
+								<UML:TaggedValue tag="ea_sourceName" value="PostgresPositionDAO"/>
+								<UML:TaggedValue tag="ea_targetName" value="PositionDAO"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
+								<UML:TaggedValue tag="ea_sourceID" value="3430"/>
+								<UML:TaggedValue tag="ea_targetID" value="3435"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="PostgresProductDAO" xmi.id="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An implementation of ProductDAO powered by Dropwizard's AbstractDAO implementation."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="2"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+								<UML:TaggedValue tag="classparams" value="Actual=Product,Parent=AbstractDAO,BindType=Gen,"/>
+								<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresProductDAO.java"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="postgres"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="husekjos"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="3431"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="eventflags" value="OBJ=1230;"/>
+								<UML:TaggedValue tag="parameters" value=";ARGS=Actual=Product,Parent=AbstractDAO,BindType=Gen,;"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Product"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{C6CDD249-2851-4204-9F62-292D77FA162D}"/>
+										<UML:TaggedValue tag="ea_localid" value="1211"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_DD55D3C2_5FED_4ec3_A301_A1D8BEADA27E"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Product"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-2851-4204-9F62-292D77FA162D}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="product" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Product"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3"/>
+												<UML:TaggedValue tag="ea_guid" value="{A41A5D81-C759-4d42-81FF-1B11E89AC032}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findAll" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="List&lt;Product&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{E1DCAE8D-CE56-426c-86AE-045CC139D5FF}"/>
+										<UML:TaggedValue tag="ea_localid" value="1212"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_A642ECAC_7FDE_4b2f_9BBA_7C6E8A8A84C6"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid6"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="List&lt;Product&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-CE56-426c-86AE-045CC139D5FF}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Optional&lt;Product&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{C738100C-2F2D-4aed-AB9E-8AD712A21EA2}"/>
+										<UML:TaggedValue tag="ea_localid" value="1213"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_778C2BB6_D50A_405e_BE77_F2A222917CF6"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid7"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Optional&lt;Product&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-2F2D-4aed-AB9E-8AD712A21EA2}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="id" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid1"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Long"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{7EE42222-2771-47f2-8898-4D92E3238385}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="PostgresProductDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{B71DF5C4-DD47-4e20-9256-827D8F4508D1}"/>
+										<UML:TaggedValue tag="ea_localid" value="1214"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-DD47-4e20-9256-827D8F4508D1}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="factory" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="SessionFactory"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{196ADC37-1F22-4f70-8CF5-29C09B8F0C89}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" supplier="EAID_CCE3AF49_6E74_4767_AF53_CC9CD945AFF8" xmi.id="EAID_3D42B4BD_6A4F_44a9_B651_0C773DAAAF9B" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="2160"/>
+								<UML:TaggedValue tag="ea_sourceName" value="PostgresProductDAO"/>
+								<UML:TaggedValue tag="ea_targetName" value="ProductDAO"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
+								<UML:TaggedValue tag="ea_sourceID" value="3431"/>
+								<UML:TaggedValue tag="ea_targetID" value="3436"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="PostgresUserDAO" xmi.id="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An implementation of UserDAO powered by Dropwizard's AbstractDAO implementation."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="2"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+								<UML:TaggedValue tag="classparams" value="Actual=User,Parent=AbstractDAO,BindType=Gen,"/>
+								<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresUserDAO.java"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="postgres"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="husekjos"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="3432"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="eventflags" value="OBJ=1230;"/>
+								<UML:TaggedValue tag="parameters" value=";ARGS=Actual=User,Parent=AbstractDAO,BindType=Gen,;"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="User"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{AE06BC5A-B73D-4634-836A-B7EBE6E12C03}"/>
+										<UML:TaggedValue tag="ea_localid" value="1215"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_B6C6E58C_9071_4264_9B64_93AAB438AC38"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="User"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-B73D-4634-836A-B7EBE6E12C03}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="user" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="User"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F"/>
+												<UML:TaggedValue tag="ea_guid" value="{D65EEDDD-13AC-4c50-AF64-EA86528B8DD0}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{10DB45FE-1D70-4d27-83C1-1B180A0F6773}"/>
+										<UML:TaggedValue tag="ea_localid" value="1216"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_442A4218_7821_4a59_85A8_8384195F2CA2"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid8"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-1D70-4d27-83C1-1B180A0F6773}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="id" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid1"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Long"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{1AF523F7-E26E-4d11-BA50-41CC98CC5F69}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findByPin" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{ED5AE27F-D7AA-44c5-9DE8-8D472BF81591}"/>
+										<UML:TaggedValue tag="ea_localid" value="1217"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_F63D8AD0_492F_45eb_98EF_3F7F7AED0582"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid8"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Optional&lt;User&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-D7AA-44c5-9DE8-8D472BF81591}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="pin" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid9"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="String"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{BF829B9E-7F85-4c96-96A5-2E5B0960C79E}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="PostgresUserDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{55C6D6EF-5610-4b9d-9837-F030F93DEC6C}"/>
+										<UML:TaggedValue tag="ea_localid" value="1218"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-5610-4b9d-9837-F030F93DEC6C}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="factory" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="SessionFactory"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{2E6ECFBF-84BD-4fd6-965C-D3C57258F67E}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" supplier="EAID_5E484D72_FE18_44e5_B71B_B52474000FED" xmi.id="EAID_A81B942C_D687_414b_8C0F_904643F0D692" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="2161"/>
+								<UML:TaggedValue tag="ea_sourceName" value="PostgresUserDAO"/>
+								<UML:TaggedValue tag="ea_targetName" value="UserDAO"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
+								<UML:TaggedValue tag="ea_sourceID" value="3432"/>
+								<UML:TaggedValue tag="ea_targetID" value="3437"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="PostgresOrderInDAO" xmi.id="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" visibility="public" namespace="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An implementation of OrderInDAO powered by Dropwizard's AbstractDAO implementation."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="2"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+								<UML:TaggedValue tag="classparams" value="Actual=OrderIn,Parent=AbstractDAO,BindType=Gen,"/>
+								<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:10"/>
+								<UML:TaggedValue tag="genfile" value="C:\Users\Pepa\Desktop\School\SI\repo\src\api\src\main\java\cz\cvut\fit\project\skld\application\db\postgres\PostgresOrderInDAO.java"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="postgres"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="husekjos"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="genlinks" value="Parent=AbstractDAO;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="3429"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="eventflags" value="OBJ=1230;"/>
+								<UML:TaggedValue tag="parameters" value=";ARGS=Actual=OrderIn,Parent=AbstractDAO,BindType=Gen,;"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Operation name="create" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="OrderIn"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{CC1522FD-6D5A-45f5-9BB3-C1A2FF0B4753}"/>
+										<UML:TaggedValue tag="ea_localid" value="1204"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_D7D1DB20_F1D6_4d71_AB80_4CFB3820CEB7"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="OrderIn"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-6D5A-45f5-9BB3-C1A2FF0B4753}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="order" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="OrderIn"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96"/>
+												<UML:TaggedValue tag="ea_guid" value="{A6692B6C-F289-4d58-9BD4-CBC74DC1486D}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findAll" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="List&lt;OrderIn&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{BB07FD10-ABC5-45b0-9EBB-F764E41120E6}"/>
+										<UML:TaggedValue tag="ea_localid" value="1205"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_D38F9049_A1C3_4463_B50D_87A41490FE05"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid10"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="List&lt;OrderIn&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-ABC5-45b0-9EBB-F764E41120E6}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="findById" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="Optional&lt;OrderIn&gt;"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{2D6ECCC8-99BC-4da3-A30C-F00A6C063FC1}"/>
+										<UML:TaggedValue tag="ea_localid" value="1206"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_5D72E78D_4EFD_4f48_A35F_875102C09389"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Optional&lt;OrderIn&gt;"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-99BC-4da3-A30C-F00A6C063FC1}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="id" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid1"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Long"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{18A8A94D-9947-405f-B0C4-40CF1DC47A3E}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="PostgresOrderInDAO" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{14382EEA-D29F-4b4a-8F7E-C2E1BB42E00C}"/>
+										<UML:TaggedValue tag="ea_localid" value="1207"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-D29F-4b4a-8F7E-C2E1BB42E00C}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="factory" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid3"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="SessionFactory"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{38D73615-9268-4dc6-A6FA-C00668069E76}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="removeLineItem" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="void"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{1DA49CF8-9953-43eb-8D15-4810C5CF231C}"/>
+										<UML:TaggedValue tag="ea_localid" value="1208"/>
+										<UML:TaggedValue tag="annotations" value="@Override" xmi.id="EAID_50084CB4_7DB1_4ca0_933D_989CD92A5C64"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="void"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-9953-43eb-8D15-4810C5CF231C}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="li" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="EAID_B2257416_66DC_41ce_945C_CE06255F8138"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="LineItem"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="classifier" value="EAID_B2257416_66DC_41ce_945C_CE06255F8138"/>
+												<UML:TaggedValue tag="ea_guid" value="{4452B112-9478-4651-8057-E6F7BD281261}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" supplier="EAID_49F65955_124C_4753_8310_457F12D29321" xmi.id="EAID_13A89041_2E4E_4bb3_8151_2C80A9D01E90" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="2158"/>
+								<UML:TaggedValue tag="ea_sourceName" value="PostgresOrderInDAO"/>
+								<UML:TaggedValue tag="ea_targetName" value="OrderInDAO"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
+								<UML:TaggedValue tag="ea_sourceID" value="3429"/>
+								<UML:TaggedValue tag="ea_targetID" value="3434"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:DataType xmi.id="eaxmiid2" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid4" name="List&lt;ProductPosition&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid8" name="Optional&lt;User&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid12" name="void" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid10" name="List&lt;OrderIn&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid6" name="List&lt;Product&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid11" name="Optional&lt;OrderIn&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid7" name="Optional&lt;Product&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid0" name="Optional&lt;ProductMovement&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid3" name="SessionFactory" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid9" name="String" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid5" name="long" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid1" name="Long" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="postgres" xmi.id="EAID_9BF8E03C_FD8F_41f4_90AF_D807F3A49B51" diagramType="ClassDiagram" owner="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="husekjos"/>
+				<UML:TaggedValue tag="created_date" value="2017-12-18 11:05:09"/>
+				<UML:TaggedValue tag="modified_date" value="2017-12-18 14:34:16"/>
+				<UML:TaggedValue tag="package" value="EAPK_D597D7AB_C2A7_4690_82E5_E1E29B529FFD"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="ea_localid" value="401"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=0;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=2;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=002404BF;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=249;Top=151;Right=446;Bottom=249;" subject="EAID_C4DE178C_3B35_4113_A7FE_3180E1E1B720" seqno="1" style="DUID=C9D57B63;"/>
+				<UML:DiagramElement geometry="Left=20;Top=151;Right=229;Bottom=249;" subject="EAID_83DEDFF5_04CE_44dc_8EA2_7527901F89DA" seqno="2" style="DUID=614ED0EC;"/>
+				<UML:DiagramElement geometry="Left=532;Top=20;Right=780;Bottom=90;" subject="EAID_6BED6BF9_0FCF_4fbf_8ACC_05C8B587CC57" seqno="3" style="DUID=0B1B760C;"/>
+				<UML:DiagramElement geometry="Left=302;Top=20;Right=512;Bottom=131;" subject="EAID_F65B2BA9_AE2C_4e79_9715_3E7E1FACC8A9" seqno="4" style="DUID=A616A1E4;"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=282;Bottom=105;" subject="EAID_45741203_D0FB_438d_A9EE_4CEC88582582" seqno="5" style="DUID=C88D3ECA;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAStub xmi.id="EAID_E862731D_FA77_4a6d_A060_6826F11F1AF5" name="MovementDAO" UMLType="Interface"/>
+		<EAModel.paramSub/>
+		<EAStub xmi.id="EAID_983FCC74_255E_441d_8AAD_BD5381C1E07E" name="PositionDAO" UMLType="Interface"/>
+		<EAStub xmi.id="EAID_CCE3AF49_6E74_4767_AF53_CC9CD945AFF8" name="ProductDAO" UMLType="Interface"/>
+		<EAStub xmi.id="EAID_5E484D72_FE18_44e5_B71B_B52474000FED" name="UserDAO" UMLType="Interface"/>
+		<EAStub xmi.id="EAID_49F65955_124C_4753_8310_457F12D29321" name="OrderInDAO" UMLType="Interface"/>
+		<EAStub xmi.id="EAID_0C12269B_5459_45d0_8153_231CDB87E03C" name="ProductMovement" UMLType="Class"/>
+		<EAStub xmi.id="EAID_9C9A9DA9_E32C_43f3_A8CE_7B7E2FA423F3" name="Product" UMLType="Class"/>
+		<EAStub xmi.id="EAID_2B5DD24E_A1C6_4fb2_9F46_F338D0DAAB1F" name="User" UMLType="Class"/>
+		<EAStub xmi.id="EAID_C00B961D_35B3_4eb8_9DD4_F90E48F3EF96" name="OrderIn" UMLType="Class"/>
+		<EAStub xmi.id="EAID_B2257416_66DC_41ce_945C_CE06255F8138" name="LineItem" UMLType="Class"/>
+	</XMI.extensions>
+</XMI>
