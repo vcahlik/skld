@@ -25,10 +25,17 @@ public class ProductsResource {
 
     private final ProductOperations productOps;
 
+    /***
+     * Construct a new ProductResource
+     * @param ops business logic class implementing operations on Products
+     */
     public ProductsResource(ProductOperations ops) {
         productOps = ops;
     }
 
+    /***
+     * Create a new product.
+     */
     @POST
     @UnitOfWork
     @RolesAllowed({"admin"})
@@ -40,6 +47,9 @@ public class ProductsResource {
         }
     }
 
+    /***
+     * List all the Products
+     */
     @GET
     @UnitOfWork
     public List<ProductRepresentation> listProducts() {

@@ -17,6 +17,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/***
+ * Implements REST endpoints which enable retrieval and manipulation of Product objects.
+ */
 @Path("/products/{id}")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -25,10 +28,17 @@ public class ProductResource {
     private final WebAppExceptionSupplier error404 = new WebAppExceptionSupplier("Product not found", Response.Status.NOT_FOUND);
     final ProductOperations productOps;
 
+    /***
+     * Construct a new ProductResource
+     * @param productOps business logic class implementing operations on Products
+     */
     public ProductResource(ProductOperations productOps) {
         this.productOps = productOps;
     }
 
+    /***
+     * Get details of a product with the given ID
+     */
     @GET
     @UnitOfWork
     @Produces(MediaType.APPLICATION_JSON)
@@ -40,6 +50,9 @@ public class ProductResource {
         }
     }
 
+    /***
+     * Edit the information about a Product
+     */
     @PUT
     @UnitOfWork
     @RolesAllowed({"admin"})

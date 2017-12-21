@@ -17,6 +17,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/***
+ * Implements REST endpoints which enable retrieval and manipulation of Order In objects.
+ */
 @Path("/orders/in/{id}")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -25,10 +28,17 @@ public class OrderInResource {
 
     private final OrderInOperations orderInOps;
 
+    /***
+     * Construct a new OrderInResource
+     * @param orderInOps business logic class implementing operations on Order Ins
+     */
     public OrderInResource(OrderInOperations orderInOps) {
         this.orderInOps = orderInOps;
     }
 
+    /***
+     * Get details about an order with the given ID
+     */
     @GET
     @UnitOfWork
     public OrderInRepresentation getOrder(@PathParam("id") long id) {
@@ -40,6 +50,9 @@ public class OrderInResource {
         }
     }
 
+    /***
+     * Edit the information about an Order In
+     */
     @PUT
     @UnitOfWork
     public OrderInRepresentation updateOrder(@PathParam("id") long id, @Valid OrderInChange change) {
@@ -56,7 +69,9 @@ public class OrderInResource {
         }
     }
 
-
+    /***
+     * Close an Order In
+     */
     @POST
     @UnitOfWork
     @Path("/close")
@@ -72,6 +87,9 @@ public class OrderInResource {
         }
     }
 
+    /***
+     * Refuse an Order In
+     */
     @POST
     @UnitOfWork
     @Path("/refuse")

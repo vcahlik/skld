@@ -19,6 +19,9 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/***
+ * Implements REST endpoints which enable creation and listing of Order In objects.
+ */
 @Path("/orders/in")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -27,10 +30,17 @@ public class OrderInsResource {
 
     private final OrderInOperations orderInOps;
 
+    /***
+     * Construct a new OrderInsResource
+     * @param orderInOps business logic class implementing operations on Order Ins
+     */
     public OrderInsResource(OrderInOperations orderInOps) {
         this.orderInOps = orderInOps;
     }
 
+    /***
+     * Create a new Order In
+     */
     @POST
     @UnitOfWork
     @RolesAllowed({"admin"})
@@ -42,6 +52,9 @@ public class OrderInsResource {
         }
     }
 
+    /***
+     * List all the Order Ins
+     */
     @GET
     @UnitOfWork
     public List<OrderInRepresentation> getAll() {
