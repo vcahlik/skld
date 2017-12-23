@@ -10,14 +10,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/***
- * Contains static methods which convert from domain objects to different representations.
+/**
+ * Obsahuje staticke metody, ktere konvertuji domenove objekty do svych reprezentaci.
  */
 class RepresentationConverter {
+    /**
+     * Konvertovani pro uzivatele.
+     * @param u Uzivatel
+     * @return Reprezentace
+     */
     public static UserRepresentation representUser(User u) {
         return new UserRepresentation(u.getId(), u.getName(), u.getCreatedAt(), u.isAdmin());
     }
 
+    /**
+     * Konvertovani pro logisticke objednavky.
+     * @param order Logisticka objednavka
+     * @return Reprezentace
+     */
     public static OrderInRepresentation representOrderIn(OrderIn order) {
         OrderInRepresentation rep = new OrderInRepresentation();
         rep.setId(order.getId());
@@ -40,6 +50,11 @@ class RepresentationConverter {
         return rep;
     }
 
+    /**
+     * Konvertovani pro produkty.
+     * @param p Produkt
+     * @return Reprezentace
+     */
     public static ProductRepresentation representProduct(Product p) {
         ProductRepresentation rep = new ProductRepresentation();
         rep.setId(p.getId());
@@ -49,6 +64,12 @@ class RepresentationConverter {
         return rep;
     }
 
+    /**
+     * Konvertovani pro produkty.
+     * @param p Produkt
+     * @param positions Seznam pozic, na kterych je produkt k nalezeni
+     * @return Reprezentace
+     */
     public static ProductRepresentation representProduct(Product p, List<ProductPosition> positions) {
         ProductRepresentation rep = representProduct(p);
         if (positions != null && positions.size() > 0) {
@@ -67,6 +88,11 @@ class RepresentationConverter {
         return rep;
     }
 
+    /**
+     * Konvertovani pro produkty.
+     * @param li LineItem
+     * @return Reprezentace
+     */
     public static ProductRepresentation representProduct(LineItem li) {
         ProductRepresentation rep = new ProductRepresentation();
         rep.setId(li.getProduct().getId());

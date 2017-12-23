@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.time.Instant;
 import java.util.*;
 
-/***
- * Represents an Order from the domain model.
+/**
+ * Reprezentuje objednavku z domenoveho modelu.
  */
 @Entity
 @Table(name="orders")
@@ -36,8 +36,16 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<LineItem> lineItems;
 
+    /**
+     * Konstruktor.
+     */
     public Order() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID objednavky
+     * @param creator Uzivatel, ktery objednavku vytvoril
+     */
     public Order(long id, User creator) {
         this.id = id;
         this.createdAt = Instant.now();

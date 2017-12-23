@@ -1,4 +1,4 @@
-/***
- * Contains classes implementing the business logic of the application.
+/**
+ * Obsahuje tridy, ktere implementuji business logiku aplikace.
  */
 package cz.cvut.fit.project.skld.application.operations;

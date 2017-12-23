@@ -18,6 +18,9 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Implementuje REST koncove body aplikace, ktere umoznuji uzivatelum tvorit a vyhledavat produkty.
+ */
 @Path("/products")
 @Produces(MediaType.APPLICATION_JSON)
 public class ProductsResource {
@@ -25,16 +28,19 @@ public class ProductsResource {
 
     private final ProductOperations productOps;
 
-    /***
-     * Construct a new ProductResource
-     * @param ops business logic class implementing operations on Products
+    /**
+     * Konstruktor.
+     * @param ops ProductOperations s business logikou produktu
      */
     public ProductsResource(ProductOperations ops) {
         productOps = ops;
     }
 
-    /***
-     * Create a new product.
+    /**
+     * Prida do systemu zadany produkt.
+     * @param user Uzivatel, ktery operaci provedl
+     * @param product Pridavany produkt
+     * @return Pridany produkt (tak, jak vypada v systemu)
      */
     @POST
     @UnitOfWork
@@ -47,8 +53,9 @@ public class ProductsResource {
         }
     }
 
-    /***
-     * List all the Products
+    /**
+     * Vrati seznam vsech produktu v systemu.
+     * @return Seznam produktu
      */
     @GET
     @UnitOfWork

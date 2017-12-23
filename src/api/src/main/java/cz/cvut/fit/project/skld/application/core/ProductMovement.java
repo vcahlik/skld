@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.time.Instant;
 import java.util.Objects;
 
-/***
- * Represents a Product Movement from the domain model.
+/**
+ * Reprezentuje umisteni produktu z domenoveho modelu.
  */
 @Entity
 @Table(name = "product_movements")
@@ -34,8 +34,18 @@ public class ProductMovement {
     @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "FK_Product_User"), nullable = false)
     private User user;
 
+    /**
+     * Konstruktor.
+     */
     public ProductMovement() {}
 
+    /**
+     * Konstruktor.
+     * @param product Umisteny produkt
+     * @param qty Mnozstvi produktu
+     * @param destination Misto, kde se produkt nachazi po umisteni
+     * @param creator Uzivatel, ktery produkt zadal do systemu
+     */
     public ProductMovement(Product product, long qty, String destination, User creator) {
         this.product = product;
         quantity = qty;

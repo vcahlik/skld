@@ -5,27 +5,27 @@ import cz.cvut.fit.project.skld.application.core.Product;
 import java.util.List;
 import java.util.Optional;
 
-/***
- * Implements basic database operations over Product objects.
+/**
+ * Implementuje zakladni databazove operace nad Product objekty.
  */
 public interface ProductDAO {
-    /***
-     * Get a product with the given ID.
-     * @param id the ID of the searched-for product.
-     * @return optionally the product that's in the database under the given ID
+    /**
+     * Vraci produkt se zadanym ID.
+     * @param id ID produktu
+     * @return Produkt
      */
     Optional<Product> findById(Long id);
 
-    /***
-     * Insert a new product into the database.
-     * @param product the product to create
-     * @return created product, with its generated fields filled-out.
+    /**
+     * Vlozi novy produkt do databaze.
+     * @param product Vkladany produkt
+     * @return Vytvoreny produkt (vcetne pripadnych automaticky generovanych hodnot)
      */
     Product create(Product product);
 
-    /***
-     * Get all the products that are in the database.
-     * @return all the products that are in the database.
+    /**
+     * Vraci vsechny produkty v databazi.
+     * @return Seznam produktu
      */
     List<Product> findAll();
 }

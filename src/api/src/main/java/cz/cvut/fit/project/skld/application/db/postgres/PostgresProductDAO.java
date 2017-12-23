@@ -8,22 +8,40 @@ import org.hibernate.SessionFactory;
 import java.util.List;
 import java.util.Optional;
 
-/***
- * An implementation of ProductDAO powered by Dropwizard's AbstractDAO implementation.
+/**
+ * Implementuje zakladni databazove operace nad Product objekty.
  */
 public class PostgresProductDAO extends AbstractDAO<Product>implements ProductDAO {
+    /**
+     * Konstruktor.
+     * @param factory Factory specifikovana v Dropwizard frameworku
+     */
     public PostgresProductDAO(SessionFactory factory) {
         super(factory);
     }
 
+    /**
+     * Vraci produkt se zadanym ID.
+     * @param id ID produktu
+     * @return Produkt
+     */
     @Override public Optional<Product> findById(Long id) {
         return Optional.ofNullable(get(id));
     }
 
+    /**
+     * Vlozi novy produkt do databaze.
+     * @param product Vkladany produkt
+     * @return Vytvoreny produkt (vcetne pripadnych automaticky generovanych hodnot)
+     */
     @Override public Product create(Product product) {
         return persist(product);
     }
 
+    /**
+     * Vraci vsechny produkty v databazi.
+     * @return Seznam produktu
+     */
     @Override public List<Product> findAll() {
         return list(namedQuery("Product.findAll"));
     }

@@ -17,8 +17,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-/***
- * Implements REST endpoints which enable retrieval and manipulation of Product objects.
+/**
+ * Implementuje REST koncove body aplikace, ktere umoznuji uzivatelum vyhledavat a upravovat produkty.
  */
 @Path("/products/{id}")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -28,16 +28,18 @@ public class ProductResource {
     private final WebAppExceptionSupplier error404 = new WebAppExceptionSupplier("Product not found", Response.Status.NOT_FOUND);
     final ProductOperations productOps;
 
-    /***
-     * Construct a new ProductResource
-     * @param productOps business logic class implementing operations on Products
+    /**
+     * Konstruktor.
+     * @param productOps ProductOperations s business logikou produktu
      */
     public ProductResource(ProductOperations productOps) {
         this.productOps = productOps;
     }
 
-    /***
-     * Get details of a product with the given ID
+    /**
+     * Vrati produkt se zadanym ID.
+     * @param productId ID
+     * @return Produkt
      */
     @GET
     @UnitOfWork
@@ -50,8 +52,11 @@ public class ProductResource {
         }
     }
 
-    /***
-     * Edit the information about a Product
+    /**
+     * Upravi produkt se zadanym ID.
+     * @param productId ID
+     * @param change Objekt s informacemi o zmene
+     * @return Zmeneny produkt
      */
     @PUT
     @UnitOfWork

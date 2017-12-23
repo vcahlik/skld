@@ -4,24 +4,25 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import java.util.function.Supplier;
 
-/***
- * An implementation of Supplier interface over WebAppExceptions.
+/**
+ * Implementace interfejsu Supplier pres WebAppExceptions.
  */
 public class WebAppExceptionSupplier implements Supplier<WebApplicationException> {
     private final String message;
     private final Response.Status status;
 
-    /***
-     * Construct a new supplier which will return WebApplicationException with the given message and status when calling
-     * its get() method.
+    /**
+     * Konstruktor. Vytvori noveho Suppliera s prednastavenou WebApplicationException se zadanou zpravou a statusem.
+     * @param message Zprava vyjimky
+     * @param status Status vyjimky
      */
     public WebAppExceptionSupplier(String message, Response.Status status) {
         this.message = message;
         this.status = status;
     }
 
-    /***
-     * Get the exception with the parameters specified in the constructor.
+    /**
+     * Vraci exception s parametry, ktere byly specifikovany v konstruktoru.
      */
     public WebApplicationException get() {
         return new WebApplicationException(message, status);

@@ -3,15 +3,14 @@ package cz.cvut.fit.project.skld.application.auth;
 import cz.cvut.fit.project.skld.application.core.User;
 import io.dropwizard.auth.Authorizer;
 
-/***
- * Implements checking whether user has the role necessary to perform an action.
+/**
+ * Implementace overeni, zda ma uzivatel prava k provedeni nejake akce.
  */
 public class UserAuthorizer implements Authorizer<User> {
-    /***
-     * Checks whether user has the requested role.
-     * @param user the user that should be checked
-     * @param role the role that the user must have to be authorized.
-     *             Currently only "admin" and "user" are supported, controlled by the isAdmin field on User.
+    /**
+     * Zjisti, zda ma uzivatel specifikovane minimalni opravneni.
+     * @param user Overovany uzivatel
+     * @param role Role, kterou uzivatel musi mit k provedeni prislusne operace
      * @return
      */
     @Override

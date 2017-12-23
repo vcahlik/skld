@@ -1,21 +1,20 @@
 package cz.cvut.fit.project.skld.application.core;
 
 
-/***
- * Represents the state of an order.
+/**
+ * Reprezentuje stav objednavky z domenoveho modelu.
  */
 public enum OrderState {
-    /***
-     * An open order has been received from the operations
-     * department and is waiting for processing in the warehouse.
+    /**
+     * Informace o objednavce byly predany skladu provoznim oddelenim a ceka se na jeji zpracovani.
      */
     OPEN,
     /**
-     * The order has been processed.
+     * Objednavka byla zpracovana (naskladnena/odeslana).
      */
     CLOSED,
-    /***
-     * There was a problem when processing the order so it is cancelled.
+    /**
+     * Pri zpracovani objednavky doslo k problemu a byla zrusena.
      */
     REFUSED;
 
