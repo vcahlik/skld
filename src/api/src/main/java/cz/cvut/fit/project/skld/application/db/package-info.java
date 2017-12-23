@@ -1,4 +1,4 @@
-/***
- * Contains the interfaces for the Data Access Objects used to query and manipulate the database.
+/**
+ * Obsahuje rozhrani pro Data Access Objects pouzivanych pro komunikaci s databazi.
  */
 package cz.cvut.fit.project.skld.application.db;

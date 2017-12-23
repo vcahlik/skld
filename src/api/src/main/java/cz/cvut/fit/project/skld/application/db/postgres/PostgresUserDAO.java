@@ -9,18 +9,32 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Optional;
 
-/***
- * An implementation of UserDAO powered by Dropwizard's AbstractDAO implementation.
+/**
+ * Implementuje zakladni databazove operace nad User objekty.
  */
 public class PostgresUserDAO extends AbstractDAO<User>implements UserDAO {
+    /**
+     * Konstruktor.
+     * @param factory Factory specifikovana v Dropwizard frameworku
+     */
     public PostgresUserDAO(SessionFactory factory) {
         super(factory);
     }
 
+    /**
+     * Vraci uzivatele se zadanym ID.
+     * @param id ID uzivatele
+     * @return Uzivatel
+     */
     @Override public Optional<User> findById(Long id) {
         return Optional.ofNullable(get(id));
     }
 
+    /**
+     * Vraci uzivatele, ktery se prihlasuje zadanym PINem.
+     * @param pin PIN kod
+     * @return Uzivatel
+     */
     @Override public Optional<User> findByPin(String pin) {
         Query<User> q = namedQuery("User.findByPIN");
         q.setParameter("pin", pin);
@@ -32,6 +46,11 @@ public class PostgresUserDAO extends AbstractDAO<User>implements UserDAO {
         }
     }
 
+    /**
+     * Vlozi do databaze noveho uzivatele.
+     * @param user Uzivatel
+     * @return Uzivatel (vcetne pripadnych automaticky generovanych hodnot)
+     */
     @Override public User create(User user) {
         return persist(user);
     }

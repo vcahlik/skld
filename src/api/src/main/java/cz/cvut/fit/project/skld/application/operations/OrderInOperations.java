@@ -19,19 +19,19 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/***
- * Implements operations on order ins.
+/**
+ * Implementuje operace souvisejici s logistickymi objednavkami.
  */
 public class OrderInOperations {
     private final OrderInDAO orderInDAO;
     private final ProductDAO productDAO;
     private final MovementDAO movementDAO;
 
-    /***
-     * Construct an instance of the class.
-     * @param orderInDAO DAO used to access order in tables
-     * @param productDAO DAO used to access product tables
-     * @param movementDAO DAO used to access product movement tables
+    /**
+     * Konstruktor.
+     * @param orderInDAO DAO pro pristup k logistickym objednavkam
+     * @param productDAO DAO pro pristup k produktum
+     * @param movementDAO DAO pro pristup k umistenim produktu
      */
     public OrderInOperations(OrderInDAO orderInDAO, ProductDAO productDAO, MovementDAO movementDAO) {
         this.orderInDAO = orderInDAO;
@@ -39,8 +39,9 @@ public class OrderInOperations {
         this.movementDAO = movementDAO;
     }
 
-    /***
-     * Get details of the order with the given ID.
+    /**
+     * Vraci logistickou objednavku podle zadaneho ID.
+     * @param id ID
      */
     public OrderIn get(long id) throws NotFoundException {
         Optional<OrderIn> order = orderInDAO.findById(id);
@@ -50,11 +51,10 @@ public class OrderInOperations {
         return order.get();
     }
 
-    /***
-     * Edit all the details of the order with the given ID.
-     * Only the order status cannot be edited, use close() and refuse()
-     * to do that.
-     * @throws InvalidStateException The edited order is not in the open state.
+    /**
+     * Upravi logistickou objednavku se zadanym ID.
+     * V soucasnosti smi byt modifikovan pouze status.
+     * @throws InvalidStateException Editovana objednavka neni ve stavu otevreno
      */
     public OrderIn edit(OrderInChange change) throws NotFoundException, InvalidStateException {
         OrderIn order = orderInDAO.findById(change.getId()).orElseThrow(new NotFoundExceptionSupplier());
@@ -83,10 +83,11 @@ public class OrderInOperations {
         return order;
     }
 
-    /***
-     * Set the order's state to closed and create the appropriate product movements for the data from the request
-     * @param handler the user who's closing the order
-     * @throws InvalidStateException the order is either already closed or refused
+    /**
+     * Uzavre logistickou objednavku a zada prislusna umisteni produktu do systemu podle predanych produktu z requestu
+     * @param handler Uzivatel, ktery operaci zadal do systemu
+     * @param request Uzavirana logisticka objednavka
+     * @throws InvalidStateException Objednavka neni ve stavu otevreno
      */
     public OrderIn close(User handler, OrderInRepresentation request) throws NotFoundException, InvalidStateException {
         OrderIn order = orderInDAO.findById(request.getId()).orElseThrow(new NotFoundExceptionSupplier());
@@ -121,10 +122,11 @@ public class OrderInOperations {
         return order;
     }
 
-    /***
-     * Set the order's state to refused
-     * @param handler the user who's refusing the order
-     * @throws InvalidStateException the order is either already refused or closed
+    /**
+     * Zamitne logistickou objednavku.
+     * @param handler Uzivatel, ktery operaci zadal do systemu
+     * @param id ID zamitane logisticke objednavky
+     * @throws InvalidStateException Objednavka neni ve stavu otevreno
      */
     public OrderIn refuse(User handler, long id) throws NotFoundException, InvalidStateException {
         OrderIn order = orderInDAO.findById(id).orElseThrow(new NotFoundExceptionSupplier());
@@ -136,10 +138,10 @@ public class OrderInOperations {
         return order;
     }
 
-    /***
-     * Create a new order with the given information
-     * @param creator the user who's creating the order
-     * @throws InvalidStateException an order with the given ID already exists
+    /**
+     * Vytvori novou logistickou objednavku.
+     * @param creator Uzivatel, ktery operaci zadal do systemu
+     * @throws InvalidStateException Logisticka objednavka se zadanym ID jiz v systemu existuje
      */
     public OrderIn create(User creator, OrderInChange request) throws InvalidStateException {
         Optional<OrderIn> existing = orderInDAO.findById(request.getId());
@@ -158,9 +160,9 @@ public class OrderInOperations {
         return order;
     }
 
-    /***
-     * Get a list of all the order ins that are in the database
-     * @return a list of all the order ins that are in the database
+    /**
+     * Vraci seznam vsech logistickych objednavek z databaze.
+     * @return Seznam logistickych objednavek
      */
     public List<OrderIn> getAll() {
         return orderInDAO.findAll();

@@ -5,8 +5,8 @@ import java.security.Principal;
 import java.time.Instant;
 import java.util.Objects;
 
-/***
- * Represents a User from the domain model.
+/**
+ * Reprezentuje uzivatele z domenoveho modelu.
  */
 @Entity
 @Table(
@@ -43,18 +43,25 @@ public class User implements Principal {
     @Column(name="is_admin", nullable = false)
     private boolean isAdmin;
 
-
+    /**
+     * Konstruktor.
+     */
     public User() {}
 
+    /**
+     * Konstruktor.
+     * @param name Jmeno uzivatele
+     * @param PIN PIN kod, kterym se uzivatel prihlasuje
+     */
     public User(String name, String PIN) {
         setName(name);
         setPin(PIN);
     }
 
-    /***
-     * Check whether the given PIN code is equal to user's PIN.
-     * @param comparedPIN PIN code to compare with the user's PIN
-     * @return whether the given PIN code is equal to user's PIN
+    /**
+     * Overi, zda zadany PIN odpovida uzivatelove PINu.
+     * @param comparedPIN Porovnavany PIN
+     * @return True zadany PIN odpovida uzivatelove PINu
      */
     public boolean comparePIN(String comparedPIN) {
         return pin.equals(comparedPIN);

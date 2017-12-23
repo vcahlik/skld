@@ -22,8 +22,8 @@ import javax.ws.rs.core.Response;
 
 import static org.jose4j.jws.AlgorithmIdentifiers.HMAC_SHA256;
 
-/***
- * Implements REST endpoints which enable users to obtain login tokens necessary to perform other operations on the API.
+/**
+ * Implementuje REST koncove body aplikace, ktere umoznuji uzivatelum ziskat bezpecnostni tokeny pro provadeni dalsich operaci.
  */
 @Path("/log")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -34,20 +34,21 @@ public class AuthResource {
     private final UserDAO userDAO;
     private final byte[] tokenKey;
 
-    /***
-     * Create a new AuthResource with the given configuration parameters.
-     * @param tokenKey key which is used with JWT encryption/signature algorithms
-     * @param uDao DAO used to access information about users.
+    /**
+     * Kontruktor.
+     * @param tokenKey Klic pouzity v JWT encryption/signature algoritmech
+     * @param uDao DAO pro pristup k uzivatelum v databazi
      */
     public AuthResource(byte[] tokenKey, UserDAO uDao) {
         this.tokenKey = tokenKey;
         userDAO = uDao;
     }
 
-    /***
-     * Verify a PIN and return an access token and user's details, if the it's correct.
-     * @param pinObject request payload, deserialized by Jersey
-     * @return the response with user's details and the token
+    /**
+     * Overi zadany PIN a pri souhlasu vrati bezpecostni token a informace o prihlasenem uzivateli.
+     * Pri nespravnem PINu vyvola WebAppExceptionSupplier.
+     * @param pinObject Deserializovany PIN
+     * @return LogInDetails s bezpecostnim tokenem a informacemi o prihlasenem uzivateli
      */
     @POST
     @Path("/in")

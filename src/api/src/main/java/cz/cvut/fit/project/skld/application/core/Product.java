@@ -3,8 +3,8 @@ package cz.cvut.fit.project.skld.application.core;
 import javax.persistence.*;
 import java.util.Objects;
 
-/***
- * Represents a Product from the domain model.
+/**
+ * Reprezentuje produkt z domenoveho modelu.
  */
 @Entity
 @Table(name="products")
@@ -25,8 +25,17 @@ public class Product {
     @JoinColumn(name = "created_by", foreignKey = @ForeignKey(name = "FK_Product_Creator"), nullable = false)
     private User creator;
 
+    /**
+     * Konstruktor.
+     */
     public Product() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param name Nazv produktu
+     * @param creator Uzivatel, ktery produkt zadal do systemu
+     */
     public Product(long id, String name, User creator) {
         this.id = id;
         this.name = name;

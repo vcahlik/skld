@@ -1,9 +1,6 @@
-/***
- * Implements REST endpoints for the application.
- *
- * Please note that the documentation for these classes is quite short. These are not supposed to be used directly by
- * users but are mostly automatically constructed and called by Dropwizard/Jersey. A lot of functionality is also
- * hidden in the annotations. Please read at least the introduction to Dropwizard development to get a feel of what
- * this package is doing and how.
+/**
+ * Implementuje REST koncove body aplikace.
+ * Dokumentace techto trid je znacne kratka. Nejsou vsak urceny k castemu pouziti uzivateli, casteji je pouziva framework Dropwizard, kterym jsou automaticky vytvoreny.
+ * Pro pochopeni chovani techto trid si prosim prectete uvod do vyvoje aplikaci pomoci frameworku Dropwizard.
  */
 package cz.cvut.fit.project.skld.application.resources;

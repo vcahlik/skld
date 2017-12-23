@@ -17,8 +17,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-/***
- * Implements REST endpoints which enable retrieval and manipulation of Order In objects.
+/**
+ * Implementuje REST koncove body aplikace, ktere umoznuji uzivatelum vyhledavat a upravovat logisticke objednavky.
  */
 @Path("/orders/in/{id}")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -28,16 +28,18 @@ public class OrderInResource {
 
     private final OrderInOperations orderInOps;
 
-    /***
-     * Construct a new OrderInResource
-     * @param orderInOps business logic class implementing operations on Order Ins
+    /**
+     * Konstruktor.
+     * @param orderInOps OrderInOperations s business logikou logistickych objednavek
      */
     public OrderInResource(OrderInOperations orderInOps) {
         this.orderInOps = orderInOps;
     }
 
-    /***
-     * Get details about an order with the given ID
+    /**
+     * Vraci logistickou objednavku se zadanym ID
+     * @param id ID
+     * @return Logisticka objednavka
      */
     @GET
     @UnitOfWork
@@ -50,8 +52,11 @@ public class OrderInResource {
         }
     }
 
-    /***
-     * Edit the information about an Order In
+    /**
+     * Upravi logistickou objednavku se zadanym ID podle informaci v OrderInChange
+     * @param id ID
+     * @param change Informace o zmene
+     * @return Logisticka objednavka
      */
     @PUT
     @UnitOfWork
@@ -69,8 +74,12 @@ public class OrderInResource {
         }
     }
 
-    /***
-     * Close an Order In
+    /**
+     * Uzavre logistickou objednavku
+     * @param user Uzivatel, ktery operaci provedl
+     * @param id ID
+     * @param request Uzavirana objednavka
+     * @return Logisticka objednavka
      */
     @POST
     @UnitOfWork
@@ -87,8 +96,11 @@ public class OrderInResource {
         }
     }
 
-    /***
-     * Refuse an Order In
+    /**
+     * Zamitne logistickou objednavku
+     * @param user Uzivatel, ktery operaci provedl
+     * @param id ID
+     * @return Logisticka objednavka
      */
     @POST
     @UnitOfWork

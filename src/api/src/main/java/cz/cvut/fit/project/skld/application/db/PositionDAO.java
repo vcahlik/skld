@@ -4,16 +4,15 @@ import cz.cvut.fit.project.skld.application.core.ProductPosition;
 
 import java.util.List;
 
-/***
- * Implements getting ProductPosition lists for products.
- * Since ProductPosition is not represented on the database level, this class
- * doesn't have any of the creation and advanced querying methods from other DAOs.
+/**
+ * Implementuje zjistovani pozic produktu.
+ * Tato trida neobsahuje metody pro tvoreni novych pozic nebo pokrocilych queries jako v ostatnich tridach v tomto balicku, protoze ProductPositions nejsou reprezentovany na DB urovni.
  */
 public interface PositionDAO {
-    /***
-     * Get ProductPositions for the product with the given ID.
-     * @param productId ID of the product to get positions for
-     * @return a list of ProductPositions where the product is currently located.
+    /**
+     * Vraci pozice produktu se zadanym ID.
+     * @param productId ID produktu
+     * @return Seznam pozic, na kterych je produkt umisten
      */
     List<ProductPosition> findForProductId(long productId);
 }

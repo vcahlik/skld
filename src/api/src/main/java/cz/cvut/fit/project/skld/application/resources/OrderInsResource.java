@@ -19,8 +19,8 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/***
- * Implements REST endpoints which enable creation and listing of Order In objects.
+/**
+ * Implementuje REST koncove body aplikace, ktere umoznuji uzivatelum tvorit a vyhledavat logisticke objednavky.
  */
 @Path("/orders/in")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -30,16 +30,19 @@ public class OrderInsResource {
 
     private final OrderInOperations orderInOps;
 
-    /***
-     * Construct a new OrderInsResource
-     * @param orderInOps business logic class implementing operations on Order Ins
+    /**
+     * Konstruktor.
+     * @param orderInOps OrderInOperations s business logikou logistickych objednavek
      */
     public OrderInsResource(OrderInOperations orderInOps) {
         this.orderInOps = orderInOps;
     }
 
-    /***
-     * Create a new Order In
+    /**
+     * Vytvori novou logistickou objednavku.
+     * @param user Uzivatel, ktery operaci provedl
+     * @param request Informace o nove objednavce
+     * @return Logisticka objednavka
      */
     @POST
     @UnitOfWork
@@ -52,8 +55,9 @@ public class OrderInsResource {
         }
     }
 
-    /***
-     * List all the Order Ins
+    /**
+     * Vrati seznam vsech logistickych objednavek v systemu.
+     * @return Seznam logistickych objednavek
      */
     @GET
     @UnitOfWork

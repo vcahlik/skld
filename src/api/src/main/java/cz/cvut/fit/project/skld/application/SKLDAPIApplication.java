@@ -22,12 +22,17 @@ import org.jose4j.jwt.consumer.JwtConsumer;
 import org.jose4j.jwt.consumer.JwtConsumerBuilder;
 import org.jose4j.keys.HmacKey;
 
-/***
- * Application entry point. Initializes all the necessary packages, injects the needed objects into resources
- * and starts, using its superclass, the application server.
+/**
+ * Vstupni bod serverove aplikace. Dedi nadtridu definovanou v Dropwizard.
+ * Inicializuje veskere potrebne balicky, injektuje potrebne objekty do resources a pomoci sve nadtridy spusti aplikacni server.
  */
 public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
 
+    /**
+     * Hlavni metoda. Spusti aplikaci.
+     * @param args Argumenty predane z prikazove radky
+     * @throws Exception chyba pri inicializaci aplikace
+     */
     public static void main(final String[] args) throws Exception {
         new SKLDAPIApplication().run(args);
     }
@@ -40,6 +45,10 @@ public class SKLDAPIApplication extends Application<SKLDAPIConfiguration> {
                 }
             };
 
+    /**
+     * Vraci nazev aplikace.
+     * @return Nazev aplikace
+     */
     @Override
     public String getName() {
         return "SKLDAPI";

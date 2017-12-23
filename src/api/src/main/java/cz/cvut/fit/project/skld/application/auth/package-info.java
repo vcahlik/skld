@@ -1,4 +1,4 @@
-/***
- * Implements classes powering the authentication and authorization capabilities of the application.
+/**
+ * Implementuje autentikaci a autorizaci uzivatelu.
  */
 package cz.cvut.fit.project.skld.application.auth;

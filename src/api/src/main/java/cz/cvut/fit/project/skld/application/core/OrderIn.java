@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
-/***
- * Represents an Order In from the domain model.
+/**
+ * Reprezentuje logistickou objednavku z domenoveho modelu.
  */
 @NamedQueries({
         @NamedQuery(
@@ -22,8 +22,17 @@ public class OrderIn extends Order {
     @Column(name = "expected_delivery")
     private Date expectedDelivery;
 
+    /**
+     * Konstruktor.
+     */
     public OrderIn() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param creator Uzivatel, ktery objednavku zadal do systemu
+     * @param supplierName Nazev dodavatele
+     */
     public OrderIn(long id, User creator, String supplierName) {
         super(id, creator);
         this.supplierName = supplierName;

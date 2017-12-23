@@ -15,8 +15,8 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.Optional;
 
-/***
- * Implements operations on products
+/**
+ * Implementuje operace souvisejici s produkty.
  */
 public class ProductOperations {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductOperations.class);
@@ -24,22 +24,22 @@ public class ProductOperations {
     private final ProductDAO productDAO;
     private final PositionDAO positionDAO;
 
-    /***
-     * Construct an instance of the class.
-     * @param pDao DAO used to access product tables
-     * @param posDao DAO used to access product position tables
+    /**
+     * Konstruktor.
+     * @param pDao DAO pro pristup k produktum
+     * @param posDao DAO pro pristup k pozicim
      */
     public ProductOperations(ProductDAO pDao, PositionDAO posDao) {
         productDAO = pDao;
         this.positionDAO = posDao;
     }
 
-    /***
-     * Create a new product
-     * @param creator the User that's creating the product and will be set as its creator
-     * @param product the information that should be saved with the product
-     * @return the created product, with its generated fields filled-out
-     * @throws InvalidStateException A product with the given ID already exists in the database.
+    /**
+     * Vytvori novy produkt.
+     * @param creator Uzivatel, ktery operaci zadal do systemu
+     * @param product Objekt obsahujici informace, podle kterych bude produkt vytvoren
+     * @return Vytvoreny produkt (vcetne pripadnych automaticky generovanych hodnot)
+     * @throws InvalidStateException Produkt se stejnym ID jiz v databazi existuje
      */
     public Product create(User creator, ProductChange product) throws InvalidStateException {
         Optional<Product> existing = productDAO.findById(product.getId());
@@ -50,7 +50,7 @@ public class ProductOperations {
         return productDAO.create(p);
     }
 
-    /***
+    /**
      * Get a list of all the products that are in the database
      * @return a list of all the products that are in the database
      */
@@ -58,21 +58,20 @@ public class ProductOperations {
         return productDAO.findAll();
     }
 
-    /***
-     * Get details of a product with the given ID
-     * @param id the ID of the product
-     * @return the requested product
-     * @throws NotFoundException there is no product with the given ID in the database
+    /**
+     * Vraci produkt se zadanym ID.
+     * @param id ID produktu
+     * @return Pozadovany produkt
+     * @throws NotFoundException Produkt se zadanym ID v systemu neexistuje
      */
     public Product get(long id) throws NotFoundException {
         return productDAO.findById(id).orElseThrow(new NotFoundExceptionSupplier());
     }
 
-    /***
-     * Change the name of the product with the given ID.
-     * @param change an object representing the change request
-     * @return complete information about the edited product
-     * @throws NotFoundException there is no product with the given ID in the database
+    /**
+     * Zmeni nazev produktu se zadanym ID.
+     * @param change Objekt obsahujici informace, podle kterych bude produkt zmenen
+     * @throws NotFoundException Produkt se zadanym ID v systemu neexistuje
      */
     public Product edit(ProductChange change) throws NotFoundException {
         Product p = productDAO.findById(change.getId()).orElseThrow(new NotFoundExceptionSupplier());
@@ -80,10 +79,10 @@ public class ProductOperations {
         return p;
     }
 
-    /***
-     * Get a list of positions where the product is currently located in the warehouse
-     * @param id the ID of the product
-     * @returna list of positions where the product is currently located in the warehouse
+    /**
+     * Vraci seznam pozic, na kterych je produkt ve skladu umisten.
+     * @param id ID produktu
+     * @returna Seznam pozic
      */
     public List<ProductPosition> positionsForProduct(long id) {
         return positionDAO.findForProductId(id);

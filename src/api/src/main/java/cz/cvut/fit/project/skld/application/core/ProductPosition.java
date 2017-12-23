@@ -3,13 +3,18 @@ package cz.cvut.fit.project.skld.application.core;
 
 import java.util.Objects;
 
-/***
- * A helper class which describes some quantity of products located at a specified position.
+/**
+ * Pomocna trida, ktera popisuje urcite mnozstvi nejakeho (zde nespecifikovaneho) produktu na specifikovanem miste.
  */
 public class ProductPosition {
     private String position;
     private long quantity;
 
+    /**
+     * Konstruktor.
+     * @param position Pozice
+     * @param quantity Mnozstvi produktu
+     */
     public ProductPosition(String position, long quantity) {
         this.setPosition(position);
         this.setQuantity(quantity);

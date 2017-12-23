@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
-/***
- * Represents a Line Item from the domain model.
+/**
+ * Reprezentuje LineItem z domenoveho modelu.
  */
 @Entity
 @Table(name="line_items")
@@ -29,8 +29,17 @@ public class LineItem {
     @JoinColumn(name = "order_id", foreignKey = @ForeignKey(name = "FK_Line_item_order"))
     private Order order;
 
+    /**
+     * Konstruktor.
+     */
     public LineItem() {}
 
+    /**
+     * Konstruktor.
+     * @param quantity Mnozstvi produktu
+     * @param product Produkt
+     * @param order Prislusna objednavka
+     */
     public LineItem(long quantity, Product product, Order order) {
         this.quantity = quantity;
         this.product = product;

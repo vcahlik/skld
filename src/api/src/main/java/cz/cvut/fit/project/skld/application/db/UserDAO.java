@@ -4,28 +4,28 @@ import cz.cvut.fit.project.skld.application.core.User;
 
 import java.util.Optional;
 
-/***
- * Implements basic database operations over user objects.
+/**
+ * Implementuje zakladni databazove operace nad User objekty.
  */
 public interface UserDAO {
-    /***
-     * Get the user with the given ID.
-     * @param id the ID of the searched-for user.
-     * @return optionally the user that's in the database under the given ID
+    /**
+     * Vraci uzivatele se zadanym ID.
+     * @param id ID uzivatele
+     * @return Uzivatel
      */
     Optional<User> findById(Long id);
 
-    /***
-     * Get the user which can sign in using the given PIN code
-     * @param pin PIN code according to which to get the user
-     * @return optionally the user that can sign in using pin.
+    /**
+     * Vraci uzivatele, ktery se prihlasuje zadanym PINem.
+     * @param pin PIN kod
+     * @return Uzivatel
      */
     Optional<User> findByPin(String pin);
 
-    /***
-     * Insert a new user into the database.
-     * @param user the user to insert
-     * @return inserted user, with its generated fields filled-out.
+    /**
+     * Vlozi do databaze noveho uzivatele.
+     * @param user Uzivatel
+     * @return Uzivatel (vcetne pripadnych automaticky generovanych hodnot)
      */
     User create(User user);
 }
