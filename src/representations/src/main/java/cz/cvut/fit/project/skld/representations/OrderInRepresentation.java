@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /***
- * A response with full details of an Order In.
+ * Obsahuje veskere detaily nejake logisticke objednavky.
  */
 public class OrderInRepresentation {
     private long id;
@@ -29,8 +29,16 @@ public class OrderInRepresentation {
 
     private List<ProductRepresentation> products;
 
+    /**
+     * Konstruktor.
+     */
     public OrderInRepresentation() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID logisticke objednavky
+     * @param supplierName Jmeno dodavatele
+     */
     public OrderInRepresentation(long id, String supplierName) {
         this.id = id;
         this.supplierName = supplierName;

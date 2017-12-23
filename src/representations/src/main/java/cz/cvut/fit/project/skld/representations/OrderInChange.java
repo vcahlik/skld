@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 /***
- * Request payload for edits performed on Order Ins.
+ * Reprezentuje zmenu provadenou v nejake logisticke objednavce.
  */
 public class OrderInChange {
     private long id;
@@ -20,8 +20,16 @@ public class OrderInChange {
 
     private List<ProductRepresentation> products;
 
+    /**
+     * Konstruktor.
+     */
     public OrderInChange() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param supplierName Jmeno dodavatele
+     */
     public OrderInChange(long id, String supplierName) {
         this.id = id;
         this.supplierName = supplierName;

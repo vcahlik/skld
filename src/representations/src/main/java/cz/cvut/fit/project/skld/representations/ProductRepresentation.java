@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /***
- * A response with full details of a Product
+ * Obsahuje veskere detaily nejakeho produktu.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductRepresentation {
@@ -17,8 +17,17 @@ public class ProductRepresentation {
 
     private Long quantity;
 
+    /**
+     * Konstruktor.
+     */
     public ProductRepresentation() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param name Nazev
+     * @param positions Mapa obsahujici nazvy pozic a mnozstvi produktu ulozenych v techto pozicich
+     */
     public ProductRepresentation(long id, String name, Map<String, Long> positions) {
         this.id = id;
         this.name = name;
@@ -26,6 +35,12 @@ public class ProductRepresentation {
         //this.quantity = 0L;
     }
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param name Nazev
+     * @param quantity Mnozstvi produktu
+     */
     public ProductRepresentation(long id, String name, long quantity) {
         this.id = id;
         this.name = name;
@@ -33,6 +48,11 @@ public class ProductRepresentation {
         this.quantity = quantity;
     }
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param quantity Mnozstvi produktu
+     */
     public ProductRepresentation(long id, long quantity) {
         this.id = id;
         this.quantity = quantity;

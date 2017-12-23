@@ -3,15 +3,22 @@ package cz.cvut.fit.project.skld.representations;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /***
- * A response to login request containing information about the logged-in user and a token which can be used
- * in Authorization HTTP header.
+ * Odpoved na pozadavek k prihlaseni. Obsahuje informace o prihlasenem uzivateli a bezpecnostni token (muze byt pouzit v Authorization HTTP headeru).
  */
 public class LogInDetails {
     private UserRepresentation user;
     private String token;
 
+    /**
+     * Konstruktor.
+     */
     public LogInDetails() {}
 
+    /**
+     * Konstruktor.
+     * @param user Prihlasovany uzivatel
+     * @param token Bezpecnostni token
+     */
     public LogInDetails(UserRepresentation user, String token) {
         this.setUser(user);
         this.setToken(token);

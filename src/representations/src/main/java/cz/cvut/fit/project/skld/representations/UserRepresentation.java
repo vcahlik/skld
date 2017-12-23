@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 /***
- * A response with full details of a User
+ * Reprezentace nejakeho uzivatele.
  */
 public class UserRepresentation {
 
@@ -15,6 +15,13 @@ public class UserRepresentation {
     private Instant createdAt;
     private boolean isAdmin;
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param name Jmeno uzivatele
+     * @param createdAt Cas, kdy byl uzivatel pridan do systemu
+     * @param isAdmin True uzivatel ma administratorska prava
+     */
     public UserRepresentation(long id, String name, Instant createdAt, boolean isAdmin) {
         this.id = id;
         this.name = name;
