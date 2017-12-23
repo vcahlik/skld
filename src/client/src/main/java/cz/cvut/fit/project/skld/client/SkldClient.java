@@ -7,100 +7,83 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * An interface for a client that can access the REST API of the SKLD information system.
- *
- * Please note that this interface doesn't provide a log in method. The client is supposed to be created with a
- * logged-in user which can provide the necessary tokens to call the API.
- *
- * Due to time contraints, the representation objects are used to cover disparate use cases. To know precisely
- * which fields should be filled in when calling an endpoint, please refer to the API documentation at:
- * https://skldapi.docs.apiary.io
+ * Interface pro prezentacni vrstvu klienta, ktery diky nemu nemusi komunikovat se serverem primo.
+ * Interface nevystavuje metodu pro prihlaseni. Instance datove vrstvy ma misto toho byt rovnou vytvorena jiz s prihlasenym uzivatelem, diky cemuz si rovnou uchovava prihlasovaci tokeny.
  */
 public interface SkldClient {
 
     /**
-     * Returns the user that's currently logged in and which will be performing the
-     * operations that this interface facilitates. This cannot return null since there
-     * are no operations with anonymous access in the API.
-     *
-     * @return the currently logged in user.
+     * Vraci prave prihlaseneho uzivatele, tedy toho, ktery provadi veskere operace volane pres tuto instanci. Uzivatel zustava stejny po celou dobu zivota instance.
+     * @return Prihlaseny uzivatel
      */
     UserRepresentation getLoggedInUser();
 
     /**
-     * Return a list of all the orders that have arrived or will arrive into the warehouse.
-     *
-     * @return incoming orders that the information system knows about.
+     * Vraci seznam vsech logistickych objednavek v systemu.
+     * @return Seznam logistickych objednavek
      */
     List<OrderInRepresentation> getOrderIns() throws IOException, APIException;
 
     /**
-     * Create a new order in in the system according to the filled-in fields of the OrderInRepresentation (id, supplierName
-     * and id and quantity for each product that will be delivered). This method can only be called by a user with admin
-     * privileges.
-     *
-     * @return the created order, with the generated fields filled.
+     * Vytvori v systemu novou objednavku podle vyplnenych poli v OrderInChange.
+     * Muze byt volana jen uzivatelem s administratorskymi pravy (vedouci smeny).
+     * @param order Objekt reprezentujici parametry nove objednavky
+     * @return Vytvorena logisticka objednavka
      */
     OrderInRepresentation createOrderIn(OrderInChange order) throws IOException, APIException;
 
     /**
-     * Get detailed information about an order in.
-     *
-     * @param id the ID of the order in user wants to get information about.
-     * @return the order in that was requested.
+     * Vraci reprezentaci logisticke objednavky s pozadovanym ID.
+     * @param id ID logisticke objednavky
+     * @return Logisticka objednavka
      */
     OrderInRepresentation getOrderIn(long id) throws IOException, APIException;
 
     /**
-     * Change the metadata or ordered products of the given order.
-     *
-     * @param order a full object describing the order that's to be changed. Please note that not just changed fields
-     *              but the whole object must be passed.
-     * @return the updated order, as seen on the server side.
+     * Zmeni logistickou objednavku podle vyplnenych poli v OrderInChange.
+     * @param order Objekt reprezentujici parametry zmenene objednavky (zmenena budou veskera pole, nejen ta vyplnena)
+     * @return Zmenena logisticka objednavka
      */
     OrderInRepresentation updateOrderIn(OrderInChange order) throws IOException, APIException;
 
     /**
-     * Set the order's status to closed and update product warehouse stocks according to the submitted product allocations.
-     * In this case, only the products field of OrderInRepresentation needs to be filled in.
-     * @param order an object containing the positions and quantities of products that have arrived.
-     * @return the closed order, as seen on the server side.
+     * Nastavi status dane logisticke objednavky jako uzavreny. V budoucnu rovnou zada do systemu pozice predanych produktu.
+     * @param order Uzavirana logisticka objednavka
+     * @return Uzavrena logisticka objednavka
      */
     OrderInRepresentation closeOrder(OrderInRepresentation order) throws IOException, APIException;
 
     /**
-     * Set the status of the order with the given ID to refused.
-     * @param id the ID of the order that should have its state set to refused
-     * @return the refused order, as seen on the server side.
+     * Nastavi status dane logisticke objednavky jako odmitnuty.
+     * @param id ID odmitane logisticke objednavky
+     * @return Odmitnuta logisticka objednavka
      */
     OrderInRepresentation refuseOrder(long id) throws IOException, APIException;
 
     /**
-     * Return a list of all the products that are saved in the system.
-     *
-     * @return products that have been saved in the system.
+     * Vraci seznam vsech produktu v systemu.
+     * @return Seznam produktu
      */
     List<ProductRepresentation> getProducts() throws IOException, APIException;
 
     /**
-     * Create a new product in in the system according to the filled-in fields.
-     *
-     * @return the product that has been created.
+     * Prida do systemu novy produkt.
+     * @param product Objekt obsahujici parametry noveho produktu
+     * @return Vytvoreny produkt
      */
     ProductRepresentation createProduct(ProductChange product) throws IOException, APIException;
 
     /**
-     * Return detailed information about a product.
-     *
-     * @param id ID od the product that should have its information returned
-     * @return the product that has been requested
+     * Vraci produkt s pozadovanym ID.
+     * @param id ID produktu
+     * @return Produkt
      */
     ProductRepresentation getProduct(long id) throws IOException, APIException;
 
     /**
-     * Change product information. Currently, only product name can be changed.
-     * @param edit an object containing product's new name and its ID.
-     * @return the changed product, as seen on the server side.
+     * Zmeni produkt podle vyplnenych v ProductChange. V soucasnosti umoznuje pouze zmenu nazvu produktu.
+     * @param edit Objekt reprezentujici parametry zmeneneho produktu (zmenena budou veskera pole, nejen ta vyplnena)
+     * @return Zmeneny produkt
      */
     ProductRepresentation changeProduct(ProductChange edit) throws IOException, APIException;
 }
