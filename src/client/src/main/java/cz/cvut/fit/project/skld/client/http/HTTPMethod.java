@@ -2,6 +2,9 @@ package cz.cvut.fit.project.skld.client.http;
 
 import org.apache.http.client.fluent.Request;
 
+/**
+ * Rozlisuje HTTP pozadavky
+ */
 public enum HTTPMethod {
     GET, POST, PUT, DELETE;
 

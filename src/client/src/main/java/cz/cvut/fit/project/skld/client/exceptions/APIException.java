@@ -1,7 +1,8 @@
 package cz.cvut.fit.project.skld.client.exceptions;
 
-import java.io.IOException;
-
+/**
+ * Reprezentace vyjimky specificke pro datovou vrstvu klienta.
+ */
 public abstract class APIException extends Exception {
     private int code;
 
@@ -10,14 +11,27 @@ public abstract class APIException extends Exception {
         this.code = code;
     }
 
+    /**
+     * Vraci chybovy kod vyjimky.
+     * @return Kod vyjimky
+     */
     public int getCode() {
         return code;
     }
 
+    /**
+     * Nastavuje chybovy kod vyjimky
+     * @param code Kod vyjimky
+     */
     public void setCode(int code) {
         this.code = code;
     }
 
+    /**
+     * Vytvori specificky objekt vyjimky podle daneho chyboveho kodu.
+     * @param code Chybovy kod
+     * @return Instance vyjimky
+     */
     public static APIException forCode(int code) {
         switch (code) {
             case 400: return new BadRequestException();
