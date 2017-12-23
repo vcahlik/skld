@@ -5,15 +5,23 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.validation.constraints.NotNull;
 
 /***
- * Request payload for edits performed on Products
+ * Reprezentuje zmenu provadenou v nejakem produktu.
  */
 public class ProductChange {
     private String name;
 
     private Long id;
 
+    /**
+     * Konstruktor.
+     */
     public ProductChange() {}
 
+    /**
+     * Konstruktor.
+     * @param id ID
+     * @param name Nazev produktu
+     */
     public ProductChange(long id, String name) {
         this.id = id;
         this.name = name;

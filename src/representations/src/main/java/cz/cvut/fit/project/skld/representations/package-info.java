@@ -1,8 +1,6 @@
 /***
- * Contains classes representing data that's received and sent by the REST API.
- *
- * These classes are generally POJOs with some annotations used by Jackson (the de/serialization framework) to
- * convert them to JSON and Hibernate validation annotations which are then processed by Dropwizard, which automatically
- * refuses non-conforming requests.
+ * Obsahuje tridy reprezentujici data, ktera jsou prenasena pres REST API.
+ * Tyto tridy vesmes reprezentuji POJO objekty. Ty maji navic anotace pouzivane Jacksonem (framework na (de)serializaci) pro prevod do formatu JSON.
+ * Take obsahuji anotace pouzivane frameworkem Hibernate pro ORM.
  */
 package cz.cvut.fit.project.skld.representations;
