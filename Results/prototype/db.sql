@@ -201,88 +201,12 @@ CREATE TABLE users (
     is_admin boolean NOT NULL
 );
 
-
---
--- Data for Name: line_item_allocations; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY line_item_allocations (product_movement_id, line_item_id) FROM stdin;
-16	25
-17	25
-18	26
-\.
-
-
---
--- Data for Name: line_items; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY line_items (id, quantity, product_id, order_id) FROM stdin;
-23	5	1	1
-24	100	2	1
-25	3	1	2
-26	2	3	2
-\.
-
-
---
--- Data for Name: order_ins; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY order_ins (id, supplier_name, expected_delivery) FROM stdin;
-1	CTU Faculty of Mass Destruction Technology Transfer Corporation Ltd.	\N
-2	Black Mesa Research Institute	\N
-\.
-
-
---
--- Data for Name: order_outs; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY order_outs (order_id) FROM stdin;
-\.
-
-
---
--- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY orders (handled_at, created_at, id, state, creator_id, handler_id) FROM stdin;
-\N	2017-12-04 22:06:31.413	1	OPEN	3	\N
-2017-12-04 22:08:55.019	2017-12-04 22:07:16.179	2	CLOSED	3	3
-\.
-
-
---
--- Data for Name: product_movements; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY product_movements (id, at, quantity, missing, product_id, location, user_id) FROM stdin;
-16	2017-12-04 22:08:54.982	1	f	1	A2	3
-17	2017-12-04 22:08:55.014	2	f	1	A1	3
-18	2017-12-04 22:08:55.016	2	f	3	B1	3
-\.
-
-
---
--- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY products (id, name, created_by) FROM stdin;
-1	World-Destroyer v2	3
-2	Nanobot Cloud	1
-3	Suitcase Antimatter bomb	2
-\.
-
-
 --
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY users (id, name, created_at, blocked_at, pin, is_admin) FROM stdin;
-1	Kanye West	2017-12-02 13:10:59.908464	\N	1234	t
-2	Blocked Test	2017-12-02 15:51:50.629862	2017-12-02 15:51:50.629862	8181	t
-3	Robo	2017-12-02 16:07:17.339676	\N	1984	t
+1	Administrator	2017-12-02 13:10:59.908464	\N	1234	t
 \.
 
 
