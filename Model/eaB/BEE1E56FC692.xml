@@ -14,10 +14,10 @@
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="parent" value="EAPK_A76BF85D_9433_4fa2_B6B5_842EA073D769"/>
 						<UML:TaggedValue tag="created" value="2017-12-18 11:05:16"/>
-						<UML:TaggedValue tag="modified" value="2017-12-26 12:30:49"/>
+						<UML:TaggedValue tag="modified" value="2017-12-26 14:48:08"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="eaB\BEE1E56FC692.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-12-26 12:30:50"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-12-26 14:48:09"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-12-20 12:52:56"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -47,7 +47,7 @@
 										<UML:TaggedValue tag="isActive" value="false"/>
 										<UML:TaggedValue tag="package" value="EAPK_2BF4F788_678E_4200_A1D9_BEE1E56FC692"/>
 										<UML:TaggedValue tag="date_created" value="2017-12-18 11:05:16"/>
-										<UML:TaggedValue tag="date_modified" value="2017-12-18 11:05:16"/>
+										<UML:TaggedValue tag="date_modified" value="2017-12-26 12:30:52"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_696292DE_31F6_474b_8E57_F2C2102AB295"/>
@@ -57,7 +57,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="575"/>
+										<UML:TaggedValue tag="ea_localid" value="763"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -82,7 +82,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="541"/>
+										<UML:TaggedValue tag="ea_localid" value="779"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -107,7 +107,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="574"/>
+										<UML:TaggedValue tag="ea_localid" value="762"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -132,7 +132,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="540"/>
+										<UML:TaggedValue tag="ea_localid" value="778"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -151,13 +151,13 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="2453"/>
+								<UML:TaggedValue tag="ea_localid" value="3004"/>
 								<UML:TaggedValue tag="ea_sourceName" value="components"/>
 								<UML:TaggedValue tag="ea_targetName" value="Presentation layer"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3666"/>
-								<UML:TaggedValue tag="ea_targetID" value="3664"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4309"/>
+								<UML:TaggedValue tag="ea_targetID" value="4307"/>
 								<UML:TaggedValue tag="privatedata5" value="EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
@@ -189,13 +189,13 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="2323"/>
+								<UML:TaggedValue tag="ea_localid" value="3022"/>
 								<UML:TaggedValue tag="ea_sourceName" value="util"/>
 								<UML:TaggedValue tag="ea_targetName" value="Presentation layer"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3530"/>
-								<UML:TaggedValue tag="ea_targetID" value="3664"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4341"/>
+								<UML:TaggedValue tag="ea_targetID" value="4307"/>
 								<UML:TaggedValue tag="privatedata5" value="EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
@@ -227,13 +227,13 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="2322"/>
+								<UML:TaggedValue tag="ea_localid" value="3020"/>
 								<UML:TaggedValue tag="ea_sourceName" value="resources"/>
 								<UML:TaggedValue tag="ea_targetName" value="Presentation layer"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3523"/>
-								<UML:TaggedValue tag="ea_targetID" value="3664"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4339"/>
+								<UML:TaggedValue tag="ea_targetID" value="4307"/>
 								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
@@ -266,13 +266,13 @@
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
 								<UML:TaggedValue tag="conditional" value="쳕se�"/>
-								<UML:TaggedValue tag="ea_localid" value="2950"/>
+								<UML:TaggedValue tag="ea_localid" value="2999"/>
 								<UML:TaggedValue tag="ea_sourceName" value="Presentation layer"/>
 								<UML:TaggedValue tag="ea_targetName" value="client"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3664"/>
-								<UML:TaggedValue tag="ea_targetID" value="3637"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4307"/>
+								<UML:TaggedValue tag="ea_targetID" value="4300"/>
 								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 								<UML:TaggedValue tag="mb" value="쳕se�"/>
@@ -306,13 +306,13 @@
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
 								<UML:TaggedValue tag="conditional" value="쳕se�"/>
-								<UML:TaggedValue tag="ea_localid" value="2953"/>
+								<UML:TaggedValue tag="ea_localid" value="2998"/>
 								<UML:TaggedValue tag="ea_sourceName" value="gui"/>
 								<UML:TaggedValue tag="ea_targetName" value="representations"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3649"/>
-								<UML:TaggedValue tag="ea_targetID" value="3548"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4306"/>
+								<UML:TaggedValue tag="ea_targetID" value="4345"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 								<UML:TaggedValue tag="mb" value="쳕se�"/>
 							</UML:ModelElement.taggedValue>
@@ -344,13 +344,13 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="2952"/>
+								<UML:TaggedValue tag="ea_localid" value="2997"/>
 								<UML:TaggedValue tag="ea_sourceName" value="gui"/>
 								<UML:TaggedValue tag="ea_targetName" value="client"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3649"/>
-								<UML:TaggedValue tag="ea_targetID" value="3637"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4306"/>
+								<UML:TaggedValue tag="ea_targetID" value="4300"/>
 								<UML:TaggedValue tag="src_visibility" value="Public"/>
 								<UML:TaggedValue tag="src_aggregation" value="0"/>
 								<UML:TaggedValue tag="src_isOrdered" value="false"/>
@@ -374,10 +374,10 @@
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="parent" value="EAPK_2BF4F788_678E_4200_A1D9_BEE1E56FC692"/>
 								<UML:TaggedValue tag="created" value="2017-12-18 11:05:16"/>
-								<UML:TaggedValue tag="modified" value="2017-12-26 12:30:52"/>
+								<UML:TaggedValue tag="modified" value="2017-12-26 14:48:11"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="eaF\F2C2102AB295.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2017-12-26 12:30:53"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-12-26 14:48:11"/>
 								<UML:TaggedValue tag="lastsavedate" value="2017-12-26 12:30:52"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -420,13 +420,17 @@
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="parent" value="EAPK_2BF4F788_678E_4200_A1D9_BEE1E56FC692"/>
 								<UML:TaggedValue tag="created" value="2017-12-18 11:05:23"/>
-								<UML:TaggedValue tag="modified" value="2017-12-18 11:05:23"/>
+								<UML:TaggedValue tag="modified" value="2017-12-26 14:48:50"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="eaE\EBD3E7EFC6F6.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-12-26 14:48:50"/>
+								<UML:TaggedValue tag="lastsavedate" value="2017-12-26 14:48:50"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
 								<UML:TaggedValue tag="usedtd" value="FALSE"/>
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
 								<UML:TaggedValue tag="packageFlags" value="VCCFG=SKLD;CheckedOutTo=Pepa;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
@@ -440,13 +444,17 @@
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="parent" value="EAPK_2BF4F788_678E_4200_A1D9_BEE1E56FC692"/>
 								<UML:TaggedValue tag="created" value="2017-12-18 11:05:24"/>
-								<UML:TaggedValue tag="modified" value="2017-12-18 11:05:24"/>
+								<UML:TaggedValue tag="modified" value="2017-12-26 14:48:52"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 								<UML:TaggedValue tag="xmlpath" value="eaA\A04293ABE48F.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2017-12-26 14:48:53"/>
+								<UML:TaggedValue tag="lastsavedate" value="2017-12-26 14:48:52"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
 								<UML:TaggedValue tag="usedtd" value="FALSE"/>
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
 								<UML:TaggedValue tag="packageFlags" value="VCCFG=SKLD;CheckedOutTo=Pepa;"/>
 								<UML:TaggedValue tag="savedasstub" value="true"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
@@ -470,11 +478,10 @@
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="451"/>
+				<UML:TaggedValue tag="ea_localid" value="574"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=0;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=2;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=74DC4F9A;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=AFC61303;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
-			<UML:Diagram.element/>
 		</UML:Diagram>
 		<UML:DiagramElement geometry="Left=107;Top=68;Right=262;Bottom=322;" subject="EAID_696292DE_31F6_474b_8E57_F2C2102AB295" seqno="2" style=" DUID=708B04F7;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;">
 			<UML:ModelElement.taggedValue>
