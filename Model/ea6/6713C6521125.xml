@@ -14,10 +14,10 @@
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="parent" value="EAPK_378FB0A9_DF6D_422d_ABAB_E8465127C828"/>
 						<UML:TaggedValue tag="created" value="2017-12-18 11:05:08"/>
-						<UML:TaggedValue tag="modified" value="2017-12-26 12:30:24"/>
+						<UML:TaggedValue tag="modified" value="2017-12-26 14:47:43"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="ea6\6713C6521125.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2017-12-26 12:30:24"/>
+						<UML:TaggedValue tag="lastloaddate" value="2017-12-26 14:47:43"/>
 						<UML:TaggedValue tag="lastsavedate" value="2017-12-20 12:53:01"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -47,13 +47,13 @@
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
 								<UML:TaggedValue tag="conditional" value="«use»"/>
-								<UML:TaggedValue tag="ea_localid" value="2970"/>
+								<UML:TaggedValue tag="ea_localid" value="2979"/>
 								<UML:TaggedValue tag="ea_sourceName" value="db"/>
 								<UML:TaggedValue tag="ea_targetName" value="core"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
 								<UML:TaggedValue tag="ea_targetType" value="Package"/>
-								<UML:TaggedValue tag="ea_sourceID" value="3602"/>
-								<UML:TaggedValue tag="ea_targetID" value="3592"/>
+								<UML:TaggedValue tag="ea_sourceID" value="4288"/>
+								<UML:TaggedValue tag="ea_targetID" value="4286"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 								<UML:TaggedValue tag="mb" value="«use»"/>
 							</UML:ModelElement.taggedValue>
@@ -74,7 +74,7 @@
 								</UML:AssociationEnd>
 							</UML:Association.connection>
 						</UML:Association>
-						<UML:Collaboration xmi.id="EAID_F85BA169_0DE8_48b3_ABAF_52ACA7B88FFB_Collaboration" name="Collaborations">
+						<UML:Collaboration xmi.id="EAID_1E47E61B_BEF6_4149_A0F4_4B57AA97D84C_Collaboration" name="Collaborations">
 							<UML:Namespace.ownedElement/>
 							<UML:Collaboration.interaction>
 								<UML:Interaction>
@@ -133,11 +133,10 @@
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
-				<UML:TaggedValue tag="ea_localid" value="442"/>
+				<UML:TaggedValue tag="ea_localid" value="564"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=0;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=2;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=6AFBE779;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=BCA2649D;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=0;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
 			</UML:ModelElement.taggedValue>
-			<UML:Diagram.element/>
 		</UML:Diagram>
 		<UML:DiagramElement geometry="Left=247;Top=499;Right=377;Bottom=657;" subject="EAID_97085C7B_465B_42b6_A871_6713C6521125" seqno="5" style=" NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=FEC35F0E;">
 			<UML:ModelElement.taggedValue>
