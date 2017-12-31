@@ -1,0 +1,9 @@
+cz.cvut.fit.project.skld.application
+cz.cvut.fit.project.skld.application.auth
+cz.cvut.fit.project.skld.application.core
+cz.cvut.fit.project.skld.application.db
+cz.cvut.fit.project.skld.application.db.postgres
+cz.cvut.fit.project.skld.application.operations
+cz.cvut.fit.project.skld.application.operations.exceptions
+cz.cvut.fit.project.skld.application.resources
+cz.cvut.fit.project.skld.application.util
