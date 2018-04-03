@@ -2,6 +2,11 @@
 # and leave all files detected as binary untouched.
 * text=auto
 
+# Documentation
+Model/* linguist-documentation
+Results/* linguist-documentation
+Results/prototype/* linguist-generated
+
 #
 # The above will handle all files NOT found below
 #
